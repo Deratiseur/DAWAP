@@ -1,0 +1,39 @@
+V2 :
+Nouveau kits :
+Fléau, Enragé
+
+Modifications :
+Psychotope : ajout de Berserk et Charme dans les déconnections pouvant lui faire perdre ses sorts.
+Eoratien : maintenant il se remémore ses sorts à FIN des combat (au début c’était naze, ça ne se faisait que quelques secondes après le début)
+Anomalie : plus de résistance aux dégâts magiques. (Il pouvait s'auto cibler avec Projectile magique et gagner des pvs comme ça)
+Miniums magiques : plus d'immunité aux armes non-magiques, à la place bonus à la CA. (c’était surcheaté dans BG1)
+
+Corrections :
+Anomalie : sa boule d’énergie ne se mettait pas à jour s'il passait beaucoup de niveaux d'un coup.
+Eoration : il ne se remémorait rien.
+
+V2.1 :
+Corrections :
+Enragé : sa rage ne durait que 4 rounds.
+Voleur de sorts : ses pouvoirs n’étaient pas limités à un usage contre les mages.
+
+V3 :
+Nouveau kit :
+Zap
+
+Modifications :
+Incantateur : plus immunisé aux effets modifiant les temps d'incantation. Robe de Vecna effective.
+Enragé : clarification du texte et ajout d'une ligne manquante dans le texte en anglais.
+
+Corrections :
+Enragé : il subissait -1 sort par niveau de sort.
+
+V4 :
+Nouveau kit :
+Sorcelier v2 (exporté du DUKP et modifié)
+
+Modifications :
+Minuims magiques : ils ne peuvent plus choisir de compétences d'armes lors de la création du personnage, puisque de toute façon il ne peuvent en porter aucune.
+
+Corrections :
+Il restait plein de fichiers textes et backups indésirables dans l'archive de la V3.

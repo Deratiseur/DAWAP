@@ -1,0 +1,270 @@
+@2 = ~This component only works with an IE game in Enhanced version.~
+@23 = ~This component only works with an IE game in Enhanced version, except IWDEE.~
+
+@10 = ~SCOURGE~
+@11 = ~Scourge~
+@12 = ~SCOURGE: this arcanist from another dark reality is a plague on our reality.
+
+Advantage:
+- All his spells are remembered every round.
+
+Disadvantage:
+- Can only learn spells from Evocation and Necromancy schools.~
+@13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (95 new spells, in french)
+@14 = ~Fire Blast (Evocation)
+Level: 1
+Range: 0
+Duration: Instantaneous
+Casting time: 1
+Area of effect: 2.5 meter radius
+Saving throw: ½
+
+This spell creates an explosion that emanates from the caster and injures all creatures within 2.5 meters of him. All affected creatures take 1D4 points of fire damage per caster level (to a maximum of 10D4). A successful saving throw against spells reduces the damage by half.~
+
+@20 = ~PSYCHOTOPE~
+@21 = ~Psychotope~
+@22 = ~PSYCHOTOPE : This very strange arcanist uses only his consciousness to cast spells.
+
+Advantage:
+- Casting time fixed to 1.
+- Every 3 rounds he rememorize a lost spell of the maximum known level. If there is no spell to rememorize at that level, it is one spell level below instead.
+
+Disadvantage:
+- Any loss of consciousness: sleep (from a night's rest or induced), stun, fear, berserk, charm, confusion, debility, or death causes him to forget all his spells.~
+
+@30 = ~SPELL STEALER~
+@31 = ~Spell stealer~
+@32 = ~SPELL STEALER : this magician has strange magical abilities.
+
+Advantage:
+- Can at will, on contact, make an arcanist forget a spell (no saving throw) to remember himself a spell of maximum known level.
+- Can once a day, on contact, make an arcanist forget all his spells (saving throw against death) to remember all his spells himself.
+
+Disadvantage:
+- Can memorize one less spell per spell level.
+- Each access to a new spell level is slowed down by one level (first spell of level 1 at level 2 of wizard).~
+@33 = ~Draining touch~
+@34 = ~Draining palm~
+
+@40 = ~EORATIAN~
+@41 = ~Eoratian~
+@42 = ~EORATIAN : this sorcerer has a very strange way of using magic.
+
+Advantage:
+- He remembers all his spells and regains his innate abilities at the end of each fight.
+
+Disadvantage:
+- Can memorize three fewer spells per spell level.
+- Each access to a new spell level is slowed down by one level (first spell level 1 at level 2 of spellcaster).
+- Unaffected by effects that allow to store more spells.~
+
+@50 = ~ANOMALY~
+@51 = ~Anomaly~
+@52 = ~ANOMALY : this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known reality.
+
+Advantage:
+- Immune to offensive magic and 100% magic resistance.
+- Immune to poison, disease and level drain.
+- Immune to dead magic, miscast and imposed wild surges.
+- Gains one hit point each time he casts a spell (out of combat only if an automatic combat script is allocated to him)
+- Can cast a ball of energy +1 once per round at will, inflicting 1D4+1 magical damage. The "enchantment" level and damages increases by +1 per 5 levels of the anomaly, up to a maximum of +7.
+
+Disadvantage:
+- Wild magic, but without the spells common to the conventional wild mage.
+- Conventional healing (spells, potions) do not affect it.
+
+Special: Immutable embodied body: Polymorph spells give him a weapon but do not modify his body.~
+@53 = ~Ball of energy~
+@531 = ~This magic energy ball +1 provides +3 to hit and inflicts 1D4+1 magic damage.~
+@532 = ~This magic energy ball +2 provides +3 to hit and inflicts 1D4+2 magic damage.~
+@533 = ~This magic energy ball +3 provides +3 to hit and inflicts 1D4+3 magic damage.~
+@534 = ~This magic energy ball +4 provides +3 to hit and inflicts 1D4+4 magic damage.~
+@535 = ~This magic energy ball +5 provides +3 to hit and inflicts 1D4+5 magic damage.~
+@536 = ~This magic energy ball +6 provides +3 to hit and inflicts 1D4+6 magic damage.~
+@537 = ~This magic energy ball +7 provides +3 to hit and inflicts 1D4+7 magic damage.~
+
+@60 = ~MAGIC MINUIMS~
+@61 = ~Magic minuims~
+@62 = ~MAGIC MINUIMS : This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect.
+
+Advantage :
+- Doubled amount of memorable spells.
+- +2 to AC, +2 additionnal against slashing and piercing attacks.
+
+Disadvantage:
+- Cannot carry any items.
+
+Special : can't give himself a physical form : Polymorph spells give him a weapon but no body.~
+
+@70 = ~INCANTATOR~
+@71 = ~Incantator~
+@72 = ~INCANTATOR : this very strange sorcerer practices magic differently.
+
+Advantage:
+- +50% spell duration.
+- +50% elemental and magical damage done.
+- +4 to caster level.
+
+Disadvantage:
+- Casting time: +4.~
+
+@80 = ~SPIRIT OF THE MIRROR~
+@81 = ~Spirit of the Mirror~
+@82 = ~Spirit of the mirror : This arcanist comes from another reality and interacts strangely with the known reality.
+
+Advantage:
+- Unlimited Spell Deflection.
+- Light Reflection: +3 to AC.
+- Can cast "Reflected Image" at will.
+- Automatically learns all "image" spells as spells one level lower when he reaches the required level.
+
+Disadvantage:
+- Very fragile: -1 hit point per level and -100% crushing damage resistance.~
+@83 = ~Major Reflected Image~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (95 new spells, in french)
+@84 = ~Major Reflected Image (Illusion) 
+Level : 4
+Range: 0
+Duration: 1 round per level
+Area of effect: the caster
+Casting Time: 4
+Saving throw: none
+
+Upon casting this spell, the wizard creates 1 image of <PRO_HIMHER>self that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wizard does so that if any enemies are trying to attack the wizard, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the caster. The image will disappear with a successful Dispel Magic or when the spell's duration expires.~
+
+@90 = ~CHEEZARD~
+@91 = ~Cheezard~
+@92 = ~CHEEZARD: This very specialized magician has difficulty finding his place in this reality.
+Advantages:
+- Whenever he casts a charm spell on a monster whose archetype includes "cheese," the saving throw against that spell has an additional -6 malus.
+- Each monster whose archetype includes "cheese" that he controls gains 4 hit dice and the corresponding bonuses.
+- +20% effect for all spells he casts whose register includes "cheese".
+
+Disadvantage:
+- He can only eat cheese. All other food is toxic to him.
+- He does not gain any bonus spells corresponding to a specialized mage.~
+
+@100 = ~ENRAGED~
+@101 = ~Enraged~
+@102 = ~ENRAGED: This magician never lets go of the animal rage that inhabits him.
+
+Advantages:
+- Whenever he kills a creature he gain Improved Alacrity for one round.
+- +15% damage dealt, weapon or spell.
+
+Disadvantage:
+- He gives no credit to defensives schools and does not learn any spells from the schools of Abjuration, Divination, and Illusion.
+- When his hit points drop below 25% he becomes a spell berserk.
+- Spells and effects like "x when y" (Fire Shield: damage inflicted WHEN hit) have no effect on him.
+
+Spell Berserk:
+For 5 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gain Improved Alacrity and -2 to casting time but has a 15% chance of missing incantations.~
+@103 = ~Enraged~
+@104 = ~Spell Berserk~
+
+@110 = ~ZAP~
+@111 = ~Zap~
+@112 = ~ZAP : This arcanist comes from another reality and survives with difficulty in the known reality.
+
+Advantages:
++10 to movement speed
++1 Attack per round
+-4 to casting time
+Improved Alacrity
++3 to saving throws against wands and breaths
+
+Disadvantage:
+When he does NOTHING he loses one hit point every 3 seconds.~
+
+
+@120 = ~SORCELER~
+@121 = ~Sorceler~
+@122 = ~SORCELER : This arcanist loves fighting so much that he spends more time doing it than mastering magic.
+
+Advantages:
+- Becomes proficient with daggers and clubs at level 3, specialized at level 10.
+- +1 melee THAC0 every 2 levels.
+- +1 melee damage at levels 7, 14 and 21.
+- +½ attack per round at levels 9, 17 and 23.
+- +1 to saving throw vs. death every 4 levels.
+- +1 to saving throw vs. polymorph every 8 levels.
+- Life Points aligned on the Thief table.
+- Can use his proficiency skill points to evolve in fight style "One weapon", "Two weapons" and "Two Handed weapons".
+- Develops improved versions of some combat spells.
+- Can choose Hlas of fighter in addition to those of mage.
+
+Disadvantages:
+- Can not use items reserved to fighters.
+- Does not benefit from the constitution and exceptional strength bonuses to which warriors are entitled.
+- Ability to cast spell reduced of two spells per spell level.
+- Development slowed by the non-exclusive practice of magic: -15% of xp.
+
+IMPROVED SPELLS: when he casts certain spells, the sorcerer can take advantage of improved effects, which vary according the spells:
+  * Called Shot: extended duration: 1 round/3 levels
+  * Armor: reduced casting time, reduced AC: -1 AC/3 levels
+  * Strength: improved strength when casting upon himself: set at 19
+  * Fire Shield (Red/Blue): affected weapon: +1D8 damage~
+  
+@123 = ~Armor
+Level: 1
+School: Conjuration
+Range: spellcaster
+Duration: 8 hours
+Casting Time: 5
+Area of Effect: caster
+Saving Throw: none
+
+By means of this spell, the wizard creates a magical field of force that sets his base armor class at 6. This effect is improved by 1 point to AC every three levels of the caster, up to an armor class of 0 at level 19. The armor spell does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.~
+
+@124 = ~True Strike~
+@125 = ~True Strike (Divination)
+Level: 1
+Range: spellcaster
+Duration: 1 round/3 levels
+Casting Time: 1
+Area of Effect: caster
+Saving Throw: none
+
+By means of this spell, the wizard can temporarily see the near future. All his attacks made during the duration of the spell gets a perception bonus of +10.~
+
+@126 = ~Strength (Alteration)
+Level: 2
+Range: Touch
+Duration: 1 turn/level
+Casting Time: 1 round
+Area of Effect: touched target
+Saving Throw: none
+
+This spell gives the touched character a Strength of 18/50. If the character already had a strength between 18/01 and 18/50, 50 points are added to its percentage of exceptional strength. If the strength was between 18/50 and 18/00, it is set at 18/00. If his strength was greater than 19, it is reduced to 18/50.
+Examples:
+Starting strength: Received Strength
+12    --> 18/50
+18/25 --> 18/75
+18/78 --> 18/00
+20    --> 18/50
+
+If the mage uses this spell on himself, the conferred strength is automatically 19.~
+
+@127 = ~Fire Shield (Red)~
+@128 = ~Fire Shield (red) (Evocation, Alteration)
+Level: 4
+Range: 0
+Duration: 3 rounds + 1 round per level
+Casting Time: 4
+Area of Effect: Caster
+Saving Throw: No
+
+This red fire shield protects the caster against fire by surrounding him by flames. Not only this shield gives him 50% Fire resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1D8 + 2 points of fire damage.
+The mage can also expand the shield covering up his weapon, which adds 1D8 points of fire damage to each of his strikes.~
+
+@129 = ~Fire Shield (Blue)~
+@1210 = ~Fire Shield (Blue) (Evocation, Alteration)
+Level: 4
+Range: 0
+Duration: 3 rounds + 1 round per level
+Casting Time: 4
+Area of Effect: Caster
+Saving Throw: No
+
+This blue fire shield protects the caster against cold by surrounding him by flames. Not only this shield gives him 50% Cold resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1d8 + 2 points of cold damage.
+The mage can also expand the shield covering up his weapon, which adds 1D8 points of cold damage to each of his strikes.~
+

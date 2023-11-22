@@ -1,0 +1,6 @@
+IF
+ActionListEmpty()
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdzap1",Myself)
+END

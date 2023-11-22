@@ -1,0 +1,13 @@
+IF
+	SpellCast(Myself,0)
+THEN
+	RESPONSE #100
+		ApplySpellRES("pxdabso1",Myself)
+END
+
+IF
+	PartyRested()
+THEN
+	RESPONSE #100
+		ApplySpellRES("pxdabso2",Myself)
+END

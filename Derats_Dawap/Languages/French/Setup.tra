@@ -1,0 +1,271 @@
+@2 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced.~
+@3 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced, sauf IWDEE.~
+
+@10 = ~FLEAU~
+@11 = ~Fléau~
+@12 = ~FLÉAU : cet arcaniste venue d'une autre sombre réalité est une plaie pour notre réalité.
+
+Avantage :
+- Tous ses sorts sont remémorés chaque round.
+
+Inconvénient :
+- Ne peut apprendre que des sorts des écoles d'Évocation et Nécromancie.~
+@13 = ~Explosion de feu~
+@14 = ~Explosion de feu (Évocation)
+Niveau : 1
+Portée : 0
+Durée : instantanée
+Temps d'incantation : 1
+Zone d'effet : rayon de 2,5 mètres
+Jet de sauvegarde : ½
+
+Ce sort crée une explosion émanant du lanceur de sort et blessant toutes les créatures situées dans un rayon de 2,5 mètres autour de lui. Toutes les créatures affectées subissent 1D4 points de dégâts de feu par niveau de lanceur de sorts (jusqu'à un maximum de 10D4). Un jet de sauvegarde contre les sorts réussi permet de réduire les dégâts de moitié.~
+@15 = ~Fleau~
+
+@20 = ~PSYCHOTOPE~
+@21 = ~Psychotope~
+@22 = ~PSYCHOTOPE : cet arcaniste très étrange n'utilise que sa conscience pour lancer des sorts.
+
+Avantage :
+- Temps d'incantation fixés à 1.
+- Tous les 3 rounds il se remémore un sort du niveau maximum connu. S'il n'y a aucun sort à remémorer à ce niveau, c'est un niveau de sort en dessous à la place.
+
+Inconvénient :
+- Toute perte de conscience : sommeil (d'une nuit de repos ou provoqué), étourdissement, peur, berserk, charme, confusion, débilité ou mort lui fait oublier tous ses sorts.~
+
+
+@30 = ~VOLEUR DE SORTS~
+@31 = ~Voleur de sorts~
+@32 = ~VOLEUR DE SORTS : ce magicien possède d'étranges capacités magiques.
+
+Avantages :
+- Peut à volonté, au contact, faire oublier un sort à un  arcaniste (sans jet de sauvegarde) pour se remémorer un sort de niveau maximum connu.
+- Peut une fois par jour, au contact, faire oublier tous ses sorts à un arcaniste (jet de sauvegarde contre la mort) pour se remémorer soit même tous ses sorts.
+
+Inconvénient :
+- Peut mémoriser un sort de moins par niveau de sort.
+- Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 de mage).~
+@33 = ~Toucher drainant~
+@34 = ~Paume drainante~
+
+@40 = ~EORATIEN~
+@41 = ~Eoratien~
+@42 = ~EORATIEN : cet ensorceleur à une façon très étrange d'utiliser la magie.
+
+Avantage :
+- Se remémore tous ses sorts et regagne ses capacités innées à la fin de chaque combat.
+
+Inconvénient :
+- Peut mémoriser trois sorts de moins par niveau de sort.
+- Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 d'ensorceleur.
+- Non affecté par les effets permettant de mémoriser plus de sorts.~
+
+@50 = ~ANOMALIE~
+@51 = ~Anomalie~
+@52 = ~ANOMALIE : ce amalgame de magie incarnée vient d'une autre réalité et réagit bizarrement aux lois de la réalité connue.
+
+Avantages :
+- Immunisé contre la magie offensive et 100% de résistance à la magie.
+- Immunisé au poison, à la maladie et au drain de niveau.
+- Immunisé à la magie morte, au fourvoiement et aux hiatus imposés.
+- Gagne un point de vie chaque fois qu'il lance un sort. (Hors combat seulement si un script de combat automatique lui est alloué)
+- Peut à volonté lancer une fois par round une boule d’énergie magique +1 qui inflige 1D4+1 dégâts magiques. Le niveau "d'enchantement" et les dégâts augmentent de +1 par 5 niveaux de l'anomalie, jusqu'à +7 maximum.
+
+Inconvénients :
+- Entropie, mais sans les sorts communs à l'entropiste classique.
+- Les soins conventionnels (sorts, potions) ne l'affectent pas.
+
+Spécial : Corps incarné immuable : les sort de métamorphoses lui donnent une arme mais ne modifient pas son corps.~
+@53 = ~Boule d’énergie~
+@531 = ~Cette boule d’énergie magique +1 procure +3 au toucher et inflige 1D4+1 dégâts magique.~
+@532 = ~Cette boule d’énergie magique +2 procure +3 au toucher et inflige 1D4+2 dégâts magique.~
+@533 = ~Cette boule d’énergie magique +3 procure +3 au toucher et inflige 1D4+3 dégâts magique.~
+@534 = ~Cette boule d’énergie magique +4 procure +3 au toucher et inflige 1D4+4 dégâts magique.~
+@535 = ~Cette boule d’énergie magique +5 procure +3 au toucher et inflige 1D4+5 dégâts magique.~
+@536 = ~Cette boule d’énergie magique +6 procure +3 au toucher et inflige 1D4+6 dégâts magique.~
+@537 = ~Cette boule d’énergie magique +7 procure +3 au toucher et inflige 1D4+7 dégâts magique.~
+
+@60 = ~MINUIMS MAGIQUES~
+@61 = ~Minuims magiques~
+@62 = ~MINUIMS MAGIQUES : cet agglomérat de minuscules fées vient d'une autre réalité et peut accomplir de grande choses par effet de groupe.
+
+Avantage :
+- Quantité de sorts mémorisables doublée.
+- +2 à la CA, +2 supplémentaire contre les attaques tranchantes et perforantes.
+
+Inconvénient :
+- Ne peut porter aucun objet.
+
+Spécial : ne peut pas se donner de forme physique : les sort de métamorphoses lui donnent une arme mais pas de corps.~
+
+@70 = ~INCANTATEUR~
+@71 = ~Incantateur~
+@72 = ~INCANTATEUR : cet ensorceleur très étrange pratique la magie différemment.
+
+Avantage :
+- +50% de durée des sorts.
+- +50% de dégâts de dégâts élémentaires et magique infligés.
+- +4 au niveau de lanceur de sort.
+
+Inconvénient :
+- Temps d'incantation : +4.~
+
+@80 = ~ESPRIT DU MIROIR~
+@81 = ~Esprit du miroir~
+@82 = ~ESPRIT DU MIROIR : cet arcaniste vient d'une autre réalité et interagit bizarrement avec la réalité connue.
+
+Avantages :
+- Renvoi des sorts illimité.
+- Réflexion de la lumière : +3 à la CA.
+- Peut lancer "Image réfléchie" à volonté.
+- Apprend automatiquement tous les sorts "d'image" comme des sorts de un niveau de moins quand il atteint le niveau requis.
+
+Inconvénient :
+- Très fragile : -1 point de vie par niveau et -100% de résistance aux dégâts contondants.~
+@83 = ~Image réfléchie majeure~
+@84 = ~Image réfléchie majeure (Illusion) 
+Niveau : 4
+Portée : 0
+Durée : 1 round par niveau
+Zone d’effet : le lanceur de sort
+Temps d’incantation : 4
+Jet de sauvegarde : aucun
+
+Ce sort permet au lanceur de créer une image de lui-même qui se déplace à ses côtés, copiant tous ses faits et gestes. Ainsi, les ennemis attaquant le magicien ne sauront pas lequel est le vrai : 50 % de chance de toucher l'image, et 50 % de chances de toucher le magicien. L'image disparaît à la suite d'une Dissipation ou à l'expiration du sort.~
+
+@90 = ~FROMAGICIEN~
+@91 = ~Fromagicien~
+@92 = ~FROMAGICIEN : Ce magicien très spécialisé à du mal à trouver sa place dans cette réalité.
+Avantages :
+- Chaque fois qu'il lance un sort de charme sur un monstre dont l’archétype inclut "fromage", le jet de sauvegarde contre ce sort est assorti d'un malus supplémentaire de -6.
+- Chaque monstre dont l’archétype inclut "fromage" qu'il contrôle gagne 4 dés de vie et les bonus correspondant.
+- +20% d'effets pour tous les sort qu'il lance dont le registre inclut "fromage".
+
+Inconvénient :
+- Il ne se nourrit que de fromage. Toute autre nourriture lui est toxique.
+- Il ne gagne pas de sort en bonus correspondant à un mage spécialisé.~
+
+@100 = ~ENRAGE~
+@101 = ~Enragé~
+@102 = ~ENRAGÉ : Ce magicien ne se défait jamais de la rage animale qui l'habite.
+
+Avantages :
+- Chaque fois qu'il tue une créature il gagne Enchaînement pendant un round.
+- +15% de dégâts infligés, arme ou sort.
+
+Inconvénient :
+- Il n'accorde aucun crédit aux écoles défensives et n'apprend aucun sort des écoles d'Abjuration, Divination et Illusion.
+- Quand ses points de vie passent en dessous de 25% il devient berserk de sorts.
+- Les sorts et effets du genre "x quand y" (Bouclier de feu : dommages infligés QUAND touché) n'ont pas d’effets sur lui.
+
+Berserk de sorts :
+Pendant 5 rounds l'Enragé ne peut plus se déplacer ni attaquer. Il ne pense qu'à lancer des sorts : il gagne Enchaînement et -2 au temps d'incantation mais à 15% de chance de rater les incantations.~
+@103 = ~Enrage~
+@104 = ~Berserk de sorts~
+
+@110 = ~ZAP~
+@111 = ~Zap~
+@112 = ~ZAP : cet arcaniste vient d'une autre réalité et survit difficilement dans la réalité connue.
+
+Avantages :
++10 au Déplacement
++1 Attaque par round
+-4 au Temps d'incantation
+Enchaînement
++3 aux jets de sauvegarde contre les baguettes et contre les souffles
+
+Inconvénient :
+Quand il ne fait RIEN il perd un point de vie toutes les 3 secondes.~
+
+@120 = ~SORCELIER~
+@121 = ~Sorcelier~
+@122 = ~SORCELIER : Cet arcaniste aime tellement se battre qu'il y consacre plus de temps qu'à maîtriser la magie.
+
+Avantages :
+- Devient compétent avec les dagues et les bâtons au niveau 3, spécialisé au niveau 10.
+- +1 au taco en mêlée tous les 2 niveaux.
+- +1 dégât en mêlée aux niveau 7, 14 et 21.
+- +½ attaque par round aux niveaux 9, 17 et 23.
+- +1 au jet de sauvegarde contre la mort tous les 4 niveaux.
+- +1 au jet de sauvegarde contre la métamorphose tous les 8 niveaux.
+- Peux utiliser ses points de compétence pour progresser dans les styles de combat "Arme à deux mains" "Une arme" et "Deux armes".
+- Points de vie alignés sur la table des voleurs.
+- Développe des versions améliorées de certains sorts de combat.
+- Peux choisir des Hlas de guerrier en plus de ceux de mage.
+
+Inconvénients :
+- Ne peut pas utiliser les objets réservés aux guerriers.
+- Ne bénéficie pas des bonus de constitution et force exceptionnelle auxquels ont droit les guerriers.
+- Capacité de lancer des sorts réduite d'un sort par niveau de sorts.
+- Progression ralentie par la pratique non-exclusive de la magie : -15% d'xp.
+
+SORTS AMÉLIORÉS : lorsqu’il lance certains sorts le sorcelier peut profiter d'effets améliorés, variables selon les sorts :
+ * Frappe précise : durée rallongée : 1 round / 3 niveaux
+ * Armure : temps d'incantation réduit, CA réduite : -1 CA / 3 niveaux
+ * Force : force améliorée si lancé sur lui même : fixée à 19
+ * Bouclier de feu (rouge/bleu) : arme affectée : +1D8 dégâts~
+
+@123 = ~Armure
+Niveau : 1
+École : Conjuration
+Portée : jeteur du sort
+Durée : 8 heures
+Temps d'incantation : 5
+Zone d'effet : jeteur du sort
+Jet de sauvegarde : aucun
+
+Grâce à ce sort, le magicien crée un champ de force magique qui fixe sa classe d'armure de base à 6. Cet effet s'améliore de 1 point de CA par tranche de trois niveaux du lanceur, jusqu'à une classe d'armure minimale de 0 au niveau 19. L'armure ne pèse rien, n'encombre pas l'utilisateur et n'exclut pas non plus la possibilité de lancer des sorts. Le sort dure jusqu'à dissipation ou jusqu'à expiration.~
+
+@124 = ~Frappe précise~
+@125 = ~Frappe précise (Divination)
+Niveau : 1
+Portée : jeteur du sort
+Durée : 1 round / 3 niveaux
+Temps d'incantation : 1
+Zone d'effet : jeteur du sort 
+Jet de sauvegarde : aucun 
+
+En lançant ce sort, le magicien peut temporairement apercevoir l'avenir proche. Tout ses jets d'attaque effectués pendant la durée du sort bénéficient d'un bonus de perception de +10.~
+
+@126 = ~Force (Altération) 
+Niveau : 2
+Portée : toucher
+Durée : 1 tour/niveau
+Temps d'incantation : 1round 
+Zone d'effet : personne touchée
+Jet de sauvegarde : aucun 
+
+Ce sort confère au personnage touché une Force de 18/50. Si le personnage avait déjà une Force comprise entre 18/01 et 18/50, 50 points sont ajoutés à son pourcentage de Force exceptionnelle. Si sa Force était comprise entre 18/50 et 18/00, elle est fixée à 18/00. Si sa Force était supérieure à 19, elle est ramenée à 18/50.
+Exemples :
+Force de départ : Force d'arrivée
+12 --> 18/50
+18/25 --> 18/75
+18/78 --> 18/00
+20 --> 18/50
+
+Si le magicien utilise ce sort sur lui-même, la force conférée est automatiquement de 19.~
+
+@127 = ~Bouclier de feu (rouge)~
+@128 = ~Bouclier de feu (rouge) (Évocation, Altération)
+Niveau : 4
+Portée : 0
+Durée : 3 rounds + 1 round par niveau
+Temps d'incantation : 4
+Zone d'effet : Lanceur
+Jet de Sauvegarde : Non
+
+Ce bouclier de feu rouge protège le lanceur du feu en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au feu, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de feu.
+Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de feu à chacune de ses frappes.~
+
+@129 = ~Bouclier de feu (bleu)~
+@1210 = ~Bouclier de feu (bleu) (Évocation, Altération)
+Niveau : 4
+Portée : 0
+Durée : 3 rounds + 1 round par niveau
+Temps d'incantation : 4
+Zone d'effet : Lanceur
+Jet de Sauvegarde : Non
+
+Ce bouclier de feu bleu protège le lanceur du froid en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au froid, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de froid.
+Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de froid à chacune de ses frappes.~
+
