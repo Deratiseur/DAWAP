@@ -16,13 +16,14 @@ Mage and sorcerer kits that will make you revise the way you play
 
 
 Magiciens :
+
 Fléau
+
 Enragé
+
 Psychotope
+
 Voleur de sorts
-
-
-
 
 Ensorceleurs :
 
@@ -35,6 +36,7 @@ Minuims magiques
 Incantateur
 
 Esprit du miroir
+
 
 Zap
 
