@@ -10,6 +10,70 @@
 ## Description:
 ------------
 
-Des kits de mage et ensorceleur qui vous feront r�viser votre fa�on de jouer.
+Des kits de mage et ensorceleur qui vous feront réviser votre façon de jouer.
 
 Mage and sorcerer kits that will make you revise the way you play
+
+
+Il y dans ce mod :
+
+Magiciens :
+
+Fléau
+
+Enragé
+
+Psychotope
+
+Voleur de sorts
+
+
+
+
+Ensorceleurs :
+
+Eoratien
+
+Anomalie
+
+Minuims magiques
+
+Incantateur
+
+Esprit du miroir
+
+Zap
+
+Sorcelier v2
+
+
+There is in this mod:
+
+Wizards:
+
+Scourge
+
+Enraged
+
+Psychotope
+
+Spell stealer
+
+
+
+
+Sorcerers:
+
+Eoratian
+
+Anomaly
+
+Magic minuims
+
+Incantator
+
+Spirit of the Mirror
+
+Zap
+
+Sorceler
