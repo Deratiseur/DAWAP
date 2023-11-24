@@ -22,7 +22,7 @@ Magiciens :
 
 - Voleur de sorts
 
-- Ensorceleurs :
+Ensorceleurs :
 
 - Eoratien
 
@@ -39,33 +39,30 @@ Magiciens :
 - Sorcelier v2
 
 
-There is in this mod:
+Mage and sorcerer kits that will make you revise the way you play.
 
 Wizards:
 
-Scourge
+- Scourge
 
-Enraged
+- Enraged
 
-Psychotope
+- Psychotope
 
-Spell stealer
-
-
-
+- Spell stealer
 
 Sorcerers:
 
-Eoratian
+- Eoratian
 
-Anomaly
+- Anomaly
 
-Magic minuims
+- Magic minuims
 
-Incantator
+- Incantator
 
-Spirit of the Mirror
+- Spirit of the Mirror
 
-Zap
+- Zap
 
-Sorceler
+- Sorceler
