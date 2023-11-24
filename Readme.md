@@ -12,34 +12,31 @@
 
 Des kits de mage et ensorceleur qui vous feront réviser votre façon de jouer.
 
-Mage and sorcerer kits that will make you revise the way you play
-
-
 Magiciens :
-Fléau
 
-Enragé
+- Fléau
 
-Psychotope
+- Enragé
 
-Voleur de sorts
+- Psychotope
 
-Ensorceleurs :
+- Voleur de sorts
 
-Eoratien
+- Ensorceleurs :
 
-Anomalie
+- Eoratien
 
-Minuims magiques
+- Anomalie
 
-Incantateur
+- Minuims magiques
 
-Esprit du miroir
+- Incantateur
 
+- Esprit du miroir
 
-Zap
+- Zap
 
-Sorcelier v2
+- Sorcelier v2
 
 
 There is in this mod:
