@@ -15,16 +15,10 @@ Des kits de mage et ensorceleur qui vous feront réviser votre façon de jouer.
 Mage and sorcerer kits that will make you revise the way you play
 
 
-Il y dans ce mod :
-
 Magiciens :
-
 Fléau
-
 Enragé
-
 Psychotope
-
 Voleur de sorts
 
 
