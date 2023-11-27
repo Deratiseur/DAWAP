@@ -42,6 +42,7 @@ Ensorceleurs :
 
 Descriptions complètes en suivant le lien pour le forum officiel.
 
+------------
 
 Mage and sorcerer kits that will make you revise the way you play.
 
