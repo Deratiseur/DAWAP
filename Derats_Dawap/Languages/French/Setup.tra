@@ -1,6 +1,12 @@
+@1 = ~Ce composant ne fonctionne qu'avec BG2EE~
 @2 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced.~
 @3 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced, sauf IWDEE.~
+@4 = ~Kits de mage~
+@5 = ~Kits d'ensorceleur~
+@6 = ~Kits de clerc~
+@7 = ~Kits de druide~
 
+@19 = ~Fleau (Magicien)~
 @10 = ~FLEAU~
 @11 = ~Fléau~
 @12 = ~FLÉAU : cet arcaniste venue d'une autre sombre réalité est une plaie pour notre réalité.
@@ -8,8 +14,10 @@
 Avantage :
 - Tous ses sorts sont remémorés chaque round.
 
-Inconvénient :
-- Ne peut apprendre que des sorts des écoles d'Évocation et Nécromancie.~
+Inconvénients :
+- Ne peut apprendre que des sorts des écoles d'Évocation et Nécromancie.
+- Ne peut pas être d'alignement bon.
+- Ne peut pas se jumeler.~
 @13 = ~Explosion de feu~
 @14 = ~Explosion de feu (Évocation)
 Niveau : 1
@@ -20,13 +28,13 @@ Zone d'effet : rayon de 2,5 mètres
 Jet de sauvegarde : ½
 
 Ce sort crée une explosion émanant du lanceur de sort et blessant toutes les créatures situées dans un rayon de 2,5 mètres autour de lui. Toutes les créatures affectées subissent 1D4 points de dégâts de feu par niveau de lanceur de sorts (jusqu'à un maximum de 10D4). Un jet de sauvegarde contre les sorts réussi permet de réduire les dégâts de moitié.~
-@15 = ~Fleau~
 
+@29 = ~Psychotope (magicien)~
 @20 = ~PSYCHOTOPE~
 @21 = ~Psychotope~
 @22 = ~PSYCHOTOPE : cet arcaniste très étrange n'utilise que sa conscience pour lancer des sorts.
 
-Avantage :
+Avantages :
 - Temps d'incantation fixés à 1.
 - Tous les 3 rounds il se remémore un sort du niveau maximum connu. S'il n'y a aucun sort à remémorer à ce niveau, c'est un niveau de sort en dessous à la place.
 
@@ -34,6 +42,7 @@ Inconvénient :
 - Toute perte de conscience : sommeil (d'une nuit de repos ou provoqué), étourdissement, peur, berserk, charme, confusion, débilité ou mort lui fait oublier tous ses sorts.~
 
 
+@39 = ~Voleur de sorts (magicien)~
 @30 = ~VOLEUR DE SORTS~
 @31 = ~Voleur de sorts~
 @32 = ~VOLEUR DE SORTS : ce magicien possède d'étranges capacités magiques.
@@ -42,12 +51,13 @@ Avantages :
 - Peut à volonté, au contact, faire oublier un sort à un  arcaniste (sans jet de sauvegarde) pour se remémorer un sort de niveau maximum connu.
 - Peut une fois par jour, au contact, faire oublier tous ses sorts à un arcaniste (jet de sauvegarde contre la mort) pour se remémorer soit même tous ses sorts.
 
-Inconvénient :
+Inconvénients :
 - Peut mémoriser un sort de moins par niveau de sort.
 - Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 de mage).~
 @33 = ~Toucher drainant~
 @34 = ~Paume drainante~
 
+@49 = ~Eoratien (ensorceleur)~
 @40 = ~EORATIEN~
 @41 = ~Eoratien~
 @42 = ~EORATIEN : cet ensorceleur à une façon très étrange d'utiliser la magie.
@@ -60,6 +70,7 @@ Inconvénient :
 - Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 d'ensorceleur.
 - Non affecté par les effets permettant de mémoriser plus de sorts.~
 
+@59 = ~Anomalie (ensorceleur)(animation changee : elementaire de magie)~
 @50 = ~ANOMALIE~
 @51 = ~Anomalie~
 @52 = ~ANOMALIE : ce amalgame de magie incarnée vient d'une autre réalité et réagit bizarrement aux lois de la réalité connue.
@@ -68,39 +79,41 @@ Avantages :
 - Immunisé contre la magie offensive et 100% de résistance à la magie.
 - Immunisé au poison, à la maladie et au drain de niveau.
 - Immunisé à la magie morte, au fourvoiement et aux hiatus imposés.
-- Gagne un point de vie chaque fois qu'il lance un sort. (Hors combat seulement si un script de combat automatique lui est alloué)
+- Gagne deux points de vie chaque fois qu'il lance un sort.
 - Peut à volonté lancer une fois par round une boule d’énergie magique +1 qui inflige 1D4+1 dégâts magiques. Le niveau "d'enchantement" et les dégâts augmentent de +1 par 5 niveaux de l'anomalie, jusqu'à +7 maximum.
 
 Inconvénients :
 - Entropie, mais sans les sorts communs à l'entropiste classique.
-- Les soins conventionnels (sorts, potions) ne l'affectent pas.
-
-Spécial : Corps incarné immuable : les sort de métamorphoses lui donnent une arme mais ne modifient pas son corps.~
+- Les soins conventionnels (sorts, potions) ne l'affectent pas.~
 @53 = ~Boule d’énergie~
-@531 = ~Cette boule d’énergie magique +1 procure +3 au toucher et inflige 1D4+1 dégâts magique.~
-@532 = ~Cette boule d’énergie magique +2 procure +3 au toucher et inflige 1D4+2 dégâts magique.~
-@533 = ~Cette boule d’énergie magique +3 procure +3 au toucher et inflige 1D4+3 dégâts magique.~
-@534 = ~Cette boule d’énergie magique +4 procure +3 au toucher et inflige 1D4+4 dégâts magique.~
-@535 = ~Cette boule d’énergie magique +5 procure +3 au toucher et inflige 1D4+5 dégâts magique.~
-@536 = ~Cette boule d’énergie magique +6 procure +3 au toucher et inflige 1D4+6 dégâts magique.~
-@537 = ~Cette boule d’énergie magique +7 procure +3 au toucher et inflige 1D4+7 dégâts magique.~
+@531 = ~Cette boule d’énergie magique +1 procure +3 au toucher et inflige 1D4+1 points de dégâts magiques.~
+@532 = ~Cette boule d’énergie magique +2 procure +3 au toucher et inflige 1D4+2 points de dégâts magiques.~
+@533 = ~Cette boule d’énergie magique +3 procure +3 au toucher et inflige 1D4+3 points de dégâts magiques.~
+@534 = ~Cette boule d’énergie magique +4 procure +3 au toucher et inflige 1D4+4 points de dégâts magiques.~
+@535 = ~Cette boule d’énergie magique +5 procure +3 au toucher et inflige 1D4+5 points de dégâts magiques.~
+@536 = ~Cette boule d’énergie magique +6 procure +3 au toucher et inflige 1D4+6 points de dégâts magiques.~
+@537 = ~Cette boule d’énergie magique +7 procure +3 au toucher et inflige 1D4+7 points de dégâts magiques.~
 
+@69 = ~Minuims magiques (ensorceleur)(animation changee : particules en mouvement)~
 @60 = ~MINUIMS MAGIQUES~
 @61 = ~Minuims magiques~
 @62 = ~MINUIMS MAGIQUES : cet agglomérat de minuscules fées vient d'une autre réalité et peut accomplir de grande choses par effet de groupe.
 
-Avantage :
+Avantages :
 - Quantité de sorts mémorisables doublée.
 - +2 à la CA, +2 supplémentaire contre les attaques tranchantes et perforantes.
+- Protection contre les armes non-magiques.
 
 Inconvénient :
 - Ne peut porter aucun objet.
 
-Spécial : ne peut pas se donner de forme physique : les sort de métamorphoses lui donnent une arme mais pas de corps.~
+Spécial :
+- Ne peut pas se donner de forme physique : les sort de métamorphoses lui donnent une arme et changent ses caractéristiques mais ne lui donnent pas de corps.~
 
+@79 = ~Incantateur (ensorceleur)~
 @70 = ~INCANTATEUR~
 @71 = ~Incantateur~
-@72 = ~INCANTATEUR : cet ensorceleur très étrange pratique la magie différemment.
+@72 = ~INCANTATEUR : cet étrange ensorceleur pratique la magie différemment.
 
 Avantage :
 - +50% de durée des sorts.
@@ -108,8 +121,9 @@ Avantage :
 - +4 au niveau de lanceur de sort.
 
 Inconvénient :
-- Temps d'incantation : +4.~
+- Temps d'incantation : +3.~
 
+@89 = ~Esprit du miroir (ensorceleur)(animation : couleurs changeant constamment)~
 @80 = ~ESPRIT DU MIROIR~
 @81 = ~Esprit du miroir~
 @82 = ~ESPRIT DU MIROIR : cet arcaniste vient d'une autre réalité et interagit bizarrement avec la réalité connue.
@@ -118,10 +132,10 @@ Avantages :
 - Renvoi des sorts illimité.
 - Réflexion de la lumière : +3 à la CA.
 - Peut lancer "Image réfléchie" à volonté.
-- Apprend automatiquement tous les sorts "d'image" comme des sorts de un niveau de moins quand il atteint le niveau requis.
+- Apprend automatiquement tous les sorts "d'image" comme des sorts d'un niveau de moins quand il atteint le niveau requis.
 
 Inconvénient :
-- Très fragile : -1 point de vie par niveau et -100% de résistance aux dégâts contondants.~
+- Très fragile : -50% de points de vie et -100% de résistance aux dégâts contondants.~
 @83 = ~Image réfléchie majeure~
 @84 = ~Image réfléchie majeure (Illusion) 
 Niveau : 4
@@ -132,54 +146,71 @@ Temps d’incantation : 4
 Jet de sauvegarde : aucun
 
 Ce sort permet au lanceur de créer une image de lui-même qui se déplace à ses côtés, copiant tous ses faits et gestes. Ainsi, les ennemis attaquant le magicien ne sauront pas lequel est le vrai : 50 % de chance de toucher l'image, et 50 % de chances de toucher le magicien. L'image disparaît à la suite d'une Dissipation ou à l'expiration du sort.~
+@85 = ~Allié imagé~
+@86 = ~Allié imagé (Illusion)
+Niveau : 7
+Portée : champ de vision
+Durée : 15 rounds
+Temps d'incantation : 7
+Zone d'effet : un personnage du groupe
+Jet de sauvegarde : Non
 
-@90 = ~FROMAGICIEN~
-@91 = ~Fromagicien~
-@92 = ~FROMAGICIEN : Ce magicien très spécialisé à du mal à trouver sa place dans cette réalité.
-Avantages :
-- Chaque fois qu'il lance un sort de charme sur un monstre dont l’archétype inclut "fromage", le jet de sauvegarde contre ce sort est assorti d'un malus supplémentaire de -6.
-- Chaque monstre dont l’archétype inclut "fromage" qu'il contrôle gagne 4 dés de vie et les bonus correspondant.
-- +20% d'effets pour tous les sort qu'il lance dont le registre inclut "fromage".
+Ce sort crée une copie illusoire de n'importe quel membre du groupe. La copie a le même équipement que l’original mais a 60% de ses capacités de combat, points de vie et jets de sauvegarde. Elle peut se déplacer et attaquer mais ne peut ni lancer de sorts ni utiliser de capacités spéciales ou d'objets rapides. Elle existe pour toute la durée du sort ou jusqu'à ce quelle soit détruite. Il n'y a pas de limite aux nombres d'alliés imagés pouvant être contrôlés, mais chaque allié ne peut avoir qu'une seule image associée.~
+@87 = ~Cet allié est déjà imagé~
 
-Inconvénient :
-- Il ne se nourrit que de fromage. Toute autre nourriture lui est toxique.
-- Il ne gagne pas de sort en bonus correspondant à un mage spécialisé.~
+@99 = ~Faiseur de miracles : (clerc)~
+@90 = ~FAISEUR DE MIRACLES~
+@91 = ~Faiseur de miracles~
+@92 = ~FAISEUR DE MIRACLES : Ce prêtre venue d'une autre réalité défie les lois de la notre.
 
+Avantages :
+- Il peut lancer Souhait limité à volonté.
+- Au niveau 9 il peut utiliser tous les objets.
+- Au niveau 18 il peut lancer Souhait à volonté.
+
+Inconvénients :
+- Sagesse -2
+- Ne connaît aucun sort de niveau 6 et 7.
+- N'a accès à aucun hla.~
+
+@109 = ~Enrage (magicien)~
 @100 = ~ENRAGE~
 @101 = ~Enragé~
 @102 = ~ENRAGÉ : Ce magicien ne se défait jamais de la rage animale qui l'habite.
 
 Avantages :
-- Chaque fois qu'il tue une créature il gagne Enchaînement pendant un round.
+- Quand il tue une créature il gagne Enchaînement pendant un round.
 - +15% de dégâts infligés, arme ou sort.
 
-Inconvénient :
-- Il n'accorde aucun crédit aux écoles défensives et n'apprend aucun sort des écoles d'Abjuration, Divination et Illusion.
+Inconvénients :
+- N'accorde aucun crédit aux écoles défensives et n'apprend aucun sort des écoles d'Abjuration, Divination et Illusion.
 - Quand ses points de vie passent en dessous de 25% il devient berserk de sorts.
-- Les sorts et effets du genre "x quand y" (Bouclier de feu : dommages infligés QUAND touché) n'ont pas d’effets sur lui.
+- Les sorts et effets du genre "x quand y" (Bouclier de feu : dommages infligés QUAND touché) ne l'affecte pas.
 
 Berserk de sorts :
-Pendant 5 rounds l'Enragé ne peut plus se déplacer ni attaquer. Il ne pense qu'à lancer des sorts : il gagne Enchaînement et -2 au temps d'incantation mais à 15% de chance de rater les incantations.~
+Pendant 5 rounds l'Enragé ne peut plus se déplacer ni attaquer. Il ne pense qu'à lancer des sorts : il gagne Enchaînement et -2 au temps d'incantation mais a 10% de chance de rater les incantations.~
 @103 = ~Enrage~
 @104 = ~Berserk de sorts~
 
+@119 = ~Zap (ensorceleur)~
 @110 = ~ZAP~
 @111 = ~Zap~
 @112 = ~ZAP : cet arcaniste vient d'une autre réalité et survit difficilement dans la réalité connue.
 
 Avantages :
-+10 au Déplacement
-+1 Attaque par round
--4 au Temps d'incantation
-Enchaînement
-+3 aux jets de sauvegarde contre les baguettes et contre les souffles
+- +10 au Déplacement.
+- +1 Attaque par round.
+- -4 au Temps d'incantation.
+- Enchaînement.
+- +3 aux jets de sauvegarde contre les baguettes et contre les souffles.
 
 Inconvénient :
-Quand il ne fait RIEN il perd un point de vie toutes les 3 secondes.~
+- Quand il ne fait RIEN il perd un point de vie toutes les 3 secondes.~
 
+@1299 = ~Sorcelier (ensorceleur)~
 @120 = ~SORCELIER~
 @121 = ~Sorcelier~
-@122 = ~SORCELIER : Cet arcaniste aime tellement se battre qu'il y consacre plus de temps qu'à maîtriser la magie.
+@122 = ~SORCELIER : Cet arcaniste n'est pas sans ressources quand les sorts lui font défaut.
 
 Avantages :
 - Devient compétent avec les dagues et les bâtons au niveau 3, spécialisé au niveau 10.
@@ -188,23 +219,22 @@ Avantages :
 - +½ attaque par round aux niveaux 9, 17 et 23.
 - +1 au jet de sauvegarde contre la mort tous les 4 niveaux.
 - +1 au jet de sauvegarde contre la métamorphose tous les 8 niveaux.
-- Peux utiliser ses points de compétence pour progresser dans les styles de combat "Arme à deux mains" "Une arme" et "Deux armes".
-- Points de vie alignés sur la table des voleurs.
-- Développe des versions améliorées de certains sorts de combat.
-- Peux choisir des Hlas de guerrier en plus de ceux de mage.
+- Peut progresser dans les styles de combat "Arme à deux mains" "Une arme" et "Deux armes".
+- Apprend automatiquement certains sorts de combat en versions améliorées.
+- Peut choisir des Hlas de guerrier en plus de ceux de mage.
+- Dés de vie : D6.
 
 Inconvénients :
-- Ne peut pas utiliser les objets réservés aux guerriers.
-- Ne bénéficie pas des bonus de constitution et force exceptionnelle auxquels ont droit les guerriers.
-- Capacité de lancer des sorts réduite d'un sort par niveau de sorts.
+- Capacité de lancer des sorts réduite de deux sorts par niveau de sorts.
 - Progression ralentie par la pratique non-exclusive de la magie : -15% d'xp.
 
-SORTS AMÉLIORÉS : lorsqu’il lance certains sorts le sorcelier peut profiter d'effets améliorés, variables selon les sorts :
+SORTS AMÉLIORÉS : Le sorcelier connaît spontanément quelques sorts de combat qu'il améliore quand il les lances :
  * Frappe précise : durée rallongée : 1 round / 3 niveaux
- * Armure : temps d'incantation réduit, CA réduite : -1 CA / 3 niveaux
+ * Armure : temps d'incantation réduit, CA réduite : -1 CA / 3 niveaux (CA max 0)
  * Force : force améliorée si lancé sur lui même : fixée à 19
  * Bouclier de feu (rouge/bleu) : arme affectée : +1D8 dégâts~
 
+@1239 = ~Armure (Améliorée)~
 @123 = ~Armure
 Niveau : 1
 École : Conjuration
@@ -216,7 +246,7 @@ Jet de sauvegarde : aucun
 
 Grâce à ce sort, le magicien crée un champ de force magique qui fixe sa classe d'armure de base à 6. Cet effet s'améliore de 1 point de CA par tranche de trois niveaux du lanceur, jusqu'à une classe d'armure minimale de 0 au niveau 19. L'armure ne pèse rien, n'encombre pas l'utilisateur et n'exclut pas non plus la possibilité de lancer des sorts. Le sort dure jusqu'à dissipation ou jusqu'à expiration.~
 
-@124 = ~Frappe précise~
+@124 = ~Frappe précise (Améliorée)~
 @125 = ~Frappe précise (Divination)
 Niveau : 1
 Portée : jeteur du sort
@@ -227,6 +257,7 @@ Jet de sauvegarde : aucun
 
 En lançant ce sort, le magicien peut temporairement apercevoir l'avenir proche. Tout ses jets d'attaque effectués pendant la durée du sort bénéficient d'un bonus de perception de +10.~
 
+@1269 = ~Force (Améliorée)~
 @126 = ~Force (Altération) 
 Niveau : 2
 Portée : toucher
@@ -245,7 +276,7 @@ Force de départ : Force d'arrivée
 
 Si le magicien utilise ce sort sur lui-même, la force conférée est automatiquement de 19.~
 
-@127 = ~Bouclier de feu (rouge)~
+@127 = ~Bouclier de feu (rouge)(Amélioré)~
 @128 = ~Bouclier de feu (rouge) (Évocation, Altération)
 Niveau : 4
 Portée : 0
@@ -257,7 +288,7 @@ Jet de Sauvegarde : Non
 Ce bouclier de feu rouge protège le lanceur du feu en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au feu, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de feu.
 Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de feu à chacune de ses frappes.~
 
-@129 = ~Bouclier de feu (bleu)~
+@129 = ~Bouclier de feu (bleu)(Amélioré)~
 @1210 = ~Bouclier de feu (bleu) (Évocation, Altération)
 Niveau : 4
 Portée : 0
@@ -269,3 +300,175 @@ Jet de Sauvegarde : Non
 Ce bouclier de feu bleu protège le lanceur du froid en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au froid, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de froid.
 Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de froid à chacune de ses frappes.~
 
+@139 = ~Vitalomage (ensorceleur)~
+@130 = ~VITALOMAGE~
+@131 = ~Vitalomage~
+@132 = ~VITALOMAGE : cet arcaniste vient d'une autre réalité où la source de magie est l’énergie vitale de l'incantateur lui même.
+
+Avantages :
+- Enchaînement
+- +2 sorts par niveau de sorts.
+- Temps d'incantation maximal des sorts fixé à 5.
+
+Inconvénient :
+ - Perd un point de vie chaque fois qu'il lance un sort.~
+ 
+@149 = ~Dweomeriste (clerc)~
+@140 = ~DWEOMERISTE~
+@141 = ~Dwéomeriste~
+@142 = ~DWÉOMERISTE : ce clerc vient d’ailleurs et ne connaît que la magie, qu'il utilise d'une façon très inhabituelle.
+
+Avantages :
+- Ses sorts et capacités spéciales sont restaurés chaque round.
+- Enchaînement.
+- Temps d'incantation maximal des sorts fixés à 5.
+
+Inconvénient :
+- N'accorde aucun crédit aux attaques physiques : attaques par round fixées à 0.
+- Ne peut pas se jumeler.~
+
+@159 = ~Eoration du chaos (clerc)~
+@150 = ~EORATION DU CHAOS~
+@151 = ~Éoration du chaos~
+@152 = ~ÉORATION DU CHAOS : ce clerc venu d'une autre réalité est soumis à d'autres règles.
+
+Avantage :
+- Ses sorts et capacités spéciales sont restaurés à la fin de chaque combat.
+
+Inconvénients :
+- Maximum 5 sorts par niveau de sort (4 de niveau 7), modulé par la sagesse.
+- Alignement limité à Chaotique.
+- A chaque lancement de sort, 5 % de chances d'engendrer un hiatus entropique.~
+
+@169 = ~Furie (Druide)~
+@160 = ~FURIE~
+@161 = ~Furie~
+@162 = ~FURIE : ce prêtre venu d'une autre réalité se comporte bizarrement.
+
+Avantage :
+- +½ attaque par round tous les 4 niveaux (maximum +4 attaques par round au niveau 32)
+
+Inconvénient :
+- Dés de vie : D4~
+
+@179 = ~Pyroclasme (druide)(animation changee : elemental de feu)~
+@170 = ~PYROCLASME~
+@171 = ~Pyroclasme~
+@172 = ~PYROCLASME : Ce druide est un extérieur venu d'un plan élémentaire.
+
+Avantages :
+- Résistance au feu 125%
+- Immunisé aux armes normales et +1.
+- Immunisé aux maladies, aux poisons, aux attaques sournoises, aux toiles, aux enchevêtrement et à la graisse.
+- Connaît une dizaine de sorts de feu supplémentaires.
+- Inflige 5% de dégâts de feu en plus par niveau, maximum +100%.
+- Peut attaquer avec son poing de feu ou avec une petite boule de feu dont les dégâts et le niveau d'enchantement varient suivant le niveau du pyroclasme : 1D4+1 au niveau 1, 1D6+2 au niveau 5, 1D8+3 au niveau 10, 1D10+4 au niveau 15 et 1D12+5 au niveau 20.
+- Peut être de n'importe quel alignement.
+
+Inconvénients :
+- Vulnérabilité au froid 50%
+- Ne peut porter aucun objet
+- Ne peut pas se métamorphoser.
+- Ne gagne pas d'autres résistances élémentaires.~
+@173 = ~Boule de feu~
+@1731 = ~Cette petite boule de feu magique +1 accorde +1 au toucher et inflige 1D4+1 points de dégâts de feu magique.~
+@1732 = ~Cette petite boule de feu magique +2 accorde +2 au toucher et inflige 1D6+2 points de dégâts de feu magique.~
+@1733 = ~Cette petite boule de feu magique +3 accorde +3 au toucher et inflige 1D8+3 points de dégâts de feu magique.~
+@1734 = ~Cette petite boule de feu magique +4 accorde +4 au toucher et inflige 1D10+4 points de dégâts de feu magique.~
+@1735 = ~Cette petite boule de feu magique +5 accorde +5 au toucher et inflige 1D12+5 points de dégâts de feu magique.~
+@1736 = ~Cette petite boule de feu magique +6 accorde +6 au toucher et inflige 2D8+6 points de dégâts de feu magique.~
+@1737 = ~Cette petite boule de feu magique +7 accorde +7 au toucher et inflige 2D12+7 points de dégâts de feu magique.~
+@1738 = ~Boule de feu supérieure~
+@17381 = ~Cette capacité améliore la boule de feu du Pyroclasme : elle devient +6, accorde +6 au toucher et inflige 2D8+6 points de dégâts de feu magique.
+Nécessite : Niveau 26~
+@1739 = ~Boule de feu majeure~
+@17391 = ~Cette capacité améliore encore la boule de feu du Pyroclasme : elle devient +7, accorde +7 au toucher et inflige 2D12+7 points de dégâts de feu magique.
+Nécessite : Niveau 32, Boule de feu supérieure~
+
+@189 = ~Monstruosite mutante instable (druide)~
+@180 = ~MONSTRUOSITÉ MUTANTE INSTABLE~
+@181 = ~Monstruosité mutante instable~
+@182 = ~MONSTRUOSITÉ MUTANTE INSTABLE : Ce druide est une grosse boursouflure sans cesse grossissante venue d'un autre univers.
+
+Avantage :
+- Au niveau 1 et tous les 5 niveaux ensuite : +1 en force, dextérité et constitution et -1 en intelligence, sagesse et charisme. (maximum +7/+7/+7/-7/-7/-7 au niveau 30)
+
+Inconvénients :
+- Il est chargé d’énergie très instable et en conséquence une fois par round quand il subit des dommages il a 5% de chance d'être désintégré en générant une boule d’énergie magique qui inflige à toutes les créatures dans les 4,5 mètres autour de lui 10D10 points de dégâts magiques (jet de sauvegarde contre les sorts pour ½). 
+- En mourant il est automatiquement désintégré et génère la boule d’énergie magique.~
+
+@199 = ~Esprit de horde (druide)~
+@190 = ~ESPRIT DE HORDE~
+@191 = ~Esprit de horde~
+@192 = ~ESPRIT DE HORDE : Ce druide est tellement obsédé par les minions qu'il en oubli le reste.
+
+Avantage :
+- Tous ses sorts d'invocation d'animaux et élémentaires (pas archomentaux) ont un effet doublé.
+
+Inconvénient :
+- Ne connaît aucun sort de soin ou régénération.~
+
+@209 = ~Necrophore (clerc)(animation : peau noire pure)~
+@200 = ~NÉCROPHORE~
+@201 = ~Nécrophore~
+@202 = ~NÉCROPHORE : Cet être malfaisant vient d'une autre réalité.
+
+Avantages :
+- Mémorise tous les sorts permettant de tuer instantanément comme des sorts d'un niveau inférieur.
+- Connaît de nouveaux sorts permettant de tuer instantanément.
+- Protection contre la mort et le drain de niveau.
+- Au niveau 5 puis tous les 5 niveaux ensuite peut lancer Mise à mort en temps que capacité spéciale.
+- Gagne 5 points de vie chaque fois qu'il tue une créature.
+- 2% de chances en touchant (en mêlée ou à distance) de tuer la cible. Aucun jet de sauvegarde et résistance à la magie ignorée.
+
+Inconvénients :
+- Ne connaît aucun sort de soins, restauration, régénération, guérison, résurrection ou protection contre la mort / le plan négatif.
+- Ne peut pas être ressuscité.
+- Alignement limité à mauvais.~
+@203 = ~gagne 5 points de vie~
+
+@219 = ~Scion de la vie (clerc)(animation changee : creature de brume blanche)~
+@210 = ~SCION DE LA VIE~
+@211 = ~Scion de la vie~
+@212 = ~SCION DE LA VIE : Cet être bienfaisant vient d'une autre réalité.
+
+Avantages :
+- Points de vie doublés.
+- Niveau de renvoi des mort vivant doublé.
+- Mémorise tous les sorts de soin, restauration, régénération, guérison, et résurrection comme des sorts d'un niveau en dessous.
+- Peut utiliser Soins des blessures légères à volonté en tant que capacité spéciale.
+
+Inconvénients :
+- Ne connaît pas les sorts qui invoquent des créatures.
+- Ne connaît pas les sorts de blessure / mise à mal, qui empoisonnent ou qui tuent directement.
+- Ne connaît pas les sorts qui invoquent des armes magiques.
+- Alignement limité à bon.~
+
+@229 = ~Ravageur (druide)~
+@220 = ~RAVAGEUR~
+@221 = ~Ravageur~
+@222 = ~RAVAGEUR : Ce élémentaliste n'a aucune connexion planaire et n'en a pas besoin.
+
+Avantages :
+- Connaît la plupart des sorts arcaniques de type élémentaire.
+- Lance certains sorts élémentaires à un niveau inférieur à ce qu'il devrait.
+- Résistance élémentaires doublés.
+
+Inconvénients :
+- Ne connaît aucun sort d'invocation de créatures.
+- Ne porte aucun intérêt aux métamorphoses.
+- N'est pas immunisé au poison.~
+
+@239 = ~Polymorphe (druide)~
+@230 = ~POLYMORPHE~
+@231 = ~Polymorphe~
+@232 = ~POLYMORPHE : Cette assemblage de vase protoplasmique peut simuler toutes les formes de vies.
+Avantages :
+- Résistance aux dégâts contondants : 25%.
+- Peut utiliser à volonté toutes les formes du sort "métamorphose".
+- Au niveau 7, peut utiliser à volonté toutes les formes druidiques spéciales.
+- Au niveau 15, peut utiliser à volonté toutes les formes du sort "Changement de forme".
+
+Inconvénients :
+- Ne peut lancer aucun sort
+- N'a accès à aucun hla.~
