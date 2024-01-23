@@ -1,0 +1,13 @@
+IF
+	TookDamage()
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdmuta2",Myself) 
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("pxdmuta3",Myself)
+END
