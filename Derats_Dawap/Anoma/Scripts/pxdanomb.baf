@@ -1,0 +1,62 @@
+IF
+	Global("pxdano","LOCALS",1)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano1",0,0,0)
+		XEquipItem("pxdano1",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",2)
+END
+
+IF
+	Global("pxdano","LOCALS",3)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano2",0,0,0)
+		XEquipItem("pxdano2",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",4)
+END
+
+IF
+	Global("pxdano","LOCALS",5)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano3",0,0,0)
+		XEquipItem("pxdano3",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",6)
+END
+
+IF
+	Global("pxdano","LOCALS",7)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano4",0,0,0)
+		XEquipItem("pxdano4",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",8)
+END
+
+IF
+	Global("pxdano","LOCALS",9)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano5",0,0,0)
+		XEquipItem("pxdano5",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",10)
+END
+
+IF
+	Global("pxdano","LOCALS",11)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano6",0,0,0)
+		XEquipItem("pxdano6",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",12)
+END
+
+IF
+	Global("pxdano","LOCALS",13)
+THEN
+	RESPONSE #100
+		CreateItem("pxdano7",0,0,0)
+		XEquipItem("pxdano7",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxdano","LOCALS",14)
+END
