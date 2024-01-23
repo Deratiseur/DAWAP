@@ -12,7 +12,7 @@
 ## Description:
 ------------
 
-Des kits de mage et ensorceleur qui vous feront réviser votre façon de jouer.
+Des kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -39,12 +39,40 @@ Ensorceleurs :
 - Zap
 
 - Sorcelier v2
+  
+- Vitalomage
+
+Clercs :
+
+- Dwéomériste
+
+- Eoratien du chaos
+
+- Faiseur de miracles
+
+- Furie
+
+- Nécrophore
+
+- Scion de la vie
+
+Druides :
+
+- Pyroclasme
+
+- Monstruosité mutante instable
+
+- Esprit de horde
+
+- Ravageur
+
+- Polymorphe
 
 Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-Mage and sorcerer kits that will make you revise the way you play.
+Spellcasters kits that will make you revise the way you play.
 
 Wizards:
 
@@ -70,4 +98,32 @@ Sorcerers:
 
 - Zap
 
-- Sorceler
+- Sorcelerer
+
+- vitalomage
+
+Clerics:
+
+- Dweomerist
+
+- Chaos Eoratian
+
+- Miracle maker
+
+- Fury
+
+- Necrophorus
+
+- Scion of life
+
+Druids:
+
+- Pyroclasm
+
+- Instable mutant monstruosity
+
+- Horde spirit
+
+- Ravager
+
+- Polymorph
