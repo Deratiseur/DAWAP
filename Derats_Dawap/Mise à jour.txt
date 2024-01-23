@@ -1,5 +1,5 @@
 V2 :
-Nouveau kits :
+Nouveaux kits :
 Fléau, Enragé
 
 Modifications :
@@ -37,3 +37,24 @@ Minuims magiques : ils ne peuvent plus choisir de compétences d'armes lors de la
 
 Corrections :
 Il restait plein de fichiers textes et backups indésirables dans l'archive de la V3.
+
+v5 :
+Nouveaux kits :
+Ajout de 12 kits, ce qui double le contenu du mod :)
+
+Modifications :
+Minuims magiques : ils regagnent l'avantage que je leur avais imaginé dès leur conception : immunité aux armes normales. C'est trop bourrin ? Le métamorphe à le même avantage.
+Sorcelier v2 : il apprend maintenant automatiquement les sorts améliorés.
+Incantateur : son inconvénient passe à +3 au temps d'incantation.
+Enragé : sa probabilité de rater le lancement de sort quand il est berserk passe à 10%.
+Anomalie : il gagne maintenant 2 points de vie quand il lance un sort, et son arme requiert la compétence fléchette.
+Anomalie : il peut maintenant se métamorphoser correctement.
+Esprit du miroir : son malus sur les pv devient "-50% de points de vie", ce qui reste équivalent à terme mais ne fait plus l'effet "plus rien après le niveau 10".
+Esprit du miroir : il gagne un nouveau sort venu de l'interplan.
+
+Corrections :
+Les magiciens ne pouvaient pas se jumeler.
+Miniums magiques : ils regagnent le choix des compétences. Sans ce choix, pas de hla.
+Zap : il copiait les ressources de l'Esprit du miroir à la place des siennes et du coup n'avait rien de correspondant à sa description.
+Éoration : au lieu d'être protégé contre les effets qui améliorent le nombre de slots il était protégé contre les icônes affichées.
+Anomalie : il avait perdu en route le sort qui lui faisait gagner un point de vie et l’icône de son arme.
