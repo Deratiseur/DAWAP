@@ -941,3 +941,25 @@ SAY @230
 SAY @231
 SAY @232
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDPOLY	END
+
+BEGIN @239 GROUP @7
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
+COPY	~Derats_Dawap/Poly/Copy~						~override~
+ADD_KIT ~pxDPOLY2~
+~pxDPOLY2               1           0           1           0           0           0           0           1~
+~pxDPOLY2               0 0 0 0 1 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDPOLY2               0       0       0       0       12      15~
+~pxDPOLY2               0       0       0       0       0       0~
+~pxDPOLY2              0       0       0       0       17      0~
+~pxDPOLY2              0       0       0       0       15      15~
+~pxDPOLY2               0       0       0       0       1       0       0       0       0~
+~pxDPOLY2               1       0       0       0       0       0~
+~Derats_Dawap/poly/pxdpoly.2da~
+~K_SH_H   K_SH_HO~
+~0x00000000    21~
+~~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @230
+SAY @231
+SAY @232
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDPOLY2	hpclass = ~hpbarb~ END
