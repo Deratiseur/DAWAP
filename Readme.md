@@ -24,6 +24,10 @@ Magiciens :
 
 - Voleur de sorts
 
+- Marteleur
+
+- Singularité légendaire
+
 Ensorceleurs :
 
 - Eoratien
@@ -56,6 +60,10 @@ Clercs :
 
 - Scion de la vie
 
+- Soigneur béni
+
+- Élu divin
+
 Druides :
 
 - Pyroclasme
@@ -67,6 +75,26 @@ Druides :
 - Ravageur
 
 - Polymorphe
+
+Bardes :
+
+- Chantesorts
+
+- Tempus fugium
+
+- Nishruunoam
+
+- Disciple de Ratatoskr
+
+- Chantre de la non-magie
+
+- Magivore
+
+- Engeance du chaos
+
+Multi-classes :
+
+- Infuseur (Guerrier/mage)
 
 Descriptions complètes en suivant le lien pour le forum officiel.
 
@@ -83,6 +111,10 @@ Wizards:
 - Psychotope
 
 - Spell stealer
+
+- Legendary singularity
+
+- Hammerer
 
 Sorcerers:
 
@@ -116,6 +148,10 @@ Clerics:
 
 - Scion of life
 
+- Blessed trainer
+
+- Divine chosen
+
 Druids:
 
 - Pyroclasm
@@ -127,3 +163,24 @@ Druids:
 - Ravager
 
 - Polymorph
+
+Bards:
+
+- Spellsinger
+
+- Tempus fugium
+
+- Nishruunoam
+
+- Disciple of Ratatoskr
+
+- No-magic chanter
+
+- Magivore
+
+- Cruw of Chaos
+
+Multiclasses :
+
+- Infuser (Fighter/mage)
+
