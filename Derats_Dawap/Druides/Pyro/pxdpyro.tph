@@ -1,0 +1,29 @@
+COPY	~Derats_Dawap/Druides/Pyro/Copy~				~override~
+COPY	~Derats_Dawap/Sorciers/Minium/Copy/pxdminia.spl~ ~override~
+COPY_EXISTING	~spwi103.spl~				~override/pxdpyr11.spl~											//Mains ardentes
+				~spwi217.spl~				~override/pxdpyr21.spl~											//Incinérateur d'Agannazar
+				~spwi303.spl~				~override/pxdpyr31.spl~											//Flèche enflammée
+				~spwi304.spl~				~override/pxdpyr32.spl~											//Boule de feu
+				~spwi325.spl~				~override/pxdpyr33.spl~	WRITE_BYTE 0x1c 2						//Minuscules météores de Melf
+COPY_EXISTING	~spwi418.spl~				~override/pxdpyr34.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 3	//Bouclier de feu (rouge)
+COPY_EXISTING	~spwi523.spl~				~override/pxdpyr41.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 4	//Feu solaire
+COPY_EXISTING	~spwi717.spl~				~override/pxdpyr51.spl~											//Convocation d'Efrit
+				~spwi712.spl~				~override/pxdpyr52.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 5	//Boule de feu à retardement
+COPY_EXISTING	~sppr705.spl~				~override/pxdpyr61.spl~	WRITE_BYTE 0x34 6						//Tempête de feu
+COPY_EXISTING	~spwi810.spl~				~override/pxdpyr71.spl~											//Nuage incendiaire
+				~spwi922.spl~				~override/pxdpyrx.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 7	//Souffle de dragon
+COPY	~Derats_Dawap/Sorciers/Anoma/Copy/pxdanom1.spl~	~override/pxdpyro1.spl~	WRITE_ASCII 0xae ~pxdpyro~ #8
+COPY_EXISTING	~pxdpyro1.spl~				~override/pxdpyro2.spl~	WRITE_BYTE 0x9e 3
+COPY_EXISTING	~pxdpyro1.spl~				~override/pxdpyro3.spl~	WRITE_BYTE 0x9e 5
+COPY_EXISTING	~pxdpyro1.spl~				~override/pxdpyro4.spl~	WRITE_BYTE 0x9e 7
+COPY_EXISTING	~pxdpyro1.spl~				~override/pxdpyro5.spl~	WRITE_BYTE 0x9e 9
+COPY_EXISTING	~pxdpyro1.spl~				~override/pxdpyr6.spl~	WRITE_BYTE 0x9e 11	SAY NAME1 @1738	SAY UNIDENTIFIED_DESC @17381	WRITE_ASCII 0x3a ~pxl2canb~ #8
+COPY_EXISTING	~pxdpyro1.spl~				~override/pxdpyr7.spl~	WRITE_BYTE 0x9e 13	SAY NAME1 @1739	SAY UNIDENTIFIED_DESC @17391	WRITE_ASCII 0x3a ~pxl2ca4b~ #8
+COPY	~Derats_Dawap/Druides/pyro/pxdpyro1.itm~		~override~	SAY NAME1 @173 SAY DESC @1731 
+COPY_EXISTING	~pxdpyro1.itm~				~override/pxdpyro2.itm~	SAY DESC @1732	WRITE_BYTE 0x60 2	WRITE_BYTE 0x86 2	WRITE_BYTE 0xca 6	WRITE_BYTE 0xae 2
+COPY_EXISTING	~pxdpyro1.itm~				~override/pxdpyro3.itm~	SAY DESC @1733	WRITE_BYTE 0x60 3	WRITE_BYTE 0x86 3	WRITE_BYTE 0xca 8	WRITE_BYTE 0xae 3
+COPY_EXISTING	~pxdpyro1.itm~				~override/pxdpyro4.itm~	SAY DESC @1734	WRITE_BYTE 0x60 4	WRITE_BYTE 0x86 4	WRITE_BYTE 0xca 10	WRITE_BYTE 0xae 4
+COPY_EXISTING	~pxdpyro1.itm~				~override/pxdpyro5.itm~	SAY DESC @1735	WRITE_BYTE 0x60 5	WRITE_BYTE 0x86 5	WRITE_BYTE 0xca 12	WRITE_BYTE 0xae 5
+COPY_EXISTING	~pxdpyro3.itm~				~override/pxdpyro6.itm~	SAY DESC @1736	WRITE_BYTE 0x60 6	WRITE_BYTE 0x86 6	WRITE_BYTE 0xae 6	WRITE_BYTE 0xc6 2
+COPY_EXISTING	~pxdpyro5.itm~				~override/pxdpyro7.itm~	SAY DESC @1737	WRITE_BYTE 0x60 7	WRITE_BYTE 0x86 7	WRITE_BYTE 0xae 7	WRITE_BYTE 0xc6 2
+COMPILE	~Derats_Dawap/Druides/pyro/pxdpyro.baf~

@@ -1,0 +1,71 @@
+IF
+	Global("pxDPYRO","LOCALS",1)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO1",0,0,0)
+		XEquipItem("pxDPYRO1",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",2)
+END
+
+IF
+	Global("pxDPYRO","LOCALS",3)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO2",0,0,0)
+		XEquipItem("pxDPYRO2",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",4)
+END
+
+IF
+	Global("pxDPYRO","LOCALS",5)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO3",0,0,0)
+		XEquipItem("pxDPYRO3",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",6)
+END
+
+IF
+	Global("pxDPYRO","LOCALS",7)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO4",0,0,0)
+		XEquipItem("pxDPYRO4",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",8)
+END
+
+IF
+	Global("pxDPYRO","LOCALS",9)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO5",0,0,0)
+		XEquipItem("pxDPYRO5",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",10)
+END
+
+IF
+	Global("pxDPYRO","LOCALS",11)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO6",0,0,0)
+		XEquipItem("pxDPYRO6",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",12)
+END
+
+IF
+	Global("pxDPYRO","LOCALS",13)
+THEN
+	RESPONSE #100
+		CreateItem("pxDPYRO7",0,0,0)
+		XEquipItem("pxDPYRO7",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxDPYRO","LOCALS",14)
+END
+
+IF
+	Global("pxDPYROpoing","LOCALS",0)
+THEN
+	RESPONSE #100
+		CreateItem("DRUFIR",0,0,0)
+		XEquipItem("DRUFIR",Myself,SLOT_WEAPON1,EQUIP)
+		SetGlobal("pxDPYROpoing","LOCALS",1)
+END
