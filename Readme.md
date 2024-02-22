@@ -132,7 +132,7 @@ Sorcerers:
 
 - Sorcelerer
 
-- vitalomage
+- Vitalomage
 
 Clerics:
 
