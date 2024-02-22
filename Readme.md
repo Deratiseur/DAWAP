@@ -12,7 +12,7 @@
 ## Description:
 ------------
 
-Des kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
+35 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -100,7 +100,7 @@ Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-Spellcasters kits that will make you revise the way you play.
+35 Spellcasters kits that will make you revise the way you play.
 
 Wizards:
 
@@ -183,4 +183,3 @@ Bards:
 Multiclasses :
 
 - Infuser (Fighter/mage)
-
