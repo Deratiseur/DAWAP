@@ -1,7 +1,0 @@
-IF
-	Global("pxsforc","LOCALS",8)
-THEN
-	RESPONSE #100
-	ReallyForceSpellRES("pxsforc",Myself)
-	SetGlobal("pxsforc","LOCALS",0)
-END
