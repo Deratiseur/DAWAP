@@ -1,659 +1,656 @@
-@1 = ~Ce composant ne fonctionne qu'avec BG2EE~
-@2 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced.~
-@3 = ~Ce composant ne fonctionne qu'avec un jeu IE en version Enhanced, sauf IWDEE.~
-@4 = ~Kits de mage~
-@5 = ~Kits d'ensorceleur~
-@6 = ~Kits de clerc~
-@7 = ~Kits de druide~
-@8 = ~Kits de barde~
-@9 = ~Kits de multiclasse~
+@1 = ~This component only works with BG2EE~
+@2 = ~This component only works with an IE game in Enhanced version.~
+@3 = ~This component only works with an IE game in Enhanced version, except IWDEE.~
+@4 = ~Mage kits~
+@5 = ~Sorcerer kits~
+@6 = ~Cleric kits~
+@7 = ~Druid kits~
+@8 = ~Bard kits~
+@9 = ~Multiclass kits~
 
-@19 = ~Fleau (mage)~
-@10 = ~fléau~
-@11 = ~Fléau~
-@12 = ~FLÉAU : cet arcaniste venue d'une autre sombre réalité est une plaie pour notre réalité.
+@19 = ~Scourge (mage)~
+@10 = ~scourge~
+@11 = ~Scourge~
+@12 = ~SCOURGE: this arcanist from another dark reality is a plague on our reality.
 
-Avantage :
-- Tous ses sorts sont remémorés chaque round.
+Advantage:
+- His spells and innate abilities are restored every round.
 
-Inconvénients :
-- Ne peut apprendre que des sorts des écoles d'Évocation et Nécromancie.
-- Ne peut pas être d'alignement bon.
-- Ne peut pas se jumeler.~
-@13 = ~Explosion de feu~
-@14 = ~Explosion de feu (Évocation)
-Niveau : 1
-Portée : 0
-Durée : instantanée
-Temps d'incantation : 1
-Zone d'effet : rayon de 2,5 mètres
-Jet de sauvegarde : ½
+Disadvantage:
+- Can only learn spells from Evocation and Necromancy schools.
+- Alignment limited to Evil.
+- Cannot dual-class.~
+@13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
+@14 = ~Fire Blast (Evocation)
+Level: 1
+Range: 0
+Duration: Instantaneous
+Casting time: 1
+Area of effect: 2.5 meter radius
+Saving throw: ½
 
-Ce sort crée une explosion émanant du lanceur de sort et blessant toutes les créatures situées dans un rayon de 2,5 mètres autour de lui. Toutes les créatures affectées subissent 1D4 points de dégâts de feu par niveau de lanceur de sorts (jusqu'à un maximum de 10D4). Un jet de sauvegarde contre les sorts réussi permet de réduire les dégâts de moitié.~
+This spell creates an explosion that emanates from the caster and injures all creatures within 2.5 meters of him. All affected creatures take 1D4 points of fire damage per caster level (to a maximum of 10D4). A successful saving throw against spells reduces the damage by half.~
 
 @29 = ~Psychotope (mage)~
 @20 = ~psychotope~
 @21 = ~Psychotope~
-@22 = ~PSYCHOTOPE : cet arcaniste très étrange n'utilise que sa conscience pour lancer des sorts.
+@22 = ~PSYCHOTOPE : This very strange arcanist uses only his consciousness to cast spells.
 
-Avantages :
-- Temps d'incantation fixés à 1.
-- Tous les 3 rounds il se remémore un sort du niveau maximum connu. S'il n'y a aucun sort à remémorer à ce niveau, c'est un niveau de sort en dessous à la place.
+Advantages:
+- Casting time fixed to 1.
+- Every 3 rounds he rememorize a lost spell of the maximum known level. If there is no spell to rememorize at that level, it is one spell level below instead.
 
-Inconvénient :
-- Toute perte de conscience : sommeil (d'une nuit de repos ou provoqué), étourdissement, peur, berserk, charme, confusion, débilité ou mort lui fait oublier tous ses sorts.~
+Disadvantage:
+- Any loss of consciousness: sleep (from a night's rest or induced), stun, fear, berserk, charm, confusion, debility, or death causes him to forget all his spells.~
 
+@39 = ~Spell stealer (mage)~
+@30 = ~spell stealer~
+@31 = ~Spell stealer~
+@32 = ~SPELL STEALER : this magician has strange magical abilities.
 
-@39 = ~Voleur de sorts (mage)~
-@30 = ~voleur de sorts~
-@31 = ~Voleur de sorts~
-@32 = ~VOLEUR DE SORTS : ce magicien possède d'étranges capacités magiques.
+Advantages:
+- Can at will, on contact, make an arcanist forget a spell (no saving throw) to remember himself a spell of maximum known level.
+- Can once a day, on contact, make an arcanist forget all his spells (saving throw against death) to remember all his spells himself.
 
-Avantages :
-- Peut à volonté, au contact, faire oublier un sort à un  arcaniste (sans jet de sauvegarde) pour se remémorer un sort de niveau maximum connu.
-- Peut une fois par jour, au contact, faire oublier tous ses sorts à un arcaniste (jet de sauvegarde contre la mort) pour se remémorer soit même tous ses sorts.
+Disadvantages:
+- Can memorize one less spell per spell level.
+- Each access to a new spell level is slowed down by one level (first spell of level 1 at level 2 of wizard).~
+@33 = ~Draining touch~
+@34 = ~Draining palm~
 
-Inconvénients :
-- Peut mémoriser un sort de moins par niveau de sort.
-- Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 de mage).~
-@33 = ~Toucher drainant~
-@34 = ~Paume drainante~
+@49 = ~Eoratian (sorcerer)~
+@40 = ~eoratian~
+@41 = ~Eoratian~
+@42 = ~EORATIAN : this sorcerer has a very strange way of using magic.
 
-@49 = ~Eoratien (ensorceleur)~
-@40 = ~éoratien~
-@41 = ~Éoratien~
-@42 = ~ÉORATIEN : cet ensorceleur à une façon très étrange d'utiliser la magie.
+Advantage:
+- His spells and innate abilities are restored at the end of each fight.
 
-Avantage :
-- Se remémore tous ses sorts et regagne ses capacités innées à la fin de chaque combat.
+Disadvantages:
+- Can memorize three fewer spells per spell level.
+- Each access to a new spell level is slowed down by one level (first spell level 1 at level 2 of spellcaster).
+- Unaffected by effects that allow to store more spells.~
 
-Inconvénient :
-- Peut mémoriser trois sorts de moins par niveau de sort.
-- Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 d'ensorceleur.
-- Non affecté par les effets permettant de mémoriser plus de sorts.~
+@59 = ~Anomaly (sorcerer)~
+@591 = ~With changed animation: magic elemental~
+@592 = ~Without changed animation (non-rp)~
+@50 = ~anomaly~
+@51 = ~Anomaly~
+@52 = ~ANOMALY : this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known reality.
 
-@59 = ~Anomalie (ensorceleur)~
-@591 = ~Avec animation changee : elementaire de magie~
-@592 = ~Sans animation changee (non-rp)~
-@50 = ~anomalie~
-@51 = ~Anomalie~
-@52 = ~ANOMALIE : ce amalgame de magie incarnée vient d'une autre réalité et réagit bizarrement aux lois de la réalité connue.
+Advantages:
+- Immune to offensive magic and 100% magic resistance.
+- Immune to poison, disease and level drain.
+- Immune to dead magic, miscast and imposed wild surges.
+- Gains two hit point each time he casts a spell.
+- Can cast a ball of energy +1 once per round at will, inflicting 1D4+1 magical damage. The "enchantment" level and damages increases by +1 per 5 levels of the anomaly, up to a maximum of +7.
 
-Avantages :
-- Immunisé contre la magie offensive et 100% de résistance à la magie.
-- Immunisé au poison, à la maladie et au drain de niveau.
-- Immunisé à la magie morte, au fourvoiement et aux hiatus imposés.
-- Gagne deux points de vie chaque fois qu'il lance un sort.
-- Peut à volonté lancer une fois par round une boule d’énergie magique +1 qui inflige 1D4+1 dégâts magiques. Le niveau "d'enchantement" et les dégâts augmentent de +1 par 5 niveaux de l'anomalie, jusqu'à +7 maximum.
+Disadvantages:
+- Wild magic, but without the spells common to the conventional wild mage.
+- Conventional healing (spells, potions) do not affect it.~
+@53 = ~Ball of energy~
+@531 = ~This magic energy ball +1 provides +3 to hit and inflicts 1D4+1 magic damage.~
+@532 = ~This magic energy ball +2 provides +3 to hit and inflicts 1D4+2 magic damage.~
+@533 = ~This magic energy ball +3 provides +3 to hit and inflicts 1D4+3 magic damage.~
+@534 = ~This magic energy ball +4 provides +3 to hit and inflicts 1D4+4 magic damage.~
+@535 = ~This magic energy ball +5 provides +3 to hit and inflicts 1D4+5 magic damage.~
+@536 = ~This magic energy ball +6 provides +3 to hit and inflicts 1D4+6 magic damage.~
+@537 = ~This magic energy ball +7 provides +3 to hit and inflicts 1D4+7 magic damage.~
 
-Inconvénients :
-- Entropie, mais sans les sorts communs à l'entropiste classique.
-- Les soins conventionnels (sorts, potions) ne l'affectent pas.~
-@53 = ~Boule d’énergie~
-@531 = ~Cette boule d’énergie magique +1 procure +3 au toucher et inflige 1D4+1 points de dégâts magiques.~
-@532 = ~Cette boule d’énergie magique +2 procure +3 au toucher et inflige 1D4+2 points de dégâts magiques.~
-@533 = ~Cette boule d’énergie magique +3 procure +3 au toucher et inflige 1D4+3 points de dégâts magiques.~
-@534 = ~Cette boule d’énergie magique +4 procure +3 au toucher et inflige 1D4+4 points de dégâts magiques.~
-@535 = ~Cette boule d’énergie magique +5 procure +3 au toucher et inflige 1D4+5 points de dégâts magiques.~
-@536 = ~Cette boule d’énergie magique +6 procure +3 au toucher et inflige 1D4+6 points de dégâts magiques.~
-@537 = ~Cette boule d’énergie magique +7 procure +3 au toucher et inflige 1D4+7 points de dégâts magiques.~
+@69 = ~Magic minuims (sorcerer)~
+@691 = ~With changed animation: particles in motion~
+@692 = ~Without changed animation (non-rp)~
+@60 = ~magic minuims~
+@61 = ~Magic minuims~
+@62 = ~MAGIC MINUIMS : This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect.
 
-@69 = ~Minuims magiques (ensorceleur)~
-@691 = ~Avec animation changee : particules en mouvement~
-@692 = ~Sans animation changee (non-rp)~
-@60 = ~minuims magiques~
-@61 = ~Minuims magiques~
-@62 = ~MINUIMS MAGIQUES : cet agglomérat de minuscules fées vient d'une autre réalité et peut accomplir de grande choses par effet de groupe.
+Advantages :
+- Doubled amount of memorable spells.
+- +2 to AC, +2 additionnal against slashing and piercing attacks.
+- Protection from normal weapons.
 
-Avantages :
-- Quantité de sorts mémorisables doublée.
-- +2 à la CA, +2 supplémentaire contre les attaques tranchantes et perforantes.
-- Protection contre les armes non-magiques.
+Disadvantage:
+- Cannot carry any items.
 
-Inconvénient :
-- Ne peut porter aucun objet.
+Special:
+- Can't give himself a physical form : Polymorph spells give him a weapon and change his characteristics, but do not give him a body.~
 
-Spécial :
-- Ne peut pas se donner de forme physique : les sort de métamorphoses lui donnent une arme et changent ses caractéristiques mais ne lui donnent pas de corps.~
+@79 = ~Incantator (sorcerer)~
+@70 = ~incantator~
+@71 = ~Incantator~
+@72 = ~INCANTATOR : this very strange sorcerer practices magic differently.
 
-@79 = ~Incantateur (ensorceleur)~
-@70 = ~incantateur~
-@71 = ~Incantateur~
-@72 = ~INCANTATEUR : cet étrange ensorceleur pratique la magie différemment.
+Advantage:
+- +50% spell duration.
+- +50% elemental and magical damage done.
+- +4 to caster level.
 
-Avantage :
-- +50% de durée des sorts.
-- +50% de dégâts élémentaires et magique infligés.
-- +4 au niveau de lanceur de sort.
+Disadvantage:
+- Casting time: +3.~
 
-Inconvénient :
-- Temps d'incantation : +3.~
+@89 = ~Spirit of the Mirror (sorcerer)(animation: constantly changing color)~
+@80 = ~spirit of the mirror~
+@81 = ~Spirit of the Mirror~
+@82 = ~Spirit of the mirror : This arcanist comes from another reality and interacts strangely with the known reality.
 
-@89 = ~Esprit du miroir (ensorceleur)(animation : couleurs changeant constamment)~
-@80 = ~esprit du miroir~
-@81 = ~Esprit du miroir~
-@82 = ~ESPRIT DU MIROIR : cet arcaniste vient d'une autre réalité et interagit bizarrement avec la réalité connue.
+Advantage:
+- Unlimited Spell Deflection.
+- Light Reflection: +3 to AC.
+- Can use the special ability "Reflected Image" at will.
+- Automatically learns all "image" spells as spells one level lower when he reaches the required level.
 
-Avantages :
-- Renvoi des sorts illimité.
-- Réflexion de la lumière : +3 à la CA.
-- Peut utiliser la capacité "Image réfléchie" à volonté.
-- Apprend automatiquement tous les sorts "d'image" comme des sorts d'un niveau de moins quand il atteint le niveau requis.
+Disadvantage:
+- Very fragile: -1 hit point per level and -100% crushing damage resistance.~
+@83 = ~Major Reflected Image~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
+@84 = ~Major Reflected Image (Illusion) 
+Level : 4
+Range: 0
+Duration: 1 round per level
+Area of effect: the caster
+Casting Time: 4
+Saving throw: none
 
-Inconvénient :
-- Très fragile : -50% de points de vie et -100% de résistance aux dégâts contondants.~
-@83 = ~Image réfléchie majeure~
-@84 = ~Image réfléchie majeure (Illusion) 
-Niveau : 4
-Portée : 0
-Durée : 1 round par niveau
-Zone d’effet : le lanceur de sort
-Temps d’incantation : 4
-Jet de sauvegarde : aucun
+Upon casting this spell, the wizard creates 1 image of <PRO_HIMHER>self that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wizard does so that if any enemies are trying to attack the wizard, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the caster. The image will disappear with a successful Dispel Magic or when the spell's duration expires.~
+@85 = ~Imaged Ally~ //Another spell from the Interplan.
+@86 = ~Imaged Ally (Illusion)
+Level: 7
+Range: Visual range
+Casting time: 7
+Area of effect: one character in the group
+Saving throw: none
 
-Ce sort permet au lanceur de créer une image de lui-même qui se déplace à ses côtés, copiant tous ses faits et gestes. Ainsi, les ennemis attaquant le magicien ne sauront pas lequel est le vrai : 50 % de chance de toucher l'image, et 50 % de chances de toucher le magicien. L'image disparaît à la suite d'une Dissipation ou à l'expiration du sort.~
-@85 = ~Allié imagé~
-@86 = ~Allié imagé (Illusion)
-Niveau : 7
-Portée : champ de vision
-Durée : 15 rounds
-Temps d'incantation : 7
-Zone d'effet : un personnage du groupe
-Jet de sauvegarde : Non
+This spell creates an illusory copy of any member of the group. The copy has the same equipment as the original, but 60% of its combat abilities, hit points and saving throws. It can move and attack, but cannot cast spells or use special abilities or quick items. It exists for the duration of the spell or until destroyed. There is no limit to the number of imaged allies that can be controlled, but each ally can have only one image associated with it.~
+@87 = ~This ally has already been imaged~
 
-Ce sort crée une copie illusoire de n'importe quel membre du groupe. La copie a le même équipement que l’original mais a 60% de ses capacités de combat, points de vie et jets de sauvegarde. Elle peut se déplacer et attaquer mais ne peut ni lancer de sorts ni utiliser de capacités spéciales ou d'objets rapides. Elle existe pour toute la durée du sort ou jusqu'à ce quelle soit détruite. Il n'y a pas de limite aux nombres d'alliés imagés pouvant être contrôlés, mais chaque allié ne peut avoir qu'une seule image associée.~
-@87 = ~Cet allié est déjà imagé~
+@99 = ~Miracle maker (cleric)~
+@90 = ~miracle maker~
+@91 = ~Miracle maker~
+@92 = ~MIRACLE MAKER: This priest from another reality defies the laws of our own.
 
-@99 = ~Faiseur de miracles : (clerc)~
-@90 = ~faiseur de miracles~
-@91 = ~Faiseur de miracles~
-@92 = ~FAISEUR DE MIRACLES : Ce prêtre venue d'une autre réalité défie les lois de la notre.
+Advantages:
+- He can cast Limited Wish at will.
+- At 9th level, he can use any item.
+- At level 18 he can cast Wish at will.
 
-Avantages :
-- Il peut lancer Souhait limité à volonté.
-- Au niveau 9 il peut utiliser tous les objets.
-- Au niveau 18 il peut lancer Souhait à volonté.
+Disadvantages:
+- Wisdom -2
+- Does not know any level 6 and 7 spells.
+- No access to hla.~
 
-Inconvénients :
-- Sagesse -2
-- Ne connaît aucun sort de niveau 6 et 7.
-- N'a accès à aucun hla.~
+@109 = ~Enraged (mage)~
+@100 = ~enraged~
+@101 = ~Enraged~
+@102 = ~ENRAGED: This magician never lets go of the animal rage that inhabits him.
 
-@109 = ~Enrage (mage)~
-@100 = ~enrage~
-@101 = ~Enragé~
-@102 = ~ENRAGÉ : Ce magicien ne se défait jamais de la rage animale qui l'habite.
+Advantages:
+- Whenever he kills a creature he gain Improved Alacrity for one round.
+- +15% damage dealt, weapon or spell.
 
-Avantages :
-- Quand il tue une créature il gagne Enchaînement pendant un round.
-- +15% de dégâts infligés, arme ou sort.
+Disadvantage:
+- He gives no credit to defensives schools and does not learn any spells from the schools of Abjuration, Divination, and Illusion.
+- When his hit points drop below 25% he becomes a spell berserk.
+- Spells and effects like "x when y" (Fire Shield: damage inflicted WHEN hit) have no effect on him.
 
-Inconvénients :
-- N'accorde aucun crédit aux écoles défensives et n'apprend aucun sort des écoles d'Abjuration, Divination et Illusion.
-- Quand ses points de vie passent en dessous de 25% il devient berserk de sorts.
-- Les sorts et effets du genre "x quand y" (Bouclier de feu : dommages infligés QUAND touché) ne l'affecte pas.
-
-Berserk de sorts :
-Pendant 5 rounds l'Enragé ne peut plus se déplacer ni attaquer. Il ne pense qu'à lancer des sorts : il gagne Enchaînement et -2 au temps d'incantation mais a 10% de chance de rater les incantations.~
+Spell Berserk:
+For 5 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gain Improved Alacrity and -2 to casting time but has a 10% chance of missing incantations.~
 @103 = ~Enrage~
-@104 = ~Berserk de sorts~
+@104 = ~Spell Berserk~
 
-@119 = ~Zap (ensorceleur)~
+@119 = ~Zap (sorcerer)~
 @110 = ~zap~
 @111 = ~Zap~
-@112 = ~ZAP : cet arcaniste vient d'une autre réalité et survit difficilement dans la réalité connue.
+@112 = ~ZAP : This arcanist comes from another reality and survives with difficulty in the known reality.
 
-Avantages :
-- +10 au Déplacement.
-- +1 Attaque par round.
-- -4 au Temps d'incantation.
-- Enchaînement.
-- +3 aux jets de sauvegarde contre les baguettes et contre les souffles.
+Advantages:
+- +10 to movement speed.
+- +1 Attack per round.
+- -4 to casting time.
+- Improved Alacrity.
+- +3 to saving throws against wands and breaths.
 
-Inconvénient :
-- Quand il ne fait RIEN il perd un point de vie toutes les 3 secondes.~
+Disadvantage:
+- When he does NOTHING he loses one hit point every 3 seconds.~
 
-@1299 = ~Sorcelier (ensorceleur)~
-@120 = ~sorcelier~
-@121 = ~Sorcelier~
-@122 = ~SORCELIER : Cet arcaniste n'est pas sans ressources quand les sorts lui font défaut.
+@1299 = ~Sorcelerer (sorcerer)~
+@120 = ~sorcelerer~
+@121 = ~Sorcelerer~
+@122 = ~SORCELERER : This arcanist loves fighting so much that he spends more time doing it than mastering magic.
 
-Avantages :
-- +1 niveau de compétence en dague et en bâton aux niveau 1 et tous les 6 niveaux ensuite, jusqu'à grand maître au niveau 24.
-- +½ attaque par round aux niveaux 9, 17 et 23.
-- +1 au taco en mêlée tous les 2 niveaux.
-- +1 au jet de sauvegarde contre la mort tous les 4 niveaux.
-- +1 au jet de sauvegarde contre la métamorphose tous les 8 niveaux.
-- Peut progresser dans les styles de combat "Arme à deux mains" "Une arme" et "Deux armes".
-- Apprend automatiquement certains sorts de combat en versions améliorées.
-- Peut choisir des Hlas de guerrier en plus de ceux de mage.
-- Dés de vie : D6.
+Advantages:
+- +1 proficient point in dagger and in staff at level 1 and every 6 levels thereafter, up to grandmaster at level 24.
+- +½ attack per round at levels 9, 17 and 23.
+- +1 melee THAC0 every 2 levels.
+- +1 to saving throw vs. death every 4 levels.
+- +1 to saving throw vs. polymorph every 8 levels.
+- Life Points aligned on the Thief table.
+- Can advance in fighting styles "One weapon", "Two weapons" and "Two Handed weapons".
+- Know improved versions of some combat spells.
+- Can choose Hlas of fighter in addition to those of mage.
+- Hit Die : D6.
 
-Inconvénients :
-- Capacité de lancer des sorts réduite de deux sorts par niveau de sorts.
-- Progression ralentie par la pratique non-exclusive de la magie : -15% d'xp.
+Disadvantages:
+- Ability to cast spell reduced of two spells per spell level.
+- Development slowed by the non-exclusive practice of magic: -15% of xp.
 
-SORTS AMÉLIORÉS : Le sorcelier connaît spontanément quelques sorts de combat qu'il améliore quand il les lances :
- * Frappe précise : durée rallongée : 1 round / 3 niveaux
- * Armure : temps d'incantation réduit, CA réduite : -1 CA / 3 niveaux (CA max 0)
- * Force : force améliorée si lancé sur lui même : fixée à 19
- * Bouclier de feu (rouge/bleu) : arme affectée : +1D8 dégâts~
+IMPROVED SPELLS: the Sorceler spontaneously knows a few combat spells, which he enhances by casting them:
+  * Called Shot: extended duration: 1 round/3 levels
+  * Armor: reduced casting time, reduced AC: -1 AC/3 levels
+  * Strength: improved strength when casting upon himself: set at 19
+  * Fire Shield (Red/Blue): affected weapon: +1D8 damage~
+ 
+@1239 = ~Armor (improved)~
+@123 = ~Armor
+Level: 1
+School: Conjuration
+Range: spellcaster
+Duration: 8 hours
+Casting Time: 5
+Area of Effect: caster
+Saving Throw: none
 
-@1239 = ~Armure (Améliorée)~
-@123 = ~Armure
-Niveau : 1
-École : Conjuration
-Portée : jeteur du sort
-Durée : 8 heures
-Temps d'incantation : 5
-Zone d'effet : jeteur du sort
-Jet de sauvegarde : aucun
+By means of this spell, the wizard creates a magical field of force that sets his base armor class at 6. This effect is improved by 1 point to AC every three levels of the caster, up to an armor class of 0 at level 19. The armor spell does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.~
 
-Grâce à ce sort, le magicien crée un champ de force magique qui fixe sa classe d'armure de base à 6. Cet effet s'améliore de 1 point de CA par tranche de trois niveaux du lanceur, jusqu'à une classe d'armure minimale de 0 au niveau 19. L'armure ne pèse rien, n'encombre pas l'utilisateur et n'exclut pas non plus la possibilité de lancer des sorts. Le sort dure jusqu'à dissipation ou jusqu'à expiration.~
+@124 = ~True Strike (improved)~
+@125 = ~True Strike (Divination)
+Level: 1
+Range: spellcaster
+Duration: 1 round/3 levels
+Casting Time: 1
+Area of Effect: caster
+Saving Throw: none
 
-@124 = ~Frappe précise (Améliorée)~
-@125 = ~Frappe précise (Divination)
-Niveau : 1
-Portée : jeteur du sort
-Durée : 1 round / 3 niveaux
-Temps d'incantation : 1
-Zone d'effet : jeteur du sort 
-Jet de sauvegarde : aucun 
+By means of this spell, the wizard can temporarily see the near future. All his attacks made during the duration of the spell gets a perception bonus of +10.~
 
-En lançant ce sort, le magicien peut temporairement apercevoir l'avenir proche. Tout ses jets d'attaque effectués pendant la durée du sort bénéficient d'un bonus de perception de +10.~
+@1269 = ~Strength (improved)~
+@126 = ~Strength (Alteration)
+Level: 2
+Range: Touch
+Duration: 1 turn/level
+Casting Time: 1 round
+Area of Effect: touched target
+Saving Throw: none
 
-@1269 = ~Force (Améliorée)~
-@126 = ~Force (Altération) 
-Niveau : 2
-Portée : toucher
-Durée : 1 tour/niveau
-Temps d'incantation : 1round 
-Zone d'effet : personne touchée
-Jet de sauvegarde : aucun 
-
-Ce sort confère au personnage touché une Force de 18/50. Si le personnage avait déjà une Force comprise entre 18/01 et 18/50, 50 points sont ajoutés à son pourcentage de Force exceptionnelle. Si sa Force était comprise entre 18/50 et 18/00, elle est fixée à 18/00. Si sa Force était supérieure à 19, elle est ramenée à 18/50.
-Exemples :
-Force de départ : Force d'arrivée
-12 --> 18/50
+This spell gives the touched character a Strength of 18/50. If the character already had a strength between 18/01 and 18/50, 50 points are added to its percentage of exceptional strength. If the strength was between 18/50 and 18/00, it is set at 18/00. If his strength was greater than 19, it is reduced to 18/50.
+Examples:
+Starting strength: Received Strength
+12    --> 18/50
 18/25 --> 18/75
 18/78 --> 18/00
-20 --> 18/50
+20    --> 18/50
 
-Si le magicien utilise ce sort sur lui-même, la force conférée est automatiquement de 19.~
+If the mage uses this spell on himself, the conferred strength is automatically 19.~
 
-@127 = ~Bouclier de feu (rouge)(Amélioré)~
-@128 = ~Bouclier de feu (rouge) (Évocation, Altération)
-Niveau : 4
-Portée : 0
-Durée : 3 rounds + 1 round par niveau
-Temps d'incantation : 4
-Zone d'effet : Lanceur
-Jet de Sauvegarde : Non
+@127 = ~Fire Shield (Red (improved)~
+@128 = ~Fire Shield (red) (Evocation, Alteration)
+Level: 4
+Range: 0
+Duration: 3 rounds + 1 round per level
+Casting Time: 4
+Area of Effect: Caster
+Saving Throw: No
 
-Ce bouclier de feu rouge protège le lanceur du feu en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au feu, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de feu.
-Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de feu à chacune de ses frappes.~
+This red fire shield protects the caster against fire by surrounding him by flames. Not only this shield gives him 50% Fire resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1D8 + 2 points of fire damage.
+The mage can also expand the shield covering up his weapon, which adds 1D8 points of fire damage to each of his strikes.~
 
-@129 = ~Bouclier de feu (bleu)(Amélioré)~
-@1210 = ~Bouclier de feu (bleu) (Évocation, Altération)
-Niveau : 4
-Portée : 0
-Durée : 3 rounds + 1 round par niveau
-Temps d'incantation : 4
-Zone d'effet : Lanceur
-Jet de Sauvegarde : Non
+@129 = ~Fire Shield (Blue)(improved)~
+@1210 = ~Fire Shield (Blue) (Evocation, Alteration)
+Level: 4
+Range: 0
+Duration: 3 rounds + 1 round per level
+Casting Time: 4
+Area of Effect: Caster
+Saving Throw: No
 
-Ce bouclier de feu bleu protège le lanceur du froid en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au froid, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de froid.
-Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de froid à chacune de ses frappes.~
+This blue fire shield protects the caster against cold by surrounding him by flames. Not only this shield gives him 50% Cold resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1d8 + 2 points of cold damage.
+The mage can also expand the shield covering up his weapon, which adds 1D8 points of cold damage to each of his strikes.~
 
-@139 = ~Vitalomage (ensorceleur)~
+@139 = ~Vitalomage (sorcerer)~
 @130 = ~vitalomage~
 @131 = ~Vitalomage~
-@132 = ~VITALOMAGE : cet arcaniste vient d'une autre réalité où la source de magie est l’énergie vitale de l'incantateur lui même.
+@132 = ~VITALOMAGE: this arcanist comes from another reality where the source of magic is the vital energy of the caster himself.
 
-Avantages :
-- Enchaînement
-- +2 sorts par niveau de sorts.
-- Temps d'incantation maximal des sorts fixé à 5.
-- Dés de vie : D8.
+Advantages :
+- Improved Alacrity.
+- +2 spells per spell level.
+- Maximum spell casting time set at 5.
+- Hit Die: D8.
 
-Inconvénient :
- - Perd un point de vie chaque fois qu'il lance un sort.~
+Disadvantages:
+ - Loses one hit point each time he casts a spell.~
  
-@149 = ~Dweomeriste (clerc)~
-@140 = ~dweomeriste~
-@141 = ~Dwéomeriste~
-@142 = ~DWÉOMERISTE : ce clerc vient d’ailleurs et ne connaît que la magie, qu'il utilise d'une façon très inhabituelle.
+@149 = ~Dweomerist (Cleric)~
+@140 = ~dweomerist~
+@141 = ~Dweomerist~
+@142 = ~DWEOMERIST: this cleric comes from elsewhere and knows only magic, which he uses in a very unusual way.
 
-Avantages :
-- Quantité de sorts divins mémorisables doublée.
-- Enchaînement.
-- Temps d'incantation maximal des sorts fixés à 5.
+Advantages :
+- Doubled amount of memorable cleric spells.
+- Improved Alacrity.
+- Maximum spell casting time set at 5.
 
-Inconvénient :
-- N'accorde aucun crédit aux attaques physiques : attaques par round fixées à 0.~
+Disadvantages:
+- No credit for physical attacks: attacks per round fixed at 0.~
 
-@159 = ~Eoration du chaos (clerc)~
-@150 = ~éoration du chaos~
-@151 = ~Éoration du chaos~
-@152 = ~ÉORATION DU CHAOS : ce clerc venu d'une autre réalité est soumis à d'autres règles.
+@159 = ~Chaos eoratian (cleric)~
+@150 = ~chaos eoratian~
+@151 = ~Chaos eoratian~
+@152 = ~CHAOS EORATIAN: This cleric from another reality is subject to other rules.
 
-Avantage :
-- Ses sorts et capacités spéciales sont restaurés à la fin de chaque combat.
+Advantage:
+- His spells and innate abilities are restored at the end of each fight.
 
-Inconvénients :
-- Maximum 5 sorts par niveau de sort (4 de niveau 7), modulé par la sagesse.
-- Alignement limité à Chaotique.
-- A chaque lancement de sort, 5 % de chances d'engendrer un hiatus entropique.~
+Disadvantages:
+- Maximum 5 spells per spell level (4 at level 7), modulated by wisdom.
+- Alignment limited to Chaotic.
+- Every time a spell is cast, there is a 5% chance of a Wild Surge effect.~
 
-@169 = ~Furie (Clerc)~
-@160 = ~furie~
-@161 = ~Furie~
-@162 = ~FURIE : ce prêtre venu d'une autre réalité se comporte bizarrement.
+@169 = ~Fury (cleric)~
+@160 = ~fury~
+@161 = ~Fury~
+@162 = ~FURY: this priest from another reality behaves strangely.
 
-Avantage :
-- +½ attaque par round tous les 4 niveaux (maximum +4 attaques par round au niveau 32)
+Advantage:
+- +½ attack per round every 4 levels (maximum +4 attacks per rondat level 32).
 
-Inconvénient :
-- Dés de vie : D4~
+Disadvantage:
+- Hit Die : D4.~
 
-@179 = ~Pyroclasme (druide)~
-@1791 = ~Avec animation changee : elemental de feu~
-@1792 = ~Sans animation changee (non-rp)~
-@170 = ~pyroclasme~
-@171 = ~Pyroclasme~
-@172 = ~PYROCLASME : Ce druide est un extérieur venu d'un plan élémentaire.
+@179 = ~Pyroclasm (druid)~
+@1791 = ~With changed animation: fire elemental~
+@1792 = ~Without changed animation (non-rp)~
+@170 = ~pyroclasm~
+@171 = ~Pyroclasm~
+@172 = ~PYROCLASM: This druid is an outsider from an elemental plane.
 
-Avantages :
-- Résistance au feu 125%
-- Immunisé aux armes normales et +1.
-- Immunisé aux maladies, aux poisons, aux attaques sournoises, aux toiles, aux enchevêtrement et à la graisse.
-- Connaît une dizaine de sorts de feu supplémentaires.
-- Inflige 5% de dégâts de feu en plus par niveau, maximum +100%.
-- Peut attaquer avec son poing de feu ou avec une petite boule de feu dont les dégâts et le niveau d'enchantement varient suivant le niveau du pyroclasme : 1D4+1 au niveau 1, 1D6+2 au niveau 5, 1D8+3 au niveau 10, 1D10+4 au niveau 15 et 1D12+5 au niveau 20.
-- Peut être de n'importe quel alignement.
+Advantages:
+- 125% fire resistance.
+- Immune to normal weapons and +1.
+- Immune to diseases, poisons, sneak attacks, webs, entangle and grease.
+- Knows a dozen additional fire spells.
+- Inflicts 5% more fire damage per level, maximum +100%.
+- Can attack with its fire fist or with a small fireball whose damage and enchantment level vary according to the pyroclasm's level: 1D4+1 at level 1, 1D6+2 at level 5, 1D8+3 at level 10, 1D10+4 at level 15 and 1D12+5 at level 20.
+- Can be of any alignment.
 
-Inconvénients :
-- Vulnérabilité au froid 50%
-- Ne peut porter aucun objet
-- Ne peut pas se métamorphoser.
-- Ne gagne pas d'autres résistances élémentaires.~
-@173 = ~Boule de feu~
-@1731 = ~Cette petite boule de feu magique +1 accorde +1 au toucher et inflige 1D4+1 points de dégâts de feu magique.~
-@1732 = ~Cette petite boule de feu magique +2 accorde +2 au toucher et inflige 1D6+2 points de dégâts de feu magique.~
-@1733 = ~Cette petite boule de feu magique +3 accorde +3 au toucher et inflige 1D8+3 points de dégâts de feu magique.~
-@1734 = ~Cette petite boule de feu magique +4 accorde +4 au toucher et inflige 1D10+4 points de dégâts de feu magique.~
-@1735 = ~Cette petite boule de feu magique +5 accorde +5 au toucher et inflige 1D12+5 points de dégâts de feu magique.~
-@1736 = ~Cette petite boule de feu magique +6 accorde +6 au toucher et inflige 2D8+6 points de dégâts de feu magique.~
-@1737 = ~Cette petite boule de feu magique +7 accorde +7 au toucher et inflige 2D12+7 points de dégâts de feu magique.~
-@1738 = ~Boule de feu supérieure~
-@17381 = ~Cette capacité améliore la boule de feu du Pyroclasme : elle devient +6, accorde +6 au toucher et inflige 2D8+6 points de dégâts de feu magique.
-Nécessite : Niveau 26~
-@1739 = ~Boule de feu majeure~
-@17391 = ~Cette capacité améliore encore la boule de feu du Pyroclasme : elle devient +7, accorde +7 au toucher et inflige 2D12+7 points de dégâts de feu magique.
-Nécessite : Niveau 32, Boule de feu supérieure~
+Disadvantages:
+- Vulnerability to cold 50%.
+- Cannot carry any object
+- Cannot metamorphose.
+- Does not gain other elemental resistances.~
+@173 = ~Fireball~
+@1731 = ~This little +1 magic fireball grants +1 to hit and inflicts 1D4+1 points of magic fire damage.~
+@1732 = ~This little +2 magic fireball grants +2 to hit and inflicts 1D6+2 points of magic fire damage.~
+@1733 = ~This little +3 magic fireball grants +3 to hit and inflicts 1D8+3 points of magic fire damage.~
+@1734 = ~This little +4 magic fireball grants +4 to hit and inflicts 1D10+4 points of magic fire damage.~
+@1735 = ~This little +5 magic fireball grants +5 to hit and inflicts 1D12+5 points of magic fire damage.~
+@1736 = ~This little +6 magic fireball grants +6 to hit and inflicts 2D8+6 points of magic fire damage.~
+@1737 = ~This little +7 magic fireball grants +7 to hit and inflicts 2D12+7 points of magic fire damage.~
+@1738 = ~Superior fireball~
+@17381 = ~This ability improves the Pyroclasm's fireball: it becomes +6, grants +6 to hit and inflicts 2D8+6 points of magical fire damage.
+Requires: Level 26~
+@1739 = ~Major Fireball~
+@17391 = ~This ability further improves the Pyroclasm's fireball: it becomes +7, grants +7 to hit and inflicts 2D12+7 points of magical fire damage.
+Requires: Level 32, Superior Fireball~
 
-@189 = ~Monstruosite mutante instable (druide)~
-@180 = ~monstruosité mutante instable~
-@181 = ~Monstruosité mutante instable~
-@182 = ~MONSTRUOSITÉ MUTANTE INSTABLE : Ce druide est une grosse boursouflure sans cesse grossissante venue d'un autre univers.
+@189 = ~Instable mutant monstruosity (druid)~
+@180 = ~instable mutant monstruosity~
+@181 = ~Instable mutant monstruosity~
+@182 = ~INSTABLE MUTANT MONSTRUOSITY: This druid is a large, ever-growing blister from another universe.
 
-Avantage :
-- Au niveau 1 et tous les 5 niveaux ensuite : +1 en force, dextérité et constitution et -1 en intelligence, sagesse et charisme. (maximum +7/+7/+7/-7/-7/-7 au niveau 30)
+Advantage:
+- At level 1 and every 5 levels thereafter: +1 in strength, dexterity and constitution and -1 in intelligence, wisdom and charisma. (maximum +7/+7/+7/-7/-7/-7 at level 30).
 
-Inconvénients :
-- Il est chargé d’énergie très instable et en conséquence une fois par round quand il subit des dommages il a 5% de chance d'être désintégré en générant une boule d’énergie magique qui inflige à toutes les créatures dans les 4,5 mètres autour de lui 10D10 points de dégâts magiques (jet de sauvegarde contre les sorts pour ½). 
-- En mourant il est automatiquement désintégré et génère la boule d’énergie magique.~
+Disadvantages:
+- He is charged with highly unstable energy and consequently once a round when he suffers damage he has a 5% chance of being disintegrated by generating a ball of magical energy which inflicts 10D10 points of magical damage to all creatures within 4.5 meters of him (saving throw against spells for ½). 
+- When dying, he is automatically disintegrated and generates the ball of magical energy.~
 
-@199 = ~Esprit de horde (druide)~
-@190 = ~esprit de horde~
-@191 = ~Esprit de horde~
-@192 = ~ESPRIT DE HORDE : Ce druide est tellement obsédé par les minions qu'il en oubli le reste.
+@199 = ~Horde spirit (druid)~
+@190 = ~horde spirit~
+@191 = ~Horde spirit~
+@192 = ~HORDE SPIRIT: This druid is so obsessed with minions that he forgets everything else.
 
-Avantage :
-- Tous ses sorts d'invocation d'animaux et élémentaires (pas archomentaux) ont un effet doublé.
+Advantage:
+- All his animal and elemental summoning spells (not archomental) have a doubled effect.
 
-Inconvénient :
-- Ne connaît aucun sort de soin ou régénération.~
+Disadvantage:
+- Knows no healing or regeneration spells.~
 
-@209 = ~Necrophore (clerc)(animation : peau noire pure)~
-@200 = ~nécrophore~
-@201 = ~Nécrophore~
-@202 = ~NÉCROPHORE : Cet être malfaisant vient d'une autre réalité.
+@209 = ~Necrophorus (cleric)(animation: pure black skin)~
+@200 = ~necrophorus~
+@201 = ~Necrophorus~
+@202 = ~NECROPHORUS: This evil being comes from another reality.
 
-Avantages :
-- Mémorise tous les sorts permettant de tuer instantanément comme des sorts d'un niveau inférieur.
-- Connaît de nouveaux sorts permettant de tuer instantanément.
-- Protection contre la mort et le drain de niveau.
-- Au niveau 5 puis tous les 5 niveaux ensuite peut lancer Mise à mort en temps que capacité spéciale.
-- Gagne 5 points de vie chaque fois qu'il tue une créature.
-- 2% de chances en touchant (en mêlée ou à distance) de tuer la cible. Aucun jet de sauvegarde et résistance à la magie ignorée.
+Advantages:
+- Memorizes all instant-kill spells as lower-level spells.
+- Knows new instant-kill spells.
+- Protection against death and level drain.
+- At level 5 and every 5 levels thereafter, can cast Slay living as a special ability.
+- Gains 5 hit points each time he kills a creature.
+- 2% chance on hit (melee or ranged) to kill target. No saving throw and magic resistance ignored.
 
-Inconvénients :
-- Ne connaît aucun sort de soins, restauration, régénération, guérison, résurrection ou protection contre la mort / le plan négatif.
-- Ne peut pas être ressuscité.
-- Alignement limité à mauvais.~
-@203 = ~gagne 5 points de vie~
+Disadvantages :
+- No healing, restoration, regeneration, resurrection or protection against death/negative plane spells.
+- Cannot be resurrected.
+- Alignment limited to Evil.~
 
-@219 = ~Scion de la Vie (clerc)~
-@2191 = ~Avec animation changee : creature de brume blanche~
-@2192 = ~Sans animation changee (non-rp)~
-@210 = ~scion de la vie~
-@211 = ~Scion de la Vie~
-@212 = ~SCION DE LA VIE : Cet être bienfaisant vient d'une autre réalité.
+@219 = ~Scion of Life (cleric)~
+@2191 = ~With changed animation: creature of white mist~
+@2192 = ~Without changed animation (non-rp)~
+@210 = ~scion of life~
+@211 = ~Scion of Life~
+@212 = ~SCION OF LIFE: This beneficent being comes from another reality.
 
-Avantages :
-- Points de vie doublés.
-- Niveau de renvoi des mort vivant doublé.
-- Mémorise tous les sorts de soin, restauration, régénération, guérison, et résurrection comme des sorts d'un niveau en dessous.
-- Peut utiliser Soins des blessures légères à volonté en tant que capacité spéciale.
+Advantages:
+- Life points doubled.
+- Turn Undead level doubled.
+- Memorizes all healing, restoration, regeneration, cure and resurrection spells as spells one level lower.
+- Can use Cure Light Wounds at will as a special ability.
 
-Inconvénients :
-- Ne connaît pas les sorts qui invoquent des créatures.
-- Ne connaît pas les sorts de blessure / mise à mal, qui empoisonnent ou qui tuent directement.
-- Ne connaît pas les sorts qui invoquent des armes magiques.
-- Alignement limité à bon.~
+Disadvantages:
+- Does not know spells that summon creatures.
+- Does not know spells that cause wounds, poison or instant-kill.
+- Does not know spells that summon magical weapons.
+- Alignment limited to good.~
 
-@229 = ~Ravageur (druide)~
-@220 = ~ravageur~
-@221 = ~Ravageur~
-@222 = ~RAVAGEUR : Ce élémentaliste n'a aucune connexion planaire et n'en a pas besoin.
+@229 = ~Ravager (druid)~
+@220 = ~ravager~
+@221 = ~Ravager~
+@222 = ~RAVAGER: This elementalist has no planar connection and doesn't need one.
 
-Avantages :
-- Connaît la plupart des sorts arcaniques de type élémentaire.
-- Lance certains sorts élémentaires à un niveau inférieur à ce qu'il devrait.
-- Résistance élémentaires doublés.
+Advantages:
+- Knows most elemental arcane spells.
+- Casts some elemental spells at a lower level than he should.
+- Doubled elemental resistance.
 
-Inconvénients :
-- Ne connaît aucun sort d'invocation de créatures.
-- Ne porte aucun intérêt aux métamorphoses.
-- N'est pas immunisé au poison.~
+Disadvantages:
+- Knows no creature summoning spells.
+- Has no interest in metamorphosis.
+- Not immune to poison.~
 
-@239 = ~Polymorphe (druide)~
-@230 = ~polymorphe~
-@231 = ~Polymorphe~
-@232 = ~POLYMORPHE : Cette assemblage de vase protoplasmique peut simuler toutes les formes de vies.
+@239 = ~Polymorph (druid)~
+@230 = ~polymorph~
+@231 = ~Polymorph~
+@232 = ~POLYMORPH: This protoplasmic vase assembly can simulate all forms of life.
 
-Avantages :
-- Résistance aux dégâts contondants : 25%.
-- Peut utiliser à volonté toutes les formes du sort "Métamorphose".
-- Au niveau 7, peut utiliser à volonté toutes les formes druidiques spéciales.
-- Au niveau 15, peut utiliser à volonté toutes les formes du sort "Changement de forme".
-- Dés de vie : D12.
+Advantages:
+- Resistance to crushing damage: 25%.
+- Can use all forms of the "Polymorph" spell at will.
+- At 7th level, can use all special druidic forms at will.
+- At level 15, can use all forms of the "Shapechange" spell at will.
+- Hit Die : D12.
 
-Inconvénients :
-- Ne peut lancer aucun sort
-- N'a accès à aucun hla.~
+Disadvantages:
+- Cannot cast any spells.
+- No access to any hla.~
 
-@249 = ~Soigneur beni (clerc)~
-@240 = ~soigneur béni~
-@241 = ~Soigneur béni~
-@242 = ~SOIGNEUR BÉNI : Ce clerc venu d'une autre réalité suit d'autres règles divines.
+@249 = ~Blessed trainer (cleric)~
+@240 = ~blessed trainer~
+@241 = ~Blessed trainer~
+@242 = ~BLESSED TRAINER: This cleric from another reality follows other divine rules.
 
-Soigneur béni :
-Avantage :
-- Chaque sort de soin qu'il lance est automatiquement relancé sur lui même. 
+Advantages:
+- Every healing spell he casts is automatically re-cast on himself. 
 
-Inconvénients :
-- TAC0 de mage.
-- Alignement limité à bon.~
+Disadvantages:
+- Mage THAC0.
+- Alignment limited to good.~
 
-@259 = ~Chantesorts (barde)~
-@250 = ~chantesorts~
-@251 = ~Chantesorts~
-@252 = ~CHANTESORTS : ce barde devrait se méfier des Magiciens rouges.
+@259 = ~Spellsinger (bard)~
+@250 = ~spellsinger~
+@251 = ~Spellsinger~
+@252 = ~Spellsinger: this bard should be wary of the Red Wizards.
 
-Avantage :
-- Son chant permet à ceux qui l'entendent de se remémorer des sorts de niveau 1 +1 par 4 niveaux du Chantesort (exemple : peut remémorer des sorts de niveau 5 et moins au niveau 16).
+Advantage:
+- His song allows those who hear it to recall spells of level 1 +1 per 4 levels of the Chantesort (example: can recall spells of level 5 and below at level 16).
 
-Inconvénient :
-- Son chant lui coûte des points de vie : 1 point de vie perdu pour remémorer des sorts de niveau 1 à 3, 2 points de vie perdus pour remémorer des sorts de niveau 4 à 6, 3 point de vies perdus pour remémorer des sorts de niveau 7 à 9.~
-@253 = ~Sorts de niveau maximum 3~
-@254 = ~Sorts de niveau maximum 6~
-@255 = ~Sorts de niveau maximum 9~
+Disadvantage:
+- His song costs him hit points: 1 hit point lost for recalling level 1-3 spells, 2 hit points lost for recalling level 4-6 spells, 3 hit points lost for recalling level 7-9 spells.~
+@253 = ~Spells up to level 3~
+@254 = ~Spells up to level 6~
+@255 = ~Spells up to level 9~
 
-@269 = ~Tempus fugium (barde)~
+@269 = ~Tempus fugium (bard)~
 @260 = ~tempus fugium~
 @261 = ~Tempus fugium~
-@262 = ~TEMPUS FUGIUM : ce barde vient d'une autre réalité et interagie bizarrement avec la notre.
+@262 = ~TEMPUS FUGIUM: this bard comes from another reality and interacts strangely with ours
 
-Avantage :
-- Son chant impose lenteur aux ennemis et accorde hâte aux alliés.
+Advantage:
+- His song imposes slowness on enemies and grants haste to allies.
 
-Inconvénient :
-- Son chant l'épuise : +1 en fatigue par round de chant.~
+Disadvantage:
+- His song exhausts him: +1 fatigue per round of singing.~
 
-@279 = ~Singularite legendaire (mage)~
-@270 = ~singularité légendaire~
-@271 = ~Singularité légendaire~
-@272 = ~SINGULARITÉ LÉGENDAIRE : Une exception telle qu'on en voit qu'une fois par millénaire.
+@279 = ~Legendary singularity (bard)~
+@270 = ~legendary singularity~
+@271 = ~Legendary singularity~
+@272 = ~LEGENDARY SINGULARITY: A once-in-a-millennium exception.
 
-Avantages :
-- Dégâts infligés triplés
+Advantage:
+- Damage inflicted tripled.
 
-Inconvénient :
-- Point de vies fixés à 1 points de vie par niveau.
-- Non affecté par les effets qui améliorent le nombre de points de vie maximum.
-- Résistances physiques, élémentaires et à la magie : -50%.
-- Jets de sauvegarde : -4~
+Disadvantage:
+- Life points fixed at 1 per level.
+- Not affected by effects that increase the number of maximum hit points.
+- Physical, elemental and magic resistances: -50%.
+- Saving throws: -4~
 
-@289 = ~Nishruunoam (barde)~
+@289 = ~Nishruunoam (bard)~
 @280 = ~nishruunoam~
 @281 = ~Nishruunoam~
-@282 = ~NISHRUUNOAM : ce barde à vraiment de drôles d'amis imaginaires.
+@282 = ~NISHRUUNOAM: this bard has some really funny imaginary friends.
 
-Avantage :
-- Son chant à 10% de chance d'invoquer un/des nishruu(s).
+Advantage:
+- His song has a 10% chance of invoking nishruu(s).
 
-Inconvénient :
-- 10% de chance chaque fois qu'il lance un sort qu'un nishruu hostile apparaisse.~
+Disadvantage:
+- 10% chance each time he casts a spell that a hostile nishruu appears.~
 
-@299 = ~Disciple de Ratatoskr (barde)~
-@290 = ~disciple de ratatoskr~
-@291 = ~Disciple de Ratatoskr~
-@292 = ~DISCIPLE DE RATATOSKR : ce barde est un élu divin.
+@299 = ~Disciple of Ratatoskr (bard)~
+@290 = ~disciple of Ratatoskr~
+@291 = ~Disciple of Ratatoskr~
+@292 = ~DDISCIPLE OF RATATOSKR: this bard is the chosen of a divinity.
 
-Avantage :
-- Son chant change en écureuil tous les ennemis qui ratent un jet de sauvegarde contre la métamorphose .
+Advantage:
+- His song turns all enemies who fail a saving throw versus metamorphosis into squirrels.
 
-Inconvénient :
-- Son chant le change lui même en écureuil s'il rate un jet de sauvegarde contre la métamorphose à +3.~
+Disadvantage:
+- His song turns him into a squirrel if he fails a saving throw versus metamorphosis at +3.~
 
-@309 = ~Chantre de la non-magie (barde)~
-@300 = ~chantre de la non-magie~
-@301 = ~Chantre de la non-magie~
-@302 = ~CHANTRE DE LA NON-MAGIE : ce chanteur viens d'une réalité ou la magie est honnie.
+@309 = ~No-magic chanter (bard)~
+@300 = ~no-magic chanter~
+@301 = ~No-magic chanter~
+@302 = ~NO-MAGIC CHANTER: this singer comes from a reality where magic is abhorred.
 
-Avantages :
-- Son chant dissipe la magie et impose 15% de chance de rater l'incantation des sorts.
-- 40% de résistance à la magie.
+Advantage:
+- His song dispels magic and imposes a 15% chance of spellcasting failure.
+- 40% resistance to magic.
 
-Inconvénient :
-- Il ne peut lancer aucun sort.~
+Disadvantage:
+- He can't cast any spells.~
 
-@319 = ~Magivore (barde)~
+@319 = ~Magivore (bard)~
 @310 = ~magivore~
 @311 = ~Magivore~
-@312 = ~MAGIVORE : ce barde insolite est une dangereuse bénédiction.
+@312 = ~MAGIVORE: this unusual bard is a dangerous blessing.
 
-Avantages :
-- Son chant lui permet d'absorber la magie résiduelle des sorts environnants : Enchaînement pour tous les alliés qui l'entendent.
-- La magie résiduelle dont il s’entoure le protège : pendant qu'il chante et jusqu'à un tour après la fin de son chant : +15% de résistance à la magie.
+Advantages:
+- His song allows him to absorb residual magic from surrounding spells: All allies who hear him gains Improved Alacrity.
+- The residual magic surrounding him protects him: while singing and up to one turn after the end of his song: +15% resistance to magic.
 
-Inconvénients :
-- La magie résiduelle dont il s’entoure rend ses sorts instables : jusqu'à un tour après la fin de son chant tous les sorts qu'il lance ont 20% de chance de générer une explosion d’énergie magique infligeant 10D10 points de dégâts magiques (jet de sauvegarde contre les sorts pour ½) à lui même et à toutes les créatures autour dans les 4,5 mètres de rayon.~
+Disadvantages:
+- The residual magic surrounding him makes his spells unstable: until one turn after the end of his song, all spells he casts have a 20% chance of generating an explosion of magical energy inflicting 10D10 points of magical damage (saving throw against spells for ½) to himself and all surrounding creatures within a 4.5-meter radius.~
 
-@329 = ~Engeance du chaos (barde)~
-@320 = ~engeance du chaos~
-@321 = ~Engeance du chaos~
-@322 = ~ENGEANCE DU CHAOS : ce barde est l'incarnation du chaos élémentaire.
+@329 = ~Cruw of chaos (bard)~
+@320 = ~cruw of chaos~
+@321 = ~Cruw of chaos~
+@322 = ~CRUW OF CHAOS: this bard is the embodiment of elemental chaos.
 
-Avantages :
-- Son chant applique sur chaque ennemi un des effets du sort Sphère du chaos.
-- Les ennemis l'entourant subissent les effets d'une Sphère du chaos chaque fois qu'il fait un échec critique.
-- Il connaît les 3 sorts normalement réserves aux entropistes.
-- Son niveau compte double pour le jet sur la table des hiatus.
+Advantages:
+- His song applies one of the effects of the Sphere of Chaos spell to each enemy.
+- Enemies surrounding him suffer the effects of a Sphere of Chaos every time he critically fails.
+- He knows the 3 spells normally reserved for entropists.
+- His level counts double for the roll on the Wild Surge table.
 
-Inconvénient :
-- Les sorts qu'il lance créent systématiquement un hiatus entropique.
-- Les alliés l'entourant subissent les effets d'une Sphère du chaos chaque fois qu'il fait un coup critique.
-- Alignement limité à chaotique.~
+Disadvantages:
+- The spells he casts systematically create a Wild Surge.
+- Allies around him suffer the effects of a Sphere of Chaos every time he makes a critical hit.
+- Alignment limited to chaotic.~
 
-@339 = ~Marteleur (mage)~
-@330 = ~marteleur~
-@331 = ~Marteleur~
-@332 = ~MARTELEUR : Ce mage ne connaît qu'un seul sort (il se croit dans un manga).
+@339 = ~Hammerer (mage)~
+@330 = ~hammerer~
+@331 = ~Hammerer~
+@332 = ~HAMMERER: This magician knows only one spell (he thinks he's in a manga).
 
-Avantages :
-- Il ne connaît qu'un seul sort, Projectile magique, qu'il peut lancer à volonté et dont  il est le spécialiste :
- * 1 projectile supplémentaire tous les 3 niveaux jusqu'à 11 projectiles maximum.
- * Dégâts des projectiles 1D4+1, 1D6+2 au niveau 10, 1D8+3 au niveau 20, 1D10+4 au niveau 30, 1D12+5 au niveau 40, 3D4+6 au niveau 50.
- * Chaque projectile à 5% de chance d'infliger des dégâts doublés, 10% au niveau 20, 15% au niveau 40.
- * Les protections contre les sorts considèrent ce sort comme un sort de niveau égal aux nombre de projectiles envoyés (IE : considéré comme un sort de niveau 6 quand il envoi 6 projectiles). À 10 projectiles envoyés plus aucune protection contre les sorts ne peut bloquer ce sort, à part Bouclier et Protection contre l'Évocation.
+Advantages:
+- He knows only one spell, Magic Missile, which he can cast at will and of which he is the specialist:
+ * 1 additional missile every 3 levels, up to a maximum of 11 missiles.
+ * Missile damage 1D4+1, 1D6+2 at level 10, 1D8+3 at level 20, 1D10+4 at level 30, 1D12+5 at level 40, 3D4+6 at level 50.
+ * Each missile has a 5% chance of inflicting double damage, 10% at level 20, 15% at level 40.
+ * Spell protection considers this spell to be of equal level to the number of missiles sent (IE: considered a level 6 spell when 6 missiles are sent). At 10 missiles sent, no spell protection can block this spell, apart from Shield and Protection against Evocation.
 
-Inconvénients :
-- Il ne peut apprendre aucun autre sort.
-- Il n'a accès à aucun hla.~
-@333 = ~Projectile magique (Évocation) 
-Niveau : 1
-Portée : champ de vision
-Durée : instantanée
-Temps d'incantation : 1 
-Zone d'effet : 1 créature
-Jet de sauvegarde : aucun
+Disadvantages :
+- He can't learn any other spells.
+- He has no access to any hla.~
+@333 = ~Magic Missile (Evocation) 
+Level: 1
+Range: field of vision
+Duration: instantaneous
+Casting time: 1 
+Area of effect: 1 creature
+Saving throw: none
 
-Ce sort permet de créer un projectile de pure énergie qui fuse du bout des doigts du magicien et frappe à coup sûr la cible en lui infligeant 1D4+1 points de dégâts magiques.
-Tous les trois niveaux ce sort crée un projectiles supplémentaire, jusqu'au maximum de onze projectiles crées au niveau 33. Tous les projectiles frappent la même cible, il n'est pas possible de les diviser.
-Tous les dix niveaux les dégâts infligés par les projectiles augmentent : 1D6+2 au niveau 10, 1D8+3 au niveau 20, 1D10+4 au niveau 30, 1D12+5 au niveau 40, 3D4+6 au niveau 50.
-Les projectiles ont 5% de chance d'infliger des dégâts doublés. Ce pourcentage passe à 10% au niveau 20 et 15% au niveau 40.
-Les protections contre les sorts considèrent ce sort comme un sort de niveau égal aux nombre de projectiles envoyés (IE : considéré comme un sort de niveau 6 quand il envoi 6 projectiles). À 10 projectiles envoyés plus aucune protection contre les sorts ne peut bloquer ce sort, à part Bouclier et la Protection contre l'Évocation.~
+This spell creates a projectile of pure energy that flies from the magician's fingertips, striking the target with a sure shot and inflicting 1D4+1 points of magical damage.
+Every three levels this spell creates an additional projectile, up to a maximum of eleven projectiles created at level 33. All projectiles strike the same target; it is not possible to divide them.
+Projectile damage increases every ten levels: 1D6+2 at level 10, 1D8+3 at level 20, 1D10+4 at level 30, 1D12+5 at level 40, 3D4+6 at level 50.
+Projectiles have a 5% chance of inflicting double damage. This percentage rises to 10% at level 20 and 15% at level 40.
+Spell protection considers this spell to be of a level equal to the number of projectiles sent (IE: considered a level 6 spell when it sends 6 projectiles). At 10 projectiles sent, no spell protection can block this spell, apart from Shield and Protection against Evocation.~
 
-@349 = ~Elu divin (clerc)~
-@340 = ~elu divin~
-@341 = ~Élu divin~
-@342 = ~ÉLU DIVIN : Ce mortel vénère son dieu d'une autre manière et reçoit un autre type d'aide divine.
+@349 = ~Divine chosen (cleric)~
+@340 = ~divine chosen~
+@341 = ~Divine chosen~
+@342 = ~DIVINE CHOSEN: This mortal worships his god in a different way and receives a different kind of divine help.
 
-Avantage :
-- Aide :  +1 et +1 tous les 6 niveaux.
-- Bénédiction : +1 et +1 tous les 6 niveaux.
-- Puiser dans la puissance divine : +1 et +1 tous les 6 niveaux.
-- Choisit des Hlas de guerrier à la place de ceux de clerc.
+Advantage:
+- Aid: +1 and +1 every 6 levels.
+- Bless: +1 and +1 every 6 levels.
+- Draw Upon Holy Might: +1 and +1 every 6 levels.
+- Chooses warrior Hlas instead of cleric Hlas.
 
-Inconvénients :
-- Ne peut lancer aucun sort~
+Disadvantages:
+- Cannot cast any spells.~
 
-@359 = ~Infuseur (guerrier -> guerrier/mage)~
-@350 = ~infuseur~
-@351 = ~Infuseur~
-@352 = ~INFUSEUR : Cet arcaniste infuse la magie qui ne lui sert pas dans son arme.
+@359 = ~Infuser (warrior -> warrior/mage)~
+@350 = ~infuser~
+@351 = ~Infuser~
+@353 = ~INFUSER: This arcanist infuses the magic he doesn't need into his weapon.
 
-Avantage :
-- Toute arme de mêlée qu'il utilise inflige 1D4 dégâts magiques supplémentaire, +1D4 tous les 5 niveaux.
-- Toute arme de mêlée qu'il utilise est considérée comme magique +1 et accorde +1 au toucher, +1 tous les 5 niveaux.
-- Devient automatiquement guerrier-mage à la création.
-- Peut porter n'importe quelle armure sans que ça l’empêche de lancer des sorts.
-- A plus de points de vie qu'un guerrier-mage standard.
+Advantage:
+- Any melee weapon he uses inflicts 1D4 additional magic damage, +1D4 every 5 levels.
+- Any melee weapon he uses is considered magic +1 and grants +1 to touch, +1 every 5 levels.
+- Automatically becomes a warrior-mage at creation.
+- Can wear any type of armor without being unable to cast spells.
+- Has more hit points than a standard warrior-mage.
 
-Inconvénient :
-- Ne peut lancer que des sorts des écoles Abjuration, Évocation et Illusion.
-- N'utilise aucune arme à distance.
-- Démarre la partie sans aucun sort connu.~
+Disadvantages:
+- Can only cast spells from the Abjuration, Evocation and Illusion schools.
+- Don't use ranged weapons.
+- Starts the game with no known spells.~
