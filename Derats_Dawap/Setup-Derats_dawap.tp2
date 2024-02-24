@@ -354,7 +354,7 @@ ADD_KIT ~pxSORCELIER~
 SAY @120
 SAY @121
 SAY @122
-LAF fl#add_kit_ee	STR_VAR kit_name = pxSORCELIER	hpclass = ~hprog~ clswpbon = ~1 0 2~ END
+LAF fl#add_kit_ee	STR_VAR kit_name = pxSORCELIER	hpclass = ~hprog~ END
 COMPILE	~Derats_Dawap/Sorciers/sorcelier/pxdsorce.baf~
 COPY	~Derats_Dawap/Sorciers/Sorcelier/Spells/pxsarmu.spl~	~override~	SAY NAME1 @1239	SAY UNIDENTIFIED_DESC @123
 COPY	~Derats_Dawap/Sorciers/Sorcelier/Spells/pxsfrap.spl~	~override~	SAY NAME1 @124	SAY UNIDENTIFIED_DESC @125
