@@ -76,3 +76,10 @@ Furie : elle était marquée comme druide lors de l'installation.
 Sorcelier v2 : sa table de hlas ne lui permettait pas de prendre les sorts de mage avant le niveau 32. Merci à TheNamelessOne pour avoir pointé ce bug.
 Faiseur de miracles : il ne perdait pas les sorts de niveau 6 et 7.
 Polymorphe : il n'avait pas les points de vies fixés à D12.
+
+v6.1 :
+Modification :
+Fléau : le rafraîchissement de ses sorts se fait maintenant toutes les 5 secondes à la place de 6. Avant il devait avoir 2 copie mémorisées d'un sort pour pouvoir le lancer chaque round.
+
+Correction :
+Infuseur : il ne pouvait pas porter d'armure.
