@@ -1,6 +1,6 @@
 BACKUP ~Derats_Dawap/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v6~
+VERSION ~v7~
 
 ALWAYS
 	INCLUDE ~Derats_Dawap/fl#add_kit_ee.tpa~
@@ -389,29 +389,6 @@ SAY @112
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDZAP	END
 COMPILE	~Derats_Dawap/Sorciers/zap/pxdzap.baf~
 
-BEGIN @139 GROUP @5
-REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
-COPY	~Derats_Dawap/Sorciers/Vital/Copy~				~override~
-ADD_KIT ~pxDVITAL~
-~pxDVITAL            0           0           1           0           0           0           0           0~
-~pxDVITAL            0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-~pxDVITAL            0       0       0       9       0       0~
-~pxDVITAL            0       0       0       0       0       0~
-~pxDVITAL            0       0       0       0       0       0~
-~pxDVITAL            0       0       0       0       0       0~
-~pxDVITAL            1       1       1       1       1       1       1       1       1~
-~pxDVITAL            0       0       0       0       0       0~
-~Derats_Dawap/Sorciers/Vital/pxdvita.2da~
-~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
-~0x00000000    19~
-~So0~
-~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
-SAY @130
-SAY @131
-SAY @132
-LAF fl#add_kit_ee	STR_VAR kit_name = pxDVITAl	hpclass = ~hprog~ END
-COMPILE	~Derats_Dawap/Sorciers/vital/pxdvita.baf~
-
 BEGIN @149 GROUP @6
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
 COPY	~Derats_Dawap/Clercs/Dweom/pxddweob.spl~		~override~
@@ -433,6 +410,8 @@ SAY @140
 SAY @141
 SAY @142
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDDWEOM	END
+COPY_EXISTING	~spwi420.spl~				~override/PXDDWEO1.spl~	WRITE_BYTE 0x1c 2
+COPY_EXISTING	~spwi617.spl~				~override/PXDDWEO2.spl~	WRITE_BYTE 0x1c 2
 
 BEGIN @159 GROUP @6
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
@@ -1203,7 +1182,7 @@ ADD_KIT ~AP_PXLAMEAR~
 ~AP_PXLAMEAR          0       0       0       0       0       0~
 ~Derats_Dawap/Multi/Lame/pxlamear.2da~
 ~K_F_H	K_F_D	K_F_G	K_F_E	K_F_HE	K_F_HL	K_F_HO~
-~0x00000DC8    2~
+~0x00000F88    2~
 ~~
 ~* * HELM19 BAG22 RING06 RING29 CLCK02 BOOT01 AMUL19 BRAC14 BELT106 * * * POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
 SAY @350
