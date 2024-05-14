@@ -83,3 +83,17 @@ Fléau : le rafraîchissement de ses sorts se fait maintenant toutes les 5 seconde
 
 Correction :
 Infuseur : il ne pouvait pas porter d'armure.
+
+V6.2 :
+Suppression de kit :
+Vitalomage : l'utilisation du super script de combat automatique inclut dans les éditions EE (avec des options à cocher/décocher) squatte l'IA et zappe complètement son inconvénient. Je n'ai rien trouvé pour contrer ça.
+
+Modification :
+Infuseur : il perd l'Evocation et gagne l’Altération à la place (peau de pierre, hâte)
+Enragé : Sa rage de berserk passe à une durée de 3 round.
+Sorcelier : Il ne peut plus être affecté par les effets qui changent l'xp. Il gagne le sort de niveau 3 "amélioré" qui lui manquait.
+
+Corrections :
+Corrections mineures dans la traduction anglaise et le readme.
+Eoration : il pouvait lancer 1 sort de plus par niveau.
+Sorcelier : il pouvait lancer 1 sort de plus par niveau.
