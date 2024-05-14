@@ -134,13 +134,13 @@ Disadvantage:
 @82 = ~Spirit of the mirror : This arcanist comes from another reality and interacts strangely with the known reality.
 
 Advantage:
-- Unlimited Spell Deflection.
+- Unlimited Spell Turning.
 - Light Reflection: +3 to AC.
 - Can use the special ability "Reflected Image" at will.
 - Automatically learns all "image" spells as spells one level lower when he reaches the required level.
 
 Disadvantage:
-- Very fragile: -1 hit point per level and -100% crushing damage resistance.~
+- Very fragile: -50% fewer hit points and -100% crushing damage resistance.~
 @83 = ~Major Reflected Image~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
 @84 = ~Major Reflected Image (Illusion) 
 Level : 4
@@ -155,7 +155,7 @@ Upon casting this spell, the wizard creates 1 image of <PRO_HIMHER>self that wil
 @86 = ~Imaged Ally (Illusion)
 Level: 7
 Range: Visual range
-Casting time: 7
+Casting time: 6
 Area of effect: one character in the group
 Saving throw: none
 
@@ -192,7 +192,7 @@ Disadvantage:
 - Spells and effects like "x when y" (Fire Shield: damage inflicted WHEN hit) have no effect on him.
 
 Spell Berserk:
-For 5 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gain Improved Alacrity and -2 to casting time but has a 10% chance of missing incantations.~
+For 3 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gain Improved Alacrity and -2 to casting time but has a 10% chance of missing incantations.~
 @103 = ~Enrage~
 @104 = ~Spell Berserk~
 
@@ -231,11 +231,13 @@ Advantages:
 Disadvantages:
 - Ability to cast spell reduced of two spells per spell level.
 - Development slowed by the non-exclusive practice of magic: -15% of xp.
+- Immune to effects that change the xp received.
 
 IMPROVED SPELLS: the Sorceler spontaneously knows a few combat spells, which he enhances by casting them:
   * Called Shot: extended duration: 1 round/3 levels
-  * Armor: reduced casting time, reduced AC: -1 AC/3 levels
+  * Armor: reduced casting time and reduced AC: -1 AC/3 levels
   * Strength: improved strength when casting upon himself: set at 19
+  * Tenser's Deadly Strikes: always maximum duration and +5% critical strike chance.
   * Fire Shield (Red/Blue): affected weapon: +1D8 damage~
  
 @1239 = ~Armor (improved)~
@@ -304,19 +306,16 @@ Saving Throw: No
 This blue fire shield protects the caster against cold by surrounding him by flames. Not only this shield gives him 50% Cold resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1d8 + 2 points of cold damage.
 The mage can also expand the shield covering up his weapon, which adds 1D8 points of cold damage to each of his strikes.~
 
-@139 = ~Vitalomage (sorcerer)~
-@130 = ~vitalomage~
-@131 = ~Vitalomage~
-@132 = ~VITALOMAGE: this arcanist comes from another reality where the source of magic is the vital energy of the caster himself.
+@1211 = ~Tenser's Deadly Strikes~
+@1212 = ~Tenser's Deadly Strikes (Alteration) 
+Level : 3
+Range: 0
+Duration: 1 turn
+Casting time: 3
+Area of effect: the caster
+Saving throw: none
 
-Advantages :
-- Improved Alacrity.
-- +2 spells per spell level.
-- Maximum spell casting time set at 5.
-- Hit Die: D8.
-
-Disadvantages:
- - Loses one hit point each time he casts a spell.~
+This spell improves the caster's martial abilities: for the duration of the spell, all his attacks inflict maximum damage and he gains +5% critical strike chance.~
  
 @149 = ~Dweomerist (Cleric)~
 @140 = ~dweomerist~
@@ -651,6 +650,6 @@ Advantage:
 - Has more hit points than a standard warrior-mage.
 
 Disadvantages:
-- Can only cast spells from the Abjuration, Evocation and Illusion schools.
+- Can only cast spells from the Alteration, Abjuration and Illusion schools.
 - Don't use ranged weapons.
 - Starts the game with no known spells.~
