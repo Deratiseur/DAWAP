@@ -12,7 +12,7 @@
 ## Description:
 ------------
 
-35 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
+34 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -43,8 +43,6 @@ Ensorceleurs :
 - Zap
 
 - Sorcelier v2
-  
-- Vitalomage
 
 Clercs :
 
@@ -100,7 +98,7 @@ Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-35 Spellcasters kits that will make you revise the way you play.
+34 Spellcasters kits that will make you revise the way you play.
 
 Wizards:
 
@@ -131,8 +129,6 @@ Sorcerers:
 - Zap
 
 - Sorcelerer
-
-- Vitalomage
 
 Clerics:
 
