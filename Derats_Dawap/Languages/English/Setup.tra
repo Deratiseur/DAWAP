@@ -240,7 +240,7 @@ IMPROVED SPELLS: the Sorceler spontaneously knows a few combat spells, which he 
   * Tenser's Deadly Strikes: always maximum duration and +5% critical strike chance.
   * Fire Shield (Red/Blue): affected weapon: +1D8 damage~
  
-@1239 = ~Armor (improved)~
+@1239 = ~Armor (Improved)~
 @123 = ~Armor
 Level: 1
 School: Conjuration
@@ -252,7 +252,7 @@ Saving Throw: none
 
 By means of this spell, the wizard creates a magical field of force that sets his base armor class at 6. This effect is improved by 1 point to AC every three levels of the caster, up to an armor class of 0 at level 19. The armor spell does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.~
 
-@124 = ~True Strike (improved)~
+@124 = ~True Strike (Improved)~
 @125 = ~True Strike (Divination)
 Level: 1
 Range: spellcaster
@@ -263,7 +263,7 @@ Saving Throw: none
 
 By means of this spell, the wizard can temporarily see the near future. All his attacks made during the duration of the spell gets a perception bonus of +10.~
 
-@1269 = ~Strength (improved)~
+@1269 = ~Strength (Improved)~
 @126 = ~Strength (Alteration)
 Level: 2
 Range: Touch
@@ -282,8 +282,8 @@ Starting strength: Received Strength
 
 If the mage uses this spell on himself, the conferred strength is automatically 19.~
 
-@127 = ~Fire Shield (Red (improved)~
-@128 = ~Fire Shield (red) (Evocation, Alteration)
+@127 = ~Fire Shield (Red) (Improved)~
+@128 = ~Fire Shield (Red) (Evocation, Alteration)
 Level: 4
 Range: 0
 Duration: 3 rounds + 1 round per level
@@ -294,7 +294,7 @@ Saving Throw: No
 This red fire shield protects the caster against fire by surrounding him by flames. Not only this shield gives him 50% Fire resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1D8 + 2 points of fire damage.
 The mage can also expand the shield covering up his weapon, which adds 1D8 points of fire damage to each of his strikes.~
 
-@129 = ~Fire Shield (Blue)(improved)~
+@129 = ~Fire Shield (Blue) (Improved)~
 @1210 = ~Fire Shield (Blue) (Evocation, Alteration)
 Level: 4
 Range: 0
@@ -306,7 +306,7 @@ Saving Throw: No
 This blue fire shield protects the caster against cold by surrounding him by flames. Not only this shield gives him 50% Cold resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1d8 + 2 points of cold damage.
 The mage can also expand the shield covering up his weapon, which adds 1D8 points of cold damage to each of his strikes.~
 
-@1211 = ~Tenser's Deadly Strikes~
+@1211 = ~Tenser's Deadly Strikes (Improved)~
 @1212 = ~Tenser's Deadly Strikes (Alteration) 
 Level : 3
 Range: 0
@@ -316,6 +316,20 @@ Area of effect: the caster
 Saving throw: none
 
 This spell improves the caster's martial abilities: for the duration of the spell, all his attacks inflict maximum damage and he gains +5% critical strike chance.~
+
+@139 = ~Lifesinger (bard)~
+@130 = ~Lifesinger~
+@131 = ~Lifesinger~
+@132 = ~Lifesinger: This bard reveres life and all its creations.
+
+Advantages:
+- His song regenerates her allies' hit points: 1 hp per round at level 1, 2 hp per round at level 15, 3 hp per round at level 30.
+- His song has a 1% chance per Lifesinger level (maximum 30%) of curing poisons and diseases.
+
+Disadvantage:
+- He cannot learn spells from the necromancy, evocation or summoning schools.
+- He is not affected by his own singing.
+- Alignment limited to good.~
  
 @149 = ~Dweomerist (Cleric)~
 @140 = ~dweomerist~
@@ -430,6 +444,7 @@ Disadvantages :
 - No healing, restoration, regeneration, resurrection or protection against death/negative plane spells.
 - Cannot be resurrected.
 - Alignment limited to Evil.~
+@203 = ~gains 5 life points~
 
 @219 = ~Scion of Life (cleric)~
 @2191 = ~With changed animation: creature of white mist~
@@ -507,10 +522,10 @@ Disadvantage:
 @254 = ~Spells up to level 6~
 @255 = ~Spells up to level 9~
 
-@269 = ~Tempus fugium (bard)~
-@260 = ~tempus fugium~
-@261 = ~Tempus fugium~
-@262 = ~TEMPUS FUGIUM: this bard comes from another reality and interacts strangely with ours
+@269 = ~Tempus fugiom (bard)~
+@260 = ~tempus fugïom~
+@261 = ~Tempus fugïom~
+@262 = ~TEMPUS FUGÏOM: this bard comes from another reality and interacts strangely with ours
 
 Advantage:
 - His song imposes slowness on enemies and grants haste to allies.
@@ -640,7 +655,7 @@ Disadvantages:
 @359 = ~Infuser (warrior -> warrior/mage)~
 @350 = ~infuser~
 @351 = ~Infuser~
-@353 = ~INFUSER: This arcanist infuses the magic he doesn't need into his weapon.
+@352 = ~INFUSER: This arcanist infuses the magic he doesn't need into his weapon.
 
 Advantage:
 - Any melee weapon he uses inflicts 1D4 additional magic damage, +1D4 every 5 levels.
@@ -653,3 +668,15 @@ Disadvantages:
 - Can only cast spells from the Alteration, Abjuration and Illusion schools.
 - Don't use ranged weapons.
 - Starts the game with no known spells.~
+
+@369 = ~Malomage (bard)~
+@360 = ~malomage~
+@361 = ~Malomage~
+@362 = ~Malomage: this bard clumsily tries to imitate the No-magic Chanter.
+
+Advantages:
+- His song dispels magic from enemies with a +4 bonus to level and has a 5% chance of dispelling magic from allies (no bonus).
+- +3 to saving throw against spells.
+
+Disadvantage:
+- 15% chance of spell casting failure.~

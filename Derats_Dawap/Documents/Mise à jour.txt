@@ -97,3 +97,10 @@ Corrections :
 Corrections mineures dans la traduction anglaise et le readme.
 Eoration : il pouvait lancer 1 sort de plus par niveau.
 Sorcelier : il pouvait lancer 1 sort de plus par niveau.
+
+v6.3 :
+Nouveaux kits :
+Chantevie, Malomage.
+
+Corrections :
+Encore des corrections dans la version anglaise.

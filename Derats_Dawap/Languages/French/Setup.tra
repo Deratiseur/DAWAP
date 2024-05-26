@@ -308,7 +308,7 @@ Jet de Sauvegarde : Non
 Ce bouclier de feu bleu protège le lanceur du froid en l'entourant de flammes. Non seulement ce bouclier lui octroie 50 % de Résistance au froid, mais il le protège aussi contre toute attaque lancée dans un rayon de 1,5 m. Tout adversaire attaquant le lanceur avec un arme ou un sort subit 1d8 +2 points de dégâts de froid.
 Le magicien peut aussi élargir le bouclier jusqu'à recouvrir son arme, ce qui rajoute 1D8 points de dégâts de froid à chacune de ses frappes.~
 
-@1211 = ~Coups mortels de Tenser~
+@1211 = ~Coups mortels de Tenser (Amélioré)~
 @1212 = ~Coups mortels de Tenser (Altération) 
 Niveau : 3
 Portée : 0
@@ -318,6 +318,20 @@ Zone d'effet : le lanceur de sorts
 Jet de sauvegarde : aucun
 
 Ce sort améliore les capacités martiales du lanceur du sort : pendant toutes la durée du sort toutes ses attaques infligent le maximum de dégâts et il gagne +5% aux chances de coup critique.~
+
+@139 = ~Chantevie (barde)~
+@130 = ~chantevie~
+@131 = ~Chantevie~
+@132 = ~Chantevie : Ce barde vénère la vie et toutes ses créations.
+
+Avantages :
+- Son chant régénère les points de vie de ses alliés : 1 point de vie par round au niveau 1,  2 points de vie par round au niveau 15,  3 point de vie par round au niveau 30.
+- Son chant à 1% de chance par niveau du Chantevie (maximum 30%) de guérir poisons et maladies.
+
+Inconvénient :
+- Il ne peut pas apprendre les sorts des écoles nécromancie, évocation et invocation.
+- Il n'est pas affecté par son propre chant.
+- Alignement limité à bon.~
 
 @149 = ~Dweomeriste (clerc)~
 @140 = ~dweomeriste~
@@ -511,10 +525,10 @@ Inconvénient :
 @254 = ~Sorts de niveau maximum 6~
 @255 = ~Sorts de niveau maximum 9~
 
-@269 = ~Tempus fugium (barde)~
-@260 = ~tempus fugium~
-@261 = ~Tempus fugium~
-@262 = ~TEMPUS FUGIUM : ce barde vient d'une autre réalité et interagie bizarrement avec la notre.
+@269 = ~Tempus fugiom (barde)~
+@260 = ~tempus fugïom~
+@261 = ~Tempus fugïom~
+@262 = ~TEMPUS FUGÏOM : ce barde vient d'une autre réalité et interagie bizarrement avec la notre.
 
 Avantage :
 - Son chant impose lenteur aux ennemis et accorde hâte aux alliés.
@@ -657,3 +671,15 @@ Inconvénient :
 - Ne peut lancer que des sorts des écoles Altération, Abjuration et Illusion.
 - N'utilise aucune arme à distance.
 - Démarre la partie sans aucun sort connu.~
+
+@369 = ~Malomage (barde)~
+@360 = ~malomage~
+@361 = ~Malomage~
+@362 = ~Malomage : ce barde tente maladroitement d'imiter le Chantre de la non-magie.
+
+Avantages :
+- Son chant dissipe la magie des ennemis avec un bonus de +4 au niveau et à 5% de chance de dissiper la magie des alliés. 
+- +3 au jet de sauvegarde contre les sorts.
+
+Inconvénient :
+- 15% de chance de rater l'incantation des sorts.~

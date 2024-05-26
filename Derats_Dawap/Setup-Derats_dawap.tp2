@@ -1,6 +1,6 @@
 BACKUP ~Derats_Dawap/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v7~
+VERSION ~v6.3~
 
 ALWAYS
 	INCLUDE ~Derats_Dawap/fl#add_kit_ee.tpa~
@@ -194,7 +194,7 @@ COMPILE	~Derats_Dawap/Sorciers/eorat/pxdeorat.baf~
 
 BEGIN @591 SUBCOMPONENT @59	GROUP @5
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
-INCLUDE ~Derats_Dawap/Sorciers/Anoma/Anoma.tph~
+INCLUDE ~Derats_Dawap/Sorciers/Anoma/pxdanoma.tph~
 ADD_KIT ~pxANOMAL~
 ~pxANOMAL           0           0           1           0           0           0           0           0~
 ~pxANOMAL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
@@ -1076,7 +1076,7 @@ COPY_EXISTING	~nishrusu.cre~				~override/pxnishru.cre~	WRITE_BYTE 0x275 4
 
 BEGIN @299 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
-COPY	~Derats_Dawap/Bardes/Ratatosk/pxratat1.spl~		~override~
+COPY	~Derats_Dawap/Bardes/Ratatosk/Copy/pxratat1.spl~		~override~
 ADD_KIT ~pxRATATO~
 ~pxRATATO            1           1           1           1           1           1           0           0~
 ~pxRATATO            0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 2 0 1 0 0 0 0 1 1 0 1 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
@@ -1169,9 +1169,53 @@ LAF fl#add_kit_ee	STR_VAR kit_name = pxANGEANCE	END
 ADD_PROJECTILE	~Derats_Dawap/Bardes/Engeance/pxengean.pro~			~Px Chaosphere~
 COPY_EXISTING	~spwi711.spl~			~override/pxengeax.spl~		WRITE_SHORT 0x98 ~%pxengean%~
 
+BEGIN @139 GROUP @8
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE EET~ @3
+COPY	~Derats_Dawap/Bardes/Vie/Copy~					~override~
+ADD_KIT ~pxCHVIE~
+~pxCHVIE               1           1           1           1           1           1           0           0~
+~pxCHVIE               0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 2 0 1 0 0 0 0 1 1 0 1 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxCHVIE               0       12      0       13      0       15~
+~pxCHVIE               0       0       0       0       0       0~
+~pxCHVIE               0       0       0       0       0       0~
+~pxCHVIE               0       0       0       0       0       0~
+~pxCHVIE               1       0       0       1       0       0       1       0       0~
+~pxCHVIE               0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Vie/pxcvie.2da~
+~K_B_H   K_C_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x80000700    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @130
+SAY @131
+SAY @132
+LAF fl#add_kit_ee	STR_VAR kit_name = pxCHVIE	END
+
+BEGIN @369 GROUP @8
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
+COPY	~Derats_Dawap/Bardes/malom/Copy~				~override~
+ADD_KIT ~pxMALOM~
+~pxMALOM               1           1           1           1           1           1           0           0~
+~pxMALOM               0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 2 0 1 0 0 0 0 1 1 0 1 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxMALOM               0       12      0       13      0       15~
+~pxMALOM               0       0       0       0       0       0~
+~pxMALOM               0       0       0       0       0       0~
+~pxMALOM               0       0       0       0       0       0~
+~pxMALOM               1       1       1       1       1       1       1       1       1~
+~pxMALOM               0       0       0       0       0       0~
+~Derats_Dawap/Bardes/malom/pxmalom.2da~
+~K_B_H   K_C_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x80000000    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @360
+SAY @361
+SAY @362
+LAF fl#add_kit_ee	STR_VAR kit_name = pxMALOM	END
+
 BEGIN @359 GROUP @9
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE EET~ @3
-COPY	~Derats_Dawap/Multi/Lame/Copy~				~override~
+COPY	~Derats_Dawap/Multi/Lame/Copy~					~override~
 ADD_KIT ~AP_PXLAMEAR~
 ~AP_PXLAMEAR          1           1           1           0           0           1           1           1~
 ~AP_PXLAMEAR          5 5 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
