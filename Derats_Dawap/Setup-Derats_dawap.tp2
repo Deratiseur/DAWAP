@@ -721,6 +721,7 @@ COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp8.spl~
 COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp9.spl~
 				~pxeluda1.spl~				~override/pxeluda9.spl~
 				~pxeludb1.spl~				~override/pxeludb9.spl~	WRITE_BYTE 0xce 9
+
 				
 BEGIN @1791 SUBCOMPONENT @179	GROUP @7
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
@@ -994,6 +995,171 @@ SAY @230
 SAY @231
 SAY @232
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDPOLY hpclass = ~hpbarb~	END
+				
+	ACTION_IF GAME_IS ~bgee~ BEGIN
+
+COPY	~Derats_Dawap/Druides/Poly/CopyBGEE~	~override~
+
+COPY_EXISTING ~pxdbear1.spl~	~override/pxdbear1.spl~ // PLYBEAR1.itm
+SAY NAME1 #19792
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYBE1~
+		END
+		
+COPY_EXISTING ~pxdbear2.spl~	~override/pxdbear2.spl~  // PLYBEAR2.itm 
+SAY NAME1 #19794
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYBE2~
+		END
+		
+COPY_EXISTING ~pxdflyn.spl~		~override/pxdflyn.spl~   // PLYFLIND.ITM 
+SAY NAME1 #23480
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYFLI~
+		END
+		
+COPY_EXISTING ~pxdjell.spl~		~override/pxdjell.spl~   // PLYJELLY.ITM 
+SAY NAME1 #23471
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYJEL~
+		END
+		
+COPY_EXISTING ~pxdogre.spl~		~override/pxdogre.spl~   // PLYMSTAR.ITM 
+SAY NAME1 #23475
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYSTA~
+		END
+		
+COPY_EXISTING ~pxdsala.spl~		~override/pxdsala.spl~   // PLYSALA.ITM
+SAY NAME1 @368
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYSAL~
+		END
+		
+COPY_EXISTING ~pxdspid.spl~		~override/pxdspid.spl~   // PLYSPID.ITM
+SAY NAME1 #25845 
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYSP1~
+		END
+		
+COPY_EXISTING ~pxdspid2.spl~	~override/pxdspid2.spl~  // plyspid2.ITM
+SAY NAME1 #23472
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYSP2~
+		END
+		
+COPY_EXISTING ~pxdwyve.spl~		~override/pxdwyve.spl~   // PLYWYVRN.ITM 
+SAY NAME1 #25846
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYWYR~
+		END
+		
+COPY_EXISTING ~pxdxefeu.spl~	~override/pxdxefeu.spl~  // FIRERN.ITM 
+SAY NAME1 @367
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXFIRERN~
+		END
+		
+COPY_EXISTING ~pxdxeter.spl~	~override/pxdxeter.spl~  // EARTHRN.ITM
+SAY NAME1 @366
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXEARTHR~
+		END
+		
+COPY_EXISTING ~pxdxgole.spl~	~override/pxdxgole.spl~  // cdgoliro.ITM (doesn't exist in BGEE)
+SAY NAME1 @365
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXcdgoli~
+		END
+		
+COPY_EXISTING ~pxdxmind.spl~	~override/pxdxmind.spl~  // cdmindfl.ITM (doesn't exist in BGEE)
+SAY NAME1 @364
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXcdmind~
+		END
+		
+COPY_EXISTING ~pxdxmulo.spl~	~override/pxdxmulo.spl~  // WOLFGR.ITM
+SAY NAME1 @363
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXWOLFGR~
+		END
+		
+COPY_EXISTING ~pxdxtrol.spl~	~override/pxdxtrol.spl~  // TROLLALL.ITM
+SAY NAME1 #25913
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXTROLLA~
+		END
+		
+COPY_EXISTING ~pxfdwolf.spl~	~override/pxfdwolf.spl~  // PLYWOLF1.ITM
+SAY NAME1 #19793
+	LPF ALTER_SPELL_EFFECT
+		INT_VAR
+			check_headers = 1			
+			match_opcode = 111
+		STR_VAR
+			resource  =  ~PXPLYWOL~
+		END
+	END
 
 BEGIN @259 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
