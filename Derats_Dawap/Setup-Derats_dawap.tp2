@@ -1242,7 +1242,7 @@ COPY_EXISTING	~nishrusu.cre~				~override/pxnishru.cre~	WRITE_BYTE 0x275 4
 
 BEGIN @299 GROUP @8
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
-COPY	~Derats_Dawap/Bardes/Ratatosk/Copy/pxratat1.spl~		~override~
+COPY	~Derats_Dawap/Bardes/Ratatosk/pxratat1.spl~		~override~
 ADD_KIT ~pxRATATO~
 ~pxRATATO            1           1           1           1           1           1           0           0~
 ~pxRATATO            0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 2 0 1 0 0 0 0 1 1 0 1 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
