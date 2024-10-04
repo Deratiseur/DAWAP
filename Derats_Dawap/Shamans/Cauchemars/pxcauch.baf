@@ -1,0 +1,6 @@
+IF
+	PartyRested()
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxcauchy",Myself)
+END

@@ -1,0 +1,13 @@
+IF
+	SpellCastPriest(Myself,0)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdmagix",Myself)
+END
+
+IF
+	SpellCast(Myself,0)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdmagix",Myself)
+END

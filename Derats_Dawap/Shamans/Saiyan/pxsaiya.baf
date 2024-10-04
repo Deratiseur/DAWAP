@@ -1,0 +1,71 @@
+IF
+	Global("pxsaiyan","LOCALS",1)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy1",0,0,0)
+		XEquipItem("pxsaiy1",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",2)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",5)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy2",0,0,0)
+		XEquipItem("pxsaiy2",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",4)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",10)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy3",0,0,0)
+		XEquipItem("pxsaiy3",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",6)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",15)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy4",0,0,0)
+		XEquipItem("pxsaiy4",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",8)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",20)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy5",0,0,0)
+		XEquipItem("pxsaiy5",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",10)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",25)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy6",0,0,0)
+		XEquipItem("pxsaiy6",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",12)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",30)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy7",0,0,0)
+		XEquipItem("pxsaiy7",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",14)
+END
+
+IF
+	Global("pxsaiyan","LOCALS",35)
+THEN
+	RESPONSE #100
+		CreateItem("pxsaiy8",0,0,0)
+		XEquipItem("pxsaiy8",Myself,SLOT_WEAPON0,EQUIP)
+		SetGlobal("pxsaiyan","LOCALS",14)
+END

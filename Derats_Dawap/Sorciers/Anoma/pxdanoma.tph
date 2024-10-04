@@ -1,0 +1,15 @@
+COPY	~Derats_Dawap/Sorciers/anoma/Copy~				~override~
+COMPILE	~Derats_Dawap/Sorciers/anoma/Scripts~
+COPY	~Derats_Dawap/Sorciers/anoma/pxdano1.itm~		~override~	SAY NAME1 @53 SAY DESC @531
+COPY_EXISTING	~pxdano1.itm~				~override/pxdano2.itm~	SAY DESC @532	WRITE_BYTE 0x60 2	WRITE_BYTE 0xae 2
+COPY_EXISTING	~pxdano1.itm~				~override/pxdano3.itm~	SAY DESC @533	WRITE_BYTE 0x60 3	WRITE_BYTE 0xae 3
+COPY_EXISTING	~pxdano1.itm~				~override/pxdano4.itm~	SAY DESC @534	WRITE_BYTE 0x60 4	WRITE_BYTE 0xae 4
+COPY_EXISTING	~pxdano1.itm~				~override/pxdano5.itm~	SAY DESC @535	WRITE_BYTE 0x60 5	WRITE_BYTE 0xae 5
+COPY_EXISTING	~pxdano1.itm~				~override/pxdano6.itm~	SAY DESC @536	WRITE_BYTE 0x60 6	WRITE_BYTE 0xae 6
+COPY_EXISTING	~pxdano1.itm~				~override/pxdano7.itm~	SAY DESC @537	WRITE_BYTE 0x60 7	WRITE_BYTE 0xae 7
+COPY_EXISTING	~pxdanom1.spl~				~override/pxdanom2.spl~	WRITE_BYTE 0x9e 3
+COPY_EXISTING	~pxdanom1.spl~				~override/pxdanom3.spl~	WRITE_BYTE 0x9e 5
+COPY_EXISTING	~pxdanom1.spl~				~override/pxdanom4.spl~	WRITE_BYTE 0x9e 7
+COPY_EXISTING	~pxdanom1.spl~				~override/pxdanom5.spl~	WRITE_BYTE 0x9e 9
+COPY_EXISTING	~pxdanom1.spl~				~override/pxdanom6.spl~	WRITE_BYTE 0x9e 11
+COPY_EXISTING	~pxdanom1.spl~				~override/pxdanom7.spl~	WRITE_BYTE 0x9e 13
