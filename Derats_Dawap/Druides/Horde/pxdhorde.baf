@@ -1,0 +1,68 @@
+IF
+	SpellCastPriest(Myself,CLERIC_ANIMAL_SUMMONING_1)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor01",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_ANIMAL_SUMMONING_2)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor02",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_ANIMAL_SUMMONING_3)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor03",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_CALL_WOODLAND_BEINGS)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor04",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_CONJURE_ANIMALS)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor05",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_CONJURE_FIRE_ELEMENTAL)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor06",Myself)
+END
+IF
+	SpellCastPriest(Myself,CLERIC_CONJURE_EARTH_ELEMENTAL)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor07",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_ELEMENTAL_SWARM)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor08",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_GIANT_INSECT)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor09",Myself)
+END
+
+IF
+	SpellCastPriest(Myself,CLERIC_STALKER)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("pxdhor10",Myself)
+END
