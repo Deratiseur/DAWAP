@@ -1,8 +1,0 @@
-IF
-	Global("pxagglu","LOCALS",1)
-	SpellCast(Myself,0)
-	RandomNum(5,1)
-THEN
-	RESPONSE #100
-		ReallyForceSpellRES("pxagglux",Myself)
-END

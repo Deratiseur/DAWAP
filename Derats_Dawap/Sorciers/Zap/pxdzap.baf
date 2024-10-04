@@ -1,7 +1,0 @@
-IF
-ActionListEmpty()
-THEN
-	RESPONSE #100
-		Wait(2)
-		ReallyForceSpellRES("pxdzap1",Myself)
-END
