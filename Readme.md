@@ -12,7 +12,7 @@
 ## Description:
 ------------
 
-34 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
+46 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -24,9 +24,15 @@ Magiciens :
 
 - Voleur de sorts
 
-- Marteleur
+- Mangacien
 
 - Singularité légendaire
+
+- Maître combineur 
+
+- Sphèromaniaque
+
+- Artilleur
 
 Ensorceleurs :
 
@@ -90,15 +96,37 @@ Bardes :
 
 - Engeance du chaos
 
+- Malomage
+
+Shamans :
+
+- Champion du clan
+
+- Conteur de cauchemars
+
+- Guérisseur Saïyen
+
+Paladins :
+
+- Paramendeur
+
+- Athran
+
+Moine :
+
+- Initié de la Flamme Blanche
+
 Multi-classes :
 
 - Infuseur (Guerrier/mage)
+
+- Magistèrium (Clerc/mage)
 
 Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-34 Spellcasters kits that will make you revise the way you play.
+46 Spellcasters kits that will make you revise the way you play.
 
 Wizards:
 
@@ -112,7 +140,13 @@ Wizards:
 
 - Legendary singularity
 
-- Hammerer
+- Mangacian
+
+- Master combiner
+
+- Spheromaniac
+
+- Artillerist
 
 Sorcerers:
 
@@ -176,6 +210,28 @@ Bards:
 
 - Cruw of Chaos
 
+- Malomage
+
+Shamans:
+
+- Clan champion
+
+- Nightmare Storyteller
+
+- Saïyan Healer
+
+Paladins:
+
+- Paramander
+
+- Athran
+
+Monk :
+
+- Initiate of the White Flame
+
 Multiclasses :
 
 - Infuser (Fighter/mage)
+
+- Magisterium (Cleric/mage)
