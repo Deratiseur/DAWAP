@@ -1,0 +1,13 @@
+IF
+    SpellCast(Myself,WIZARD_MELF_METEOR)
+THEN
+    RESPONSE #100
+        ReallyForceSpellRES("pxdarti3",Myself)
+END
+
+IF
+    SpellCast(Myself,WIZARD_ENERGY_BLADES)
+THEN
+    RESPONSE #100
+        ReallyForceSpellRES("pxdarti9",Myself)
+END
