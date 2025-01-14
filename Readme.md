@@ -13,15 +13,13 @@
 ## Description:
 ------------
 
-46 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
+47 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
 - Fléau
 
 - Enragé
-
-- Psychotope
 
 - Voleur de sorts
 
@@ -34,6 +32,8 @@ Magiciens :
 - Sphèromaniaque
 
 - Artilleur
+
+- Modeleur de sorts
 
 Ensorceleurs :
 
@@ -49,7 +49,9 @@ Ensorceleurs :
 
 - Zap
 
-- Sorcelier v2
+- Sorcelier
+
+- Psycho Absorbeur
 
 Clercs :
 
@@ -91,13 +93,13 @@ Bardes :
 
 - Disciple de Ratatoskr
 
-- Chantre de la non-magie
+- Antimaginum
 
 - Magivore
 
 - Engeance du chaos
 
-- Malomage
+- Impériosa
 
 Shamans :
 
@@ -127,15 +129,13 @@ Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-46 Spellcasters kits that will make you revise the way you play.
+47 Spellcasters kits that will make you revise the way you play.
 
 Wizards:
 
 - Scourge
 
 - Enraged
-
-- Psychotope
 
 - Spell stealer
 
@@ -148,6 +148,8 @@ Wizards:
 - Spheromaniac
 
 - Artillerist
+
+- Spell modeler
 
 Sorcerers:
 
@@ -164,6 +166,8 @@ Sorcerers:
 - Zap
 
 - Sorcelerer
+
+- Psycho absorber
 
 Clerics:
 
@@ -205,13 +209,13 @@ Bards:
 
 - Disciple of Ratatoskr
 
-- No-magic chanter
+- Antimaginum
 
 - Magivore
 
 - Cruw of Chaos
 
-- Malomage
+- Imperiosa
 
 Shamans:
 
@@ -227,7 +231,7 @@ Paladins:
 
 - Athran
 
-Monk :
+Monk:
 
 - Initiate of the White Flame
 
