@@ -32,17 +32,20 @@ Jet de sauvegarde : ½
 
 Ce sort crée une explosion émanant du lanceur de sort et blessant toutes les créatures situées dans un rayon de 2,5 mètres autour de lui. Toutes les créatures affectées subissent 1D4 points de dégâts de feu par niveau de lanceur de sorts (jusqu'à un maximum de 10D4). Un jet de sauvegarde contre les sorts réussi permet de réduire les dégâts de moitié.~
 
-@29 = ~Psychotope (mage)~
-@20 = ~psychotope~
-@21 = ~Psychotope~
-@22 = ~PSYCHOTOPE : cet arcaniste très étrange n'utilise que sa conscience pour lancer des sorts.
+@29 = ~Psycho absorbeur (ensorceleur)~
+@20 = ~psycho absorbeur~
+@21 = ~Psycho absorbeur~
+@22 = ~PSYCHO ABSORBEUR : cet arcaniste très étrange tire sa magie de toutes les sources possibles et n'utilise que sa conscience pour lancer des sorts.
 
 Avantages :
+- Tous les 3 rounds il se remémore un sort du plus haut niveau qu'il connaît. S'il n'y a aucun sort à remémorer à ce niveau, c'est un niveau de sort en dessous à la place.
+- Piège à sort permanent.
+- Chaque fois qu'il tue une créature il se remémore un sort du plus haut niveau qu'il connaît.
 - Temps d'incantation fixés à 1.
-- Tous les 3 rounds il se remémore un sort du niveau maximum connu. S'il n'y a aucun sort à remémorer à ce niveau, c'est un niveau de sort en dessous à la place.
+- Après chaque repos il se remémore 1D10 sorts du niveau maximum connu.
 
 Inconvénient :
-- Toute perte de conscience : sommeil (d'une nuit de repos ou provoqué), étourdissement, peur, berserk, charme, confusion, débilité ou mort lui fait oublier tous ses sorts.~
+- Toute perte de conscience : sommeil (après un repos ou provoqué), étourdissement, peur, berserk, charme, confusion, débilité ou mort lui fait oublier tous ses sorts.~
 
 
 @39 = ~Voleur de sorts (mage)~
@@ -234,6 +237,7 @@ Inconvénients :
 - Capacité de lancer des sorts réduite de deux sorts par niveau de sorts.
 - Progression ralentie par la pratique non-exclusive de la magie : -15% d'xp.
 - Immunisé aux effets qui changent l'xp reçu.
+- N'utilise pas d'armes à distance.
 
 
 SORTS AMÉLIORÉS : Le sorcelier connaît spontanément quelques sorts de combat qu'il améliore quand il les lances :
@@ -475,7 +479,7 @@ Inconvénients :
 Avantages :
 - Points de vie doublés.
 - Niveau de renvoi des mort vivant doublé.
-- Mémorise tous les sorts de soin, restauration, régénération, guérison, et résurrection comme des sorts d'un niveau en dessous.
+- Mémorise tous les sorts de soin, restauration, régénération, guérison, et résurrection comme des sorts d'un niveau en dessous, à distance et avec un temps d'incantation de 1.
 - Peut utiliser Soins des blessures légères à volonté en tant que capacité spéciale.
 
 Inconvénients :
@@ -590,17 +594,18 @@ Avantage :
 Inconvénient :
 - Son chant le change lui même en écureuil s'il rate un jet de sauvegarde contre la métamorphose à +3.~
 
-@309 = ~Chantre de la non-magie (barde)~
-@300 = ~chantre de la non-magie~
-@301 = ~Chantre de la non-magie~
-@302 = ~CHANTRE DE LA NON-MAGIE : ce chanteur viens d'une réalité ou la magie est honnie.
+@309 = ~Antimaginum (barde)~
+@300 = ~antimaginum~
+@301 = ~Antimaginum~
+@302 = ~ANTIMAGINUM : ce chanteur viens d'une réalité ou la magie est honnie.
 
 Avantages :
-- Son chant dissipe la magie et impose 15% de chance de rater l'incantation des sorts.
+- Son chant dissipe la magie (100% de chance), impose 15% de chance de rater l'incantation des sorts et réduit de 10% la résistance à la magie pendant un tour (cumulatif).
 - 40% de résistance à la magie.
 
 Inconvénient :
-- La puissance de ses sorts est fortement réduite par son aura : -40% de dégâts et de durée.~
+- Son chant affecte aussi ses alliés.
+- La puissance de ses sorts est fortement réduite par son aura : -30% de dégâts et de durée.~
 
 @319 = ~Magivore (barde)~
 @310 = ~magivore~
@@ -706,7 +711,8 @@ Inconvénient :
 
 Avantages :
 - Il devient automatiquement un Clerc/Mage après la création.
-- Chaque niveau il découvre comment reproduire un sort druidique sous forme arcanique. Le groupe gagne l'xp d’apprentissage pour cette découverte.
+- Si un sort est commun aux deux classes mais d'un niveau inférieur dans une classe, il apprend ce sort au niveau inférieur dans l'autre classe. Le groupe gagne l'xp d’apprentissage pour cette conversion.
+- Il découvre régulièrement comment reproduire un sort druidique sous forme arcanique. Le groupe gagne l'xp d’apprentissage pour cette découverte.- A partir du niveau 3 chaque niveau il découvre comment reproduire un sort druidique sous forme arcanique. Le groupe gagne l'xp d’apprentissage pour cette découverte.
 - +3 sorts arcaniques par niveau de sorts.
 - Chaque fois qu'il lance un sort il gagne 75 xp (réduction incluse) et à 10% de chance de déclencher "Chance arcanique".
 
@@ -825,7 +831,7 @@ Ce sort octroie au shaman l'Invisibilité majeure et le téléporte à quelques 
 Avantage :
 - Il connaît pour chaque niveau de sort deux sorts d'orbe/sphère/globe qu'il peut lancer indéfiniment :
   En sort infini de niveau 1 : Orbe chromatique et Projectile magique
-  En sort infini de niveau 2 : Sphère résistante d'Otiluke et Cône d'orbes élémentaires
+  En sort infini de niveau 2 : Sphère résistante d'Otiluke et Cône d'Orbes élémentaires
   En sort infini de niveau 3 : Orbes explosifs et Boule de feu
   En sort infini de niveau 4 : Globe d'invulnérabilité mineur et Sphère noire
   En sort infini de niveau 5 : Sphère acide et Sphère Glaciale d'Otiluke
@@ -839,8 +845,8 @@ Inconvénient :
 - Il ne peut apprendre aucun autre sort ni aucun hla.
 - Il ne peut pas utiliser de parchemins.~
 
-@40221 = ~Cône de sphères Élémentaires~
-@40222 = ~Cône de sphères Élémentaires (Invocation)
+@40221 = ~Cône d'Orbes élémentaires~
+@40222 = ~Cône d'Orbes élémentaires (Invocation)
 
 Niveau : 2
 Portée : 0
@@ -990,6 +996,7 @@ Le sort crée un orbe de glace entre les mains du mage, qu'il lance aussitôt à
 @410 = ~artilleur~
 @411 = ~Artilleur~
 @412 = ~ARTILLEUR : Cet arcaniste a deux passions : faire des petits trous cramés et trancher des têtes grillées.
+
 Avantages :
 - Quand il lance le sort "Minuscules météores de Melf" il crée toujours 20 météores, 30 au niveau 18, 40 au niveau 27 et 50 au niveau 36.
 - Quand il lance le sort "Lames d’énergie" il crée toujours 30 lames, 40 au niveau 27 et 50 au niveau 36.
@@ -999,19 +1006,25 @@ Inconvénient :
 - Il ne peut pas être Bon.
 - Les projectiles qu'il crée ont une durée maximale d'un tour et disparaissent automatiquement s'il se déplace.~
 
-@429 = ~Malomage (barde)~
-@420 = ~malomage~
-@421 = ~Malomage~
-@422 = ~MALOMAGE : ce barde n'aime pas les duels de magie : ils sont trop faciles.
+@429 = ~Imperiosa (barde)~
+@420 = ~imperiosa~
+@421 = ~Impériosa~
+@422 = ~IMPÉRIOSA : ce "barde" n'en est pas vraiment un : il ne chante pas et ne lance pas de sort. Ce qu'il fait, c'est imposer sa parole impérieuse.
 
 Avantages :
-- Son chant supprime chaque round un sort de protection (de niveau maximum égal à la moitié du niveau du malomage. Ex: de niveau maximum 8 quand le malomage est de niveau 16). Les sorts supprimés sont : Déviation de sorts mineurs, Globe mineur d'invulnérabilité, Renvoi des sorts mineurs, Immunité contre les Sorts, Déviation de sorts, Globe d'invulnérabilité, Renvoi des sorts, Bouclier des Archontes, Bouclier de sort et Piège à sorts. La résistance à la magie des victimes est ignorée.
-- Son chant réduit de 5% par round la résistance à la magie de toutes les victimes, cumulable. La résistance à la magie des créatures impactées revient après un tour, au rythme de 5% par round.
-
+- Son chant reproduit les effets des Mots de pouvoir et les cumule :
+À partir du niveau 1 son chant produit les effets de Mot de pouvoir : Sommeil
+À partir du niveau 5 son chant produit en plus les effets de Mot de pouvoir : Surdité
+À partir du niveau 10 son chant produit en plus les effets de Mot de pouvoir : Silence
+À partir du niveau 15 son chant produit en plus les effets de Mot de pouvoir : Étourdissement
+À partir du niveau 20 son chant produit en plus les effets de Mot de pouvoir : Cécité
+À partir du niveau 25 son chant produit en plus les effets de Mot de pouvoir : Mort
+À partir du niveau 30 son chant produit en plus les effets de Mot de pouvoir : Destruction
+- Charisme : +2
 
 Inconvénient :
-- Il doit rester concentré pendant son chant : il ne peut pas se déplacer et subit -2 à la Classe d'armure.
-- Son chant affecte aussi ses alliés.~
+- Il ne peut lancer aucun sort.
+- Il ne peut pas être chaotique ou bon.~
 
 @439 = ~Paramandeur (paladin)~
 @430 = ~paramandeur~
@@ -1054,7 +1067,7 @@ Inconvénients :
 - Dés de Vie : D8.~
 
 @459 = ~Guerisseur Saiyen (shhaman)~
-@450 = ~guérisseur Saïyen~
+@450 = ~guérisseur saïyen~
 @451 = ~Guérisseur Saïyen~
 @452 = ~GUÉRISSEUR SAÏYEN : Ce shaman a une queue de singe. Étrange....
 
@@ -1132,7 +1145,7 @@ Cette incantation fait apparaître une sphère d'acide vert émeraude, que le pe
 L'acide asperge toutes les créatures situées à moins de 1,50 mètre de la cible. Toutes doivent réussir un jet de sauvegarde contre la pétrification/métamorphose si elles ne veulent pas subir 1d4 points de dégâts par cinq niveaux du lanceur. Ces dégâts d'aspersion ne sont pas continus.~
 
 @469 = ~Initie de la Flamme Blanche (moine)~
-@460 = ~initié de la Flamme Blanche~
+@460 = ~initié de la flamme Blanche~
 @461 = ~Initié de la Flamme Blanche~
 @462 = ~INITIÉ DE LA FLAMME BLANCHE : Cet ordre de moine suit un entraînement rigoureux pour devenir les marteaux de dieu.
 
@@ -1153,3 +1166,109 @@ Inconvénients :
 @4625 = ~Sorts de niveau 5~
 @4626 = ~Sorts de niveau 6~
 @4627 = ~Sorts de niveau 7~
+
+@479 = ~Modeleur de sorts (mage)~
+@470 = ~modeleur de sorts~
+@471 = ~Modeleur de sorts~
+@472 = ~MODELEUR DE SORTS : Ce mage est né avec un don unique : une connaissance innée de la magie universelle.
+Avantage :
+- Il modèle les sorts : chaque fois qu'il devrait lancer un sort, à la place il peut lancer n'importe quel sort existant du niveau correspondant.
+- Temps d'incantation : -2.
+- Il n'a pas besoin d'apprendre de hlas, il peut les modeler (au niveau de sort 9).
+- Dés de vie : D6.
+
+Inconvénients :
+- Il ne peut pas "apprendre" de sorts.
+- Il ne peut pas lancer de sorts "normalement".
+- S'il essaie de lancer des sorts de Contingence/Séquenceurs, il perd son temps, ça ne marchera pas.
+- Chaque fois qu'il modèle un sort il perd un point de vie.~
+@4721 = ~Modélisation de sort de niveau 1~
+@47211 = ~Modélisation de sort de niveau 1 (non aligné)
+Niveau : 1
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 1 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4722 = ~Modélisation de sort de niveau 2~
+@47221 = ~Modélisation de sort de niveau 2 (non aligné)
+Niveau : 2
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 2 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4723 = ~Modélisation de sort de niveau 3~
+@47231 = ~Modélisation de sort de niveau 3 (non aligné)
+Niveau : 3
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 3 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4724 = ~Modélisation de sort de niveau 4~
+@47241 = ~Modélisation de sort de niveau 4 (non aligné)
+Niveau : 4
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 4 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4725 = ~Modélisation de sort de niveau 5~
+@47251 = ~Modélisation de sort de niveau 5 (non aligné)
+Niveau : 5
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 5 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4726 = ~Modélisation de sort de niveau 6~
+@47261 = ~Modélisation de sort de niveau 6 (non aligné)
+Niveau : 6
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 6 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4727 = ~Modélisation de sort de niveau 7~
+@47271 = ~Modélisation de sort de niveau 7 (non aligné)
+Niveau : 7
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 7 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4728 = ~Modélisation de sort de niveau 8~
+@47281 = ~Modélisation de sort de niveau 8 (non aligné)
+Niveau : 8
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 8 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+@4729 = ~Modélisation de sort de niveau 9~
+@47291 = ~Modélisation de sort de niveau 9 (non aligné)
+Niveau : 9
+Portée : spéciale
+Durée : spéciale
+Temps d'incantation : spécial
+Zone d'effet : spécial
+Jet de sauvegarde : spécial
+
+Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 9 ou hla existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~

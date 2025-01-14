@@ -21,7 +21,7 @@ Disadvantage:
 - Can only learn spells from Evocation and Necromancy schools.
 - Alignment limited to Evil.
 - Cannot dual-class.~
-@13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
+@13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (125 new spells, in french)
 @14 = ~Fire Blast (Evocation)
 Level: 1
 Range: 0
@@ -32,17 +32,20 @@ Saving throw: ½
 
 This spell creates an explosion that emanates from the caster and injures all creatures within 2.5 meters of him. All affected creatures take 1D4 points of fire damage per caster level (to a maximum of 10D4). A successful saving throw against spells reduces the damage by half.~
 
-@29 = ~Psychotope (mage)~
-@20 = ~psychotope~
-@21 = ~Psychotope~
-@22 = ~PSYCHOTOPE : This very strange arcanist uses only his consciousness to cast spells.
+@29 = ~Psycho absorber (sorcerer)~
+@20 = ~psycho absorber~
+@21 = ~Psycho absorber~
+@22 = ~PSYCHO ABSORBER : This very strange arcanist draws his magic from every possible source, using only his conscience to cast spells.
 
 Advantages:
-- Casting time fixed to 1.
 - Every 3 rounds he rememorize a lost spell of the maximum known level. If there is no spell to rememorize at that level, it is one spell level below instead.
+- Permanent Spell Trap.
+- Every time he kills a creature, he recalls a spell of the highest level he knows.
+- Casting time fixed to 1.
+- After each rest he memorizes 1D10 spells of the maximum known level.
 
 Disadvantage:
-- Any loss of consciousness: sleep (from a night's rest or induced), stun, fear, berserk, charm, confusion, debility, or death causes him to forget all his spells.~
+- Any loss of consciousness: sleep (after a rest or induced), stun, fear, berserk, charm, confusion, debility, or death causes him to forget all his spells.~
 
 @39 = ~Spell stealer (mage)~
 @30 = ~spell stealer~
@@ -144,8 +147,8 @@ Advantage:
 
 Disadvantage:
 - Very fragile: -50% fewer hit points and -100% crushing damage resistance.~
-@83 = ~Major Reflected Image~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
-@84 = ~Major Reflected Image (Illusion) 
+@821 = ~Major Reflected Image (personal)~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
+@822 = ~Major Reflected Image (Illusion) 
 Level : 4
 Range: 0
 Duration: 1 round per level
@@ -154,6 +157,16 @@ Casting Time: 4
 Saving throw: none
 
 Upon casting this spell, the wizard creates 1 image of <PRO_HIMHER>self that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wizard does so that if any enemies are trying to attack the wizard, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the caster. The image will disappear with a successful Dispel Magic or when the spell's duration expires.~
+@823 = ~Reflected image (on target)~
+@824 = ~Mirror image (personal)~
+@825 = ~Mirror image (on target)~
+@826 = ~Major reflected image (on target)~
+@827 = ~Mislead (personal)~
+@828 = ~Mislead (on target)~
+@829 = ~Project image (personal)~
+@8210 = ~Project image (on target)~
+@8211 = ~Simulacrum (personal)~
+@8212 = ~Simulacrum (on target)~
 
 @99 = ~Miracle maker (cleric)~
 @90 = ~miracle maker~
@@ -219,12 +232,13 @@ Advantages:
 - Can advance in fighting styles "One weapon", "Two weapons" and "Two Handed weapons".
 - Know improved versions of some combat spells.
 - Can choose Hlas of fighter in addition to those of mage.
-- Hit Die : D6.
+- Hit Die: D6.
 
 Disadvantages:
 - Ability to cast spell reduced of two spells per spell level.
 - Development slowed by the non-exclusive practice of magic: -15% of xp.
 - Immune to effects that change the xp received.
+- May not use missile weapons.
 
 IMPROVED SPELLS: the Sorceler spontaneously knows a few combat spells, which he enhances by casting them:
   * True Strike: extended duration: 1 round/3 levels
@@ -323,6 +337,8 @@ Disadvantage:
 - He cannot learn spells from the necromancy, evocation or summoning schools.
 - He is not affected by his own singing.
 - Alignment limited to good.~
+@1321 = ~Raise Dead
+This ability brings a recently deceased person back from the dead. Body and soul are reassociated, but the person rises with only 1 hit point.~
  
 @149 = ~Dweomerist (Cleric)~
 @140 = ~dweomerist~
@@ -359,7 +375,7 @@ Advantage:
 - +½ attack per round every 4 levels (maximum +4 attacks per rondat level 32).
 
 Disadvantage:
-- Hit Die : D4.~
+- Hit Die: D4.~
 
 @179 = ~Pyroclasm (druid)~
 @1791 = ~With changed animation: fire elemental~
@@ -461,7 +477,7 @@ Disadvantages :
 Advantages:
 - Life points doubled.
 - Turn Undead level doubled.
-- Memorizes all healing, restoration, regeneration, cure and resurrection spells as spells one level lower.
+- Memorizes all healing, restoration, regeneration, cure and resurrection spells as spells one level lower, at distance, with an incantation time of 1.
 - Can use Cure Light Wounds at will as a special ability.
 
 Disadvantages:
@@ -495,7 +511,7 @@ Advantages:
 - Can use all forms of the "Polymorph" spell at will.
 - At 7th level, can use all special druidic forms at will.
 - At level 15, can use all forms of the "Shapechange" spell at will.
-- Hit Die : D12.
+- Hit Die: D12.
 
 Disadvantages:
 - Cannot cast any spells.
@@ -575,17 +591,18 @@ Advantage:
 Disadvantage:
 - His song turns him into a squirrel if he fails a saving throw versus metamorphosis at +3.~
 
-@309 = ~No-magic chanter (bard)~
-@300 = ~no-magic chanter~
-@301 = ~No-magic chanter~
-@302 = ~NO-MAGIC CHANTER: this singer comes from a reality where magic is abhorred.
+@309 = ~Antimaginum (bard)~
+@300 = ~antimaginum~
+@301 = ~Antimaginum~
+@302 = ~ANTIMAGINUM: this singer comes from a reality where magic is abhorred.
 
 Advantage:
-- His song dispels magic and imposes a 15% chance of spellcasting failure.
+- His song dispels magic (100%), imposes a 15% chance of spellcasting failure and reduces the magic resistance of all victims by 10% for one turn, cumulative.
 - 40% resistance to magic.
 
 Disadvantage:
-- The power of his spells is greatly reduced by his aura: -40% damage and duration.~
+- His song also affects his allies.
+- The power of his spells is greatly reduced by his aura: -30% damage and duration.~
 
 @319 = ~Magivore (bard)~
 @310 = ~magivore~
@@ -648,6 +665,8 @@ Every three levels this spell creates an additional projectile, up to a maximum 
 Projectile damage increases every ten levels: 1D6+2 at level 10, 1D8+3 at level 20, 1D10+4 at level 30, 1D12+5 at level 40, 3D4+6 at level 50.
 Projectiles have a 5% chance of inflicting double damage. This percentage rises to 10% at level 20 and 15% at level 40.
 Spell protection considers this spell to be of a level equal to the number of projectiles sent (IE: considered a level 6 spell when it sends 6 projectiles). At 10 projectiles sent, no spell protection can block this spell, apart from Shield and Protection against Evocation.~
+@334 = ~MANGACIEN (mage)~
+@335 = ~MANGACIEN This script allows the mangacian to automatically cast his Magic Missile as soon as he sees an enemy. It does not do so if you give it the order to move.~
 
 @349 = ~Divine chosen (cleric)~
 @340 = ~divine chosen~
@@ -687,7 +706,8 @@ Disadvantages:
 
 Advantages :
 - He automatically becomes a Cleric/Mage after creation.
-- Each level he discovers how to reproduce a druidic spell in arcane form. The group gains learning xp for this discovery.
+- If a spell is common to both classes but of a lower level in one class, he learns that spell at the lower level in the other class. The group gains learning xp for this conversion.
+- He regularly discovers how to reproduce a druidic spell in arcane form. The group gains learning xp for this discovery.
 - +3 arcane spells per spell level.
 - Each time he casts a spell, he gains 75 xp (including reduction) and has a 10% chance of triggering "Arcane Luck".
 
@@ -819,8 +839,8 @@ Advantages:
 Disadvantage:
 - He can't learn any other spells or hla.
 - He cannot use scrolls.~
-@40221 = ~Cone of Elemental Spheres~
-@40222 = ~Cone of Elemental Spheres (Invocation)
+@40221 = ~Cone of Elemental Orbs~
+@40222 = ~Cone of Elemental Orbs (Invocation)
 
 Level : 2
 Range: 0
@@ -981,19 +1001,25 @@ Disadvantage:
 - He can't be Good.
 - The projectiles he creates last a maximum of one turn and disappear automatically if he moves.~
 
-@429 = ~Malomage (bard)~
-@420 = ~malomage~
-@421 = ~Malomage~
-@422 = ~MALOMAGE: this bard don't like mage duels: they're too easy.
+@429 = ~Imperiosa (bard)~
+@420 = ~imperiosa~
+@421 = ~Imperiosa~
+@422 = ~IMPERIOSA: this "bard" isn't really a bard: he doesn't sing or cast spells. What he does is impose his imperious words.
 
-Advantages:
-- Every round, its chant removes a protection spell (maximum level equal to half the malomage's level. Ex: maximum level 4 when the malomage is level 8). The spells removed are: Minor Spell Turning, Minor Globe of Invulnerability, Spell Shield , Spell Immunity, Globe Of Invulnerability, Spell deflection, Spell Turning, Spell Shield, Shield of the Archons, Spell Deflection and Spell Trap. The target's Magic Resistance, if any, does not affect this song.
-- His song reduces the magic resistance of all victims by 5% per round, cumulative. Impacted creatures' magic resistance returns after one turn, at a rate of 5% per round.
+Advantages:				
+- His song reproduces the effects of Power Words and accumulates them:
+From level 1 onwards, his song produces the effects of Power Words: Sleep
+From level 5 onwards, his song also produces the effects of Power Word: Deafness
+From level 10 onwards, his song also produces the effects of Power Word: Silence
+From level 15 onwards, his song also produces the effects of Power Word: Stun
+From level 20 onwards, his song also produces the effects of Power Word: Blindness
+From level 25 onwards, his song also produces the effects of Power Word: Death
+From level 30 onwards, his song also produces the effects of Power Word: Destruction
+- Charisma: +2
 
-
-Disadvantage:
-- He must remain concentrated while singing: he cannot move and suffers -2 to Armor Class.
-- His song also affects his allies.~
+Drawback:
+- Can't cast any spells.
+- It cannot be chaotic or good.~
 
 @439 = ~Paramander (paladin)~
 @430 = ~paramander~
@@ -1033,17 +1059,17 @@ Disadvantages:
 - Cannot turn undead.
 - Does not know wounding spells or spells that kill directly.
 - Knows no spells to summon the undead, demons or fallen Devas.
-- Life dice: D8.~
+- Hit Die: D8.~
 
 @459 = ~Saïyan Healer (shaman)~
-@459 = ~saïyan Healer~
-@459 = ~Saïyan Healer~
-@459 = ~SAÏYAN HEALER: this shaman has a monkey tail. Strange....
+@450 = ~saïyan Healer~
+@451 = ~Saïyan Healer~
+@452 = ~SAÏYAN HEALER: this shaman has a monkey tail. Strange....
 
 Advantages:
 - He knows several spells of destruction: Magic Missile, Agannazar's Scorcher, Fireball, Vitriolic Sphere, Cone of Cold, Chain Lightning and Energy Blades.
 - His dance grants him 15% damage inflicted and -1 to casting time for one turn and cumulative. (e.g. if he dances for 5 rounds, he will inflict +60% damage and gain -4 to casting time for one turn when he stops dancing).
-- At level 28, the bonuses granted by his dance are doubled, granting him Improved Alacrity and Improved Haste for 2 rounds and turning his hair golden.
+- At level 28, the bonuses granted by his dance are doubled, granting him Improved Alacrity and Improved Haste for 2 rounds and turning his hairs golden.
 - His fist attacks evolve with his level as follows:
   At level 1: 1D6 non-lethal damage, +1 to hit, 1.5 attacks per round, considered a +1 weapon.
   At Level 5: 1D8 non-lethal damage, +2 to hit, 2 attacks per round
@@ -1122,7 +1148,7 @@ Advantages:
 - For each spell level he can cast any spell of that level.
 
 Disadvantages:
-- He can only be Loyal Good
+- He can only be Loyal Good.
 - He don't gains magic resistance.
 - He don't gains increased movement.
 - He isn't immune to haste and slow.
@@ -1134,3 +1160,109 @@ Disadvantages:
 @4625 = ~Spells level 5~
 @4626 = ~Spells level 6~
 @4627 = ~Spells level 7~
+
+@479 = ~Spell modeler (mage)~
+@470 = ~spell modeler~
+@471 = ~Spell modeler~
+@472 = ~SPELL MODELER: This mage was born with a unique gift: an innate knowledge of universal magic.
+Advantage:
+- He models spells: whenever he should cast a spell, instead he can cast any existing spell of the corresponding level.
+- Casting time: -2.
+- He doesn't need to learn hlas, he can model them (at spell level 9).
+- Hit Die: D6.
+
+Disadvantages:
+- He cannot "learn" spells.
+- He cannot cast spells "normally".
+- If he tries to cast Contingency/Sequencer spells, he's wasting his time, it won't work.
+- Each time he models a spell, he loses one hit point.~
+@4721 = ~Level 1 Spell Modeling~
+@47211 = ~Level 1 Spell Modeling (unaligned)
+Level: 1
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 1 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4722 = ~Level 2 Spell Modeling~
+@47221 = ~Level 2 Spell Modeling (unaligned)
+Level: 2
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 2 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4723 = ~Level 3 Spell Modeling~
+@47231 = ~Level 3 Spell Modeling (unaligned)
+Level: 3
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 3 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4724 = ~Level 4 Spell Modeling~
+@47241 = ~Level 4 Spell Modeling (unaligned)
+Level: 4
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 4 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4725 = ~Level 5 Spell Modeling~
+@47251 = ~Level 5 Spell Modeling (unaligned)
+Level: 5
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 5 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4726 = ~Level 6 Spell Modeling~
+@47261 = ~Level 6 Spell Modeling (unaligned)
+Level: 6
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 6 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4727 = ~Level 7 Spell Modeling~
+@47271 = ~Level 7 Spell Modeling (unaligned)
+Level: 7
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 7 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4728 = ~Level 8 Spell Modeling~
+@47281 = ~Level 8 Spell Modeling (unaligned)
+Level: 8
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 8 spell to be cast instead. All spell parameters depend on the selected spell.~
+@4729 = ~Level 9 Spell Modeling~
+@47291 = ~Level 9 Spell Modeling (unaligned)
+Level: 9
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Spell Modeler to select any existing level 9 spell to be cast instead. All spell parameters depend on the selected spell.~

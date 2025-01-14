@@ -1,26 +1,35 @@
+DEFINE_PATCH_FUNCTION INSTANT_HEAL BEGIN
+	READ_LONG 0x64 abilities_off
+	READ_SHORT 0x68 num_abilities
+	READ_LONG 0x6a off_feat
+	FOR (i = 0; i < num_abilities; i += 1) BEGIN
+	WRITE_BYTE 0x0e+abilities_off+i*0x28 40 //Distance 40
+	WRITE_BYTE 0x012+abilities_off+i*0x28 1 //Casting time 1
+		END
+	END
 INCLUDE ~Derats_Dawap/Druides/Horde/GW_Preacher.tpa~
 COPY	~Derats_Dawap/Clercs/Vie/Copy~					~override~
-COPY_EXISTING	~sppr212.spl~				~override/pxdvie11.spl~	WRITE_BYTE 0x34 1 //Ralentissement du poison
+COPY_EXISTING	~sppr212.spl~				~override/pxdvie11.spl~	WRITE_BYTE 0x34 1 LPF INSTANT_HEAL END//Ralentissement du poison
 COPY_EXISTING	~sppr307.spl~				~override/pxdvie21.spl~					  //Délivrance de la malédiction
 				~sppr308.spl~				~override/pxdvie22.spl~ 				  //Délivrance de la paralysie
 				~sppr315.spl~				~override/pxdvie23.spl~ 				  //Soins des blessures moyennes
-				~sppr317.spl~				~override/pxdvie24.spl~	WRITE_BYTE 0x34 2 //Guérison des maladies
+				~sppr317.spl~				~override/pxdvie24.spl~	WRITE_BYTE 0x34 2 LPF INSTANT_HEAL END //Guérison des maladies
 COPY_EXISTING	~sppr401.spl~				~override/pxdvie31.spl~					  //Soins des blessures graves
 				~sppr404.spl~				~override/pxdvie32.spl~					  //Neutralisation du poison
 				~sppr409.spl~				~override/pxdvie33.spl~				 	  //Spécial : Protection contre la mort
 				~sppr413.spl~				~override/pxdvie34.spl~	 				  //Spécial : Protection contre le Plan Négatif
-COPY_EXISTING	~sppr417.spl~				~override/pxdvie35.spl~	WRITE_BYTE 0x34 3 //Restitution mineure
-COPY_EXISTING	~spwi410.spl~				~override/pxdvie36.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 3	//Spécial : Délivrance de la malédiction
+				~sppr417.spl~				~override/pxdvie35.spl~	WRITE_BYTE 0x34 3 LPF INSTANT_HEAL END //Restitution mineure
+COPY_EXISTING	~spwi410.spl~				~override/pxdvie36.spl~	WRITE_BYTE 0x1c 2 LPF INSTANT_HEAL END	WRITE_BYTE 0x34 3	//Spécial : Délivrance de la malédiction
 COPY_EXISTING	~sppr502.spl~				~override/pxdvie41.spl~	 				  //Soins des blessures critiques
 				~sppr504.spl~				~override/pxdvie42.spl~	 				  //Rappel à la vie
-				~sppr514.spl~				~override/pxdvie43.spl~	WRITE_BYTE 0x34 4 //Guérison de masse
-COPY_EXISTING	~sppr607.spl~				~override/pxdvie51.spl~	WRITE_BYTE 0x34 5 //Guérison
+				~sppr514.spl~				~override/pxdvie43.spl~	WRITE_BYTE 0x34 4 LPF INSTANT_HEAL END //Guérison de masse
+COPY_EXISTING	~sppr607.spl~				~override/pxdvie51.spl~	WRITE_BYTE 0x34 5 LPF INSTANT_HEAL END //Guérison
 COPY_EXISTING	~sppr711.spl~				~override/pxdvie61.spl~					  //Régénération
 				~sppr712.spl~				~override/pxdvie62.spl~					  //Résurrection
-				~sppr713.spl~				~override/pxdvie63.spl~	WRITE_BYTE 0x34 6 //Restauration majeure
+				~sppr713.spl~				~override/pxdvie63.spl~	WRITE_BYTE 0x34 6 LPF INSTANT_HEAL END //Restauration majeure
 OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_CURE_MODERATE_WOUNDS~)) - 1000)
 ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
-COPY_EXISTING	~sppr%spellId%.spl~			~override/pxdvie12.spl~	WRITE_BYTE 0x34 1 //IWD Soin des blessures modérées
+COPY_EXISTING	~sppr%spellId%.spl~			~override/pxdvie12.spl~	WRITE_BYTE 0x34 1 LPF INSTANT_HEAL END //IWD Soin des blessures modérées
 END
 CREATE SPL pxdvie0 //Sort qui supprime tous les sorts contenant soins, régénération, restauration, délivrance et création d'arme (blessure, mise à mort/à mal)
 	WRITE_LONG 0x18 THIS | BIT11 | BIT14 | BIT25	// ajoute No LOS required - Non-magical ability - Castable when silenced
