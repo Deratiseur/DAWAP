@@ -1,6 +1,6 @@
 BACKUP ~Derats_Dawap/Backup~
 AUTHOR ~Deratiseur, at the_deratiseur@hotmail.com~
-VERSION ~v7~
+VERSION ~v8~
 
 ALWAYS
 	INCLUDE ~Derats_Dawap/fl#add_kit_ee.tpa~
@@ -10,8 +10,8 @@ ALWAYS
 	READ_SHORT 0x68 num_abilities
 	FOR (i = 0; i < num_abilities; i += 1) BEGIN				// pour chaque habileté
 		WRITE_SHORT (abilities_off + 0x28*i + 0x26) projectile	// indiquer le projectile
-	END
-END
+		END
+	END	
 END
 
 LANGUAGE ~Francais~
@@ -74,29 +74,6 @@ SAY @102
 LAF fl#add_kit_ee	STR_VAR kit_name = pxRAGED	END
 COPY	~Derats_Dawap/Mages/Rage/pxdrage2.spl~			~override~	SAY NAME1 @104
 COMPILE	~Derats_Dawap/Mages/Rage/pxdrage.baf~
-
-BEGIN @29 GROUP @4 DESIGNATED 29 LABEL Px_Dawap_Psycho
-REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
-COPY	~Derats_Dawap/Mages/Psycho/Copy~				~override~
-ADD_KIT ~pxPSYCHO~
-~pxPSYCHO          0           0           1           0           0           0           0           0~
-~pxPSYCHO          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-~pxPSYCHO          0       0       0       9       0       0~
-~pxPSYCHO          0       0       0       0       0       0~
-~pxPSYCHO          0       0       0       0       0       0~
-~pxPSYCHO          0       0       0       0       0       0~
-~pxPSYCHO          1       1       1       1       1       1       1       1       1~
-~pxPSYCHO          1       1       0       1       0       0~
-~Derats_Dawap/Mages/Psycho/pxdpsyc.2da~
-~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
-~0x00000000    1~
-~Ma0~
-~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
-SAY @20
-SAY @21
-SAY @22
-LAF fl#add_kit_ee	STR_VAR kit_name = pxPSYCHO	END
-COMPILE	~Derats_Dawap/Mages/Psycho/pxdpsyc.baf~
 
 BEGIN @39 GROUP @4 DESIGNATED 39 LABEL Px_Dawap_Volsor
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
@@ -313,7 +290,6 @@ COPY_EXISTING	~inarea.pro~				~override/pxsphe42.pro~	WRITE_LONG 0x204 220	WRITE
 ADD_PROJECTILE ~override/pxsphe42.pro~							~pxd Black Sphere~
 COPY ~Derats_Dawap/Mages/Spheres/pxsphe42.spl~			~override~	SAY NAME1 @40241	SAY UNIDENTIFIED_DESC @40242	LPF SPELL_PROJO INT_VAR projectile = ~pxsphe42~ END
 //Niveau 5 : Sphère acide
-COPY ~Derats_Dawap/Mages/Spheres/pxspherz.spl~			~override~
 ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro316.pro~	~pxd Viriolic Sphere~
 COPY ~Derats_Dawap/Mages/Spheres/pxsphe51.spl~			~override~	SAY NAME1 @40251	SAY UNIDENTIFIED_DESC @40252	LPF SPELL_PROJO INT_VAR projectile = ~idpro316~ END
  LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 5 END WRITE_LONG 0x18 (THIS | 49152)
@@ -384,6 +360,47 @@ LAF fl#add_kit_ee	STR_VAR kit_name = PXDARTIL	END
 COPY	~Derats_Dawap/Clercs/Eochaos/Copy/pxdeochb.spl~	~override/pxdartib.spl~	WRITE_ASCII 0xae ~pxdarti~ #8
 COPY_EXISTING	~pxdart3x.spl~				~override/pxdart9x.spl~	WRITE_ASCII 0xae ~ENEBLADE~ #8
 
+BEGIN @479 GROUP @4 DESIGNATED 479 LABEL Px_Dawap_Modeleur
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
+COPY	~Derats_Dawap/Mages/Modeleur/Copy~				~override~
+COPY	~Derats_Dawap/Divers/Flamme/Bams~				~override~
+COPY	~Derats_Dawap/Mages/Projo/Copy/pxprojoa.spl~	~override~
+ADD_KIT ~PXDMODEL~
+~PXDMODEL           0           0           1           0           0           0           0           0~
+~PXDMODEL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXDMODEL           0       0       0       9       0       0~
+~PXDMODEL           0       0       0       0       0       0~
+~PXDMODEL           0       0       0       0       0       0~
+~PXDMODEL           0       0       0       0       0       0~
+~PXDMODEL           1       1       1       1       1       1       1       1       1~
+~PXDMODEL           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Modeleur/pxdmodel.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00004000    1~
+~~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @470
+SAY @471
+SAY @472
+LAF fl#add_kit_ee	STR_VAR kit_name = PXDMODEL	hpclass = ~hprog~ END
+COPY ~Derats_Dawap/Mages/Modeleur/pxdmodl1.spl~			~override~	SAY NAME1 @4721	SAY UNIDENTIFIED_DESC @47211
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl2.spl~	SAY NAME1 @4722	SAY UNIDENTIFIED_DESC @47221	
+WRITE_BYTE 0x34 2	WRITE_ASCII 0x3a ~pxwyin42~ #8	WRITE_ASCII 0x76 ~pxwyin42~ #8	WRITE_ASCII 0x10e ~pxl2rpt2~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl3.spl~	SAY NAME1 @4723	SAY UNIDENTIFIED_DESC @47231
+WRITE_BYTE 0x34 3	WRITE_ASCII 0x3a ~pxwyin43~ #8	WRITE_ASCII 0x76 ~pxwyin43~ #8	WRITE_ASCII 0x10e ~pxl2rpt3~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl4.spl~	SAY NAME1 @4724	SAY UNIDENTIFIED_DESC @47241
+WRITE_BYTE 0x34 4	WRITE_ASCII 0x3a ~pxwyin44~ #8	WRITE_ASCII 0x76 ~pxwyin44~ #8	WRITE_ASCII 0x10e ~pxl2rpt4~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl5.spl~	SAY NAME1 @4725	SAY UNIDENTIFIED_DESC @47251
+WRITE_BYTE 0x34 5	WRITE_ASCII 0x3a ~pxwyin45~ #8	WRITE_ASCII 0x76 ~pxwyin45~ #8	WRITE_ASCII 0x10e ~pxl2rpt5~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl6.spl~	SAY NAME1 @4726	SAY UNIDENTIFIED_DESC @47261
+WRITE_BYTE 0x34 6	WRITE_ASCII 0x3a ~pxwyin46~ #8	WRITE_ASCII 0x76 ~pxwyin46~ #8	WRITE_ASCII 0x10e ~pxl2rpt6~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl7.spl~	SAY NAME1 @4727	SAY UNIDENTIFIED_DESC @47271
+WRITE_BYTE 0x34 7	WRITE_ASCII 0x3a ~pxwyin47~ #8	WRITE_ASCII 0x76 ~pxwyin47~ #8	WRITE_ASCII 0x10e ~pxl2rpt7~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl8.spl~	SAY NAME1 @4728	SAY UNIDENTIFIED_DESC @47281
+WRITE_BYTE 0x34 8	WRITE_ASCII 0x3a ~pxwyin48~ #8	WRITE_ASCII 0x76 ~pxwyin48~ #8	WRITE_ASCII 0x10e ~pxl2rpt8~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl9.spl~	SAY NAME1 @4729	SAY UNIDENTIFIED_DESC @47291
+WRITE_BYTE 0x34 9	WRITE_ASCII 0x3a ~pxwyin49~ #8	WRITE_ASCII 0x76 ~pxwyin49~ #8	WRITE_ASCII 0x10e ~pxl2rpt9~ #8
+
 BEGIN @49 GROUP @5 DESIGNATED 49 LABEL Px_Dawap_Eorat
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
 COPY	~Derats_Dawap/Sorciers/Eorat/Copy~				~override~
@@ -406,7 +423,6 @@ SAY @40
 SAY @41
 SAY @42
 LAF fl#add_kit_ee	STR_VAR kit_name = pxEORAT	END
-
 
 BEGIN @591 SUBCOMPONENT @59	GROUP @5 DESIGNATED 591 LABEL Px_Dawap_Anomal_Anim
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
@@ -573,7 +589,7 @@ COPY	~Derats_Dawap/Sorciers/Sorcelier/Copy~			~override~
 COPY_EXISTING	~lufm0.2da~					~override/lupx6.2da~	REPLACE_TEXTUALLY ~32        ~ ~1         ~
 ADD_KIT ~pxSORCELIER~
 ~pxSORCELIER           0           0           1           0           0           0           0           0~
-~pxSORCELIER           0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxSORCELIER           0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxSORCELIER           15      15      0       9       0       0~
 ~pxSORCELIER           0       0       0       0       0       0~
 ~pxSORCELIER           0       0       0       0       0       0~
@@ -582,13 +598,13 @@ ADD_KIT ~pxSORCELIER~
 ~pxSORCELIER           0       0       0       0       0       0~
 ~Derats_Dawap/Sorciers/Sorcelier/pxdsorce.2da~
 ~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
-~0x00004000    19~
+~0x00000008    19~
 ~PX6~
 ~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 STAF07 STAF13 STAF20~
 SAY @120
 SAY @121
 SAY @122
-LAF fl#add_kit_ee	STR_VAR kit_name = pxSORCELIER	hpclass = ~hprog~ END
+LAF fl#add_kit_ee	STR_VAR kit_name = pxSORCELIER	hpclass = ~hprog~ clswpbon = ~1 0 2~ numwslot = 2	END
 COMPILE	~Derats_Dawap/Sorciers/sorcelier/pxdsorce.baf~
 COPY	~Derats_Dawap/Sorciers/Sorcelier/Spells/pxsarmu.spl~	~override~	SAY NAME1 @1239	SAY UNIDENTIFIED_DESC @123
 COPY	~Derats_Dawap/Sorciers/Sorcelier/Spells/pxsfrap.spl~	~override~	SAY NAME1 @124	SAY UNIDENTIFIED_DESC @125
@@ -625,6 +641,30 @@ SAY @111
 SAY @112
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDZAP	END
 COMPILE	~Derats_Dawap/Sorciers/zap/pxdzap.baf~
+
+BEGIN @29 GROUP @5 DESIGNATED 29 LABEL Px_Dawap_Psycho
+REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
+COPY	~Derats_Dawap/Sorciers/Psycho/Copy~				~override~
+ADD_KIT ~pxPSYCHO~
+~pxPSYCHO          0           0           1           0           0           0           0           0~
+~pxPSYCHO          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxPSYCHO          0       0       0       9       0       0~
+~pxPSYCHO          0       0       0       0       0       0~
+~pxPSYCHO          0       0       0       0       0       0~
+~pxPSYCHO          0       0       0       0       0       0~
+~pxPSYCHO          1       1       1       1       1       1       1       1       1~
+~pxPSYCHO          1       1       0       1       0       0~
+~Derats_Dawap/Sorciers/Psycho/pxdpsyc.2da~
+~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
+~0x00000000    19~
+~So0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @20
+SAY @21
+SAY @22
+LAF fl#add_kit_ee	STR_VAR kit_name = pxPSYCHO	END
+COMPILE	~Derats_Dawap/Sorciers/Psycho/pxdpsyc.baf~
+COPY_EXISTING	~sareveff.eff~				~override/pxdpsyc3.eff~	WRITE_ASCII 0x30 ~pxdpsyc3~ #8
 
 BEGIN @149 GROUP @6 DESIGNATED 149 LABEL Px_Dawap_Dwomer
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
@@ -957,7 +997,7 @@ COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp9.spl~
 				~pxeluda1.spl~				~override/pxeluda9.spl~
 				~pxeludb1.spl~				~override/pxeludb9.spl~	WRITE_BYTE 0xce 9
 				
-BEGIN @1791 SUBCOMPONENT @179	GROUP @7 DESIGNATED 1791 LABEL Px_Dawap_Vie_Pyro_Anim
+BEGIN @1791 SUBCOMPONENT @179	GROUP @7 DESIGNATED 1791 LABEL Px_Dawap_Pyro_Anim
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
 INCLUDE ~Derats_Dawap/Druides/Pyro/pxdpyro.tph~
 ADD_KIT ~pxDPYRO~
@@ -978,7 +1018,7 @@ SAY @170
 SAY @171
 SAY @172
 LAF fl#add_kit_ee	STR_VAR kit_name = pxDPYRO	END
-BEGIN @1792	SUBCOMPONENT @179	GROUP @7 DESIGNATED 1792 LABEL Px_Dawap_Vie_Pyro_NoAnim
+BEGIN @1792	SUBCOMPONENT @179	GROUP @7 DESIGNATED 1792 LABEL Px_Dawap_Pyro_NoAnim
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
 INCLUDE ~Derats_Dawap/Druides/Pyro/pxdpyro.tph~
 ADD_KIT ~pxDPYRO~
@@ -1172,7 +1212,7 @@ COPY_EXISTING	~spwi911.spl~	~override/pxdelmx.spl~											//Nuée de météor
 COPY	~Derats_Dawap/Mages/Spheres/Copy2~				~override~
 ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro316.pro~	~pxd Viriolic Sphere~			//Sphère acide
 COPY	~Derats_Dawap/Shamans/Saiyan/pxsaiys4.spl~			~override~	SAY NAME1 @40251	SAY UNIDENTIFIED_DESC @4529	LPF SPELL_PROJO INT_VAR projectile = ~idpro316~ END
-COPY ~Derats_Dawap/Mages/Spheres/pxspherz.spl~	~override/pxsaiyz.spl~	WRITE_ASCII 0xde ~pxsaiyz~ #8	WRITE_ASCII 0x10e ~pxsaiy4~ #8
+COPY ~Derats_Dawap/Mages/Spheres/copy2/pxspherz.spl~	~override/pxsaiyz.spl~	WRITE_ASCII 0xde ~pxsaiyz~ #8	WRITE_ASCII 0x10e ~pxsaiy4~ #8
 ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/vspherx.pro~	~pxd Viriolic Sphere sub~
 COPY ~Derats_Dawap/Mages/Spheres/pxsphery.spl~			~override~	LPF SPELL_PROJO INT_VAR projectile = ~vspherx~ END
 COPY	~Derats_Dawap/Mages/Spheres/Copy3~				~override~
@@ -1364,7 +1404,7 @@ SAY @292
 LAF fl#add_kit_ee	STR_VAR kit_name = pxRATATO	END
 COPY	~Derats_Dawap/Bardes/Chsort/Copy/pxchsob.spl~	~override/pxratatb.spl~	WRITE_ASCII 0xae ~pxratat1~ #8
 
-BEGIN @309 GROUP @8 DESIGNATED 309 LABEL Px_Dawap_Antimagic
+BEGIN @309 GROUP @8 DESIGNATED 309 LABEL Px_Dawap_Antimaginum
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
 COPY	~Derats_Dawap/Bardes/Antimagie/Copy~			~override~
 ADD_KIT ~pxANTIM~
@@ -1451,7 +1491,7 @@ ADD_KIT ~pxCHVIE~
 ~pxCHVIE               0       0       0       0       0       0~
 ~Derats_Dawap/Bardes/Vie/pxcvie.2da~
 ~K_B_H   K_B_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
-~0x80000700    5~
+~0x00000700    5~
 ~PX7~
 ~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
 SAY @130
@@ -1460,28 +1500,29 @@ SAY @132
 LAF fl#add_kit_ee	STR_VAR kit_name = pxCHVIE	END
 COPY	~Derats_Dawap/Bardes/Vie/pxcviex.spl~			~override~	SAY UNIDENTIFIED_DESC @1321
 
-BEGIN @429 GROUP @8 DESIGNATED 429 LABEL Px_Dawap_Malomage
+BEGIN @429 GROUP @8 DESIGNATED 429 LABEL Px_Dawap_Imperiosa
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
-COPY	~Derats_Dawap/Bardes/malom/pxmalom1.spl~		~override~
-ADD_KIT ~pxMALOM~
-~pxMALOM               1           1           1           1           1           1           0           0~
-~pxMALOM               0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 2 0 1 0 0 0 0 1 1 0 1 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-~pxMALOM               0       12      0       13      0       15~
-~pxMALOM               0       0       0       0       0       0~
-~pxMALOM               0       0       0       0       0       0~
-~pxMALOM               0       0       0       0       0       0~
-~pxMALOM               1       1       1       1       1       1       1       1       1~
-~pxMALOM               0       0       0       0       0       0~
-~Derats_Dawap/Bardes/malom/pxmalom.2da~
+COPY	~Derats_Dawap/Bardes/Imperiosa/pxdimpe1.spl~	~override~
+COPY	~Derats_Dawap/Mages/Projo/Copy~					~override~
+ADD_KIT ~PXDIMPER~
+~PXDIMPER              1           1           1           1           1           1           0           0~
+~PXDIMPER              0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 2 0 1 0 0 0 0 1 1 0 1 2 2 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXDIMPER              0       12      0       13      0       15~
+~PXDIMPER              0       0       0       0       0       2~
+~PXDIMPER              0       0       0       0       0       0~
+~PXDIMPER              0       0       0       0       0       0~
+~PXDIMPER              0       1       1       0       1       1       0       0       0~
+~PXDIMPER              0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Imperiosa/pxdimper.2da~
 ~K_B_H   K_C_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
-~0x80000000    5~
+~0x00000000    5~
 ~Ba0~
 ~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
 SAY @420
 SAY @421
 SAY @422
-LAF fl#add_kit_ee	STR_VAR kit_name = pxMALOM	END
-COPY	~Derats_Dawap/Bardes/Chsort/Copy/pxchsob.spl~	~override/pxmalomb.spl~	WRITE_ASCII 0xae ~pxmalom1~ #8
+LAF fl#add_kit_ee	STR_VAR kit_name = PXDIMPER	END
+COPY	~Derats_Dawap/Bardes/Chsort/Copy/pxchsob.spl~	~override/pxdimpeb.spl~	WRITE_ASCII 0xae ~pxdimpe1~ #8
 
 BEGIN @399 GROUP @990 DESIGNATED 399 LABEL Px_Dawap_Champ_Clan
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
@@ -1579,7 +1620,7 @@ COPY_EXISTING	~spwi112.spl~				~override/pxsaiys1.spl~											//Projectile ma
 COPY	~Derats_Dawap/Mages/Spheres/Copy2~				~override~
 ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro316.pro~	~pxd Viriolic Sphere~							//Sphère acide
 COPY	~Derats_Dawap/Shamans/Saiyan/pxsaiys4.spl~			~Override~	SAY NAME1 @40251	SAY UNIDENTIFIED_DESC @4529	LPF SPELL_PROJO INT_VAR projectile = ~idpro316~ END
-COPY ~Derats_Dawap/Mages/Spheres/pxspherz.spl~	~override/pxsaiyz.spl~	WRITE_ASCII 0xde ~pxsaiyz~ #8	WRITE_ASCII 0x10e ~pxsaiy4~ #8
+COPY ~Derats_Dawap/Mages/Spheres/Copy2/pxspherz.spl~ ~override/pxsaiyz.spl~	WRITE_ASCII 0xde ~pxsaiyz~ #8	WRITE_ASCII 0x10e ~pxsaiy4~ #8
 ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/vspherx.pro~	~pxd Viriolic Sphere sub~
 COPY ~Derats_Dawap/Mages/Spheres/pxsphery.spl~			~override~	LPF SPELL_PROJO INT_VAR projectile = ~vspherx~ END
 COPY_EXISTING	~sparm2.vvc~				~override/pxsaiyv.vvc~	WRITE_ASCII 0x8 ~pxsaiy1~ #8	WRITE_BYTE 0x20 (THIS | 65)	WRITE_BYTE 0x18 (THIS | 2)
@@ -1820,6 +1861,7 @@ END
 BEGIN @469 GROUP @9 DESIGNATED 469 LABEL Px_Dawap_White_Flam
 REQUIRE_PREDICATE GAME_IS ~BGEE BG2EE IWDEE EET~ @2
 COPY	~Derats_Dawap/Divers/Flamme/Copy~				~override~
+COPY	~Derats_Dawap/Divers/Flamme/Bams~				~override~
 ADD_KIT ~PxDFLAM~
 ~PxDFLAM         1           1           0           0           1           0           0           1~
 ~PxDFLAM         1 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
@@ -1912,7 +1954,17 @@ COPY_EXISTING	~sppr105.spl~				~override/pxdmag1.spl~
 				~sppr606.spl~				~override/pxdmag13.spl~
 				~sppr702.spl~				~override/pxdmag14.spl~
 				~sppr717.spl~				~override/pxdmag15.spl~
-				~sppr704.spl~				~override/pxdmag16.spl~	WRITE_BYTE 0x1c 1
-OUTER_FOR ( i=1 ; i<17 ; i +=1)	BEGIN
+				~sppr704.spl~				~override/pxdmag16.spl~
+				~sppr108.spl~				~override/pxdmag17.spl~
+				~sppr208.spl~				~override/pxdmag18.spl~
+				~sppr301.spl~				~override/pxdmag19.spl~
+				~sppr405.spl~				~override/pxdmag20.spl~
+				~sppr407.spl~				~override/pxdmag21.spl~
+				~sppr505.spl~				~override/pxdmag22.spl~
+				~sppr703.spl~				~override/pxdmag23.spl~	WRITE_BYTE 0x1c 1
+COPY_EXISTING	~sppr721.spl~				~override/pxdmag24.spl~	WRITE_BYTE 0x1c 1	WRITE_BYTE 0x34 8
+COPY_EXISTING	~spwi401.spl~				~override/pxdmag25.spl~	WRITE_BYTE 0x1c 2
+COPY_EXISTING	~spwi401.spl~				~override/pxdmagx.spl~
+OUTER_FOR ( i=1 ; i<25 ; i +=1)	BEGIN
 COPY_EXISTING	~pxdmgl1.spl~	~override/pxdmgl%i%.spl~	WRITE_ASCIIE 0xde ~pxdmag%i%~ #8	WRITE_ASCIIE 0x10e ~pxdmgl%i%~ #8	END
 COPY ~Derats_Dawap/Multi/Magie/pxdmagix.spl~			~override~	SAY 0x9e @3621	SAY 0xce @3622	SAY 0xfe @3623	SAY 0x12e @3624
