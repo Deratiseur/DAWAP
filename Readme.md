@@ -143,7 +143,7 @@ Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-47 Spellcasters kits that will make you revise the way you play.
+53 Spellcasters kits that will make you revise the way you play.
 
 Wizards:
 
