@@ -183,3 +183,22 @@ Chantre de la non-magie (Antimaginum) : il était affecté par son propre chant.
 Sphèromaniaque : il ne s'installait pas (modification du au Ravageur v7)
 Ravageur : il pouvait toujours lancer des sorts de convocation.
 Scion de la vie : il avait 4 sorts qui n'avaient pas le niveau de sort réduit.
+
+
+
+v9
+Nouveaux kit :
+Malavisé, Préfondateur, Instilleur, Dweomeriste divin universel, Maître du Vif, Lèvemort.
+
+Modifications :
+Modeleur de sorts : il a maintenant un décalage de niveaux pour pouvoir modeler les hlas.
+Fléau : son installation ajoute un nouveau sort d'évocation de niveau 1.
+
+Corrections :
+Corrections mineures dans la traduction anglaise.
+Dans les descriptions des kits, ajout ou suppression des "s" aux avantages et inconvénients suivant s'il y en a un ou plusieurs.
+Les compétence d'armes de tous les kits de bardes étaient foireuses. (???)
+Incantateur : sa pénalité au temps d'incantation était toujours de -4 (récurrent : modification, test, et le fichier reste dans l'override...)
+Monstruosité mutante instable et Polymorphe : 2DA prévu jusqu'au niveau 40 seulement.
+Mangacien, Sphéromaniaque et Modeleur de sorts : dans le cas d'une grosse installations avec beaucoup de modules de sorts, il pouvait leur rester des sorts "vanilla" appris.
+Modeleur de sorts : pour chaque niveau de sort, le jeu n'affichait pas les 3 premières entrées de la liste.

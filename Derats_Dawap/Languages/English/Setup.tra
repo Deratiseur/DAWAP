@@ -17,25 +17,36 @@
 Advantage:
 - His spells and innate abilities are restored every round.
 
-Disadvantage:
+Disadvantages:
 - Can only learn spells from Evocation and Necromancy schools.
 - Alignment limited to Evil.
 - Cannot dual-class.~
-@13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (125 new spells, in french)
+@13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (130 new spells, in french)
 @14 = ~Fire Blast (Evocation)
 Level: 1
 Range: 0
-Duration: Instantaneous
+Duration: Instant
 Casting time: 1
-Area of effect: 2.5 meter radius
+Area of effect: 7-ft. radius
 Saving throw: ½
 
 This spell creates an explosion that emanates from the caster and injures all creatures within 2.5 meters of him. All affected creatures take 1D4 points of fire damage per caster level (to a maximum of 10D4). A successful saving throw against spells reduces the damage by half.~
 
+@14 = ~Fiery burst~
+@15 = ~Fiery burst (Evocation)
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting time: 1
+Area of effect: 7-ft. radius
+Saving throw: Neg.
+
+This spell creates a burst of flame at the designated location, inflicting 1D2 points of fire damage per level (maximum 8D2) to all creatures in the area who fail a saving throw against breath.~
+
 @29 = ~Psycho absorber (sorcerer)~
 @20 = ~psycho absorber~
 @21 = ~Psycho absorber~
-@22 = ~PSYCHO ABSORBER : This very strange arcanist draws his magic from every possible source, using only his conscience to cast spells.
+@22 = ~PSYCHO ABSORBER: This very strange arcanist draws his magic from every possible source, using only his conscience to cast spells.
 
 Advantages:
 - Every 3 rounds he rememorize a lost spell of the maximum known level. If there is no spell to rememorize at that level, it is one spell level below instead.
@@ -50,7 +61,7 @@ Disadvantage:
 @39 = ~Spell stealer (mage)~
 @30 = ~spell stealer~
 @31 = ~Spell stealer~
-@32 = ~SPELL STEALER : this magician has strange magical abilities.
+@32 = ~SPELL STEALER: this magician has strange magical abilities.
 
 Advantages:
 - Can at will, on contact, make an arcanist forget a spell (no saving throw) to remember himself a spell of maximum known level.
@@ -65,7 +76,7 @@ Disadvantages:
 @49 = ~Eoratian (sorcerer)~
 @40 = ~eoratian~
 @41 = ~Eoratian~
-@42 = ~EORATIAN : this sorcerer has a very strange way of using magic.
+@42 = ~EORATIAN: this sorcerer has a very strange way of using magic.
 
 Advantage:
 - His spells and innate abilities are restored at the end of each fight.
@@ -80,7 +91,7 @@ Disadvantages:
 @592 = ~Without changed animation (non-rp)~
 @50 = ~anomaly~
 @51 = ~Anomaly~
-@52 = ~ANOMALY : this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known reality.
+@52 = ~ANOMALY: this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known reality.
 
 Advantages:
 - Immune to offensive magic and 100% magic resistance.
@@ -106,9 +117,9 @@ Disadvantages:
 @692 = ~Without changed animation (non-rp)~
 @60 = ~magic minuims~
 @61 = ~Magic minuims~
-@62 = ~MAGIC MINUIMS : This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect.
+@62 = ~MAGIC MINUIMS: This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect.
 
-Advantages :
+Advantages:
 - Doubled amount of memorable spells.
 - +2 to AC, +2 additionnal against slashing and piercing attacks.
 - Protection from normal weapons.
@@ -117,14 +128,14 @@ Disadvantage:
 - Cannot carry any items.
 
 Special:
-- Can't give himself a physical form : Polymorph spells give him a weapon and change his characteristics, but do not give him a body.~
+- Can't give himself a physical form: Polymorph spells give him a weapon and change his characteristics, but do not give him a body.~
 
 @79 = ~Incantator (sorcerer)~
 @70 = ~incantator~
 @71 = ~Incantator~
-@72 = ~INCANTATOR : this very strange sorcerer practices magic differently.
+@72 = ~INCANTATOR: this very strange sorcerer practices magic differently.
 
-Advantage:
+Advantages:
 - +50% spell duration.
 - +50% elemental and magical damage done.
 - +4 to caster level.
@@ -135,9 +146,9 @@ Disadvantage:
 @89 = ~Spirit of the Mirror (sorcerer)(animation: constantly changing color)~
 @80 = ~spirit of the mirror~
 @81 = ~Spirit of the Mirror~
-@82 = ~Spirit of the mirror : This arcanist comes from another reality and interacts strangely with the known reality.
+@82 = ~Spirit of the mirror: This arcanist comes from another reality and interacts strangely with the known reality.
 
-Advantage:
+Advantages:
 - Unlimited Spell Turning.
 - Light Reflection: +3 to AC.
 - Can use the special ability "Reflected Image" at will.
@@ -147,14 +158,14 @@ Advantage:
 
 Disadvantage:
 - Very fragile: -50% fewer hit points and -100% crushing damage resistance.~
-@821 = ~Major Reflected Image (personal)~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (108 new spells, in french)
+@821 = ~Major Reflected Image (personal)~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (130 new spells, in french)
 @822 = ~Major Reflected Image (Illusion) 
-Level : 4
+Level: 4
 Range: 0
-Duration: 1 round per level
+Duration: 1 round/level
 Area of effect: the caster
 Casting Time: 4
-Saving throw: none
+Saving throw: None
 
 Upon casting this spell, the wizard creates 1 image of <PRO_HIMHER>self that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wizard does so that if any enemies are trying to attack the wizard, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the caster. The image will disappear with a successful Dispel Magic or when the spell's duration expires.~
 @823 = ~Reflected image (on target)~
@@ -192,10 +203,9 @@ Advantages:
 - Whenever he kills a creature he gain Improved Alacrity for one round.
 - +15% damage dealt, weapon or spell.
 
-Disadvantage:
+Disadvantages:
 - He gives no credit to defensives schools and does not learn any spells from the schools of Abjuration, Divination, and Illusion.
 - When his hit points drop below 25% he becomes a spell berserk.
-- Spells and effects like "x when y" (Fire Shield: damage inflicted WHEN hit) have no effect on him.
 
 Spell Berserk:
 For 3 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gain Improved Alacrity and -2 to casting time but has a 10% chance of missing incantations.~
@@ -205,7 +215,7 @@ For 3 rounds the Enraged can no longer move or attack. He can only think of cast
 @119 = ~Zap (sorcerer)~
 @110 = ~zap~
 @111 = ~Zap~
-@112 = ~ZAP : This arcanist comes from another reality and survives with difficulty in the known reality.
+@112 = ~ZAP: This arcanist comes from another reality and survives with difficulty in the known reality.
 
 Advantages:
 - +10 to movement speed.
@@ -220,7 +230,7 @@ Disadvantage:
 @1299 = ~Sorcelerer (sorcerer)~
 @120 = ~sorcelerer~
 @121 = ~Sorcelerer~
-@122 = ~SORCELERER : This arcanist loves fighting so much that he spends more time doing it than mastering magic.
+@122 = ~SORCELERER: This arcanist loves fighting so much that he spends more time doing it than mastering magic.
 
 Advantages:
 - +1 proficient point in dagger and in staff at level 1 and every 6 levels thereafter, up to grandmaster at level 24.
@@ -315,7 +325,7 @@ The mage can also expand the shield covering up his weapon, which adds 1D8 point
 
 @1211 = ~Tenser's Deadly Strikes (Improved)~
 @1212 = ~Tenser's Deadly Strikes (Alteration) 
-Level : 3
+Level: 3
 Range: 0
 Duration: 1 turn
 Casting time: 3
@@ -333,7 +343,7 @@ Advantages:
 - His song regenerates her allies' hit points: 1 hp per round at level 1, 2 hp per round at level 15, 3 hp per round at level 30.
 - His song has a 1% chance per Lifesinger level (maximum 30%) of curing poisons and diseases.
 
-Disadvantage:
+Disadvantages:
 - He cannot learn spells from the necromancy, evocation or summoning schools.
 - He is not affected by his own singing.
 - Alignment limited to good.~
@@ -345,12 +355,12 @@ This ability brings a recently deceased person back from the dead. Body and soul
 @141 = ~Dweomerist~
 @142 = ~DWEOMERIST: this cleric comes from elsewhere and knows only magic, which he uses in a very unusual way.
 
-Advantages :
+Advantages:
 - Doubled amount of memorable cleric spells.
 - Improved Alacrity.
 - Maximum spell casting time set at 5.
 
-Disadvantages:
+Disadvantage:
 - Hit Dies and THAC0 of a mage.~
 
 @159 = ~Chaos eoratian (cleric)~
@@ -361,7 +371,7 @@ Disadvantages:
 Advantage:
 - His spells and innate abilities are restored at the end of each fight.
 
-Disadvantages:hggggggggggggggggg
+Disadvantages:
 - Maximum 5 spells per spell level (4 at level 7), modulated by wisdom.
 - Alignment limited to Chaotic.
 - Every time a spell is cast, there is a 5% chance of a Wild Surge effect.~
@@ -372,7 +382,7 @@ Disadvantages:hggggggggggggggggg
 @162 = ~FURY: this priest from another reality behaves strangely.
 
 Advantage:
-- +½ attack per round every 4 levels (maximum +4 attacks per rondat level 32).
+- +½ attack per round every 4 levels (maximum +4 attacks per round at level 32).
 
 Disadvantage:
 - Hit Die: D4.~
@@ -461,7 +471,7 @@ Advantages:
 - Gains 5 hit points each time he kills a creature.
 - 2% chance on hit (melee or ranged) to kill target. No saving throw and magic resistance ignored.
 
-Disadvantages :
+Disadvantages:
 - No healing, restoration, regeneration, resurrection or protection against death/negative plane spells.
 - Cannot be resurrected.
 - Alignment limited to Evil.~
@@ -517,12 +527,12 @@ Disadvantages:
 - Cannot cast any spells.
 - No access to any hla.~
 
-@249 = ~Blessed trainer (cleric)~
-@240 = ~blessed trainer~
-@241 = ~Blessed trainer~
-@242 = ~BLESSED TRAINER: This cleric from another reality follows other divine rules.
+@249 = ~Blessed healer (cleric)~
+@240 = ~blessed healer~
+@241 = ~Blessed healer~
+@242 = ~BLESSED HEALER: This cleric from another reality follows other divine rules.
 
-Advantages:
+Advantage:
 - Every healing spell he casts is automatically re-cast on himself. 
 
 Disadvantages:
@@ -562,7 +572,7 @@ Disadvantage:
 Advantage:
 - Damage inflicted tripled.
 
-Disadvantage:
+Disadvantages:
 - Life points fixed at 1 per level.
 - Not affected by effects that increase the number of maximum hit points.
 - Physical, elemental and magic resistances: -50%.
@@ -576,7 +586,7 @@ Disadvantage:
 Advantage:
 - His song has a 15% chance of invoking nishruu(s).
 
-Disadvantage:
+Disadvantages:
 - 10% chance each time he casts a spell that a hostile nishruu appears.
 - 1% chance when he sings that the nishruu that appears will be hostile.~
 
@@ -596,11 +606,11 @@ Disadvantage:
 @301 = ~Antimaginum~
 @302 = ~ANTIMAGINUM: this singer comes from a reality where magic is abhorred.
 
-Advantage:
+Advantages:
 - His song dispels magic (100%), imposes a 15% chance of spellcasting failure and reduces the magic resistance of all victims by 10% for one turn, cumulative.
 - 40% resistance to magic.
 
-Disadvantage:
+Disadvantages:
 - His song also affects his allies.
 - The power of his spells is greatly reduced by his aura: -30% damage and duration.~
 
@@ -613,7 +623,7 @@ Advantages:
 - His song allows him to absorb residual magic from surrounding spells: All allies who hear him gains Improved Alacrity.
 - The residual magic surrounding him protects him: while singing and up to one turn after the end of his song: +15% resistance to magic.
 
-Disadvantages:
+Disadvantage:
 - The residual magic surrounding him makes his spells unstable: until one turn after the end of his song, all spells he casts have a 20% chance of generating an explosion of magical energy inflicting 10D10 points of magical damage (saving throw against spells for ½) to himself and all surrounding creatures within a 4.5-meter radius.~
 
 @329 = ~Cruw of chaos (bard)~
@@ -649,9 +659,11 @@ Advantages:
  * Each missile has a 5% chance of inflicting double damage, 10% at level 20, 15% at level 40.
  * Spell protection considers this spell to be of equal level to the number of missiles sent (IE: considered a level 6 spell when 6 missiles are sent). At 10 missiles sent, no spell protection can block this spell, apart from Shield and Protection against Evocation.
 
-Disadvantages :
+Disadvantages:
 - He can't learn any other spells.
-- He has no access to any hla.~
+- He has no access to any hla.
+
+Special: This class comes with a player script called "PXMANGA". Remember to assign it to the character.~
 @333 = ~Magic Missile (Evocation) 
 Level: 1
 Range: field of vision
@@ -673,13 +685,13 @@ Spell protection considers this spell to be of a level equal to the number of pr
 @341 = ~Divine chosen~
 @342 = ~DIVINE CHOSEN: This mortal worships his god in a different way and receives a different kind of divine help.
 
-Advantage:
+Advantages:
 - Aid: +1 and +1 every 6 levels.
 - Bless: +1 and +1 every 6 levels.
 - Draw Upon Holy Might: +1 and +1 every 6 levels.
 - Chooses warrior Hlas instead of cleric Hlas.
 
-Disadvantages:
+Disadvantage:
 - Cannot cast any spells.~
 
 @359 = ~Infuser (warrior -> warrior/mage)~
@@ -687,7 +699,7 @@ Disadvantages:
 @351 = ~Infuser~
 @352 = ~INFUSER: This arcanist infuses the magic he doesn't need into his weapon.
 
-Advantage:
+Advantages:
 - Any melee weapon he uses inflicts 1D4 additional magic damage, +1D4 every 5 levels.
 - Any melee weapon he uses is considered magic +1 and grants +1 to touch, +1 every 5 levels.
 - Automatically becomes a warrior-mage at creation.
@@ -704,7 +716,7 @@ Disadvantages:
 @361 = ~Magisterium~
 @362 = ~MAGISTERIUM: This arcanist seeks by all means to know all forms of magic, and better still, to draw new power from their combination.
 
-Advantages :
+Advantages:
 - He automatically becomes a Cleric/Mage after creation.
 - If a spell is common to both classes but of a lower level in one class, he learns that spell at the lower level in the other class. The group gains learning xp for this conversion.
 - He regularly discovers how to reproduce a druidic spell in arcane form. The group gains learning xp for this discovery.
@@ -713,7 +725,7 @@ Advantages :
 
 ARCANIC LUCK: when this effect is active the magisterium recalls an arcane spell and a divine spell of the highest known level, is healed of 1D12+5 hit points, is covered by 1D5+2 mirror images and applies +4 to spellcaster level and +30% damage/duration on spells it casts for the next 2 rounds.
 
-Disadvantage:
+Disadvantages:
 - Time spent researching leaves little time to apprehend the rest: -25% xp received.
 - He wears no armor (he can wear a robe).
 - He does not Turn undead.~
@@ -836,13 +848,13 @@ Advantages:
   Level 9 infinite spells: Ice Orb and Globe of Absolute Immunity
 - All his spells are "on target", even normally personal spells (such as Globe of Invulnerability).
 
-Disadvantage:
+Disadvantages:
 - He can't learn any other spells or hla.
 - He cannot use scrolls.~
 @40221 = ~Cone of Elemental Orbs~
 @40222 = ~Cone of Elemental Orbs (Invocation)
 
-Level : 2
+Level: 2
 Range: 0
 Duration: instant
 Casting time: 2
@@ -857,7 +869,7 @@ This spell conjures up multiple elemental spheres projected in the shape of a co
 Level: 3
 Range: 0
 Duration: special
-Casting time : 3
+Casting time: 3
 Area of effect: caster
 Saving throw: none
 
@@ -929,9 +941,9 @@ This spell surrounds the target with a sphere of electricity, giving it 100% res
 @40271 = ~Lethal Sphere of Absolute Vulnerability~
 @40272 = ~Lethal Sphere of Absolute Vulnerability (Abjuration)
 
-Level : 7
+Level: 7
 Range: Visual range of the caster
-Duration : permanent
+Duration: permanent
 Casting time: 6
 Area of effect: 1 creature
 Saving throw: nullifies
@@ -997,7 +1009,7 @@ Advantages:
 - When he casts the "Energy Blades" spell, he always creates 30 blades, 40 at level 27 and 50 at level 36.
 - +1 to TAC0 with projectile weapons every 5 levels.
 
-Disadvantage:
+Disadvantages:
 - He can't be Good.
 - The projectiles he creates last a maximum of one turn and disappear automatically if he moves.~
 
@@ -1017,7 +1029,7 @@ From level 25 onwards, his song also produces the effects of Power Word: Death
 From level 30 onwards, his song also produces the effects of Power Word: Destruction
 - Charisma: +2
 
-Drawback:
+Disadvantages:
 - Can't cast any spells.
 - It cannot be chaotic or good.~
 
@@ -1086,42 +1098,42 @@ Disadvantages:
 - He cannot use projectile weapons.
 - He cannot use one-handed weapons or shields.
 - He does not gain unique shamanic spells.~
-@4521 = ~Fist attack :
+@4521 = ~Fist attack:
 Magic +1
 1.5 attacks per round
 +1 to hit
 1D6 points of non-lethal blunt damage.~
-@4522 = ~Fist attack :
+@4522 = ~Fist attack:
 Magic +1
 2 attacks per round
 +2 to hit
 1D8 points of non-lethal blunt damage.~
-@4523 = ~Fist attack :
+@4523 = ~Fist attack:
 Magic +1
 2.5 attacks per round
 +3 to hit
 1D10 points of non-lethal blunt damage.~
-@4524 = ~Fist attack :
+@4524 = ~Fist attack:
 Magic +1
 3 attacks per round
 +4 to hit
 1D12 points of non-lethal blunt damage.~
-@4525 = ~Fist attack :
+@4525 = ~Fist attack:
 Magic +1
 3.5 attacks per round
 +5 to hit
 2D6 points of non-lethal blunt damage.~
-@4526 = ~Fist attack :
+@4526 = ~Fist attack:
 Magic +1
 4 attacks per round
 +6 to hit
 2D8 points of non-lethal blunt damage.~
-@4527 = ~Fist attack :
+@4527 = ~Fist attack:
 Magic +1
 4.5 attacks per round
 +7 to hit
 2D10 points of non-lethal blunt damage.~
-@4528 = ~Fist attack :
+@4528 = ~Fist attack:
 Magic +1
 5 attacks per round
 +8 to hit
@@ -1165,10 +1177,10 @@ Disadvantages:
 @470 = ~spell modeler~
 @471 = ~Spell modeler~
 @472 = ~SPELL MODELER: This mage was born with a unique gift: an innate knowledge of universal magic.
-Advantage:
+Advantages:
 - He models spells: whenever he should cast a spell, instead he can cast any existing spell of the corresponding level.
 - Casting time: -2.
-- He doesn't need to learn hlas, he can model them (at spell level 9).
+- He doesn't need to learn hla; he can cast them as level 9 spells from level 23.
 - Hit Die: D6.
 
 Disadvantages:
@@ -1266,3 +1278,349 @@ Area of effect: special
 Saving throw: special
 
 This spell allows the Spell Modeler to select any existing level 9 spell to be cast instead. All spell parameters depend on the selected spell.~
+
+@489 = ~Master of the Wit (druid)~
+@480 = ~master of the Wit~
+@481 = ~Master of the Wit~
+@482 = ~MASTER OF THE WIT: This druid's link with nature is very strong, but it doesn't manifest itself in the same way as that of his colleagues.
+
+Advantages:
+- Protection against animals.
+- He can charm a wild animal (not summoned) at will: the animal cannot make a saving throw, and becomes his faithful companion. It can follow him into any zone. Control is definitive until death.
+- From level 12 onwards, his charming ability can also affect woodland creatures: spiders, beetles, snakes, ankheg, wyverns.
+- From level 15, protection against woodland creatures he can charm.
+- From level 24, his ability to charm can also affect certain exotic creatures: carrion crawlers, trolls, umber hulks, otyughs, basilisks.
+- From level 30, protection against exotic creatures he can charm.
+
+Disadvantages:
+- He cannot cast any spells.
+- He has no access to hla.
+- He has no elemental or poison resistance.
+- He cannot use metamorphoses.~
+
+@499 = ~Deathraiser (bard)~
+@490 = ~deathraiser~
+@491 = ~Deathraiser~
+@492 = ~DEATHRAISER: This bard knows a family secret that it's best not to tell too much to the defenders of good.
+
+Advantages:
+- His chant has a 20% chance +1% chance per level (max 40%) of raising the dead in zombie form.
+- Every 4 levels of Lèvemort, the zombies he raises have an extra HD (including TAC0 and saving throw) and +1 to movement (max +10).
+- From level 8, zombies he raises inflict Contagion on hit.
+- From level 16, the zombies he raises gain ½ additional attack per round.
+- From level 24, the zombies he raises inflict Hold Person on hit.
+- From level 32, the zombies he raises gain ½ extra attack per round.
+- From level 40 the zombies he raises inflict Hold Monster on hit.
+
+Disadvantages:
+- Necromancer and enchanter at the same time, but without additional spells.
+-1 spell per spell level, additional -1 at levels 20 and 40.
+- Aligned limited to evil.~
+
+@509 = ~Overflower (sorcerer)~
+@500 = ~overflower~
+@501 = ~Overflower~
+@502 = ~OVERFLOWER: This sorcerer is literally bursting with magical energy. This impacts the weapons he uses and is accompanied by other effects.
+
+Advantages:
+- All his attacks add 1D4 points of magic damage. At higher levels, other random effects are added (all non-damaging effects allow a saving throw against spells to cancel and last one turn):
+ From level 4 onwards, all his attacks have an additional 5% chance of slowing down the target.
+ From level 8 all attacks have an additional 5% chance of stunning the target.
+ From level 12 onwards, all attacks have an additional 5% chance of adding 1D8 points of magic damage.
+ From level 16 onwards, all his attacks have an additional 5% chance of holding the target.
+ From level 20 onwards, all attacks have an additional 5% chance of disintegrating the target.
+ From level 24 all attacks have an additional 5% chance of adding 1D12 points of magic damage.
+ From level 28 onwards, all magical effects of his attacks are applied to a small area and affect only enemies.
+- Spells targeting him are disrupted: +15% resistance to magic.
+- Spells he casts are enhanced: +15% duration and elemental and magical damage inflicted, and +3 at caster level.
+
+Disadvantage:
+- The spells he casts are disrupted: 15% chance of miscast.~
+
+@519 = ~Universal Divine Dweomerist (cleric)~
+@510 = ~universal Divine Dweomerist~
+@511 = ~Universal Divine Dweomerist~
+@512 = ~UNIVERSAL DIVINE DWEOMERIST: This arcanist from another reality knows how to use the energy released by gods and nature.
+
+Advantages:
+- Whenever he should cast a spell, he can instead cast any existing spell of the corresponding level.
+- He can cast all divine spells, including druidic spells.
+- He doesn't need to learn any hla; he can cast them as level 7 spells from level 22.
+
+Disadvantages:
+- Casting time: +1
+- -3 spells per spell level.
+- Hit Die: D6.
+- Alignment limited to neutral.~
+@5121 = ~Universal Divine Dweomer 1~
+@51211 = ~Level 1 universal divine dweomer (unaligned)
+Level: 1
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the universal divine Dweomerist to select any existing level 1 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5122 = ~Universal Divine Dweomer 2~
+@51221 = ~Level 2 universal divine dweomer (unaligned)
+Level: 2
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the universal divine Dweomerist to select any existing level 2 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5123 = ~Universal Divine Dweomer 3~
+@51231 = ~Level 3 universal divine dweomer (unaligned)
+Level: 3
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the universal divine Dweomerist to select any existing level 3 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5124 = ~Universal Divine Dweomer 4~
+@51241 = ~Level 4 universal divine dweomer (unaligned)
+Level: 4
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the universal divine Dweomerist to select any existing level 4 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5125 = ~Universal Divine Dweomer 5~
+@51251 = ~Level 5 universal divine dweomer (unaligned)
+Level: 5
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the universal divine Dweomerist to select any existing level 5 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5126 = ~Universal Divine Dweomer 6~
+@51261 = ~Level 6 universal divine dweomer (unaligned)
+Level: 6
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the universal divine Dweomerist to select any existing level 6 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5127 = ~Universal Divine Dweomer 7~
+@51271 = ~Level 7 universal divine dweomer (unaligned)
+Level: 7
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Universal Divine Dweomerist to select any existing 7th-level divine spell to cast instead. All spell parameters depend on the selected spell. From level 22 onwards, it can also be used to select quest spells.~
+
+@529 = ~Unwise (mage)~
+@520 = ~unwise~
+@521 = ~Unwise~
+@522 = ~UNWISE: this magician sought to gain power by making a pact with a demon lord, without measuring the consequences.
+
+Advantages:
+- +3 spells per spell level
+- Maximum spell casting time set at 6.
+- Hit Die: D6.
+
+Disadvantage:
+- Each time he kills a creature, all members of the group suffer 1D4 points of non-lethal damage.
+- Wisdom : -3~
+
+@539 = ~Prefoundater (mage)~
+@530 = ~prefoundater~
+@531 = ~Prefoundater~
+@532 = ~Prefoundater : This monster knows how to extract raw magic from the vital energy of the beings around him, which he can reshape into any spell he wants.
+
+Advantages:
+- He models spells: whenever he should cast a spell, instead he can cast any existing spell of the corresponding level.
+- He can also model clerical and druidic spells, and casts quest spells as level 8 spells.
+- +2 spells per spell level.
+
+Disadvantages:
+- Cannot "learn" spells.
+- Cannot cast spells "normally".
+- He has no access to mage's hlas and epic spells.
+- Each time he casts a spell, all group members (regardless of range) and all enemies within 4.5 meters lose a number of hit points equal to half the level of the spell cast, rounded up.
+- Contingency/sequencer spells don't affect him.
+- Alignment limited to evil.~
+@5321 = ~Divine Dweomer 1~
+@53211 = ~Level 1 divine dweomer (unaligned)
+Level: 1
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 1 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5322 = ~Divine Dweomer 2~
+@53221 = ~Level 2 divine dweomer (unaligned)
+Level: 2
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 2 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5323 = ~Divine Dweomer 3~
+@53231 = ~Level 3 divine dweomer (unaligned)
+Level: 3
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 3 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5324 = ~Divine Dweomer 4~
+@53241 = ~Level 4 divine dweomer (unaligned)
+Level: 4
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 4 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5325 = ~Divine Dweomer 5~
+@53251 = ~Level 5 divine dweomer (unaligned)
+Level: 5
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 5 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5326 = ~Divine Dweomer 6~
+@53261 = ~Level 6 divine dweomer (unaligned)
+Level: 6
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 6 divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5327 = ~Divine Dweomer 7~
+@53271 = ~Level 7 divine dweomer (unaligned)
+Level: 7
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing 7th-level divine spell to cast instead. All spell parameters depend on the selected spell.~
+@5328 = ~Divine Dweomer 8~
+@53281 = ~Level Quest divine dweomer (unaligned)
+Level: 8
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell.~
+@53291 = ~arcanic Dweomer 1~
+@532911 = ~Level 1 arcanic dweomer (unaligned)
+Level: 1
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 1 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53292 = ~arcanic Dweomer 2~
+@532921 = ~Level 2 arcanic dweomer (unaligned)
+Level: 2
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 2 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53293 = ~arcanic Dweomer 3~
+@532931 = ~Level 3 arcanic dweomer (unaligned)
+Level: 3
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 3 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53294 = ~arcanic Dweomer 4~
+@532941 = ~Level 4 arcanic dweomer (unaligned)
+Level: 4
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 4 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53295 = ~arcanic Dweomer 5~
+@532951 = ~Level 5 arcanic dweomer (unaligned)
+Level: 5
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 5 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53296 = ~arcanic Dweomer 6~
+@532961 = ~Level 6 arcanic dweomer (unaligned)
+Level: 6
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing level 6 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53297 = ~arcanic Dweomer 7~
+@532971 = ~Level 7 arcanic dweomer (unaligned)
+Level: 7
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing 7th-level arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+@53298 = ~arcanic Dweomer 8~
+@532981 = ~Level 8 arcanic dweomer (unaligned)
+Level: 8
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell.~
+@53299 = ~arcanic Dweomer 9~
+@532991 = ~Level 9 arcanic dweomer (unaligned)
+Level: 9
+Range: special
+Duration: special
+Casting time: special
+Area of effect: special
+Saving throw: special
+
+This spell allows the Prefoundater to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell.~
