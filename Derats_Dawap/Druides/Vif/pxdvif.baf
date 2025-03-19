@@ -1,0 +1,10 @@
+IF
+	Global("pxdvif","LOCALS",0)
+THEN
+	RESPONSE #100
+		MakeGlobal()
+		ChangeEnemyAlly(Myself,FAMILIAR)
+		AddFamiliar()
+		DisplayStringHead(Myself,29476)
+		SetGlobal("pxdvif","LOCALS",1)
+END
