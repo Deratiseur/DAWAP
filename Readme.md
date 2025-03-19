@@ -15,7 +15,7 @@
 ## Description:
 ------------
 
-47 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
+53 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -37,6 +37,10 @@ Magiciens :
 
 - Modeleur de sorts
 
+- Malavisé
+
+- Préfondateur
+
 Ensorceleurs :
 
 - Eoratien
@@ -54,6 +58,8 @@ Ensorceleurs :
 - Sorcelier
 
 - Psycho Absorbeur
+
+- Instilleur
 
 Clercs :
 
@@ -73,6 +79,8 @@ Clercs :
 
 - Élu divin
 
+- Dweomeriste divin universel
+
 Druides :
 
 - Pyroclasme
@@ -84,6 +92,8 @@ Druides :
 - Ravageur
 
 - Polymorphe
+
+- Maître du Vif
 
 Bardes :
 
@@ -102,6 +112,8 @@ Bardes :
 - Engeance du chaos
 
 - Impériosa
+
+- Lèvemort
 
 Shamans :
 
@@ -153,6 +165,10 @@ Wizards:
 
 - Spell modeler
 
+- Unwise
+
+- Prefoundater
+
 Sorcerers:
 
 - Eoratian
@@ -170,6 +186,8 @@ Sorcerers:
 - Sorcelerer
 
 - Psycho absorber
+
+- Overflower
 
 Clerics:
 
@@ -189,6 +207,8 @@ Clerics:
 
 - Divine chosen
 
+- Universal Divine Dweomerist
+
 Druids:
 
 - Pyroclasm
@@ -200,6 +220,8 @@ Druids:
 - Ravager
 
 - Polymorph
+
+- Master of the Wit
 
 Bards:
 
@@ -218,6 +240,8 @@ Bards:
 - Cruw of Chaos
 
 - Imperiosa
+
+- Deathraiser
 
 Shamans:
 
