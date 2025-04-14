@@ -1,0 +1,19 @@
+COPY	~Derats_Dawap/Sorciers/Formu/pxdformb.spl~		~override~
+ADD_KIT ~pxFORMUL~
+~pxFORMUL           0           0           1           0           0           0           0           0~
+~pxFORMUL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxFORMUL           0       0       0       9       0       0~
+~pxFORMUL           0       0       0       0       0       0~
+~pxFORMUL           0       0       0       0       0       0~
+~pxFORMUL           0       0       0       0       0       0~
+~pxFORMUL           1       1       1       1       1       1       1       1       1~
+~pxFORMUL           0       0       0       0       0       0~
+~Derats_Dawap/Sorciers/Formu/pxdformu.2da~
+~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
+~0x00000000    19~
+~So0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @70
+SAY @71
+SAY @72
+LAF fl#add_kit_ee	STR_VAR kit_name = pxFORMUL	END

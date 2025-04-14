@@ -1,0 +1,21 @@
+COPY	~Derats_Dawap/Sorciers/Psycho/Copy~				~override~
+ADD_KIT ~pxPSYCHO~
+~pxPSYCHO          0           0           1           0           0           0           0           0~
+~pxPSYCHO          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxPSYCHO          0       0       0       9       0       0~
+~pxPSYCHO          0       0       0       0       0       0~
+~pxPSYCHO          0       0       0       0       0       0~
+~pxPSYCHO          0       0       0       0       0       0~
+~pxPSYCHO          1       1       1       1       1       1       1       1       1~
+~pxPSYCHO          1       1       0       1       0       0~
+~Derats_Dawap/Sorciers/Psycho/pxdpsyc.2da~
+~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
+~0x00000000    19~
+~So0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @20
+SAY @21
+SAY @22
+LAF fl#add_kit_ee	STR_VAR kit_name = pxPSYCHO	END
+COMPILE	~Derats_Dawap/Sorciers/Psycho/pxdpsyc.baf~
+COPY_EXISTING	~sareveff.eff~				~override/pxdpsyc3.eff~	WRITE_ASCII 0x30 ~pxdpsyc3~ #8

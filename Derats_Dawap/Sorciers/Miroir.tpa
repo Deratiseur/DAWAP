@@ -1,0 +1,44 @@
+DEFINE_PATCH_FUNCTION SELF_TO_TARGET BEGIN
+READ_LONG 0x64 abilities_off
+READ_SHORT 0x68 num_abilities
+READ_LONG 0x6a off_feat
+FOR (i = 0; i < num_abilities; i += 1) BEGIN
+WRITE_BYTE 0x0c+abilities_off+i*0x28 1 //Une créature
+WRITE_BYTE 0x0e+abilities_off+i*0x28 40 //portée 40
+READ_SHORT 0x1e+abilities_off+i*0x28 nb_feat
+READ_SHORT 0x20+abilities_off+i*0x28 ind_feat
+FOR (p = 0; p < nb_feat; p += 1) BEGIN
+WRITE_BYTE 0x02+off_feat+p*0x30+ind_feat*0x30 2 //Pre target
+END
+END
+END
+COPY	~Derats_Dawap/Sorciers/Miror/Copy~				~override~
+ADD_KIT ~pxEMIROR~
+~pxEMIROR           0           0           1           0           0           0           0           0~
+~pxEMIROR           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxEMIROR           0       0       0       9       0       0~
+~pxEMIROR           0       0       0       0       0       0~
+~pxEMIROR           0       0       0       0       0       0~
+~pxEMIROR           0       0       0       0       0       0~
+~pxEMIROR           1       1       1       1       1       1       1       1       1~
+~pxEMIROR           0       0       0       0       0       0~
+~Derats_Dawap/Sorciers/Miror/pxdmiror.2da~
+~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
+~0x00000000    19~
+~So0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @80
+SAY @81
+SAY @82
+LAF fl#add_kit_ee	STR_VAR kit_name = pxEMIROR	END
+COPY	~Derats_Dawap/Sorciers/Miror/pxdmiro4.spl~		~override~	SAY NAME1 @821	SAY UNIDENTIFIED_DESC @822
+COPY_EXISTING	~spwi212.spl~				~override/pxdmiro2.spl~	WRITE_BYTE 0x34 1	SAY NAME1 @824
+COPY_EXISTING	~spwi607.spl~				~override/pxdmiro6.spl~	WRITE_BYTE 0x34 5	SAY NAME1 @827
+COPY_EXISTING	~spwi703.spl~				~override/pxdmiro7.spl~	WRITE_BYTE 0x34 6	SAY NAME1 @829
+COPY_EXISTING	~spwi804.spl~				~override/pxdmiro8.spl~	WRITE_BYTE 0x34 7	SAY NAME1 @8211
+COPY_EXISTING	~spwi120.spl~				~override/pxdmirou.spl~	LPF SELF_TO_TARGET END	SAY NAME1 @823
+COPY_EXISTING	~spwi212.spl~				~override/pxdmirov.spl~	LPF SELF_TO_TARGET END	SAY NAME1 @825
+COPY_EXISTING	~pxdmiro4.spl~				~override/pxdmirow.spl~	LPF SELF_TO_TARGET END	SAY NAME1 @826	WRITE_BYTE 0x34 4
+COPY_EXISTING	~spwi607.spl~				~override/pxdmirox.spl~	LPF SELF_TO_TARGET END	SAY NAME1 @828
+COPY_EXISTING	~spwi703.spl~				~override/pxdmiroy.spl~	LPF SELF_TO_TARGET END	SAY NAME1 @8210
+COPY_EXISTING	~spwi804.spl~				~override/pxdmiroz.spl~	LPF SELF_TO_TARGET END	SAY NAME1 @8212

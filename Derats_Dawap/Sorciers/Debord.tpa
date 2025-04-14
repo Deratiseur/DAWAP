@@ -1,0 +1,20 @@
+COPY	~Derats_Dawap/Sorciers/debord/Copy~				~override~
+ADD_KIT ~pxDEBORDER~
+~pxDEBORDER          0           0           1           0           0           0           0           0~
+~pxDEBORDER          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDEBORDER          0       0       0       9       0       0~
+~pxDEBORDER          0       0       0       0       0       0~
+~pxDEBORDER          0       0       0       0       0       0~
+~pxDEBORDER          0       0       0       0       0       0~
+~pxDEBORDER          1       1       1       1       1       1       1       1       1~
+~pxDEBORDER          1       1       0       1       0       0~
+~Derats_Dawap/Sorciers/debord/pxdebor.2da~
+~K_S_H	K_S_D	K_S_G	K_S_E	K_S_HE	K_S_HL	K_S_HO~
+~0x00000000    19~
+~So0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @500
+SAY @501
+SAY @502
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDEBORDER	END
+COPY_EXISTING	~sareveff.eff~				~override/pxdebor.eff~	WRITE_ASCII 0x30 ~pxdebor1~ #8
