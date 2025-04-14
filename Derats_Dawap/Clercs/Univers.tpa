@@ -1,0 +1,42 @@
+COPY	~Derats_Dawap/Clercs/Univers/Copy~				~override~
+COPY	~Derats_Dawap/Clercs/Univers/pxuniveb.spl~		~override~
+COPY	~Derats_Dawap/Combattants/Athran/Copy/pxathra0.spl~	~override~
+ADD_KIT ~pxUNIVERS~
+~pxUNIVERS           0           0           1           1           0           1           0           0~
+~pxUNIVERS           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxUNIVERS           0       0       0       0       9       0~
+~pxUNIVERS           0       0       0       0       0       0~
+~pxUNIVERS           0       0       0       0       17      0~
+~pxUNIVERS           0       0       0       0       15      0~
+~pxUNIVERS           0       1       0       0       1       0       0       1       0~
+~pxUNIVERS           1       0       1       1       0       1~
+~Derats_Dawap/Clercs/Univers/pxuniver.2da~
+~K_C_H   K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+~0x00000000    3~
+~~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @510
+SAY @511
+SAY @512
+LAF fl#add_kit_ee	STR_VAR kit_name = pxUNIVERS	hpclass = ~hprog~ END
+COPY	~Derats_Dawap/Clercs/Univers/pxclerc1.spl~		~override~	SAY NAME1 @5121	SAY UNIDENTIFIED_DESC @51211
+COPY_EXISTING	~pxclerc1.spl~				~override/pxclerc2.spl~	SAY NAME1 @5122	SAY UNIDENTIFIED_DESC @51221	
+WRITE_BYTE 0x34 2	WRITE_ASCII 0x3a ~pxwyin42~ #8	WRITE_ASCII 0x76 ~pxwyin42~ #8	WRITE_ASCII 0xae ~pxclerc2~ #8
+COPY_EXISTING	~pxclerc1.spl~				~override/pxclerc3.spl~	SAY NAME1 @5123	SAY UNIDENTIFIED_DESC @51231
+WRITE_BYTE 0x34 3	WRITE_ASCII 0x3a ~pxwyin43~ #8	WRITE_ASCII 0x76 ~pxwyin43~ #8	WRITE_ASCII 0xae ~pxclerc3~ #8
+COPY_EXISTING	~pxclerc1.spl~				~override/pxclerc4.spl~	SAY NAME1 @5124	SAY UNIDENTIFIED_DESC @51241
+WRITE_BYTE 0x34 4	WRITE_ASCII 0x3a ~pxwyin44~ #8	WRITE_ASCII 0x76 ~pxwyin44~ #8	WRITE_ASCII 0xae ~pxclerc4~ #8
+COPY_EXISTING	~pxclerc1.spl~				~override/pxclerc5.spl~	SAY NAME1 @5125	SAY UNIDENTIFIED_DESC @51251
+WRITE_BYTE 0x34 5	WRITE_ASCII 0x3a ~pxwyin45~ #8	WRITE_ASCII 0x76 ~pxwyin45~ #8	WRITE_ASCII 0xae ~pxclerc5~ #8
+COPY_EXISTING	~pxclerc1.spl~				~override/pxclerc6.spl~	SAY NAME1 @5126	SAY UNIDENTIFIED_DESC @51261
+WRITE_BYTE 0x34 6	WRITE_ASCII 0x3a ~pxwyin46~ #8	WRITE_ASCII 0x76 ~pxwyin46~ #8	WRITE_ASCII 0xae ~pxclerc6~ #8
+COPY	~Derats_Dawap/Clercs/Univers/pxclerc7.spl~		~override~	SAY NAME1 @5127	SAY UNIDENTIFIED_DESC @51271
+ACTION_IF !FILE_EXISTS_IN_GAME ~pxdeoch2.spl~ THEN BEGIN
+	COPY	~Derats_Dawap/Clercs/Eochaos/Copy/pxdeoch1.spl~	~override~
+	COPY_EXISTING	~pxdeoch1.spl~			~override/pxdeoch2.spl~	WRITE_BYTE 0xa2 2
+	COPY_EXISTING	~pxdeoch1.spl~			~override/pxdeoch3.spl~	WRITE_BYTE 0xa2 4
+	COPY_EXISTING	~pxdeoch1.spl~			~override/pxdeoch4.spl~	WRITE_BYTE 0xa2 8
+	COPY_EXISTING	~pxdeoch1.spl~			~override/pxdeoch5.spl~	WRITE_BYTE 0xa2 16
+	COPY_EXISTING	~pxdeoch1.spl~			~override/pxdeoch6.spl~	WRITE_BYTE 0xa2 32
+	COPY_EXISTING	~pxdeoch1.spl~			~override/pxdeoch7.spl~	WRITE_BYTE 0xa2 64
+END

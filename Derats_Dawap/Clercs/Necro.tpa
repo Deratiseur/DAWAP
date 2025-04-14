@@ -1,0 +1,103 @@
+INCLUDE ~Derats_Dawap/Druides/Horde/GW_Preacher.tpa~
+COPY	~Derats_Dawap/Clercs/Necro/Copy~				~override~
+ADD_KIT ~pxDNECRO~
+~pxDNECRO           0           0           1           1           0           1           0           0~
+~pxDNECRO           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDNECRO           0       0       0       0       9       0~
+~pxDNECRO           0       0       0       0       0       0~
+~pxDNECRO           0       0       0       0       17      0~
+~pxDNECRO           0       0       0       0       15      0~
+~pxDNECRO           0       0       1       0       0       1       0       0       1~
+~pxDNECRO           1       0       1       1       0       1~
+~Derats_Dawap/Clercs/Necro/pxdnecro.2da~
+~K_C_H   K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+~0x00000000    3~
+~PX3~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @200
+SAY @201
+SAY @202
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDNECRO	END
+CREATE SPL pxdnec0 //Sort qui supprime tous les sorts contenant restauration / guérison / soins / régénération / résurrection
+	WRITE_LONG 0x18 THIS | BIT11 | BIT14 | BIT25	// ajoute No LOS required - Non-magical ability - Castable when silenced
+	WRITE_SHORT 0x1c 4	// spelltype = innate
+	WRITE_LONG  0x34 1	// spelllevel
+	LPF ~GW_DEF_OFFSETS_FILE~ STR_VAR GW_file_sig = SPL RET GW_oe GW_oc GW_al GW_fx GW_fi GW_fc GW_min_size END	// DÉFINITION des offsets généraux des fichiers SPL, ITM et CRE.
+	LPF ~GW_ADD_HEADERS~ INT_VAR GW_Headers = 1 END
+	LPF ~ALTER_SPELL_HEADER~ INT_VAR location = 4 new_header_type = 1 target = 5 range = 0 min_level = 0 speed = 0 projectile = 1 END
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR409 END //Protection contre la mort
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR413 END //Protection contre le Plan Négatif
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR511 END //Mise à mort
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR608 END //Mise à mal
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR708 END //Doigt de mort
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR719 END //Symbole : mort
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR504 END //Rappel à la vie
+	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = SPPR712 END //Résurrection
+	FOR (level = 7 ; level > 0 ; level = level - 1) BEGIN					// Je commence par le niveau 7 car la fonction ADD_SPELL_CFEFFECT par défaut un effet en première position.
+		SET bornesup = level*100 + 99										// Je fixe la borne supérieure du sort à chercher (199 - 299 - 399 ....)
+		FOR (spellcode = bornesup ; spellcode > level*100 ; spellcode = spellcode - 1) BEGIN	// Je lis chaque sort SPPR (101 à 199 ; 201 à 299 ...)
+			PATCH_IF (FILE_EXISTS_IN_GAME "SPPR%spellcode%.spl") BEGIN							// Test qui permet de gagner du temps de traitement.
+				LPF NAME_NUM_OF_SPELL_RES STR_VAR spell_res = EVAL "SPPR%spellcode%" RET spell_num spell_name END	// Fonction de WeiDU 239 qui retourne le numéro du sort et son code du fichier SPELL.ids
+				SET GW_opcode_checked = 0			// Test évitant de retrouver le même sort plusieurs fois s'il utilise au moins deux des opcodes à vérifier.
+				PATCH_MATCH ~%spell_name%~ WITH
+					"CLERIC_.*" BEGIN				// Si le ce code SPELL.IDS commence par "CLERIC_", c'est un nsort de prêtre.
+													// Ça permet d'écarter les sorts spéciaux de certines créatures ou de pièges.
+						INNER_ACTION BEGIN
+							COPY_EXISTING - ~SPPR%spellcode%.spl~ ~override~
+								PATCH_FOR_EACH GW_opcode_to_check IN 11 23 26 32 46 79 81 98 161 162 224 242 304 BEGIN	// On vérifie l'existance de ces opcodes dans le sort.
+									PATCH_IF GW_opcode_checked = 0 BEGIN						// Utilisation du test décrit plus haut
+										LPF ~GW_SEARCH_OPCODE~ INT_VAR GW_opcode_to_check RET GW_opcode_checked END	// Valeur retournée	==> 0 = pas d'opcode	-	1 = opcodeprésent dans le fichier
+									END
+								END
+								// Cas particulier de l'opcode Stat: Current HP Modifier [17] :
+								// Si paramètre 2 = 0 et paramètre 1 > 0 alors l'effet ajoute des PV.
+								// Si paramètre 2 = 2 et paramètre 1 >= 100, alors l'effet ajoute des PV.
+								PATCH_IF GW_opcode_checked = 0 BEGIN						// Utilisation du test décrit plus haut
+									LPF ~GW_DERAT_FIND_CURE_HP~ INT_VAR GW_opcode_to_check = 17 GW_param1_to_check = 1 GW_param2_to_check = 0 RET GW_opcode_Cure_checked END
+									PATCH_IF GW_opcode_Cure_checked = 1 BEGIN				// Si c'est un sort de soins
+										SET GW_opcode_checked = 1
+									END ELSE BEGIN
+										LPF ~GW_DERAT_FIND_CURE_HP~ INT_VAR GW_opcode_to_check = 17 GW_param1_to_check = 100 GW_param2_to_check = 2 RET GW_opcode_Cure_checked END
+										PATCH_IF GW_opcode_Cure_checked = 1 BEGIN			// Si c'est un sort de soins
+											SET GW_opcode_checked = 1
+										END
+									END
+								END
+							BUT_ONLY
+						END	// of INNER_ACTION
+						PATCH_IF GW_opcode_checked = 1 BEGIN		// Si on a trouvé un sort utilisant les opcodes qui t'intéressent
+																	// La fonction ADD_SPELL_CFEFFECT ajoute un casting feature à ton nouveau sort.
+							LPF ~ADD_SPELL_CFEFFECT~ INT_VAR opcode = 172 target = 1 timing = 1 STR_VAR resource = EVAL "SPPR%spellcode%" END
+						END
+						
+					END	// of PATCH_MATCH ~%spell_name%~ WITH "CLERIC_.*"
+					DEFAULT
+				END		// of PATCH_MATCH ~%spell_name%~ WITH
+			END			// of PATCH_IF (FILE_EXISTS_IN_GAME "SPPR%spellcode%.spl")
+		END				// of FOR (spellcode = bornesup ; spellcode > header*100 ; spellcode = spellcode - 1)
+	END					// of FOR (level = 7 ; level > 0 ; level = level - 1)
+OUTER_SET spell_num = IDS_OF_SYMBOL (~spell~ ~CLERIC_CURE_MODERATE_WOUNDS~)
+ACTION_IF (spell_num >= 0) THEN BEGIN
+   LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET spell_res END
+   ACTION_IF FILE_EXISTS_IN_GAME "%spell_res%.spl" BEGIN
+      COPY_EXISTING	~pxdnec0.spl~						~override~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = EVAL ~%spell_res%~ END
+   END
+END
+OUTER_SET spell_num = IDS_OF_SYMBOL (~spell~ ~CLERIC_MIST_OF_ELDATH~)
+ACTION_IF (spell_num >= 0) THEN BEGIN
+   LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET spell_res END
+   ACTION_IF FILE_EXISTS_IN_GAME "%spell_res%.spl" BEGIN
+      COPY_EXISTING	~pxdnec0.spl~						~override~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = EVAL ~%spell_res%~ END
+   END
+END
+COPY_EXISTING	~sppr511.spl~				~override/pxdnecrm.spl~	WRITE_BYTE 0x1c 4	WRITE_BYTE 0x74 4	//Mise à mort innate
+COPY_EXISTING	~sppr511.spl~				~override/pxdnec41.spl~	WRITE_BYTE 0x34 4						//Mise à mort
+COPY_EXISTING	~sppr608.spl~				~override/pxdnec51.spl~	WRITE_BYTE 0x34 5						//Mise à mal
+COPY_EXISTING	~spwi605.spl~				~override/pxdnec52.spl~											//Sort de mort
+				~spwi616.spl~				~override/pxdnec53.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 5	//Désintégration
+COPY_EXISTING	~sppr708.spl~				~override/pxdnec61.spl~											//Doigt de mort
+				~sppr719.spl~				~override/pxdnec62.spl~	WRITE_BYTE 0x34 6						//Symbole : mort
+COPY_EXISTING	~spwi913.spl~				~override/pxdnecx.spl~											//Cri de la banshee
+				~spwi912.spl~				~override/pxdnecy.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 7	//Mot de pouvoir : Mort
+COPY_EXISTING	~sareveff.eff~				~override/pxdnecrt.eff~	WRITE_ASCII 0x30 ~pxdnecrt~ #8
+COPY	~Derats_Dawap/Clercs/Necro/pxdnecr5.spl~		~override~	SAY 0xfe @203

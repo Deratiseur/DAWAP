@@ -1,0 +1,46 @@
+COPY	~Derats_Dawap/Druides/Poly/Copy/pxdpolyb.spl~ ~override/pxeludb.spl~	LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete=87 END
+ADD_KIT ~pxELUD~
+~pxELUD            0           0           1           1           0           1           0           0~
+~pxELUD            0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxELUD            0       0       0       0       9       0~
+~pxELUD            0       0       0       0       0       0~
+~pxELUD            0       0       0       0       17      0~
+~pxELUD            0       0       0       0       15      0~
+~pxELUD            1       1       1       1       1       1       1       1       1~
+~pxELUD            1       0       1       1       0       1~
+~Derats_Dawap/Clercs/Elud/pxelud.2da~
+~K_C_H   K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+~0x00000000    3~
+~Fi0~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @340
+SAY @341
+SAY @342
+LAF fl#add_kit_ee	STR_VAR kit_name = pxELUD	END
+COPY	~Derats_Dawap/Clercs/Elud/pxeludp1.spl~			~override~
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeluda1.spl~	WRITE_BYTE 0xa2 129	WRITE_BYTE 0xca 129
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludb1.spl~	WRITE_BYTE 0xa2 130	WRITE_BYTE 0xca 130
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp2.spl~
+				~pxeluda1.spl~				~override/pxeluda2.spl~
+				~pxeludb1.spl~				~override/pxeludb2.spl~	WRITE_BYTE 0xce 2
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp3.spl~
+				~pxeluda1.spl~				~override/pxeluda3.spl~
+				~pxeludb1.spl~				~override/pxeludb3.spl~	WRITE_BYTE 0xce 3
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp4.spl~
+				~pxeluda1.spl~				~override/pxeluda4.spl~
+				~pxeludb1.spl~				~override/pxeludb4.spl~	WRITE_BYTE 0xce 4
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp5.spl~
+				~pxeluda1.spl~				~override/pxeluda5.spl~
+				~pxeludb1.spl~				~override/pxeludb5.spl~	WRITE_BYTE 0xce 5
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp6.spl~
+				~pxeluda1.spl~				~override/pxeluda6.spl~
+				~pxeludb1.spl~				~override/pxeludb6.spl~	WRITE_BYTE 0xce 6
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp7.spl~
+				~pxeluda1.spl~				~override/pxeluda7.spl~
+				~pxeludb1.spl~				~override/pxeludb7.spl~	WRITE_BYTE 0xce 7			
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp8.spl~
+				~pxeluda1.spl~				~override/pxeluda8.spl~
+				~pxeludb1.spl~				~override/pxeludb8.spl~	WRITE_BYTE 0xce 8
+COPY_EXISTING	~pxeludp1.spl~				~override/pxeludp9.spl~
+				~pxeluda1.spl~				~override/pxeluda9.spl~
+				~pxeludb1.spl~				~override/pxeludb9.spl~	WRITE_BYTE 0xce 9

@@ -1,0 +1,27 @@
+COPY	~Derats_Dawap/Sorciers/Eorat/Copy/pxdrecal.spl~	~override~
+COMPILE	~Derats_Dawap/Sorciers/eorat/pxdeorat.baf~
+COPY	~Derats_Dawap/Clercs/Eochaos/Copy~				~override~
+ADD_KIT ~pxDEOCHAOS~
+~pxDEOCHAOS           0           0           1           1           0           1           0           0~
+~pxDEOCHAOS           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDEOCHAOS           0       0       0       0       9       0~
+~pxDEOCHAOS           0       0       0       0       0       0~
+~pxDEOCHAOS           0       0       0       0       17      0~
+~pxDEOCHAOS           0       0       0       0       15      0~
+~pxDEOCHAOS           0       0       0       0       0       0       1       1       1~
+~pxDEOCHAOS           1       0       1       1       0       1~
+~Derats_Dawap/Clercs/Eochaos/pxdeoch.2da~
+~K_C_H   K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+~0x80000000    3~
+~Cl0~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @150
+SAY @151
+SAY @152
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDEOCHAOS	END
+COPY_EXISTING	~pxdeoch1.spl~				~override/pxdeoch2.spl~	WRITE_BYTE 0xa2 2
+COPY_EXISTING	~pxdeoch1.spl~				~override/pxdeoch3.spl~	WRITE_BYTE 0xa2 4
+COPY_EXISTING	~pxdeoch1.spl~				~override/pxdeoch4.spl~	WRITE_BYTE 0xa2 8
+COPY_EXISTING	~pxdeoch1.spl~				~override/pxdeoch5.spl~	WRITE_BYTE 0xa2 16
+COPY_EXISTING	~pxdeoch1.spl~				~override/pxdeoch6.spl~	WRITE_BYTE 0xa2 32
+COPY_EXISTING	~pxdeoch1.spl~				~override/pxdeoch7.spl~	WRITE_BYTE 0xa2 64

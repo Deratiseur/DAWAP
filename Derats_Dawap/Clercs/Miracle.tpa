@@ -1,0 +1,23 @@
+COPY	~Derats_Dawap/Clercs/Miracle/COPY~				~override~
+ADD_KIT ~pxDMIRAC~
+~pxDMIRAC             1           1           1           1           1           1           1           1~
+~pxDMIRAC             1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDMIRAC             0       0       0       0       9       0~
+~pxDMIRAC             0       0       0       0       -2      0~
+~pxDMIRAC             0       0       0       0       17      0~
+~pxDMIRAC             0       0       0       0       15      0~
+~pxDMIRAC             1       1       1       1       1       1       1       1       1~
+~pxDMIRAC             1       0       1       1       0       1~
+~Derats_Dawap/Clercs/Miracle/pxdmira.2da~
+~K_C_H   K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+~0x00000000    3~
+~~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @90
+SAY @91
+SAY @92
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDMIRAC END
+ACTION_IF !FILE_EXISTS_IN_GAME ~pxdeoch7.spl~ THEN BEGIN
+	COPY	~Derats_Dawap/Clercs/Eochaos/Copy/pxdeoch1.spl~	~override/pxdeoch6.spl~	WRITE_BYTE 0xa2 32
+	COPY_EXISTING	~pxdeoch6.spl~				~override/pxdeoch7.spl~	WRITE_BYTE 0xa2 64
+END

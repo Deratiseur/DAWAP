@@ -1,0 +1,26 @@
+COPY	~Derats_Dawap/Clercs/Beni/pxsoben1.spl~			~override~
+ADD_KIT ~pxSOBENI~
+~pxSOBENI            0           0           1           1           0           1           0           0~
+~pxSOBENI            0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxSOBENI            0       0       0       0       9       0~
+~pxSOBENI            0       0       0       0       0       0~
+~pxSOBENI            0       0       0       0       17      0~
+~pxSOBENI            0       0       0       0       15      0~
+~pxSOBENI            1       0       0       1       0       0       1       0       0~
+~pxSOBENI            1       0       1       1       0       1~
+~Derats_Dawap/Clercs/Beni/pxsobeni.2da~
+~K_C_H   K_C_D   K_C_G   K_C_E   K_C_HE   K_C_HL   K_C_HO~
+~0x00000000    3~
+~Cl0~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @240
+SAY @241
+SAY @242
+LAF fl#add_kit_ee	STR_VAR kit_name = pxSOBENI	END
+ACTION_IF GAME_IS ~BGEE BG2EE EET~ THEN BEGIN
+	COMPILE	~Derats_Dawap/Clercs/Beni/pxsobeni.baf~
+END
+ACTION_IF GAME_IS ~IWDEE~ THEN BEGIN
+	COMPILE	~Derats_Dawap/Clercs/Beni/IWD/pxsobeni.baf~
+END
+COPY	~Derats_Dawap/Clercs/Eochaos/Copy/pxdeochb.spl~	~override/pxsobenb.spl~	WRITE_ASCII 0xae ~pxsobeni~ #8
