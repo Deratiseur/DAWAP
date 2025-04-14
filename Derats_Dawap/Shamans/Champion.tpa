@@ -1,0 +1,30 @@
+COPY	~Derats_Dawap/Shamans/Champion/Copy~			~override~
+ADD_KIT ~PXCHCLAN~
+~PXCHCLAN          1           0           1           1           0           0           0           1~
+~PXCHCLAN          0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 2 2 0 0 0 2 0 0 1 1 1 2 2 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXCHCLAN          0       0       12      0       12      0~
+~PXCHCLAN          0       0       0       0       0       0~
+~PXCHCLAN          0       0       0       0       0       0~
+~PXCHCLAN          0       0       0       0       0       0~
+~PXCHCLAN          0       0       0       1       1       1       0       0       0~
+~PXCHCLAN          0       0       0       0       0       0~
+~Derats_Dawap/Shamans/Champion/pxchcla.2da~
+~K_SH_H K_SH_HO~
+~0x00000000    21~
+~Sh0~
+~LEAT20 * HELM19 BAG27A RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27,40 STAF08~
+SAY @390
+SAY @391
+SAY @392
+LAF fl#add_kit_ee	STR_VAR kit_name = PXCHCLAN	END
+COPY_EXISTING	~spwi214.spl~				~override/pxchclaa.spl~						//Force
+				~spwi406.spl~				~override/pxchclai.spl~						//Globe mineur d'invulnérabilité
+				~spwi511.spl~				~override/pxchclae.spl~	WRITE_BYTE 0x1c 2	//Protection contre les armes normales
+COPY_EXISTING	~sppr412.spl~				~override/pxchclac.spl~						//Sainte puissance
+				~sppr513.spl~				~override/pxchclad.spl~	WRITE_LONG 0x1e 0	//Magie des vertueux
+COPY_EXISTING	~spwi607.spl~				~override/pxchclaf.spl~	WRITE_BYTE 0x1c 2
+WRITE_BYTE 0x22 14	WRITE_BYTE 0x25 2	WRITE_BYTE 0x27 6	SAY NAME1 @3921	SAY UNIDENTIFIED_DESC @3922 //Esprit gardien (Double illusoire, convocation)
+COPY_EXISTING	~spwi708.spl~				~override/pxchclag.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 6 //Manteau
+COPY_EXISTING	~spwi603.spl~				~override/pxchclah.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 7 //Transformation de Tenser
+COPY_EXISTING	~sppr101.spl~				~override/pxchcla3.spl~
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 321 target = 2 STR_VAR resource = ~pxchcla3~ END

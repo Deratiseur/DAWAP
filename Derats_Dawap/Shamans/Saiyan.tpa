@@ -1,0 +1,49 @@
+COPY	~Derats_Dawap/Shamans/Saiyan/Copy~				~override~
+
+COMPILE	~Derats_Dawap/Shamans/Saiyan/pxsaiya.baf~
+ADD_KIT ~PXSAIYAN~
+~PXSAIYAN          1           0           1           1           0           0           0           1~
+~PXSAIYAN               0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXSAIYAN          0       0       12      0       12      0~
+~PXSAIYAN          0       0       0       0       0       0~
+~PXSAIYAN          0       0       0       0       0       0~
+~PXSAIYAN          0       0       0       0       0       0~
+~PXSAIYAN          0       0       0       1       1       1       0       0       0~
+~PXSAIYAN          0       0       0       0       0       0~
+~Derats_Dawap/Shamans/Saiyan/pxsaiyan.2da~
+~K_SH_H K_SH_HO~
+~0x00000008    21~
+~Sh0~
+~LEAT20 * HELM19 BAG27A RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27,40 STAF08~
+SAY @450
+SAY @451
+SAY @452
+LAF fl#add_kit_ee	STR_VAR kit_name = PXSAIYAN	END
+COPY_EXISTING	~spwi112.spl~				~override/pxsaiys1.spl~											//Projectile magique
+				~spwi217.spl~				~override/pxsaiys2.spl~											//Incinérateur d'Agannazar
+				~spwi304.spl~				~override/pxsaiys3.spl~											//Boule de feu
+				~spwi503.spl~				~override/pxsaiys5.spl~											//Cône de froid
+				~spwi615.spl~				~override/pxsaiys6.spl~	WRITE_BYTE 0x1c 2						//Chaîne d’éclair
+COPY	~Derats_Dawap/Mages/Spheres/Copy2~				~override~
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro316.pro~	~pxd Viriolic Sphere~							//Sphère acide
+COPY	~Derats_Dawap/Shamans/Saiyan/pxsaiys4.spl~			~Override~	SAY NAME1 @40251	SAY UNIDENTIFIED_DESC @4529	LPF SPELL_PROJO INT_VAR projectile = ~idpro316~ END
+COPY ~Derats_Dawap/Mages/Spheres/Copy2/pxspherz.spl~ ~override/pxsaiyz.spl~	WRITE_ASCII 0xde ~pxsaiyz~ #8	WRITE_ASCII 0x10e ~pxsaiy4~ #8
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/vspherx.pro~	~pxd Viriolic Sphere sub~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphery.spl~			~override~	LPF SPELL_PROJO INT_VAR projectile = ~vspherx~ END
+COPY_EXISTING	~sparm2.vvc~				~override/pxsaiyv.vvc~	WRITE_ASCII 0x8 ~pxsaiy1~ #8	WRITE_BYTE 0x20 (THIS | 65)	WRITE_BYTE 0x18 (THIS | 2)
+COPY	~Derats_Dawap/Shamans/Saiyan/pxsaiy1.itm~ 		~override~	SAY DESC @4521
+COPY_EXISTING	~pxsaiy1.itm~				~override/pxsaiy2.itm~	SAY DESC @4522	WRITE_BYTE 0x86 2	WRITE_BYTE 0x88 8	WRITE_BYTE 0xae 2
+COPY_EXISTING	~pxsaiy1.itm~				~override/pxsaiy3.itm~	SAY DESC @4523	WRITE_BYTE 0x86 3	WRITE_BYTE 0x88 10	WRITE_BYTE 0xae 8	WRITE_BYTE 0x60 2
+COPY_EXISTING	~pxsaiy1.itm~				~override/pxsaiy4.itm~	SAY DESC @4524	WRITE_BYTE 0x86 4	WRITE_BYTE 0x88 12	WRITE_BYTE 0xae 3
+COPY_EXISTING	~pxsaiy1.itm~				~override/pxsaiy5.itm~	SAY DESC @4525	WRITE_BYTE 0x86 5	WRITE_BYTE 0x88 6	WRITE_BYTE 0xae 9	WRITE_BYTE 0x60 3	WRITE_BYTE 0x8a 2
+COPY_EXISTING	~pxsaiy5.itm~				~override/pxsaiy6.itm~	SAY DESC @4526	WRITE_BYTE 0x86 6	WRITE_BYTE 0x88 8	WRITE_BYTE 0xae 4
+COPY_EXISTING	~pxsaiy5.itm~				~override/pxsaiy7.itm~	SAY DESC @4527	WRITE_BYTE 0x86 7	WRITE_BYTE 0x88 10	WRITE_BYTE 0xae 10	WRITE_BYTE 0x60 4
+COPY_EXISTING	~pxsaiy5.itm~				~override/pxsaiy8.itm~	SAY DESC @4528	WRITE_BYTE 0x86 8	WRITE_BYTE 0x88 12	WRITE_BYTE 0xae 5
+COPY	~Derats_Dawap/Sorciers/anoma/Copy/pxdanom1.spl~	~override/pxsaiya1.spl~	WRITE_ASCII 0xae ~pxsaiyan~ #8
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya2.spl~	WRITE_BYTE 0x9e 5
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya3.spl~	WRITE_BYTE 0x9e 10
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya4.spl~	WRITE_BYTE 0x9e 15
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya5.spl~	WRITE_BYTE 0x9e 20
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya6.spl~	WRITE_BYTE 0x9e 25
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya7.spl~	WRITE_BYTE 0x9e 30
+COPY_EXISTING	~pxsaiya1.spl~				~override/pxsaiya8.spl~	WRITE_BYTE 0x9e 35
