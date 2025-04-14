@@ -6,8 +6,12 @@
 @6 = ~Kits de clerc~
 @7 = ~Kits de druide~
 @8 = ~Kits de barde~
-@9 = ~Kits divers et multiclasses~
+@9 = ~Kits de multiclasses~
 @990 = ~Kits de shaman~
+@991 = ~Installer tous les kits~
+@992 = ~Avec animations changees~
+@993 = ~Sans animations changees~
+@995 = ~Kits de combattants~
 
 @19 = ~Fleau (mage)~
 @10 = ~fléau~
@@ -195,7 +199,7 @@ Inconvénients :
 - Il n'a accès à aucun hla.~
 
 @109 = ~Enrage (mage)~
-@100 = ~enrage~
+@100 = ~enragé~
 @101 = ~Enragé~
 @102 = ~ENRAGÉ : Ce magicien ne se défait jamais de la rage animale qui l'habite.
 
@@ -702,9 +706,9 @@ Inconvénient :
 @352 = ~INFUSEUR : Cet arcaniste infuse la magie qui ne lui sert pas dans son arme.hhh
 
 Avantages :
+- Devient automatiquement guerrier-mage à la création.
 - Toute arme de mêlée qu'il utilise inflige 1D4 dégâts magiques supplémentaire, +1D4 tous les 5 niveaux.
 - Toute arme de mêlée qu'il utilise est considérée comme magique +1 et accorde +1 au toucher, +1 tous les 5 niveaux.
-- Devient automatiquement guerrier-mage à la création.
 - Peut porter n'importe quelle armure sans que ça l’empêche de lancer des sorts.
 - A plus de points de vie qu'un guerrier-mage standard.
 
@@ -1285,7 +1289,7 @@ Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de nivea
 @489 = ~Maitre du Vif (druide)~
 @480 = ~maître du Vif~
 @481 = ~Maître du Vif~
-@482 = ~Maître du Vif : Le lien de ce druide avec la nature est très fort, mais ne se manifeste de la même manière que celui de ces confrères.
+@482 = ~MAÎTRE DU VIF : Le lien de ce druide avec la nature est très fort, mais ne se manifeste de la même manière que celui de ces confrères.
 
 Avantages :
 - Protection contre les animaux.
@@ -1304,7 +1308,7 @@ Inconvénients :
 @499 = ~Levemort (barde)~
 @490 = ~lèvemort~
 @491 = ~Lèvemort~
-@492 = ~Lèvemort : Ce barde connaît un secret de famille qu'il ne vaut mieux pas trop raconter aux défenseurs du bien.
+@492 = ~LÈVEMORT : Ce barde connaît un secret de famille qu'il ne vaut mieux pas trop raconter aux défenseurs du bien.
 
 Avantages :
 - Son chant à 20% de chance +1% de chance par niveau (max 40%) de relever les morts sous forme de zombis.
@@ -1323,7 +1327,7 @@ Inconvénients :
 @509 = ~Debordeur (ensorceleur)~
 @500 = ~débordeur~
 @501 = ~Débordeur~
-@502 = ~Débordeur : Cet ensorceleur déborde littéralement d’énergie magique. Cela impacte les armes qu'il utilise et s'accompagne d'autres effets.
+@502 = ~DÉBORDEUR : Cet ensorceleur déborde littéralement d’énergie magique. Cela impacte les armes qu'il utilise et s'accompagne d'autres effets.
 Avantages :
 - Toutes ses attaques rajoutent 1D4 points de dégâts magiques. À plus haut niveau d'autre effets aléatoires sont rajoutés (tous les effets non dégâts autorisent un jet de sauvegarde contre les sorts pour annuler et durent un tour) :
  À partir du niveau 4 toutes ses attaques ont en plus 5% de chance de ralentir la cible.
@@ -1342,7 +1346,7 @@ Inconvénient :
 @519 = ~Dweomeriste divin universel (clerc)~
 @510 = ~dwéomeriste divin universel~
 @511 = ~Dwéomeriste divin universel~
-@512 = ~Dwéomeriste divin universel : Cet arcaniste venu d'une autre réalité sait comment utiliser l’énergie diffusée par les dieux et la nature.
+@512 = ~DWÉOMERISTE DIVIN UNIVERSEL : Cet arcaniste venu d'une autre réalité sait comment utiliser l’énergie diffusée par les dieux et la nature.
 
 Avantages :
 - Chaque fois qu'il devrait lancer un sort, à la place il peut lancer n'importe quel sort existant du niveau correspondant.
@@ -1428,7 +1432,7 @@ Ce sort permet au Dweomeriste divin universel de sélectionner n'importe quel so
 @529 = ~Malavise (mage)~
 @520 = ~malavisé~
 @521 = ~Malavisé~
-@522 = ~Malavisé : ce mage a cherché à gagner de la puissance en pactisant avec un seigneur démon, sans en mesurer les conséquences.
+@522 = ~MALAVISÉ : ce mage a cherché à gagner de la puissance en pactisant avec un seigneur démon, sans en mesurer les conséquences.
 
 Avantages :
 - +3 sorts par niveau de sort
@@ -1439,10 +1443,10 @@ Inconvénient :
 - Chaque fois qu'il tue une créature tous les membres du groupe subissent 1D4 points de dégâts non létaux.
 - Sagesse : -3~
 
-@539 = ~Prefondateur (mage)~
-@530 = ~préfondateur~
-@531 = ~Préfondateur~
-@532 = ~Préfondateur : Ce monstre sait comment extraire de l’énergie vitale des êtres l'entourant une magie brute qu'il peut remodeler en n'importe quel sort.
+@539 = ~Arcanologue vampirique (mage)~
+@530 = ~arcanologue vampirique~
+@531 = ~Arcanologue vampirique~
+@532 = ~ARCANOLOGUE VAMPIRIQUE : Cet être venu d'une autre réalité sait comment extraire l’énergie vitale des êtres l'entourant pour en faire une magie brute qu'il peut remodeler en n'importe quel sort.
 
 Avantages :
 - Il modèle les sorts : chaque fois qu'il devrait lancer un sort, à la place il peut lancer n'importe quel sort existant du niveau correspondant.
@@ -1465,7 +1469,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 1 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 1 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 1 point de vie.~
 @5322 = ~Dwéomer divin 2~
 @53221 = ~Dwéomer divin de niveau 2 (non aligné)
 Niveau : 2
@@ -1475,7 +1479,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 2 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 2 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 1 point de vie.~
 @5323 = ~Dwéomer divin 3~
 @53231 = ~Dwéomer divin de niveau 3 (non aligné)
 Niveau : 3
@@ -1485,7 +1489,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 3 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 3 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 2 points de vie.~
 @5324 = ~Dwéomer divin 4~
 @53241 = ~Dwéomer divin de niveau 4 (non aligné)
 Niveau : 4
@@ -1495,7 +1499,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 4 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 4 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 2 points de vie.~
 @5325 = ~Dwéomer divin 5~
 @53251 = ~Dwéomer divin de niveau 5 (non aligné)
 Niveau : 5
@@ -1505,7 +1509,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 5 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 5 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 3 points de vie.~
 @5326 = ~Dwéomer divin 6~
 @53261 = ~Dwéomer divin de niveau 6 (non aligné)
 Niveau : 6
@@ -1515,7 +1519,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 6 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 6 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 3 points de vie.~
 @5327 = ~Dwéomer divin 7~
 @53271 = ~Dwéomer divin de niveau 7 (non aligné)
 Niveau : 7
@@ -1525,7 +1529,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 7 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau 7 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 4 points de vie.~
 
 @5328 = ~Dwéomer divin 8~
 @53281 = ~Dwéomer divin de niveau quête (non aligné)
@@ -1536,7 +1540,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau quête existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort divin de niveau quête existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 4 points de vie.~
 
 @53291 = ~Dwéomer arcanique 1~
 @532911 = ~Dwéomer arcanique de niveau 1 (non aligné)
@@ -1547,7 +1551,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 1 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 1 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 1 point de vie.~
 @53292 = ~Dwéomer arcanique 2~
 @532921 = ~Dwéomer arcanique de niveau 2 (non aligné)
 Niveau : 2
@@ -1557,7 +1561,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 2 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 2 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 1 point de vie.~
 @53293 = ~Dwéomer arcanique 3~
 @532931 = ~Dwéomer arcanique de niveau 3 (non aligné)
 Niveau : 3
@@ -1567,7 +1571,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 3 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 3 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 2 points de vie.~
 @53294 = ~Dwéomer arcanique 4~
 @532941 = ~Dwéomer arcanique de niveau 4 (non aligné)
 Niveau : 4
@@ -1577,7 +1581,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 4 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 4 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 2 points de vie.~
 @53295 = ~Dwéomer arcanique 5~
 @532951 = ~Dwéomer arcanique de niveau 5 (non aligné)
 Niveau : 5
@@ -1587,7 +1591,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 5 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 5 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 3 points de vie.~
 @53296 = ~Dwéomer arcanique 6~
 @532961 = ~Dwéomer arcanique de niveau 6 (non aligné)
 Niveau : 6
@@ -1597,7 +1601,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 6 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 6 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 3 points de vie.~
 @53297 = ~Dwéomer arcanique 7~
 @532971 = ~Dwéomer arcanique de niveau 7 (non aligné)
 Niveau : 7
@@ -1607,7 +1611,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 7 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 7 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 4 points de vie.~
 @53298 = ~Dwéomer arcanique 8~
 @532981 = ~Dwéomer arcanique de niveau 8 (non aligné)
 Niveau : 8
@@ -1617,7 +1621,7 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 8 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 8 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 4 points de vie.~
 @53299 = ~Dwéomer arcanique 9~
 @532991 = ~Dwéomer arcanique de niveau 9 (non aligné)
 Niveau : 9
@@ -1627,4 +1631,66 @@ Temps d'incantation : spécial
 Zone d'effet : spécial
 Jet de sauvegarde : spécial
 
-Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 9 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi.~
+Ce sort permet au Préfondateur de sélectionner n'importe quel sort arcanique de niveau 9 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. Utiliser ce sort coûte à toutes les créatures vivantes alentours 5 points de vie.~
+
+@549 = ~4U-H4S4RD (guerrier)~
+@540 = ~4u-h4s4rd~
+@541 = ~4U-H4S4RD~
+@542 = ~4U-H4S4RD : ce guerrier ne se sert pas d'une technique particulière. Il se sert de TOUTES les techniques.
+
+Avantage :
+- Il peut utiliser Grande technique magique une fois tous les 2 niveaux.
+- À partir du niveau 18 il peut utiliser Super technique magique une fois par niveau.
+
+GRANDE TECHNIQUE MAGIQUE : cette technique donne au 4U-H4S4RD tous les bonus d'une capacité aléatoire normalement acquise par une autre classe /spécialisation. La capacité peut être de n'importe quel ordre, mais ne concerne pas les armes à distance.
+
+SUPER TECHNIQUE MAGIQUE : cette technique permet au 4U-H4S4RD de simuler aléatoirement n'importe quelle capacité de haut niveau d'une autres classe/spécialisation, y compris des sorts épiques.
+
+Inconvénients :
+- Il ne peut pas se spécialiser dans les armes à distance.
+- Il ne peut pas choisir de hlas.~
+@543 = ~Grande technique magique~
+@544 = ~Super technique magique~
+
+@559 = ~Frenetique (guerrier)~
+@550 = ~frénétique~
+@551 = ~Frénétique~
+@552 = ~FRÉNÉTIQUE : Vite,vite, vite.... mais trop vite, sinon ça fait mal.
+- 
+Avantage :
+- Hâte améliorée permanente.
+
+Inconvénients :
+- Il n'utilise que les lames longues.
+- Chances de ratés critique +2.
+- Quand il fait un raté critique il subit 1D6+2 points de dégâts tranchants.~
+
+@569 = ~Flemmard (guerrier)~
+@560 = ~flemmard~
+@561 = ~Flemmard~
+@562 = ~FLEMMARD : Ce guerrier ne compte pas apprendre quoi que ce soit, il ne compte que sur sa chance. Et ça marche.
+
+Avantages :
+- Chance +1, +1 tous les 10 niveaux.
+- Chance de coup critique +1, +1 tous les 10 niveaux.
+- Ses attaques ont 6% de chance de déclencher au hasard Attaque tournoyante majeure, Coup mortel majeur ou Frappe critique, +3% tous les 10 niveaux.
+
+Inconvénients :
+- TAC0 de voleur.
+- Il ne peut pas dépasser la maîtrise avec les armes.
+- Il ne peut pas choisir de HLAs.~
+
+@579 = ~Boucher (Guerrier)~
+@570 = ~boucher~
+@571 = ~Boucher~
+@572 = ~BOUCHER : Ce guerrier aime tellement tuer que ça le rend fou.
+
+Avantages :
+- Chaque fois qu'il tue une créature il regagne 2 points de vie.
+- Dégâts infligés +30%
+- À partir du niveau 15, Coup mortel permanent.
+- À partir du niveau 22 toutes ses frappes tuent la cible si elle rate un jet de sauvegarde contre les sorts.
+
+Inconvénient :
+- Chaque fois qu'il tue une créature il a 30% de chance -1% tous les 3 niveaux de devenir berserk. Cet état dure 2 tours pendant lesquels il est incontrôlable le premier tour. S'il tue d'autres créatures, il peut relancer l'état incontrôlable.
+- Alignement limité à Neutre mauvais et Chaotique mauvais.~

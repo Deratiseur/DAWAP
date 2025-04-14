@@ -8,6 +8,10 @@
 @8 = ~Bard kits~
 @9 = ~Miscellaneous and multi-class kits~
 @990 = ~Shaman kits~
+@991 = ~Install all kits~
+@992 = ~With changed animations~
+@993 = ~Without changed animations~
+@995 = ~Fighters kits~
 
 @19 = ~Scourge (mage)~
 @10 = ~scourge~
@@ -700,9 +704,9 @@ Disadvantage:
 @352 = ~INFUSER: This arcanist infuses the magic he doesn't need into his weapon.
 
 Advantages:
+- Automatically becomes a warrior-mage at creation.
 - Any melee weapon he uses inflicts 1D4 additional magic damage, +1D4 every 5 levels.
 - Any melee weapon he uses is considered magic +1 and grants +1 to touch, +1 every 5 levels.
-- Automatically becomes a warrior-mage at creation.
 - Can wear any type of armor without being unable to cast spells.
 - Has more hit points than a standard warrior-mage.
 
@@ -1437,10 +1441,12 @@ Disadvantage:
 - Each time he kills a creature, all members of the group suffer 1D4 points of non-lethal damage.
 - Wisdom : -3~
 
-@539 = ~Prefoundater (mage)~
-@530 = ~prefoundater~
-@531 = ~Prefoundater~
-@532 = ~Prefoundater : This monster knows how to extract raw magic from the vital energy of the beings around him, which he can reshape into any spell he wants.
+@539 = ~Vampiric Arcanologist (mage)~
+@5391 = ~With changed animation: recolored doppelganger~
+@5392 = ~Without changed animation (non-rp)~
+@530 = ~vampiric arcanologist~
+@531 = ~Vampiric Arcanologist~
+@532 = ~VAMPIRIC ARCANOLOGIST: This being from another reality knows how to extract vital energy from the beings around him, turning it into raw magic that he can reshape into any spell he wants..
 
 Advantages:
 - He models spells: whenever he should cast a spell, instead he can cast any existing spell of the corresponding level.
@@ -1463,7 +1469,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 1 divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 1 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
 @5322 = ~Divine Dweomer 2~
 @53221 = ~Level 2 divine dweomer (unaligned)
 Level: 2
@@ -1473,7 +1479,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 2 divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 2 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
 @5323 = ~Divine Dweomer 3~
 @53231 = ~Level 3 divine dweomer (unaligned)
 Level: 3
@@ -1483,7 +1489,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 3 divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 3 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
 @5324 = ~Divine Dweomer 4~
 @53241 = ~Level 4 divine dweomer (unaligned)
 Level: 4
@@ -1493,7 +1499,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 4 divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 4 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
 @5325 = ~Divine Dweomer 5~
 @53251 = ~Level 5 divine dweomer (unaligned)
 Level: 5
@@ -1503,7 +1509,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 5 divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 5 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
 @5326 = ~Divine Dweomer 6~
 @53261 = ~Level 6 divine dweomer (unaligned)
 Level: 6
@@ -1513,7 +1519,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 6 divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 6 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
 @5327 = ~Divine Dweomer 7~
 @53271 = ~Level 7 divine dweomer (unaligned)
 Level: 7
@@ -1523,7 +1529,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing 7th-level divine spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing 7th-level divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
 @5328 = ~Divine Dweomer 8~
 @53281 = ~Level Quest divine dweomer (unaligned)
 Level: 8
@@ -1533,7 +1539,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
 @53291 = ~arcanic Dweomer 1~
 @532911 = ~Level 1 arcanic dweomer (unaligned)
 Level: 1
@@ -1543,7 +1549,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 1 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 1 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
 @53292 = ~arcanic Dweomer 2~
 @532921 = ~Level 2 arcanic dweomer (unaligned)
 Level: 2
@@ -1553,7 +1559,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 2 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 2 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
 @53293 = ~arcanic Dweomer 3~
 @532931 = ~Level 3 arcanic dweomer (unaligned)
 Level: 3
@@ -1563,7 +1569,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 3 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 3 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
 @53294 = ~arcanic Dweomer 4~
 @532941 = ~Level 4 arcanic dweomer (unaligned)
 Level: 4
@@ -1573,7 +1579,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 4 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 4 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
 @53295 = ~arcanic Dweomer 5~
 @532951 = ~Level 5 arcanic dweomer (unaligned)
 Level: 5
@@ -1583,7 +1589,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 5 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 5 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
 @53296 = ~arcanic Dweomer 6~
 @532961 = ~Level 6 arcanic dweomer (unaligned)
 Level: 6
@@ -1593,7 +1599,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing level 6 arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing level 6 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
 @53297 = ~arcanic Dweomer 7~
 @532971 = ~Level 7 arcanic dweomer (unaligned)
 Level: 7
@@ -1603,7 +1609,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing 7th-level arcanic spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing 7th-level arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
 @53298 = ~arcanic Dweomer 8~
 @532981 = ~Level 8 arcanic dweomer (unaligned)
 Level: 8
@@ -1613,7 +1619,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
 @53299 = ~arcanic Dweomer 9~
 @532991 = ~Level 9 arcanic dweomer (unaligned)
 Level: 9
@@ -1623,4 +1629,66 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Prefoundater to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Vampiric Arcanologist to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 5 life points.~
+
+@549 = ~4T-R4ND0M (warrior)~
+@540 = ~4T-R4ND0M~
+@541 = ~4T-R4ND0M~
+@542 = ~4T-R4ND0M : this warrior doesn't use any particular technique. He uses ALL techniques.
+
+Advantages: 
+- He can use Great Magic Technique once every 2 levels.
+- From level 18 he can use Super magic technique once per level.
+
+GREAT MAGIC TECHNIQUE: this technique gives the 4U-H4S4RD all the bonuses of a random ability normally acquired by another class/specialization. The ability can be of any order, but does not apply to ranged weapons.
+
+SUPER MAGIC TECHNIQUE: this technique allows the 4U-H4S4RD to randomly simulate any high-level ability of another class/specialization, including epic spells.
+
+Disadvantages:
+- He Cannot specialize in ranged weapons.
+- He cannot choose hlas.~
+@543 = ~Great Magic Technique~
+@544 = ~Super Magic Technique~
+
+@559 = ~Frenzied (warrior)~
+@550 = ~frenzied~
+@551 = ~Frenzied~
+@552 = ~FRENZIED: Quick, quick, quick.... but not too quick, otherwise it hurts.
+
+Advantage:
+- Permanently Improved haste.
+
+Disadvantages:
+- Uses only long blades.
+- Chance of critical miss +2.
+- When he critically misses, he suffers 1D6+2 points of slashing damage.~
+
+@569 = ~Lazy (warrior)~
+@560 = ~lazy~
+@561 = ~Lazy~
+@562 = ~LAZY: This warrior doesn't intend to learn anything, he just relies on his luck. And it works.
+
+Advantages: 
+- Luck +1, +1 every 10 levels.
+- Critical strike chance +1, +1 every 10 levels.
+- His attacks have a 6% chance of randomly triggering Greater Whirlwind Attack, Greater Deathblow or Critical Strike, +3% every 10 levels.
+
+Disadvantages:
+- Thief's TAC0.
+- Cannot exceed mastery with weapons.
+- Cannot choose HLAs.~
+
+@579 = ~Butcher (warrior)~
+@570 = ~butcher~
+@571 = ~Butcher~
+@572 = ~BUTCHER: This warrior loves killing so much it drives him mad.
+
+Advantages: 
+- Every time he kills a creature, he regains 2 hit points.
+- Damage inflicted +30%
+- From level 15, permanent death blow.
+- From level 22 all his strikes kill the target if it fails a saving throw against spells.
+
+Disadvantages:
+- Every time he kills a creature, he has a 30% -1% chance every 3 levels of becoming a berserk. This state lasts 2 turns, during which he is uncontrollable for the first turn. If he kills other creatures, he can restart the uncontrollable state.
+- Alignment limited to Neutral Evil and Chaotic Evil.~
