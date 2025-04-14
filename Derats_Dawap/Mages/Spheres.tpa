@@ -1,0 +1,113 @@
+DEFINE_PATCH_FUNCTION SELF_TO_TARGET BEGIN
+READ_LONG 0x64 abilities_off
+READ_SHORT 0x68 num_abilities
+READ_LONG 0x6a off_feat
+FOR (i = 0; i < num_abilities; i += 1) BEGIN
+WRITE_BYTE 0x0c+abilities_off+i*0x28 1 //Une créature
+WRITE_BYTE 0x0e+abilities_off+i*0x28 40 //portée 40
+READ_SHORT 0x1e+abilities_off+i*0x28 nb_feat
+READ_SHORT 0x20+abilities_off+i*0x28 ind_feat
+FOR (p = 0; p < nb_feat; p += 1) BEGIN
+WRITE_BYTE 0x02+off_feat+p*0x30+ind_feat*0x30 2 //Pre target
+END
+END
+END
+COPY	~Derats_Dawap/Mages/Spheres/Copy~				~override~
+COPY	~Derats_Dawap/Mages/Spheres/Copy2~				~override~
+COPY	~Derats_Dawap/Mages/Spheres/Copy3~				~override~
+COPY	~Derats_Dawap/Mages/Projo/Copy/pxprojoa.spl~	~override~
+ADD_KIT ~pxSPHERES~
+~pxSPHERES           0           0           1           0           0           0           0           0~
+~pxSPHERES           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxSPHERES           0       0       0       9       0       0~
+~pxSPHERES           0       0       0       0       0       0~
+~pxSPHERES           0       0       0       17      0       0~
+~pxSPHERES           0       0       0       15      0       0~
+~pxSPHERES           1       1       1       1       1       1       1       1       1~
+~pxSPHERES           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Spheres/pxsphere.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00003FC0    1~
+~~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @400
+SAY @401
+SAY @402
+LAF fl#add_kit_ee	STR_VAR kit_name = pxSPHERES	END
+//Niveau 1 : Orbe chromatique et Projectile magique
+COPY_EXISTING	~spwi118.spl~				~override/pxsphe11.spl~
+				~spwi112.spl~				~override/pxsphe12.spl~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 1 END WRITE_LONG 0x18 (THIS | 49152)
+//Niveau 2 : Cône de sphères Élémentaires
+COPY_EXISTING	~cspray.pro~				~override/pxsphe22.pro~	WRITE_LONG 0x204 231	WRITE_LONG 0x206 231
+ADD_PROJECTILE	~Override/pxsphe22.pro~	~pxd Cone of Spheres~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe22.spl~			~override~	SAY NAME1 @40221	SAY UNIDENTIFIED_DESC @40222 WRITE_SHORT 0x98 ~%pxsphe22%~
+//Niveau 2 : Sphère résistante d'Otiluke
+COPY_EXISTING	~spwi413.spl~				~override/pxsphe21.spl~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 2 END WRITE_BYTE 0x34 2 WRITE_LONG 0x18 (THIS | 49152) 	WRITE_BYTE 0x84 2
+//Niveau 3 : Orbes explosifs
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe31.spl~			~override~	SAY NAME1 @40231	SAY UNIDENTIFIED_DESC @40232
+COPY	~Derats_Dawap/Mages/Devast/Copy/pxf2expl.bam~	~override~
+COPY_EXISTING	~inareans.pro~					~override/pxf2expl.pro~	WRITE_LONG 0x204 128	WRITE_LONG 0x206 128
+ADD_PROJECTILE ~override/pxf2expl.pro~							~pxf fire Explosion~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe3y.spl~			~override~	WRITE_SHORT 0x98 ~%pxf2expl%~
+COPY ~Derats_Dawap/Mages/Spheres/pxspher3.itm~			~override~	SAY NAME2 @402321
+COPY_EXISTING	~amcall.vvc~					~override/pxf2ex0v.vvc~	WRITE_ASCII 0x8 ~pxf2expl~ #8	WRITE_BYTE 0x34 28	WRITE_BYTE 0x28 10	WRITE_BYTE 0x4c 30
+COPY_EXISTING	~pxf2ex0v.vvc~					~override/pxf2ex1v.vvc~	WRITE_BYTE 0x68 2
+COPY_EXISTING	~pxf2ex0v.vvc~					~override/pxf2ex2v.vvc~	WRITE_BYTE 0x68 3
+//Niveau 3 : Boule de feu
+COPY_EXISTING	~spwi304.spl~				~override/pxsphe32.spl~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 3 END WRITE_LONG 0x18 (THIS | 49152) 
+//Niveau 4 : Globe d'invulnérabilité mineur
+COPY_EXISTING	~spwi406.spl~				~override/pxsphe41.spl~	LPF SELF_TO_TARGET END	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 4 END WRITE_LONG 0x18 (THIS | 49152)  
+//Niveau 4 : Sphère noire
+COPY_EXISTING	~spstones.vvc~				~override/pxsp421v.vvc~	WRITE_ASCII 0x8 ~PXSPH4X0~ #8	WRITE_BYTE 0x34 33	WRITE_BYTE 0x18 (THIS | 2)	WRITE_BYTE 0x20 (THIS | 64)
+COPY_EXISTING	~pxsp421v.vvc~				~override/pxsp422v.vvc~	WRITE_ASCII 0x8 ~PXSPH4X1~ #8
+COPY_EXISTING	~pxsp421v.vvc~				~override/pxsp423v.vvc~	WRITE_ASCII 0x8 ~PXSPH4X2~ #8
+COPY_EXISTING	~pxsp421v.vvc~				~override/pxsp424v.vvc~	WRITE_ASCII 0x8 ~PXSPH4X3~ #8
+COPY_EXISTING	~minorglb.vvc~				~override/pxsp425V.vvc~	WRITE_ASCII 0x8 ~PXSPH4X4~ #8	
+COPY_EXISTING	~inarea.pro~				~override/pxsphe42.pro~	WRITE_LONG 0x204 220	WRITE_LONG 0x206 220
+ADD_PROJECTILE ~override/pxsphe42.pro~							~pxd Black Sphere~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe42.spl~			~override~	SAY NAME1 @40241	SAY UNIDENTIFIED_DESC @40242	LPF SPELL_PROJO INT_VAR projectile = ~pxsphe42~ END
+//Niveau 5 : Sphère acide
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro316.pro~	~pxd Viriolic Sphere~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe51.spl~			~override~	SAY NAME1 @40251	SAY UNIDENTIFIED_DESC @40252	LPF SPELL_PROJO INT_VAR projectile = ~idpro316~ END
+ LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 5 END WRITE_LONG 0x18 (THIS | 49152)
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/vspherx.pro~	~pxd Viriolic Sphere sub~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphery.spl~			~override~	LPF SPELL_PROJO INT_VAR projectile = ~vspherx~ END
+//Niveau 5 : Sphère glaciale d'Otiluke
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro269.pro~	~pxd Otiluke Freezing Sphere~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe52.spl~			~override~	SAY NAME1 @40253	SAY UNIDENTIFIED_DESC @40254	LPF SPELL_PROJO INT_VAR projectile = ~idpro269~ END
+ LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 5 END WRITE_LONG 0x18 (THIS | 49152)
+//Niveau 6 Sphère Antimagique
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe61.spl~			~override~ SAY NAME1 @40261	SAY UNIDENTIFIED_DESC @40262
+COPY_EXISTING	~spattck1.vvc~				~override/pxsph61v.vvc~	WRITE_ASCII 0x8 ~pxsphe61~ #8
+COPY_EXISTING	~spwi903.spl~				~override/pxsph61x.spl~	  WRITE_LONG 0x8 (BNOT 0x0)	WRITE_LONG 0xc (BNOT 0x0) WRITE_BYTE 0x98 0
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 215 END
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 215 target = 2 resist_dispel = 2  STR_VAR resource = ~pxsph61v~ END
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 58 target = 2 resist_dispel = 2 END
+//Niveau 6 Sphère Électrique
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe62.spl~			~override~ SAY NAME1 @40263	SAY UNIDENTIFIED_DESC @40264
+COPY_EXISTING	~spwi418d.eff~				~override/pxsphe62.eff~	WRITE_ASCII 0x30 ~pxsph62x~ #8
+COPY_EXISTING	~sparm2.vvc~				~override/pxsph62v.vvc~	WRITE_ASCII 0x8 ~pxl2elc1~ #8	WRITE_BYTE 0x20 (THIS | 65)	WRITE_BYTE 0x18 (THIS | 2)
+//Niveau 7 : Boule de feu à retardement
+COPY_EXISTING	~spwi712.spl~				~override/pxsphe71.spl~ LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 7 END WRITE_LONG 0x18 (THIS | 49152)
+//Niveau 7 : Sphère de vulnérabilité totale
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe72.spl~			~override~	SAY NAME1 @40271	SAY UNIDENTIFIED_DESC @40272 SAY 0x42e @402721
+//Niveau 8 : Sphère de lame (Barrière de lames)
+COPY_EXISTING	~sppr603.spl~				~override/pxsphe81.spl~ SAY NAME1 @40281	SAY UNIDENTIFIED_DESC @40282	WRITE_BYTE 0x1c 1	LPF SELF_TO_TARGET END
+LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 8 END WRITE_LONG 0x18 (THIS | 49152)	WRITE_BYTE 0x34 8
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 215 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 215 target = 2 duration = 60 resist_dispel = 3  parameter2 = 1 STR_VAR resource = ~SPGLBBLD~ END
+//Niveau 8 : Globe d'Invulnérabilité Totale
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe82.spl~			~override~	SAY NAME1 @40283	SAY UNIDENTIFIED_DESC @40284
+COPY_EXISTING	~deathwrd.vvc~					~override/pxl2glbv.vvc~	WRITE_ASCII 0x8 ~pxl2glb1~ #8	WRITE_BYTE 0x20 (THIS | 64)	WRITE_BYTE 0x4c 28
+//Niveau 9 : Globe d'Immunité Absolue
+COPY_EXISTING	~spwi907.spl~				~override/pxsphe91.spl~	LPF SELF_TO_TARGET END	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 261 target = 1 parameter1 = 9 END WRITE_LONG 0x18 (THIS | 49152)
+	SAY NAME1 @40291	SAY UNIDENTIFIED_DESC @40292 
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 215 END
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 215 target = 2 duration = 24 resist_dispel = 3  parameter2 = 1 STR_VAR resource = ~pxsph91V~ END
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 215 target = 2 duration = 24 resist_dispel = 3  parameter2 = 1 STR_VAR resource = ~pxsphe9v~ END
+COPY_EXISTING	~minorglb.vvc~				~override/pxsph91V.vvc~	WRITE_ASCII 0x8 ~pxsphe91~ #8
+COPY_EXISTING	~deathwrd.vvc~				~override/pxsphe9v.vvc~	WRITE_ASCII 0x8 ~pxsphe9x~ #8
+//Niveau 9 : orbe de glace
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/pxl2orbe.pro~	~pxw ice orbe~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe92.spl~			~override~	SAY NAME1 @40293	SAY UNIDENTIFIED_DESC @40294 WRITE_SHORT 0x98 ~%pxl2orbe%~
+COPY_EXISTING	~amcall.vvc~				~override/pxw4orbv.vvc~	WRITE_ASCII 0x8 ~pxw4orbe~ #8	WRITE_BYTE 0x34 33

@@ -1,0 +1,38 @@
+COPY	~Derats_Dawap/Mages/Modeleur/Copy~				~override~
+COPY	~Derats_Dawap/Mages/Modeleur/Copy2~				~override~
+COPY	~Derats_Dawap/Combattants/Flamme/Bams~			~override~
+COPY	~Derats_Dawap/Mages/Projo/Copy/pxprojoa.spl~	~override~
+ADD_KIT ~PXDMODEL~
+~PXDMODEL           0           0           1           0           0           0           0           0~
+~PXDMODEL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXDMODEL           0       0       0       9       0       0~
+~PXDMODEL           0       0       0       0       0       0~
+~PXDMODEL           0       0       0       17      0       0~
+~PXDMODEL           0       0       0       15      0       0~
+~PXDMODEL           1       1       1       1       1       1       1       1       1~
+~PXDMODEL           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Modeleur/pxdmodel.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00004000    1~
+~~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @470
+SAY @471
+SAY @472
+LAF fl#add_kit_ee	STR_VAR kit_name = PXDMODEL	hpclass = ~hprog~ END
+COPY ~Derats_Dawap/Mages/Modeleur/pxdmodl1.spl~			~override~	SAY NAME1 @4721	SAY UNIDENTIFIED_DESC @47211
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl2.spl~	SAY NAME1 @4722	SAY UNIDENTIFIED_DESC @47221	
+WRITE_BYTE 0x34 2	WRITE_ASCII 0x3a ~pxwyin42~ #8	WRITE_ASCII 0x76 ~pxwyin42~ #8	WRITE_ASCII 0x10e ~pxl2rpt2~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl3.spl~	SAY NAME1 @4723	SAY UNIDENTIFIED_DESC @47231
+WRITE_BYTE 0x34 3	WRITE_ASCII 0x3a ~pxwyin43~ #8	WRITE_ASCII 0x76 ~pxwyin43~ #8	WRITE_ASCII 0x10e ~pxl2rpt3~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl4.spl~	SAY NAME1 @4724	SAY UNIDENTIFIED_DESC @47241
+WRITE_BYTE 0x34 4	WRITE_ASCII 0x3a ~pxwyin44~ #8	WRITE_ASCII 0x76 ~pxwyin44~ #8	WRITE_ASCII 0x10e ~pxl2rpt4~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl5.spl~	SAY NAME1 @4725	SAY UNIDENTIFIED_DESC @47251
+WRITE_BYTE 0x34 5	WRITE_ASCII 0x3a ~pxwyin45~ #8	WRITE_ASCII 0x76 ~pxwyin45~ #8	WRITE_ASCII 0x10e ~pxl2rpt5~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl6.spl~	SAY NAME1 @4726	SAY UNIDENTIFIED_DESC @47261
+WRITE_BYTE 0x34 6	WRITE_ASCII 0x3a ~pxwyin46~ #8	WRITE_ASCII 0x76 ~pxwyin46~ #8	WRITE_ASCII 0x10e ~pxl2rpt6~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl7.spl~	SAY NAME1 @4727	SAY UNIDENTIFIED_DESC @47271
+WRITE_BYTE 0x34 7	WRITE_ASCII 0x3a ~pxwyin47~ #8	WRITE_ASCII 0x76 ~pxwyin47~ #8	WRITE_ASCII 0x10e ~pxl2rpt7~ #8
+COPY_EXISTING	~pxdmodl1.spl~				~override/pxdmodl8.spl~	SAY NAME1 @4728	SAY UNIDENTIFIED_DESC @47281
+WRITE_BYTE 0x34 8	WRITE_ASCII 0x3a ~pxwyin48~ #8	WRITE_ASCII 0x76 ~pxwyin48~ #8	WRITE_ASCII 0x10e ~pxl2rpt8~ #8
+COPY ~Derats_Dawap/Mages/Modeleur/pxdmodl9.spl~			~override~	SAY NAME1 @4729	SAY UNIDENTIFIED_DESC @47291

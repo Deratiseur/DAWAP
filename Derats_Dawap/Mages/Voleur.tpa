@@ -1,0 +1,23 @@
+COPY	~Derats_Dawap/Mages/Voleur/Copy~				~override~
+ADD_KIT ~pxVOLSOR~
+~pxVOLSOR           0           0           1           0           0           0           0           0~
+~pxVOLSOR           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxVOLSOR           0       0       0       9       0       0~
+~pxVOLSOR           0       0       0       0       0       0~
+~pxVOLSOR           0       0       0       17      0       0~
+~pxVOLSOR           0       0       0       15      0       0~
+~pxVOLSOR           1       1       1       1       1       1       1       1       1~
+~pxVOLSOR           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Voleur/pxdvole.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00000000    1~
+~Ma0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @30
+SAY @31
+SAY @32
+LAF fl#add_kit_ee	STR_VAR kit_name = pxVOLSOR	END
+COPY	~Derats_Dawap/Mages/Voleur/pxdvol1.spl~			~override~	SAY NAME1 @33
+COPY	~Derats_Dawap/Mages/Voleur/pxdvolt.spl~			~override~	SAY NAME1 @34
+COPY_EXISTING	~sareveff.eff~				~override/pxdvol1.eff~	WRITE_ASCII 0x30 ~pxdvo1~ #8
+COPY_EXISTING	~sareveff.eff~				~override/pxdvol2.eff~	WRITE_ASCII 0x30 ~pxdvo2~ #8

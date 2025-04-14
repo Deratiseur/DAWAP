@@ -1,0 +1,27 @@
+COPY	~Derats_Dawap/Mages/Projo/Copy~					~override~
+ADD_KIT ~PxDMANGA~
+~PxDMANGA           0           0           1           0           0           0           0           0~
+~PxDMANGA           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PxDMANGA           0       0       0       9       0       0~
+~PxDMANGA           0       0       0       0       0       0~
+~PxDMANGA           0       0       0       17      0       0~
+~PxDMANGA           0       0       0       15      0       0~
+~PxDMANGA           1       1       1       1       1       1       1       1       1~
+~PxDMANGA           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Projo/Pxdprojo.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00003FC0    1~
+~~
+~* * * BAG29 RING06 RING31 * BOOT01 AMUL27 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @330
+SAY @331
+SAY @332
+LAF fl#add_kit_ee	STR_VAR kit_name = PxDMANGA	END
+COPY	~Derats_Dawap/Mages/Projo/pxprojo.spl~			~override~	SAY UNIDENTIFIED_DESC @333
+
+COMPILE	~Derats_Dawap/Mages/Projo/pxmanga.baf~ EVAL
+COPY_EXISTING	~pxmanga.bcs~					~scripts/pxmanga.bs~
+APPEND	~SCRPDESC.2DA~	~PXMANGA    pxprojo    pxproj2~
+COPY_EXISTING ~SCRPDESC.2DA~							~override~	REPLACE ~pxprojo~ @334	REPLACE ~pxproj2~ @335
+PRETTY_PRINT_2DA
+BUT_ONLY_IF_IT_CHANGES

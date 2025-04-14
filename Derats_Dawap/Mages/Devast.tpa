@@ -1,0 +1,29 @@
+COPY	~Derats_Dawap/Mages/Devast/Copy~				~override~
+ADD_KIT ~pxDEVAST~
+~pxDEVAST          0           0           1           0           0           0           0           0~
+~pxDEVAST          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDEVAST          0       0       0       9       0       0~
+~pxDEVAST          0       0       0       0       0       0~
+~pxDEVAST          0       0       0       17      0       0~
+~pxDEVAST          0       0       0       15      0       0~
+~pxDEVAST          0       1       1       0       1       1       0       1       1~
+~pxDEVAST          0       0       0       0       0       0~
+~Derats_Dawap/Mages/Devast/pxddevas.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x000039C0    1~
+~PX0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @10
+SAY @11
+SAY @12
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDEVAST	END
+//Explosion de feu
+COPY_EXISTING	~inareans.pro~				~override/pxf2expl.pro~	WRITE_LONG 0x204 128	WRITE_LONG 0x206 128
+ADD_PROJECTILE ~override/pxf2expl.pro~						~pxf fire Explosion~
+ADD_SPELL ~Derats_Dawap/Mages/Devast/pxl2ex2l.spl~ 2 1 WIZARD_PX_FIRE_EXPLOSION	SPRINT current_spell_res "%DEST_RES%"	SAY NAME1 @13	SAY UNIDENTIFIED_DESC @14	LPF SPELL_PROJO INT_VAR projectile = ~pxf2expl~ END
+COPY_EXISTING	~amcall.vvc~				~override/pxf2ex0v.vvc~	WRITE_ASCII 0x8 ~pxf2expl~ #8	WRITE_BYTE 0x34 28	WRITE_BYTE 0x28 10	WRITE_BYTE 0x4c 30
+COPY_EXISTING	~pxf2ex0v.vvc~				~override/pxf2ex1v.vvc~	WRITE_BYTE 0x68 2
+COPY_EXISTING	~pxf2ex0v.vvc~				~override/pxf2ex2v.vvc~	WRITE_BYTE 0x68 3
+//Bouffée ardente
+ADD_SPELL ~Derats_Dawap/Mages/Devast/pxl2ecla.spl~ 2 1 WIZARD_PX_FIRE_BURST	SPRINT current_spell_res "%DEST_RES%"	SAY NAME1 @14	SAY UNIDENTIFIED_DESC @15	LPF SPELL_PROJO INT_VAR projectile = ~pxf2expl~ END
+COPY_EXISTING	~amcall.vvc~				~override/pxl2eclv.vvc~	WRITE_ASCII 0x8 ~pxl2ecl1~ #8	WRITE_BYTE 0x34 25

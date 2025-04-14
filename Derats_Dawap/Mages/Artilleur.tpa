@@ -1,0 +1,22 @@
+COPY	~Derats_Dawap/Mages/Artilleur/Copy~				~override~
+COMPILE	~Derats_Dawap/Mages/Artilleur/pxdarti.baf~
+ADD_KIT ~PXDARTIL~
+~PXDARTIL           0           0           1           0           0           0           0           0~
+~PXDARTIL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXDARTIL           0       0       0       9       0       0~
+~PXDARTIL           0       0       0       0       0       0~
+~PXDARTIL           0       0       0       17      0       0~
+~PXDARTIL           0       0       0       15      0       0~
+~PXDARTIL           0       0       0       1       1       1       1       1       1~
+~PXDARTIL           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Artilleur/pxdarti.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00000000    1~
+~Ma0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @410
+SAY @411
+SAY @412
+LAF fl#add_kit_ee	STR_VAR kit_name = PXDARTIL	END
+COPY	~Derats_Dawap/Clercs/Eochaos/Copy/pxdeochb.spl~	~override/pxdartib.spl~	WRITE_ASCII 0xae ~pxdarti~ #8
+COPY_EXISTING	~pxdart3x.spl~				~override/pxdart9x.spl~	WRITE_ASCII 0xae ~ENEBLADE~ #8

@@ -1,0 +1,56 @@
+COPY	~Derats_Dawap/Mages/Goralion/Copy~				~override~
+COPY	~Derats_Dawap/Mages/Modeleur/Copy~				~override~
+COPY	~Derats_Dawap/Clercs/Univers/Copy~				~override~
+COPY	~Derats_Dawap/Combattants/Flamme/Bams~			~override~
+COPY	~Derats_Dawap/Mages/Projo/Copy/pxprojoa.spl~	~override~
+ADD_KIT ~pxGORAL~
+~pxGORAL           0           0           1           0           0           0           0           0~
+~pxGORAL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxGORAL           0       0       0       9       0       0~
+~pxGORAL           0       0       0       0       0       0~
+~pxGORAL           0       0       0       17      0       0~
+~pxGORAL           0       0       0       15      0       0~
+~pxGORAL           0       0       1       0       0       1       0       0       1~
+~pxGORAL           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Goralion/pxgoral.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00000000    1~
+~~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @530
+SAY @531
+SAY @532
+LAF fl#add_kit_ee	STR_VAR kit_name = pxGORAL 	END
+COPY ~Derats_Dawap/Mages/Goralion/pxgorac1.spl~			~override~	SAY NAME1 @5321	SAY UNIDENTIFIED_DESC @53211
+COPY_EXISTING	~pxgorac1.spl~				~override/pxgorac2.spl~	SAY NAME1 @5322	SAY UNIDENTIFIED_DESC @53221	WRITE_BYTE 0x34 2
+WRITE_ASCII 0x3a ~pxwyin42~ #8	WRITE_ASCII 0x76 ~pxwyin42~ #8	WRITE_ASCII 0xae ~pxclerc2~ #8	WRITE_ASCII 0xde ~pxgorac2~ #8
+COPY_EXISTING	~pxgorac1.spl~				~override/pxgorac3.spl~	SAY NAME1 @5323	SAY UNIDENTIFIED_DESC @53231	WRITE_BYTE 0x34 3	
+WRITE_ASCII 0x3a ~pxwyin43~ #8	WRITE_ASCII 0x76 ~pxwyin43~ #8	WRITE_ASCII 0xae ~pxclerc3~ #8	WRITE_ASCII 0xde ~pxgorac3~ #8	WRITE_BYTE 0xfe 2	WRITE_BYTE 0xfe 2
+COPY_EXISTING	~pxgorac3.spl~				~override/pxgorac4.spl~	SAY NAME1 @5324	SAY UNIDENTIFIED_DESC @53241	WRITE_BYTE 0x34 4	
+WRITE_ASCII 0x3a ~pxwyin44~ #8	WRITE_ASCII 0x76 ~pxwyin44~ #8	WRITE_ASCII 0xae ~pxclerc4~ #8	WRITE_ASCII 0xde ~pxgorac4~ #8
+COPY_EXISTING	~pxgorac1.spl~				~override/pxgorac5.spl~	SAY NAME1 @5325	SAY UNIDENTIFIED_DESC @53251	WRITE_BYTE 0x34 5
+WRITE_ASCII 0x3a ~pxwyin45~ #8	WRITE_ASCII 0x76 ~pxwyin45~ #8	WRITE_ASCII 0xae ~pxclerc5~ #8	WRITE_ASCII 0xde ~pxgorac5~ #8	WRITE_BYTE 0xfe 3	WRITE_BYTE 0xfe 3
+COPY_EXISTING	~pxgorac5.spl~				~override/pxgorac6.spl~	SAY NAME1 @5326	SAY UNIDENTIFIED_DESC @53261	WRITE_BYTE 0x34 6	
+WRITE_ASCII 0x3a ~pxwyin46~ #8	WRITE_ASCII 0x76 ~pxwyin46~ #8	WRITE_ASCII 0xae ~pxclerc6~ #8	WRITE_ASCII 0xde ~pxgorac6~ #8
+COPY_EXISTING	~pxgorac1.spl~				~override/pxgorac7.spl~	SAY NAME1 @5327	SAY UNIDENTIFIED_DESC @53271	WRITE_BYTE 0x34 7
+WRITE_ASCII 0x3a ~pxwyin47~ #8	WRITE_ASCII 0x76 ~pxwyin47~ #8	WRITE_ASCII 0xae ~pxclerc7~ #8	WRITE_ASCII 0xde ~pxgorac7~ #8	WRITE_BYTE 0xfe 4	WRITE_BYTE 0xfe 4
+COPY_EXISTING	~pxgorac7.spl~				~override/pxgorac8.spl~	SAY NAME1 @5328	SAY UNIDENTIFIED_DESC @53281	WRITE_BYTE 0x34 8	
+WRITE_ASCII 0x3a ~pxwyin48~ #8	WRITE_ASCII 0x76 ~pxwyin48~ #8	WRITE_ASCII 0xae ~pxclercx~ #8	WRITE_ASCII 0xde ~pxgorac8~ #8
+COPY_EXISTING	~pxgorac1.spl~				~override/pxgoram1.spl~	SAY NAME1 @53291 SAY UNIDENTIFIED_DESC @532911
+WRITE_ASCII 0x3a ~pxgoral1~ #8	WRITE_ASCII 0x76 ~pxgoral1~ #8	WRITE_ASCII 0xae ~pxl2rpt1~ #8	WRITE_ASCII 0xde ~pxgoram1~ #8
+COPY_EXISTING	~pxgorac1.spl~				~override/pxgoram2.spl~	SAY NAME1 @53292 SAY UNIDENTIFIED_DESC @532921	WRITE_BYTE 0x34 2
+WRITE_ASCII 0x3a ~pxgoral2~ #8	WRITE_ASCII 0x76 ~pxgoral2~ #8	WRITE_ASCII 0xae ~pxl2rpt2~ #8	WRITE_ASCII 0xde ~pxgoram2~ #8
+COPY_EXISTING	~pxgorac3.spl~				~override/pxgoram3.spl~	SAY NAME1 @53293 SAY UNIDENTIFIED_DESC @532931	WRITE_BYTE 0x34 3
+WRITE_ASCII 0x3a ~pxgoral3~ #8	WRITE_ASCII 0x76 ~pxgoral3~ #8	WRITE_ASCII 0xae ~pxl2rpt3~ #8	WRITE_ASCII 0xde ~pxgoram3~ #8
+COPY_EXISTING	~pxgorac3.spl~				~override/pxgoram4.spl~	SAY NAME1 @53294 SAY UNIDENTIFIED_DESC @532941	WRITE_BYTE 0x34 4
+WRITE_ASCII 0x3a ~pxgoral4~ #8	WRITE_ASCII 0x76 ~pxgoral4~ #8	WRITE_ASCII 0xae ~pxl2rpt4~ #8	WRITE_ASCII 0xde ~pxgoram4~ #8
+COPY_EXISTING	~pxgorac5.spl~				~override/pxgoram5.spl~	SAY NAME1 @53295 SAY UNIDENTIFIED_DESC @532951	WRITE_BYTE 0x34 5
+WRITE_ASCII 0x3a ~pxgoral5~ #8	WRITE_ASCII 0x76 ~pxgoral5~ #8	WRITE_ASCII 0xae ~pxl2rpt5~ #8	WRITE_ASCII 0xde ~pxgoram5~ #8
+COPY_EXISTING	~pxgorac5.spl~				~override/pxgoram6.spl~	SAY NAME1 @53296 SAY UNIDENTIFIED_DESC @532961	WRITE_BYTE 0x34 6
+WRITE_ASCII 0x3a ~pxgoral6~ #8	WRITE_ASCII 0x76 ~pxgoral6~ #8	WRITE_ASCII 0xae ~pxl2rpt6~ #8	WRITE_ASCII 0xde ~pxgoram6~ #8
+COPY_EXISTING	~pxgorac7.spl~				~override/pxgoram7.spl~	SAY NAME1 @53297 SAY UNIDENTIFIED_DESC @532971	WRITE_BYTE 0x34 7
+WRITE_ASCII 0x3a ~pxgoral7~ #8	WRITE_ASCII 0x76 ~pxgoral7~ #8	WRITE_ASCII 0xae ~pxl2rpt7~ #8	WRITE_ASCII 0xde ~pxgoram7~ #8
+COPY_EXISTING	~pxgorac7.spl~				~override/pxgoram8.spl~	SAY NAME1 @53298 SAY UNIDENTIFIED_DESC @532981	WRITE_BYTE 0x34 8
+WRITE_ASCII 0x3a ~pxgoral8~ #8	WRITE_ASCII 0x76 ~pxgoral8~ #8	WRITE_ASCII 0xae ~pxl2rpt8~ #8	WRITE_ASCII 0xde ~pxgoram8~ #8
+COPY_EXISTING	~pxgorac7.spl~				~override/pxgoram9.spl~	SAY NAME1 @53299 SAY UNIDENTIFIED_DESC @532991	WRITE_BYTE 0x34 9
+WRITE_ASCII 0x3a ~pxgoral9~ #8	WRITE_ASCII 0x76 ~pxgoral9~ #8	WRITE_ASCII 0xde ~pxl2rpt9~ #8	WRITE_ASCII 0xde ~pxgoram9~ #8	WRITE_BYTE 0xfe 5	WRITE_BYTE 0xfe 5

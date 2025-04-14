@@ -1,0 +1,62 @@
+COPY	~Derats_Dawap/Mages/Combino/Copy~				~override~
+COPY	~Derats_Dawap/Mages/Voleur/Copy/pxdvolb.spl~	~override~
+ADD_KIT ~PXDCOMBI~	
+~PXDCOMBI           0           0           1           0           0           0           0           0~
+~PXDCOMBI           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXDCOMBI           0       15      0       0       0       0~
+~PXDCOMBI           0       0       0       0       0       0~
+~PXDCOMBI           0       15      0       17      0       0~
+~PXDCOMBI           0       0       0       15      0       0~
+~PXDCOMBI           1       1       1       1       1       1       1       1       1~
+~PXDCOMBI           1       1       0       1       0       0~
+~Derats_Dawap/Mages/Combino/pxdcombi.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x00002800    1~
+~Ma0~
+~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @380
+SAY @381
+SAY @382
+LAF fl#add_kit_ee	STR_VAR kit_name = PXDCOMBI	END
+COPY	~Derats_Dawap/Mages/Combino/pxcomb1.spl~			~override~	SAY NAME1 @3821	SAY UNIDENTIFIED_DESC @3822
+COPY_EXISTING	~spwi420d.spl~				~override/PXCOMB1d.spl~	WRITE_ASCII 0xae ~PXCOMB1~ #8	WRITE_ASCII 0xde ~PXCOMB1d~ #8	WRITE_ASCII 0x76 ~PXCOMB1b~ #8	SAY NAME1 @3821	SAY UNIDENTIFIED_DESC @3822
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END	
+COPY_EXISTING	~spwi420p.spl~				~override/PXCOMB1p.spl~	WRITE_ASCII 0xae ~PXCOMB1~ #8	WRITE_ASCII 0xde ~PXCOMB1p~ #8	WRITE_ASCII 0x76 ~PXCOMB1b~ #8	SAY NAME1 @3821	SAY UNIDENTIFIED_DESC @3822
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi420.spl~				~override/PXCOMB2.spl~	WRITE_BYTE 0x34 3 WRITE_BYTE 0x84 0//Séquenceur mineur
+COPY_EXISTING	~spwi420d.spl~				~override/PXCOMB2D.spl~	WRITE_ASCII 0xae ~PXCOMB2~ #8	WRITE_ASCII 0xde ~PXCOMB2D~ #8
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi420p.spl~				~override/PXCOMB2P.spl~	WRITE_ASCII 0xae ~PXCOMB2~ #8	WRITE_ASCII 0xde ~PXCOMB2P~ #8
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi710.spl~				~override/PXCOMB3.spl~	WRITE_BYTE 0x34 6 //Séquenceur de sorts
+COPY_EXISTING	~spwi710d.spl~				~override/PXCOMB3d.spl~	WRITE_ASCII 0xae ~PXCOMB3~ #8	WRITE_ASCII 0xde ~PXCOMB3D~ #8
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi710p.spl~				~override/PXCOMB3p.spl~	WRITE_ASCII 0xae ~PXCOMB3~ #8	WRITE_ASCII 0xde ~PXCOMB3P~ #8
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi809.spl~				~override/PXCOMB4.spl~	WRITE_BYTE 0x34 7 //Déclencheur de sorts
+COPY_EXISTING	~spwi809d.spl~				~override/PXCOMB4d.spl~	WRITE_ASCII 0xae ~PXCOMB4~ #8	WRITE_ASCII 0xde ~PXCOMB4D~ #8
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi809p.spl~				~override/PXCOMB4p.spl~	WRITE_ASCII 0xae ~PXCOMB4~ #8	WRITE_ASCII 0xde ~PXCOMB4P~ #8
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY	~Derats_Dawap/Mages/Combino/pxcomb5.spl~			~override~	SAY NAME1 @3823	SAY UNIDENTIFIED_DESC @3824
+COPY_EXISTING	~spwi809d.spl~				~override/PXCOMB5d.spl~	WRITE_ASCII 0xae ~PXCOMB5~ #8	WRITE_ASCII 0xde ~PXCOMB5D~ #8	WRITE_ASCII 0x76 ~pxl2pqdb~ SAY NAME1 @3823	SAY UNIDENTIFIED_DESC @3824
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END
+COPY_EXISTING	~spwi809p.spl~				~override/PXCOMB5p.spl~	WRITE_ASCII 0xae ~PXCOMB5~ #8	WRITE_ASCII 0xde ~PXCOMB5P~ #8	WRITE_ASCII 0x76 ~pxl2pqdb~ SAY NAME1 @3823	SAY UNIDENTIFIED_DESC @3824
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 99 target = 1	duration = 2 parameter1 = 135 END	
+LPF ADD_SPELL_EFFECT INT_VAR insert_point = 0 opcode = 332 target = 1	duration = 2 parameter1 = 35 END			
+COPY_EXISTING	~BGEE.LUA~								~override~	REPLACE_TEXTUALLY ~SPWI420 = {tip = 60420, title = 'MINOR_SEQUENCER_TITLE', action = "ADD_SPELLS_SEQUENCER_LABEL"},~
+~SPWI420 = {tip = 60420, title = 'MINOR_SEQUENCER_TITLE', action = "ADD_SPELLS_SEQUENCER_LABEL"},
+	PXCOMB1 = {tip = 55372, title = 'SPELL_TRIGGER_TITLE', action = "ADD_SPELLS_TRIGGER_LABEL"},
+	PXCOMB2 = {tip = 60420, title = 'MINOR_SEQUENCER_TITLE', action = "ADD_SPELLS_SEQUENCER_LABEL"},
+	PXCOMB3 = {tip = 60420, title = 'MINOR_SEQUENCER_TITLE', action = "ADD_SPELLS_SEQUENCER_LABEL"},
+	PXCOMB4 = {tip = 55372, title = 'SPELL_TRIGGER_TITLE', action = "ADD_SPELLS_TRIGGER_LABEL"},
+	PXCOMB5 = {tip = 55372, title = 'SPELL_TRIGGER_TITLE', action = "ADD_SPELLS_TRIGGER_LABEL"},~
