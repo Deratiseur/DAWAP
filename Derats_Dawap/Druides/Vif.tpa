@@ -1,0 +1,21 @@
+COPY	~Derats_Dawap/Druides/Vif/Copy~					~override~
+COPY	~Derats_Dawap/Druides/Poly/Copy/pxdpolyb.spl~	~override/pxdvifb.spl~	LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete=87 END
+ADD_KIT ~pxDVIF~
+~pxDVIF               1           0           1           0           0           0           0           1~
+~pxDVIF               0 0 0 0 1 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDVIF               0       0       0       0       12      15~
+~pxDVIF               0       0       0       0       0       0~
+~pxDVIF               0       0       0       0       17      0~
+~pxDVIF               0       0       0       0       15      15~
+~pxDVIF               0       0       0       0       1       0       0       0       0~
+~pxDVIF               1       0       0       0       0       0~
+~Derats_Dawap/Druides/Vif/pxdvif.2da~
+~K_D_H   K_D_D   K_D_G   K_D_E   K_D_HE   K_D_HL   K_D_HO~
+~0x00000000    11~
+~~
+~LEAT20 * HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @480
+SAY @481
+SAY @482
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDVIF	END
+COMPILE	~Derats_Dawap/Druides/Vif/pxdvif.baf~

@@ -1,0 +1,95 @@
+INCLUDE ~Derats_Dawap/Druides/Horde/GW_Preacher.tpa~
+COPY	~Derats_Dawap/Clercs/Eochaos/Copy/pxdeochb.spl~	~override/pxdhordb.spl~	WRITE_ASCII 0xae ~pxdhorde~ #8
+ADD_KIT ~pxDHORDE~
+~pxDHORDE              1           0           1           0           0           0           0           1~
+~pxDHORDE              0 0 0 0 1 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDHORDE              0       0       0       0       12      15~
+~pxDHORDE              0       0       0       0       0       0~
+~pxDHORDE              0       0       0       0       17      0~
+~pxDHORDE              0       0       0       0       15      15~
+~pxDHORDE              0       1       0       0       1       0       0       1       0~
+~pxDHORDE              1       0       0       0       0       0~
+~Derats_Dawap/Druides/horde/pxdhorde.2da~
+~K_D_H   K_D_D   K_D_G   K_D_E   K_D_HE   K_D_HL   K_D_HO~
+~0x00000000    11~
+~DR0~
+~LEAT20 * HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @190
+SAY @191
+SAY @192
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDHORDE	END
+COPY_EXISTING	~sppr402.spl~				~override/pxdhor01.spl~ //Convocation d'animaux I
+COPY_EXISTING	~sppr501.spl~				~override/pxdhor02.spl~ //Convocation d'animaux II
+COPY_EXISTING	~sppr602.spl~				~override/pxdhor03.spl~ //Convocation d'animaux III
+COPY_EXISTING	~sppr410.spl~				~override/pxdhor04.spl~ //Appel de créatures des bois
+COPY_EXISTING	~sppr604.spl~				~override/pxdhor05.spl~ //Conjuration d'animaux
+COPY_EXISTING	~sppr605.spl~				~override/pxdhor06.spl~ //Conjuration d'élémentaire de feu
+ACTION_IF GAME_IS ~BG2EE IWDEE EET~ THEN BEGIN
+COPY_EXISTING	~sppr723.spl~				~override/pxdhor08.spl~ //Convocation d'élémentaires
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_CONJURE_EARTH_ELEMENTAL~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxdhor07.spl~ //Conjuration d'élémentaire de terre, changé de niveau par Spell revision
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_GIANT_INSECT~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxdhor09.spl~ //Insectes géants
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_STALKER~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxdhor10.spl~ //traqueur
+END
+
+SILENT
+COMPILE	~Derats_Dawap/Druides/Horde/pxdhorde.baf~
+VERBOSE
+CREATE SPL pxdhor0 //Sort qui supprime tous les sorts contenant soins & régénération
+	WRITE_LONG 0x18 THIS | BIT11 | BIT14 | BIT25	// ajoute No LOS required - Non-magical ability - Castable when silenced
+	WRITE_SHORT 0x1c 4	// spelltype = innate
+	WRITE_LONG  0x34 1	// spelllevel
+	LPF ~GW_DEF_OFFSETS_FILE~ STR_VAR GW_file_sig = SPL RET GW_oe GW_oc GW_al GW_fx GW_fi GW_fc GW_min_size END	// DÉFINITION des offsets généraux des fichiers SPL, ITM et CRE.
+	LPF ~GW_ADD_HEADERS~ INT_VAR GW_Headers = 1 END
+	LPF ~ALTER_SPELL_HEADER~ INT_VAR location = 4 new_header_type = 1 target = 5 range = 0 min_level = 0 speed = 0 projectile = 1 END
+	FOR (level = 7 ; level > 0 ; level = level - 1) BEGIN					// Je commence par le niveau 7 car la fonction ADD_SPELL_CFEFFECT par défaut un effet en première position.
+		SET bornesup = level*100 + 99										// Je fixe la borne supérieure du sort à chercher (199 - 299 - 399 ....)
+		FOR (spellcode = bornesup ; spellcode > level*100 ; spellcode = spellcode - 1) BEGIN	// Je lis chaque sort SPPR (101 à 199 ; 201 à 299 ...)
+			PATCH_IF (FILE_EXISTS_IN_GAME "SPPR%spellcode%.spl") BEGIN							// Test qui permet de gagner du temps de traitement.
+				LPF NAME_NUM_OF_SPELL_RES STR_VAR spell_res = EVAL "SPPR%spellcode%" RET spell_num spell_name END	// Fonction de WeiDU 239 qui retourne le numéro du sort et son code du fichier SPELL.ids
+				SET GW_opcode_checked = 0			// Test évitant de retrouver le même sort plusieurs fois s'il utilise au moins deux des opcodes à vérifier.
+				PATCH_MATCH ~%spell_name%~ WITH
+					"CLERIC_.*" BEGIN				// Si le ce code SPELL.IDS commence par "CLERIC_", c'est un nsort de prêtre.
+													// Ça permet d'écarter les sorts spéciaux de certines créatures ou de pièges.
+						INNER_ACTION BEGIN
+							COPY_EXISTING - ~SPPR%spellcode%.spl~ ~override~
+								PATCH_FOR_EACH GW_opcode_to_check IN 98 BEGIN	// On vérifie l'opcode "Régénération" dans le sort.
+									PATCH_IF GW_opcode_checked = 0 BEGIN						// Utilisation du test décrit plus haut
+										LPF ~GW_SEARCH_OPCODE~ INT_VAR GW_opcode_to_check RET GW_opcode_checked END	// Valeur retournée	==> 0 = pas d'opcode	-	1 = opcodeprésent dans le fichier
+									END
+								END
+								// Cas particulier de l'opcode Stat: Current HP Modifier [17] :
+								// Si paramètre 2 = 0 et paramètre 1 > 0 alors l'effet ajoute des PV.
+								// Si paramètre 2 = 2 et paramètre 1 >= 100, alors l'effet ajoute des PV.
+								PATCH_IF GW_opcode_checked = 0 BEGIN						// Utilisation du test décrit plus haut
+									LPF ~GW_DERAT_FIND_CURE_HP~ INT_VAR GW_opcode_to_check = 17 GW_param1_to_check = 1 GW_param2_to_check = 0 RET GW_opcode_Cure_checked END
+									PATCH_IF GW_opcode_Cure_checked = 1 BEGIN				// Si c'est un sort de soins
+										SET GW_opcode_checked = 1
+									END ELSE BEGIN
+										LPF ~GW_DERAT_FIND_CURE_HP~ INT_VAR GW_opcode_to_check = 17 GW_param1_to_check = 100 GW_param2_to_check = 2 RET GW_opcode_Cure_checked END
+										PATCH_IF GW_opcode_Cure_checked = 1 BEGIN			// Si c'est un sort de soins
+											SET GW_opcode_checked = 1
+										END
+									END
+								END
+							BUT_ONLY
+						END	// of INNER_ACTION
+						PATCH_IF GW_opcode_checked = 1 BEGIN		// Si on a trouvé un sort utilisant les opcodes qui t'intéressent
+																	// La fonction ADD_SPELL_CFEFFECT ajoute un casting feature à ton nouveau sort.
+							LPF ~ADD_SPELL_CFEFFECT~ INT_VAR opcode = 172 target = 1 timing = 1 STR_VAR resource = EVAL "SPPR%spellcode%" END
+						END
+						
+					END	// of PATCH_MATCH ~%spell_name%~ WITH "CLERIC_.*"
+					DEFAULT
+				END		// of PATCH_MATCH ~%spell_name%~ WITH
+			END			// of PATCH_IF (FILE_EXISTS_IN_GAME "SPPR%spellcode%.spl")
+		END				// of FOR (spellcode = bornesup ; spellcode > header*100 ; spellcode = spellcode - 1)
+	END					// of FOR (level = 7 ; level > 0 ; level = level - 1)

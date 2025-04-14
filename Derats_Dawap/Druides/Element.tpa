@@ -1,0 +1,86 @@
+COPY	~Derats_Dawap/Druides/Element/Copy~				~override~
+ADD_KIT ~pxdRAVAGE~
+~pxdRAVAGE               1           0           1           0           0           0           0           1~
+~pxdRAVAGE               0 0 0 0 1 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxdRAVAGE               0       0       0       0       12      15~
+~pxdRAVAGE               0       0       0       0       0       0~
+~pxdRAVAGE               0       0       0       0       17      0~
+~pxdRAVAGE               0       0       0       0       15      15~
+~pxdRAVAGE               0       0       0       0       1       0       0       0       0~
+~pxdRAVAGE               1       0       0       0       0       0~
+~Derats_Dawap/Druides/Element/pxdravag.2da~
+~K_D_H   K_D_D   K_D_G   K_D_E   K_D_HE   K_D_HL   K_D_HO~
+~0x00000000    11~
+~PX5~
+~LEAT20 * HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @220
+SAY @221
+SAY @222
+LAF fl#add_kit_ee	STR_VAR kit_name = pxdRAVAGE 	END
+ ACTION_IF !FILE_EXISTS_IN_GAME ~pxdpyr11.spl~ THEN BEGIN
+COPY_EXISTING	~spwi103.spl~	~override/pxdpyr11.spl~ 										//Mains ardentes
+				~spwi217.spl~	~override/pxdpyr21.spl~											//Incinérateur d'Agannazar
+				~spwi303.spl~	~override/pxdpyr31.spl~											//Flèche enflammée
+				~spwi304.spl~	~override/pxdpyr32.spl~											//Boule de feu
+				~spwi325.spl~	~override/pxdpyr33.spl~	WRITE_BYTE 0x1c 2						//Minuscules météores de Melf
+COPY_EXISTING	~spwi418.spl~	~override/pxdpyr34.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 3	//Bouclier de feu (rouge)
+COPY_EXISTING	~sppr705.spl~	~override/pxdpyr61.spl~	WRITE_BYTE 0x34 6						//Tempête de feu
+COPY_EXISTING	~spwi810.spl~	~override/pxdpyr71.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 7	//Nuage incendiaire
+END
+COPY_EXISTING	~spwi115.spl~	~override/pxdelm12.spl~ 										//Poigne électrique
+				~spwi117.spl~	~override/pxdelm13.spl~											//Toucher glacial
+				~spwi211.spl~	~override/pxdelm22.spl~											//Flèche acide de Melf
+				~spwi503.spl~	~override/pxdelm51.spl~											//Cône de froid
+				~spwi523.spl~	~override/pxdelm52.spl~											//Feu solaire
+				~spwi604.spl~	~override/pxdelm62.spl~	WRITE_BYTE 0x1c 2						//Pétrification
+COPY_EXISTING	~spwi308.spl~	~override/pxdelm23.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 2	//Éclair
+COPY_EXISTING	~spwi403.spl~	~override/pxdelm35.spl~											//Bouclier de feu (bleu)
+				~spwi404.spl~	~override/pxdelm36.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34	3	//Tempête de glace
+COPY_EXISTING	~spPR503.spl~	~override/pxdelm41.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 4	//Colonne de feu
+COPY_EXISTING	~spwi615.spl~	~override/pxdelm53.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 5	//Chaîne d'éclairs
+COPY_EXISTING	~spwi712.spl~	~override/pxdelm63.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 6	//Boule de feu à retardement
+COPY_EXISTING	~spwi911.spl~	~override/pxdelmx.spl~											//Nuée de météores
+				~spwi925.spl~	~override/pxdelmy.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 7	//Comète
+COPY	~Derats_Dawap/Mages/Spheres/Copy2~				~override~
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro316.pro~	~pxd Viriolic Sphere~			//Sphère acide
+COPY	~Derats_Dawap/Shamans/Saiyan/pxsaiys4.spl~			~override~	SAY NAME1 @40251	SAY UNIDENTIFIED_DESC @4529	LPF SPELL_PROJO INT_VAR projectile = ~idpro316~ END
+COPY ~Derats_Dawap/Mages/Spheres/copy2/pxspherz.spl~	~override/pxsaiyz.spl~	WRITE_ASCII 0xde ~pxsaiyz~ #8	WRITE_ASCII 0x10e ~pxsaiy4~ #8
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/vspherx.pro~	~pxd Viriolic Sphere sub~
+COPY ~Derats_Dawap/Mages/Spheres/pxsphery.spl~			~override~	LPF SPELL_PROJO INT_VAR projectile = ~vspherx~ END
+COPY	~Derats_Dawap/Mages/Spheres/Copy3~				~override~
+ADD_PROJECTILE	~Derats_Dawap/Mages/Spheres/Pros/idpro269.pro~	~pxd Otiluke Freezing Sphere~	//Sphère Glaciale d'Otiluke
+COPY ~Derats_Dawap/Mages/Spheres/pxsphe52.spl~	~override/pxdelm5x.spl~	SAY NAME1 @40253	SAY UNIDENTIFIED_DESC @40254	LPF SPELL_PROJO INT_VAR projectile = ~idpro269~ END	WRITE_BYTE 0x1c 2		
+				
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~WIZARD_SNILLOCS_SNOWBALL_SWARM~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxdelm24.spl~	WRITE_BYTE 0x1c 2		 //Nuée de boules de neige de Snilloc
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~WIZARD_BELTYNS_BURNING_BLOOD~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxdelm43.spl~	WRITE_BYTE 0x1c 2		//Sang brûlant de Beltyn
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~WIZARD_ACID_STORM~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxdelm64.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 6 //Pluie Acide
+END
+OUTER_SET spell_num = IDS_OF_SYMBOL (~spell~ ~CLERIC_GIANT_INSECT~)
+ACTION_IF (spell_num >= 0) THEN BEGIN
+   LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET spell_res END
+   ACTION_IF FILE_EXISTS_IN_GAME "%spell_res%.spl" BEGIN
+      COPY_EXISTING	~pxdelm0.spl~						~override~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = EVAL ~%spell_res%~ END
+   END
+END
+OUTER_SET spell_num = IDS_OF_SYMBOL (~spell~ ~CLERIC_CONJURE_EARTH_ELEMENTAL~)
+ACTION_IF (spell_num >= 0) THEN BEGIN
+   LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET spell_res END
+   ACTION_IF FILE_EXISTS_IN_GAME "%spell_res%.spl" BEGIN
+      COPY_EXISTING	~pxdelm0.spl~						~override~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = EVAL ~%spell_res%~ END
+   END
+END
+OUTER_SET spell_num = IDS_OF_SYMBOL (~spell~ ~CLERIC_STALKER~)
+ACTION_IF (spell_num >= 0) THEN BEGIN
+   LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET spell_res END
+   ACTION_IF FILE_EXISTS_IN_GAME "%spell_res%.spl" BEGIN
+      COPY_EXISTING	~pxdelm0.spl~						~override~	LPF ADD_SPELL_CFEFFECT INT_VAR opcode = 172 target = 1  STR_VAR resource = EVAL ~%spell_res%~ END
+   END
+END

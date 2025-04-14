@@ -1,0 +1,19 @@
+INCLUDE ~Derats_Dawap/Druides/Pyro/pxdpyro.tph~
+ADD_KIT ~pxDPYRO~
+~pxDPYRO               1           0           1           0           0           0           0           1~
+~pxDPYRO               0 0 0 0 1 1 0 1 0 0 0 0 0 0 1 1 0 1 1 0 0 0 1 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDPYRO               0       0       0       0       12      15~
+~pxDPYRO               0       0       0       0       0       0~
+~pxDPYRO               0       0       0       0       17      0~
+~pxDPYRO               0       0       0       0       15      15~
+~pxDPYRO               1       1       1       1       1       1       1       1       1~
+~pxDPYRO               1       0       0       0       0       0~
+~Derats_Dawap/Druides/Pyro/pxdpyro.2da~
+~K_D_H   K_D_D   K_D_G   K_D_E   K_D_HE   K_D_HL   K_D_HO~
+~0x00000000    11~
+~PX2~
+~LEAT20 * HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @170
+SAY @171
+SAY @172
+LAF fl#add_kit_ee	STR_VAR kit_name = pxDPYRO	END
