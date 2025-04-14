@@ -1,0 +1,216 @@
+V2 :
+Nouveaux kits :
+Fléau, Enragé
+
+Modifications :
+Psychotope : ajout de Berserk et Charme dans les déconnections pouvant lui faire perdre ses sorts.
+Eoratien : maintenant il se remémore ses sorts à FIN des combat (au début c’était naze, ça ne se faisait que quelques secondes après le début)
+Anomalie : plus de résistance aux dégâts magiques. (Il pouvait s'auto cibler avec Projectile magique et gagner des pvs comme ça)
+Miniums magiques : plus d'immunité aux armes non-magiques, à la place bonus à la CA. (c’était surcheaté dans BG1)
+
+Corrections :
+Anomalie : sa boule d’énergie ne se mettait pas à jour s'il passait beaucoup de niveaux d'un coup.
+Eoration : il ne se remémorait rien.
+
+
+
+V2.1 :
+Corrections :
+Enragé : sa rage ne durait que 4 rounds.
+Voleur de sorts : ses pouvoirs n’étaient pas limités à un usage contre les mages.
+
+
+
+V3 :
+Nouveau kit :
+Zap
+
+Modifications :
+Incantateur : plus immunisé aux effets modifiant les temps d'incantation. Robe de Vecna effective.
+Enragé : clarification du texte et ajout d'une ligne manquante dans le texte en anglais.
+
+Correction :
+Enragé : il subissait -1 sort par niveau de sort.
+
+
+
+V4 :
+Nouveau kit :
+Sorcelier v2 (exporté du DUKP et modifié)
+
+Modifications :
+Minuims magiques : ils ne peuvent plus choisir de compétences d'armes lors de la création du personnage, puisque de toute façon il ne peuvent en porter aucune.
+
+Corrections :
+Il restait plein de fichiers textes et backups indésirables dans l'archive de la V3.
+
+
+
+v5 :
+Nouveaux kits :
+Ajout de 12 kits, ce qui double le contenu du mod :)
+
+Modifications :
+Minuims magiques : ils regagnent l'avantage que je leur avais imaginé dès leur conception : immunité aux armes normales. C'est trop bourrin ? Le métamorphe à le même avantage.
+Sorcelier v2 : il apprend maintenant automatiquement les sorts améliorés.
+Incantateur : son inconvénient passe à +3 au temps d'incantation.
+Enragé : sa probabilité de rater le lancement de sort quand il est berserk passe à 10%.
+Anomalie : il gagne maintenant 2 points de vie quand il lance un sort, et son arme requiert la compétence fléchette.
+Anomalie : il peut maintenant se métamorphoser correctement.
+Esprit du miroir : son malus sur les pv devient "-50% de points de vie", ce qui reste équivalent à terme mais ne fait plus l'effet "plus rien après le niveau 10".
+Esprit du miroir : il gagne un nouveau sort venu de l'interplan.
+
+Corrections :
+Les magiciens ne pouvaient pas se jumeler.
+Miniums magiques : ils regagnent le choix des compétences. Sans ce choix, pas de hla.
+Zap : il copiait les ressources de l'Esprit du miroir à la place des siennes et du coup n'avait rien de correspondant à sa description.
+Éoration : au lieu d'être protégé contre les effets qui améliorent le nombre de slots il était protégé contre les icônes affichées.
+Anomalie : il avait perdu en route le sort qui lui faisait gagner un point de vie et l’icône de son arme.
+
+
+
+v6 :
+Nouveaux kits :
+Ajout de 12 kits, dont tout plein de bardes (toujours pas de shamans :/).
+
+Modifications :
+Ajout de sous-composants pour les kits qui changent d'avatar proposant d’empêcher ce changement.
+Sorcelier v2 : révision des bonus de combat.
+Vitalomage : il gagne un bonus de points de vie pour être plus viable.
+Dweomériste : capacité de régénération des sorts remplacé par doublement des sorts. Régénération de sorts s’était ultra trop cheaté en multiclassant en mage.
+
+Corrections :
+Tous les druides avaient des sets d'objets pour le début de TOB correspondant aux clercs.
+Tous les ensorceleurs proposaient un choix de compétences d'armes supplémentaires sans fondements. Merci à TheNamelessOne pour avoir pointé ce bug.
+Furie : elle était marquée comme druide lors de l'installation.
+Sorcelier v2 : sa table de hlas ne lui permettait pas de prendre les sorts de mage avant le niveau 32. Merci à TheNamelessOne pour avoir pointé ce bug.
+Faiseur de miracles : il ne perdait pas les sorts de niveau 6 et 7.
+Polymorphe : il n'avait pas les points de vies fixés à D12.
+
+
+
+v6.1 :
+Modification :
+Fléau : le rafraîchissement de ses sorts se fait maintenant toutes les 5 secondes à la place de 6. Avant il devait avoir 2 copie mémorisées d'un sort pour pouvoir le lancer chaque round.
+
+Correction :
+Infuseur : il ne pouvait pas porter d'armure.
+
+
+
+V6.2 :
+Suppression de kit :
+Vitalomage : l'utilisation du super script de combat automatique inclut dans les éditions EE (avec des options à cocher/décocher) squatte l'IA et zappe complètement son inconvénient. Je n'ai rien trouvé pour contrer ça.
+
+Modifications :
+Infuseur : il perd l'Evocation et gagne l’Altération à la place (peau de pierre, hâte)
+Enragé : Sa rage de berserk passe à une durée de 3 round.
+Sorcelier : Il ne peut plus être affecté par les effets qui changent l'xp. Il gagne le sort de niveau 3 "amélioré" qui lui manquait.
+
+Corrections :
+Corrections mineures dans la traduction anglaise et le readme.
+Eoration : il pouvait lancer 1 sort de plus par niveau.
+Sorcelier : il pouvait lancer 1 sort de plus par niveau.
+
+
+
+v6.3 :
+Nouveaux kits :
+Chantevie, Malomage.
+
+Corrections :
+Encore des corrections dans la version anglaise.
+
+
+
+V6.4 :
+Correction du polymorphe qui ne fonctionnait pas dans BGEE (merci JohnBob pour la correction)
+
+
+
+V6.5 :
+Correction du Disciple de Ratatosk qui demandait un fichier placé au mauvais endroit.
+
+
+
+V7 :
+Nouveaux kits :
+Ajouts de 10 kits, dont des chamans, des paladins, et même un moine :)
+
+Modifications :
+Ajout des Labels dans le tp2 pour simplifier le travail de Selphira.
+Amélioration du texte pour indiquer qu'un composant n'est pas compatible avec IWDEE.
+Marteleur : Il peut dorénavant utiliser les parchemins + ajout d'un script de cast automatique + il change de nom (l'ancien était très moche)pour devenir Mangacien, nom étrange mais justifié par son texte. ^^ 
+Esprit du miroir : remplacement d'un avantage inutile par un autre vraiment intéressant.
+Dwéomériste : Légère amélioration d'un de ses avantages et inconvénient changé pour le rendre jouable.
+Ravageur : les sorts "Sphère acide" et "Sphère glaciale d'Otiluke" ne sont plus limités à une installation dans IWDEE.
+Polymorphe : changement complet de la façon dont il fonctionne afin qu'il fonctionne sans problèmes sous BGEE, IWDEE et si un mod (comme SR) a modifié les sorts de métamorphose. Ajout de la peau verdâtre.
+Nishruunoam : légère modification pour le rendre plus intéressant.
+Engeance du chaos : réécriture pour qu'il soit plus facile à gérer.
+Chantevie : ajout d'une capacité en hla.
+Chantre de la non-magie : inconvénient changé pour qu'il soit pleinement jouable.
+Malomage : complètement réécrit. Crée uniquement dans le but de satisfaire les(le ?) déçu(s) du chantre de la non-magie, il n'avait plus de raison d'être après la réécriture de ce dernier.
+
+Corrections :
+Ajout de l’icône "chant de barde" dans les chansons de tous les bardes à qui elle manquait.
+Pyroclasme, Esprit de horde et Éoration : ils ne s'installaient pas sur BGEE (merci N3ige pour le signalement)
+Enragé & Nécrophore : ils ne sont plus incompatibles avec les autres sorts/objets qui utilisent l'effet #232.
+Voleur de sorts : il ne volait rien du tout (erreur de typo)(et ça depuis la v2.1. Personne ne s'en est jamais servi ?)
+Sorcelier : ses boucliers de feu/froid n’affichaient pas l'effet élémentaire de l'arme affectée.
+Eoration du chaos : il appelait un script avec le mauvais nom (erreur de typo)(même bug que l'Eoration)
+Nécrophore : il n'avait pas les sorts de soins d'IWDEE correctement supprimés.
+Dweomériste : il avait deux sorts en bonus bugués et non précisés dans le texte.
+Ravageur : il n'avait les sorts de convocation d'IWDEE correctement supprimés. Ces 2 hlas exclusifs étaient "vides".
+Chantesort : son chant ne ciblait pas que les alliés.
+Magivore : il gagnait 20% de RM à la place des 15% annoncés.
+Infuseur : il n'avait pas accès aux hlas. (erreur de typo)
+
+
+
+v8
+Nouveaux kit :
+Modeleur de sort, Impériosa.
+
+Modifications :
+Magistèrium : ajout d'un avantage.
+Scion de la vie : amélioration d'un des avantages.
+Malomage et Chantre de la magie : fusion en un seul kit : l'Antimaginum. (le Malomage était nul, seulement crée pour satisfaire un gars en manque de DPS)
+Psychotope : réécriture en ensorceleur : le Psycho absorbeur. (Il avait besoin de quelque chose pour regagner plus vite ses sorts après repos)
+
+Corrections :
+Chantevie : il était aussi entropiste.
+Chantre de la non-magie (Antimaginum) : il était affecté par son propre chant.
+Sphèromaniaque : il ne s'installait pas (modification du au Ravageur v7)
+Ravageur : il pouvait toujours lancer des sorts de convocation.
+Scion de la vie : il avait 4 sorts qui n'avaient pas le niveau de sort réduit.
+
+
+
+v9
+Nouveaux kit :
+Malavisé, Préfondateur, Instilleur, Dweomeriste divin universel, Maître du Vif, Lèvemort.
+
+Modifications :
+Modeleur de sorts : il a maintenant un décalage de niveaux pour pouvoir modeler les hlas.
+Fléau : son installation ajoute un nouveau sort d'évocation de niveau 1.
+
+Corrections :
+Corrections mineures dans la traduction anglaise.
+Dans les descriptions des kits, ajout ou suppression des "s" aux avantages et inconvénients suivant s'il y en a un ou plusieurs.
+Les compétence d'armes de tous les kits de bardes étaient foireuses. (???)
+Incantateur : sa pénalité au temps d'incantation était toujours de -4 (récurrent : modification, test, et le fichier reste dans l'override...)
+Monstruosité mutante instable et Polymorphe : 2DA prévu jusqu'au niveau 40 seulement.
+Mangacien, Sphéromaniaque et Modeleur de sorts : dans le cas d'une grosse installations avec beaucoup de modules de sorts, il pouvait leur rester des sorts "vanilla" appris.
+Modeleur de sorts : pour chaque niveau de sort, le jeu n'affichait pas les 3 premières entrées de la liste.
+
+
+
+v10
+Nouveaux kit :
+Ajout de 3 kits de combattants.
+Intégration du kit déjà existant "4UH4S4RD" dans le Dawap.
+
+Modifications :
+- Le "Arcanist" dans DAWAP devient "Adventurers" et le mod intègre maintenant des combattants. (Merci à ceux qui m'ont aidé à trouver ce nouvel acronyme)
+- Ajout d'un Weidu alternatif pour installer tous les kits d'un coup.
+- Préfondateur : il avait un nom vraiment trop moche. Il devient l'Arcanologue Vampirique. Il gagne aussi une nouvelle animation.
