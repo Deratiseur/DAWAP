@@ -1,0 +1,19 @@
+COPY	~Derats_Dawap/Bardes/Antimagie/Copy~			~override~
+ADD_KIT ~pxANTIM~
+~pxANTIM            1           1           1           1           1           1           0           0~
+~pxANTIM            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxANTIM            0       12      0       13      0       15~
+~pxANTIM            0       0       0       0       0       0~
+~pxANTIM            0       0       0       0       0       0~
+~pxANTIM            0       0       0       0       0       0~
+~pxANTIM            1       1       1       1       1       1       1       1       1~
+~pxANTIM            0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Antimagie/pxantima.2da~
+~K_B_H   K_B_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x00000000    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @300
+SAY @301
+SAY @302
+LAF fl#add_kit_ee	STR_VAR kit_name = pxANTIM	END

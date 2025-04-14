@@ -1,0 +1,22 @@
+COPY	~Derats_Dawap/Bardes/Nishruu/Copy~				~override~
+ADD_KIT ~pxNISHRUU~
+~pxNISHRUU            1           1           1           1           1           1           0           0~
+~pxNISHRUU            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxNISHRUU            0       12      0       13      0       15~
+~pxNISHRUU            0       0       0       0       0       0~
+~pxNISHRUU            0       0       0       0       0       0~
+~pxNISHRUU            0       0       0       0       0       0~
+~pxNISHRUU            1       1       1       1       1       1       1       1       1~
+~pxNISHRUU            0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Nishruu/pxnishru.2da~
+~K_B_H   K_B_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x00000000    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @280
+SAY @281
+SAY @282
+LAF fl#add_kit_ee	STR_VAR kit_name = pxNISHRUU	END
+COMPILE	~Derats_Dawap/Bardes/Nishruu/pxnishru.baf~
+COPY_EXISTING	~pxnishr1.spl~				~override/pxnishrd.spl~	WRITE_BYTE 0x1c 0	WRITE_BYTE 0xa2 5
+COPY_EXISTING	~nishrusu.cre~				~override/pxnishru.cre~	WRITE_BYTE 0x275 4

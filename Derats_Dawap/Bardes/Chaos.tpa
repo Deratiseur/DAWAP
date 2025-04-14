@@ -1,0 +1,22 @@
+COPY	~Derats_Dawap/Bardes/Engeance/Copy~				~override~
+ADD_KIT ~pxANGEANCE~
+~pxANGEANCE            1           1           1           1           1           1           0           0~
+~pxANGEANCE            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxANGEANCE            0       12      0       13      0       15~
+~pxANGEANCE            0       0       0       0       0       0~
+~pxANGEANCE            0       0       0       0       0       0~
+~pxANGEANCE            0       0       0       0       0       0~
+~pxANGEANCE            1       1       1       1       1       1       1       1       1~
+~pxANGEANCE            0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Engeance/pxengea.2da~
+~K_B_H   K_B_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x80000000    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @320
+SAY @321
+SAY @322
+LAF fl#add_kit_ee	STR_VAR kit_name = pxANGEANCE	END
+COPY_EXISTING	~spwi711.spl~			~override/pxengea2.spl~		WRITE_BYTE 0x98 1	WRITE_BYTE 0x7e 1
+COPY_EXISTING	~pxengea1.spl~			~override/pxengea3.spl~		WRITE_BYTE 0x98 151
+COPY_EXISTING	~spwi711.spl~			~override/pxengea4.spl~		WRITE_BYTE 0x34 5	WRITE_BYTE 0x84 5

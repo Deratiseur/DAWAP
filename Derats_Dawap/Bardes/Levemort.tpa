@@ -1,0 +1,32 @@
+COPY	~Derats_Dawap/Bardes/Levemort/Copy~					~override~
+ADD_KIT ~PXLEVMORT~
+~PXLEVMORT              1           1           1           1           1           1           0           0~
+~PXLEVMORT              1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXLEVMORT              0       12      0       13      0       15~
+~PXLEVMORT              0       0       0       0       0       2~
+~PXLEVMORT              0       0       0       0       0       0~
+~PXLEVMORT              0       0       0       0       0       0~
+~PXLEVMORT              0       0       1       0       0       1       0       0       1~
+~PXLEVMORT              0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Levemort/pxdlev.2da~
+~K_B_H   K_C_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x00001200    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @490
+SAY @491
+SAY @492
+LAF fl#add_kit_ee	STR_VAR kit_name = PXLEVMORT	END
+COPY	~Derats_Dawap/Bardes/Chsort/Copy/pxchsob.spl~	~override/pxdlevb.spl~	WRITE_ASCII 0xae ~pxdlev1~ #8
+COPY_EXISTING	~pxdlvl2.itm~							~override/pxdlvl3.itm~	WRITE_ASCII 0xee ~spwi507~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl1.eff~	WRITE_ASCII 0x30 ~pxdlvl1~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl4.eff~	WRITE_ASCII 0x30 ~pxdlvl4~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl8.eff~	WRITE_ASCII 0x30 ~pxdlvl8~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl12.eff~	WRITE_ASCII 0x30 ~pxdlvl12~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl16.eff~	WRITE_ASCII 0x30 ~pxdlvl16~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl20.eff~	WRITE_ASCII 0x30 ~pxdlvl20~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl24.eff~	WRITE_ASCII 0x30 ~pxdlvl24~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl28.eff~	WRITE_ASCII 0x30 ~pxdlvl28~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl32.eff~	WRITE_ASCII 0x30 ~pxdlvl32~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl36.eff~	WRITE_ASCII 0x30 ~pxdlvl36~ #8
+COPY_EXISTING	~spandead.eff~							~override/pxdlvl40.eff~	WRITE_ASCII 0x30 ~pxdlvl40~ #8

@@ -1,0 +1,28 @@
+COPY	~Derats_Dawap/Bardes/Chsort/Copy~				~override~
+ADD_KIT ~PxCHSORT~
+~PxCHSORT            1           1           1           1           1           1           0           0~
+~PxCHSORT            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PxCHSORT            0       12      0       13      0       15~
+~PxCHSORT            0       0       0       0       0       0~
+~PxCHSORT            0       0       0       0       0       0~
+~PxCHSORT            0       0       0       0       0       0~
+~PxCHSORT            1       1       1       1       1       1       1       1       1~
+~PxCHSORT            0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Chsort/Pxchsort.2da~
+~K_B_H   K_B_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x00000000    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @250
+SAY @251
+SAY @252
+LAF fl#add_kit_ee	STR_VAR kit_name = PxCHSORT	END
+COPY	~Derats_Dawap/Bardes/Chsort/pxchsox.spl~		~override~	SAY NAME1 @253
+COPY_EXISTING	~pxchsox.spl~				~override/pxchsoy.spl~	SAY NAME1 @254	WRITE_ASCII 0x76 ~pxl2aen2~ #8	WRITE_ASCII 0xae ~pxchsoy~ #8	WRITE_ASCII 0xde ~pxchsor2~ #8	WRITE_ASCII 0x10e ~pxchsoy~ #8
+COPY_EXISTING	~pxchsox.spl~				~override/pxchsoz.spl~	SAY NAME1 @255	WRITE_ASCII 0x76 ~pxl2aen3~ #8	WRITE_ASCII 0xae ~pxchsoz~ #8	WRITE_ASCII 0xde ~pxchsor3~ #8	WRITE_ASCII 0x10e ~pxchsoz~ #8
+COPY_EXISTING	~pxchsor1.spl~				~override/pxchsor2.spl~	WRITE_BYTE 0x11e 4	WRITE_BYTE 0x14e 4	WRITE_BYTE 0x17e 2
+WRITE_BYTE 0xaa 16	WRITE_BYTE 0x1de 5	WRITE_BYTE 0x20e 5	WRITE_BYTE 0x23e 2
+WRITE_BYTE 0xd2 20	WRITE_BYTE 0x20e 6	WRITE_BYTE 0x23e 6	WRITE_BYTE 0x2fe 2
+COPY_EXISTING	~pxchsor1.spl~				~override/pxchsor3.spl~	WRITE_BYTE 0x11e 7	WRITE_BYTE 0x14e 7	WRITE_BYTE 0x17e 3
+WRITE_BYTE 0xaa 28	WRITE_BYTE 0x1de 8	WRITE_BYTE 0x20e 8	WRITE_BYTE 0x23e 3
+WRITE_BYTE 0xd2 32	WRITE_BYTE 0x20e 9	WRITE_BYTE 0x23e 9	WRITE_BYTE 0x2fe 3
