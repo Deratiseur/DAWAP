@@ -1,0 +1,27 @@
+COPY	~Derats_Dawap/Combattants/Flamme/Copy~				~override~
+COPY	~Derats_Dawap/Combattants/Flamme/Bams~				~override~
+ADD_KIT ~PxDFLAM~
+~PxDFLAM         1           1           0           0           1           0           0           1~
+~PxDFLAM         1 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PxDFLAM         9       0       0       9      0       0~
+~PxDFLAM         0       0       0       0      0       0~
+~PxDFLAM         0       17      0       0      17      0~
+~PxDFLAM         0       15      0       0      15      0~
+~PxDFLAM         1       0       0       0      0       0       0       0       0~
+~PxDFLAM         0       0       0       0      0       0~
+~Derats_Dawap/Combattants/Flamme/pxdflam.2da~
+~K_MN_H~
+~0x00040000    20~
+~MO0~
+~* * HELM19 BAG23 RING06 RING29 CLCK02 BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 * * *~
+SAY @460
+SAY @461
+SAY @462
+LAF fl#add_kit_ee	STR_VAR kit_name = PxDFLAM	END
+COPY ~Derats_Dawap/Combattants/Flamme/pxdflam1.spl~			~override~	SAY NAME1 @4621
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam2.spl~	SAY NAME1 @4622	WRITE_ASCII 0x76 ~pxwyin41~ #8	WRITE_ASCII 0xae ~pxdflam2~ #8
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam3.spl~	SAY NAME1 @4623	WRITE_ASCII 0x76 ~pxwyin43~ #8	WRITE_ASCII 0xae ~pxdflam3~ #8
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam4.spl~	SAY NAME1 @4624	WRITE_ASCII 0x76 ~pxwyin44~ #8	WRITE_ASCII 0xae ~pxdflam4~ #8
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam5.spl~	SAY NAME1 @4625	WRITE_ASCII 0x76 ~pxwyin45~ #8	WRITE_ASCII 0xae ~pxdflam5~ #8
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam6.spl~	SAY NAME1 @4626	WRITE_ASCII 0x76 ~pxwyin46~ #8	WRITE_ASCII 0xae ~pxdflam6~ #8
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam7.spl~	SAY NAME1 @4627	WRITE_ASCII 0x76 ~pxwyin47~ #8	WRITE_ASCII 0xae ~pxdflam7~ #8

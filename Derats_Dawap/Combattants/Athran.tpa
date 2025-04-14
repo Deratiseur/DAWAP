@@ -1,0 +1,178 @@
+COPY	~Derats_Dawap/Combattants/Athran/Copy~				~override~
+ADD_KIT ~PXATHRAN~
+~PXATHRAN                1           1           1           1           1           1           1           1~
+~PXATHRAN                1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 1 1 1 1 1 2 0 0 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+~PXATHRAN                12      0       9       0       13      17~
+~PXATHRAN                0       0       0       0       0       0~
+~PXATHRAN                17      0       0       0       0       17~
+~PXATHRAN                15      0       0       0       0       15~
+~PXATHRAN                1       0       0       0       0       0       0       0       0~
+~PXATHRAN                0       0       0       0       0       0~
+~Derats_Dawap/Combattants/Athran/pxathran.2da~
+~K_P_H K_P_HO~
+~0x00000000 6~
+~PA0~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @440
+SAY @441
+SAY @442
+LAF fl#add_kit_ee STR_VAR kit_name = PXATHRAN clsrcreq = ~1 0 0 0 0 0 0~ hpclass = ~hpprs~ END
+COPY_EXISTING	~sppr303.spl~				~override/pxath103.spl~ 										//Dissipation de la magie
+				~sppr304.spl~				~override/pxath104.spl~ 										//Glyphe de garde
+				~sppr306.spl~				~override/pxath106.spl~ 										//Protection contre le feu
+				~sppr307.spl~				~override/pxath107.spl~ 										//Délivrance de la malédiction
+				~sppr308.spl~				~override/pxath108.spl~ 										//Délivrance de la paralysie
+				~sppr309.spl~				~override/pxath109.spl~ 										//Élimination des invisibilités
+				~sppr310.spl~				~override/pxath110.spl~ 										//Fourvoiement magique
+				~sppr311.spl~				~override/pxath111.spl~ 										//Obstination bornée 
+				~sppr312.spl~				~override/pxath113.spl~ 										//Force d'un seul
+				~sppr313.spl~				~override/pxath115.spl~ 										//Sainte Punition
+				~sppr315.spl~				~override/pxath116.spl~ 										//Soins des blessures moyennes
+				~sppr317.spl~				~override/pxath117.spl~ 										//Guérison des maladies 
+				~sppr318.spl~				~override/pxath118.spl~ WRITE_BYTE 0x34 1						//Zone d'air pur
+COPY_EXISTING	~sppr401.spl~				~override/pxath201.spl~ 										//Soins des blessures graves
+				~sppr402.spl~				~override/pxath202.spl~ 										//Convocation d'animaux I
+				~sppr403.spl~				~override/pxath203.spl~ 										//Action libre
+				~sppr404.spl~				~override/pxath204.spl~ 										//Neutralisation du poison
+				~sppr405.spl~				~override/pxath205.spl~ 										//Domination mentale
+				~sppr406.spl~				~override/pxath206.spl~ 										//Harmonie défensive
+				~sppr407.spl~				~override/pxath207.spl~ 										//Protection contre la foudre
+				~sppr408.spl~				~override/pxath208.spl~ 										//Protection contre le Mal 3 m
+				~sppr409.spl~				~override/pxath209.spl~ 										//Protection contre la mort
+				~sppr411.spl~				~override/pxath211.spl~ 										//Poison
+				~sppr412.spl~				~override/pxath212.spl~ 										//Puissance sacrée	
+				~sppr413.spl~				~override/pxath213.spl~ 										//Protection contre le Plan Négatif
+				~sppr415.spl~				~override/pxath215.spl~ 										//Vision lointaine
+				~sppr416.spl~				~override/pxath216.spl~ 										//Manteau de terreur
+				~sppr417.spl~				~override/pxath217.spl~ WRITE_BYTE 0x34 2	 					//Restitution mineure
+COPY_EXISTING	~sppr501.spl~				~override/pxath301.spl~ 										//Convocation d'animaux II
+				~sppr510.spl~				~override/pxath302.spl~ 										//Soins des blessures critiques
+				~sppr503.spl~				~override/pxath303.spl~ 										//Colonne de feu
+				~sppr504.spl~				~override/pxath304.spl~ 										//Rappel à la vie
+				~sppr505.spl~				~override/pxath305.spl~ 										//Vision véritable
+				~sppr507.spl~				~override/pxath307.spl~ 										//Force de Champion
+				~sppr508.spl~				~override/pxath308.spl~ 										//Ordres chaotiques
+				~sppr509.spl~				~override/pxath309.spl~ 										//Résistance Magique
+				~sppr512.spl~				~override/pxath312.spl~ 										//Ordre Majeur
+				~sppr513.spl~				~override/pxath313.spl~ 										//Magie des vertueux
+				~sppr514.spl~				~override/pxath314.spl~ 										//Guérison de masse
+				~sppr515.spl~				~override/pxath315.spl~	WRITE_BYTE 0x34 3						//Repousser les morts-vivants
+COPY_EXISTING	~sppr601.spl~				~override/pxath401.spl~ 										//Serviteur aérien
+				~sppr602.spl~				~override/pxath402.spl~ 										//Convocation d'animaux III
+				~sppr603.spl~				~override/pxath403.spl~ 										//Barrière de lames
+				~sppr604.spl~				~override/pxath404.spl~ 										//Conjuration d'Animaux
+				~sppr607.spl~				~override/pxath407.spl~ 										//Guérison
+				~sppr609.spl~				~override/pxath409.spl~ 										//Aube illusoire
+				~sppr612.spl~				~override/pxath412.spl~ 										//Rayon divin
+				~sppr613.spl~				~override/pxath413.spl~ 										//Miroir physique
+				~sppr614.spl~				~override/pxath414.spl~ WRITE_BYTE 0x34 4						//Orbe desséchant de Sol
+COPY_EXISTING	~sppr701.spl~				~override/pxath501.spl~ 										//Bouclier des Archontes
+				~sppr703.spl~				~override/pxath503.spl~ 										//Portail
+				~sppr705.spl~				~override/pxath505.spl~ 										//Tempête de feu
+				~sppr706.spl~				~override/pxath506.spl~ 										//Symbole Terreur/Faiblesse
+				~sppr707.spl~				~override/pxath507.spl~ 										//Rayon de soleil
+				~sppr709.spl~				~override/pxath509.spl~ 										//Confusion
+				~sppr710.spl~				~override/pxath510.spl~ 										//Parole sacrée
+				~sppr711.spl~				~override/pxath511.spl~ 										//Régénération
+				~sppr712.spl~				~override/pxath512.spl~ 										//Résurrection
+				~sppr713.spl~				~override/pxath513.spl~ 										//Restauration majeure
+				~sppr718.spl~				~override/pxath518.spl~ 										//Symbole, Étourdissement
+				~sppr720.spl~				~override/pxath620.spl~ WRITE_BYTE 0x34 5						//Tremblement de terre
+COPY_EXISTING	~sppr721.spl~				~override/pxath621.spl~											//Lames d'énergie
+				~sppr725.spl~				~override/pxath625.spl~	WRITE_BYTE 0x34 6						//Sphère de lames				
+ACTION_IF GAME_IS ~IWDEE BG2EE EET~ THEN BEGIN
+COPY_EXISTING	~sppr722.spl~				~override/pxath622.spl~											//Orage vengeur
+				~sppr723.spl~				~override/pxath623.spl~											//Invocation d'élémentaires
+				~sppr726.spl~				~override/pxath626.spl~											//Convocation de Déva
+				~sppr728.spl~				~override/pxath628.spl~											//Implosion
+				~sppr729.spl~				~override/pxath629.spl~											//Résurrection de masse
+				~sppr730.spl~				~override/pxath630.spl~	WRITE_BYTE 0x34 6						//Aura de feu funeste
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_GUST_OF_WIND~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx1a.spl~ //Bourrasque
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_PRAYER~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx1b.spl~ //Prière
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_EXALTATION~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx1c.spl~ //Exaltation
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_FAVOR_OF_ILMATER~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx1d.spl~ //Faveur du martyr
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_BLOOD_RAGE~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx2a.spl~ //Rage sanguinaire
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_CLOUD_OF_PESTILENCE~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx2b.spl~ //Nuage de pestilence
+END			
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_UNFAILING_ENDURANCE~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx2c.spl~ //Endurance infaillible
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_RECITATION~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx2d.spl~ //Récitation
+END			
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_PROTECTION_FROM_ACID~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3a.spl~ //Protection contre l'acide
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_PROTECTION_FROM_COLD~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3b.spl~ //Protection contre le froid
+END			
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_PROTECTION_FROM_LIGHTNING~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3c.spl~ //Protection contre l'électricité
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_PROTECTION_FROM_FIRE~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3d.spl~ //Protection contre le feu
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_UNDEAD_WARD~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3e.spl~ //Vigilance contre les morts-vivants
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3f.spl~ //Juste courroux des fidèles
+END				
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SHIELD_OF_LATHANDER~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3g.spl~ //Égide divine
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~PHYSICAL_MIRROR~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx3h.spl~ //Miroir Physique
+END	
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_BANISHMENT~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx4a.spl~ //Bannissement
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_PROTECTION_FROM_COLD~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx4b.spl~ //Animation de Guerrier Squelette
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SYMBOL_PAIN~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx5a.spl~ //Symbole : douleur
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SYMBOL_HOPELESSNESS~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx5b.spl~ //Symbole : désespoir
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx5c.spl~ //Citadelle de l'âme
+END
+OUTER_SET spellId = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_GREATER_SHIELD_OF_LATHANDER~)) - 1000)
+ACTION_IF ((spellId > 0) AND (FILE_EXISTS_IN_GAME ~sppr%spellId%.spl~)) THEN BEGIN
+COPY_EXISTING	~sppr%spellId%.spl~				~override/pxathx5d.spl~ //Égide divine supérieur
+END

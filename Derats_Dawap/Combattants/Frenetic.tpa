@@ -1,0 +1,19 @@
+COPY	~Derats_Dawap/Combattants/Frenetic/Copy~	~override~
+ADD_KIT ~PXFRENETIC~
+~PXFRENETIC                1           1           0           0           0           0           0           0~
+~PXFRENETIC                5 5 0 0 0 0 0 0 5 5 0 0 5 5 5 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+~PXFRENETIC                9       0       0       0       0       0~
+~PXFRENETIC                0       0       0       0       0       0~
+~PXFRENETIC                17      0       0       0       0       0~
+~PXFRENETIC                15      0       0       0       0       0~
+~PXFRENETIC                1       1       1       1       1       1       1       1       1~
+~PXFRENETIC                0       1       1       1       1       0~
+~Derats_Dawap/Combattants/Frenetic/pxdfrene.2da~
+~K_F_H   K_F_E   K_F_D   K_F_G   K_F_HL   K_F_HE  K_F_HO~
+~0x00000001 2~
+~Fi0~
+~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @550
+SAY @551
+SAY @552
+LAF fl#add_kit_ee STR_VAR kit_name = PXFRENETIC END

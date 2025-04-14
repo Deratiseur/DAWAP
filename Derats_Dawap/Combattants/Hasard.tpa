@@ -1,0 +1,21 @@
+ADD_KIT ~px4UH4S4RD~
+~px4UH4S4RD                1           1           1           1           1           1           1           1~
+~px4UH4S4RD                5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 1 1 1 1 1 2 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+~px4UH4S4RD                9       0       0       0       0       0~
+~px4UH4S4RD                0       0       0       0       0       0~
+~px4UH4S4RD                17      0       0       0       0       0~
+~px4UH4S4RD                15      0       0       0       0       0~
+~px4UH4S4RD                1       1       1       1       1       1       1       1       1~
+~px4UH4S4RD                0       1       1       1       1       0~
+~Derats_Dawap/Combattants/Hasard/px4UH4S.2da~
+~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
+~0x00004001 2~
+~~
+~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @540
+SAY @541
+SAY @542
+LAF fl#add_kit_ee	STR_VAR kit_name = px4UH4S4RD	END
+COPY	~Derats_Dawap/Combattants/Hasard/Copy~						~override~
+COPY	~Derats_Dawap/Combattants/Hasard/px4uhab.spl~				~override~	SAY NAME1 @543
+COPY	~Derats_Dawap/Combattants/Hasard/px4uhac.spl~				~override~	SAY NAME1 @544

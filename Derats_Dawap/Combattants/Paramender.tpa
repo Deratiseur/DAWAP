@@ -1,0 +1,33 @@
+COPY	~Derats_Dawap/Combattants/Paramander/pxparamb.spl~	~override~
+ADD_KIT ~PXPARAM~
+~PXPARAM                1           1           1           1           1           1           1           1~
+~PXPARAM                2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 2 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+~PXPARAM                12      0       9       13      9       17~
+~PXPARAM                0       0       0       0       0       0~
+~PXPARAM                17      0       0       0       0       17~
+~PXPARAM                15      0       0       0       0       15~
+~PXPARAM                0       0       0       0       1       0       0       0       0~
+~PXPARAM                0       0       0       0       0       0~
+~Derats_Dawap/Combattants/Paramander/pxparam.2da~
+~K_P_H K_P_HO~
+~0x00010008 6~
+~PA0~
+~CHAN09 * HELM07 BAG26 RING06 RING31 * BOOT01 AMUL20 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @430
+SAY @431
+SAY @432
+LAF fl#add_kit_ee STR_VAR kit_name = PXPARAM clsrcreq = ~1 0 0 0 0 0 0~ END
+COPY_EXISTING	~spwi103.spl~				~override/pxdpar11.spl~											//Mains ardentes
+				~spwi104.spl~				~override/pxdpar12.spl~											//Charme personne
+				~spwi221.spl~				~override/pxdpar21.spl~											//Rayon débilitant
+				~spwi205.spl~				~override/pxdpar22.spl~											//Horreur
+				~spwi304.spl~				~override/pxdpar31.spl~											//Boule de feu
+				~spwi312.spl~				~override/pxdpar32.spl~											//Lenteur
+				~spwi415.spl~				~override/pxdpar41.spl~											//Métamorphose d'autrui
+				~spwi401.spl~				~override/pxdpar42.spl~											//Confusion
+				~spwi413.spl~				~override/pxdpar43.spl~											//Sphère résistante d'Otiluke
+				~spwi507.spl~				~override/pxdpar51.spl~	WRITE_BYTE 0x1c 2						//Immobilisation des monstres
+COPY_EXISTING	~spwi213.spl~				~override/pxdpar13.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 1	//Nuage Puant
+COPY_EXISTING	~spwi402.spl~				~override/pxdpar23.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 2	//Porte dimensionnelle
+COPY_EXISTING	~spwi417.spl~				~override/pxdpar33.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 3	//Arme enchantée
+COPY_EXISTING	~spwi605.spl~				~override/pxdpar52.spl~	WRITE_BYTE 0x1c 2	WRITE_BYTE 0x34 5	//Sort de mort

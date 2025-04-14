@@ -1,0 +1,25 @@
+COPY	~Derats_Dawap/Combattants/Boucher/Copy~	~override~
+ADD_KIT ~PXBOUCHER~
+~pxBOUCHER                1           1           1           1           1           1           1           1~
+~pxBOUCHER                5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 2 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~
+~PXBOUCHER                9       0       0       0       0       0~
+~PXBOUCHER                0       0       0       0       0       0~
+~PXBOUCHER                17      0       0       0       0       0~
+~PXBOUCHER                15      0       0       0       0       0~
+~PXBOUCHER                0       0       0       0       0       1       0       0       1~
+~PXBOUCHER                0       1       1       1       1       0~
+~Derats_Dawap/Combattants/Boucher/pxdbouch.2da~
+~K_F_H   K_F_E   K_F_D   K_F_G   K_F_HL   K_F_HE  K_F_HO~
+~0x00000001 2~
+~~
+~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+SAY @570
+SAY @571
+SAY @572
+LAF fl#add_kit_ee STR_VAR kit_name = PXBOUCHER END
+COPY_EXISTING	~SPIN117.SPL~				~override/pxbouch4.spl~
+LPF	ADD_SPELL_EFFECT  INT_VAR insert_point = 0 opcode = 3 parameter2 = 1	target = 1	duration = 60	END
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 17 END
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 18 END
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 146 END
