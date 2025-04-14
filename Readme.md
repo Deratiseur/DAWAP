@@ -1,4 +1,4 @@
-# Derat's Absolute Wacky Arcanists Pack
+# Derat's Absolute Wacky Adventurers Pack
 
 ![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20french%20%7C%20&color=informational)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macOS%20%7C%20&color=informational)
@@ -15,7 +15,7 @@
 ## Description:
 ------------
 
-53 kits de lanceurs de sorts qui vous feront réviser votre façon de jouer.
+57 kits qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -123,15 +123,21 @@ Shamans :
 
 - Guérisseur Saïyen
 
-Paladins :
+Combattants :
 
-- Paramendeur
+- Paramendeur (paladin)
 
-- Athran
+- Athran (paladin)
 
-Moine :
+- 4U-H4S4RD (guerrier)
 
-- Initié de la Flamme Blanche
+- Frénétique (guerrier)
+
+- Flemmard (guerrier)
+
+- Boucher (guerrier)
+
+- Initié de la Flamme Blanche (moine)
 
 Multi-classes :
 
@@ -143,7 +149,7 @@ Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-53 Spellcasters kits that will make you revise the way you play.
+57 kits that will make you revise the way you play.
 
 Wizards:
 
@@ -251,15 +257,21 @@ Shamans:
 
 - Saïyan Healer
 
-Paladins:
+Fighters:
 
-- Paramander
+- Paramander (paladin)
 
-- Athran
+- Athran (paladin)
 
-Monk:
+- 4T-R4ND0M (warrior)
 
-- Initiate of the White Flame
+- Frenzied (warrior
+
+- Lazy (warrior)
+
+- Butcher (warrior)
+
+- Initiate of the White Flame (monk)
 
 Multiclasses :
 
