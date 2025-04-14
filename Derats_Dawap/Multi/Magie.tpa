@@ -1,0 +1,50 @@
+COPY	~Derats_Dawap/Multi/Magie/Copy~					~override~
+ADD_KIT ~PXMAGISTER~
+~PXMAGISTER           0           0           1           1           0           1           0           0~
+~PXMAGISTER           0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXMAGISTER           0       0       0       9       10      0~
+~PXMAGISTER           0       0       0       0       0       0~
+~PXMAGISTER           0       0       0       0       0       0~
+~PXMAGISTER           0       0       0       0       0       0~
+~PXMAGISTER           0       1       0       0       1       0       0       1       0~
+~PXMAGISTER           1       1       0       1       0       0~
+~Derats_Dawap/Multi/Magie/pxdmagie.2da~
+~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
+~0x10000000    1~
+~CM0~
+~* * * BAG29 RING06 RING31 * BOOT01 AMUL27 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
+SAY @360
+SAY @361
+SAY @362
+
+LAF fl#add_kit_ee	STR_VAR kit_name = PXMAGISTER	END
+COMPILE	~Derats_Dawap/Multi/Magie/pxdmagie.baf~
+COPY_EXISTING	~sppr105.spl~				~override/pxdmag1.spl~
+				~sppr204.spl~				~override/pxdmag2.spl~
+				~sppr207.spl~				~override/pxdmag3.spl~
+				~sppr302.spl~				~override/pxdmag4.spl~
+				~sppr305.spl~				~override/pxdmag5.spl~
+				~sppr319.spl~				~override/pxdmag6.spl~
+				~sppr410.spl~				~override/pxdmag7.spl~
+				~sppr517.spl~				~override/pxdmag8.spl~
+				~sppr506.spl~				~override/pxdmag9.spl~
+				~sppr516.spl~				~override/pxdmag10.spl~
+				~sppr605.spl~				~override/pxdmag11.spl~
+				~sppr610.spl~				~override/pxdmag12.spl~
+				~sppr606.spl~				~override/pxdmag13.spl~
+				~sppr702.spl~				~override/pxdmag14.spl~
+				~sppr717.spl~				~override/pxdmag15.spl~
+				~sppr704.spl~				~override/pxdmag16.spl~
+				~sppr108.spl~				~override/pxdmag17.spl~
+				~sppr208.spl~				~override/pxdmag18.spl~
+				~sppr301.spl~				~override/pxdmag19.spl~
+				~sppr405.spl~				~override/pxdmag20.spl~
+				~sppr407.spl~				~override/pxdmag21.spl~
+				~sppr505.spl~				~override/pxdmag22.spl~
+				~sppr703.spl~				~override/pxdmag23.spl~	WRITE_BYTE 0x1c 1
+COPY_EXISTING	~sppr721.spl~				~override/pxdmag24.spl~	WRITE_BYTE 0x1c 1	WRITE_BYTE 0x34 8
+COPY_EXISTING	~spwi401.spl~				~override/pxdmag25.spl~	WRITE_BYTE 0x1c 2
+COPY_EXISTING	~spwi401.spl~				~override/pxdmagx.spl~
+OUTER_FOR ( i=1 ; i<25 ; i +=1)	BEGIN
+COPY_EXISTING	~pxdmgl1.spl~	~override/pxdmgl%i%.spl~	WRITE_ASCIIE 0xde ~pxdmag%i%~ #8	WRITE_ASCIIE 0x10e ~pxdmgl%i%~ #8	END
+COPY ~Derats_Dawap/Multi/Magie/pxdmagix.spl~			~override~	SAY 0x9e @3621	SAY 0xce @3622	SAY 0xfe @3623	SAY 0x12e @3624

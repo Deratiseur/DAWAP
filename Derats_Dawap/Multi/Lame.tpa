@@ -1,0 +1,25 @@
+COPY	~Derats_Dawap/Multi/Lame/Copy~					~override~
+ADD_KIT ~PxINFUSA~
+~PxINFUSA          1           1           1           0           0           1           1           1~
+~PxINFUSA          5 5 0 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 0 0 0 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PxINFUSA          9       0       0       12      0       0~
+~PxINFUSA          0       0       0       0       0       0~
+~PxINFUSA          0       0       0       0       0       0~
+~PxINFUSA          0       0       0       0       0       0~
+~PxINFUSA          1       1       1       1       1       1       1       1       1~
+~PxINFUSA          0       0       0       0       0       0~
+~Derats_Dawap/Multi/Lame/pxlamear.2da~
+~K_F_H	K_F_D	K_F_G	K_F_E	K_F_HE	K_F_HL	K_F_HO~
+~0x00000F88    2~
+~FM0~
+~* * * BAG29 RING06 RING40 *2 BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 SW1H27 STAF20~
+SAY @350
+SAY @351
+SAY @352
+LAF fl#add_kit_ee	STR_VAR kit_name = PxINFUSA	END
+COPY_EXISTING	~pxlamem1.spl~				~override/pxlamem2.spl~	WRITE_BYTE 0x9e 2
+COPY_EXISTING	~pxlamem1.spl~				~override/pxlamem3.spl~	WRITE_BYTE 0x9e 3
+COPY_EXISTING	~pxlamem1.spl~				~override/pxlamem4.spl~	WRITE_BYTE 0x9e 4
+COPY_EXISTING	~pxlamem1.spl~				~override/pxlamem5.spl~	WRITE_BYTE 0x9e 5
+COPY_EXISTING	~pxlamem1.spl~				~override/pxlamem6.spl~	WRITE_BYTE 0x9e 6
+COPY_EXISTING	~pxlamem1.spl~				~override/pxlamem7.spl~	WRITE_BYTE 0x9e 7
