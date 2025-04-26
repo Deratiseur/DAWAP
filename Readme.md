@@ -39,7 +39,7 @@ Magiciens :
 
 - Malavisé
 
-- Préfondateur
+- Arcanologue vampirique
 
 Ensorceleurs :
 
@@ -173,7 +173,7 @@ Wizards:
 
 - Unwise
 
-- Prefoundater
+- Vampiric Arcanologist
 
 Sorcerers:
 
