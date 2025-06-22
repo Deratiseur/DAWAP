@@ -59,7 +59,7 @@ Ensorceleurs :
 
 - Psycho Absorbeur
 
-- Instilleur
+- Débordeur
 
 Clercs :
 
