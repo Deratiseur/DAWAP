@@ -9,7 +9,7 @@
 
 [Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=33790)  
 
-[Link to the beamdog forum and full descriptions](https://forums.beamdog.com/discussion/87104/derats-dawap-a-new-kits-mods-for-ee-editions)
+[Link to the beamdog forum and full descriptions](https://forums.beamdog.com/discussion/87104/derats-dawap-a-new-kits-mods-for-ee-editions/p1)
 
 
 ## Description:
