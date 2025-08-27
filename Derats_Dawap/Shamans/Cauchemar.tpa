@@ -2,7 +2,7 @@ COPY	~Derats_Dawap/Shamans/Cauchemars/Copy~			~override~
 COMPILE	~Derats_Dawap/Shamans/Cauchemars/pxcauch.baf~
 ADD_KIT ~PXCAUCHEM~
 ~PXCAUCHEM          1           0           1           1           0           0           0           1~
-~PXCAUCHEM          0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PXCAUCHEM          0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PXCAUCHEM          0       0       12      0       12      0~
 ~PXCAUCHEM          0       0       0       0       0       0~
 ~PXCAUCHEM          0       0       0       0       0       0~
