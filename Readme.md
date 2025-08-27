@@ -15,7 +15,7 @@
 ## Description:
 ------------
 
-57 kits qui vous feront réviser votre façon de jouer.
+58 kits qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -114,6 +114,8 @@ Bardes :
 - Impériosa
 
 - Lèvemort
+  
+- Chantefeu
 
 Shamans :
 
@@ -248,6 +250,8 @@ Bards:
 - Imperiosa
 
 - Deathraiser
+  
+- Firesinger
 
 Shamans:
 
