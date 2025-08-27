@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Sorciers/debord/Copy~				~override~
 ADD_KIT ~pxDEBORDER~
-~pxDEBORDER          0           0           1           0           0           0           0           0~
+~pxDEBORDER          1           0           1           1           0           0           0           0~
 ~pxDEBORDER          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDEBORDER          0       0       0       9       0       0~
 ~pxDEBORDER          0       0       0       0       0       0~

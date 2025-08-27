@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Sorciers/Formu/pxdformb.spl~		~override~
 ADD_KIT ~pxFORMUL~
-~pxFORMUL           0           0           1           0           0           0           0           0~
+~pxFORMUL           1           0           1           1           0           0           0           0~
 ~pxFORMUL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxFORMUL           0       0       0       9       0       0~
 ~pxFORMUL           0       0       0       0       0       0~

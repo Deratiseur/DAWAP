@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Sorciers/Psycho/Copy~				~override~
 ADD_KIT ~pxPSYCHO~
-~pxPSYCHO          0           0           1           0           0           0           0           0~
+~pxPSYCHO          1           0           1           1           0           0           0           0~
 ~pxPSYCHO          0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxPSYCHO          0       0       0       9       0       0~
 ~pxPSYCHO          0       0       0       0       0       0~

@@ -1,7 +1,7 @@
 COPY	~Derats_Dawap/Sorciers/Eorat/Copy~				~override~
 COMPILE	~Derats_Dawap/Sorciers/eorat/pxdeorat.baf~
 ADD_KIT ~pxEORAT~
-~pxEORAT           0           0           1           0           0           0           0           0~
+~pxEORAT           1           0           1           1           0           0           0           0~
 ~pxEORAT           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxEORAT           0       0       0       9       0       0~
 ~pxEORAT           0       0       0       0       0       0~

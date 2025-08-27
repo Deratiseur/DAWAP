@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Sorciers/Zap/Copy~				~override~
 ADD_KIT ~pxDZAP~
-~pxDZAP              0           0           1           0           0           0           0           0~
+~pxDZAP              1           0           1           1           0           0           0           0~
 ~pxDZAP              0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDZAP              0       0       0       9       0       0~
 ~pxDZAP              0       0       0       0       0       0~

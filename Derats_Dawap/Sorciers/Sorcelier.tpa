@@ -1,7 +1,7 @@
 COPY	~Derats_Dawap/Sorciers/Sorcelier/Copy~			~override~
 COPY_EXISTING	~lufm0.2da~					~override/lupx6.2da~	REPLACE_TEXTUALLY ~32        ~ ~1         ~
 ADD_KIT ~pxSORCELIER~
-~pxSORCELIER           0           0           1           0           0           0           0           0~
+~pxSORCELIER           1           0           1           1           0           0           0           0~
 ~pxSORCELIER           0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxSORCELIER           15      15      0       9       0       0~
 ~pxSORCELIER           0       0       0       0       0       0~
