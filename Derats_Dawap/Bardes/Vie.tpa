@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Bardes/Vie/Copy~					~override~
 ADD_KIT ~pxCHVIE~
-~pxCHVIE               1           1           1           1           1           1           0           0~
+~pxCHVIE               1           1           1           1           1           1           1           1~
 ~pxCHVIE               1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxCHVIE               0       12      0       13      0       15~
 ~pxCHVIE               0       0       0       0       0       0~

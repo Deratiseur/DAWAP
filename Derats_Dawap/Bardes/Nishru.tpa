@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Bardes/Nishruu/Copy~				~override~
 ADD_KIT ~pxNISHRUU~
-~pxNISHRUU            1           1           1           1           1           1           0           0~
+~pxNISHRUU            1           1           1           1           1           1           1           1~
 ~pxNISHRUU            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxNISHRUU            0       12      0       13      0       15~
 ~pxNISHRUU            0       0       0       0       0       0~

@@ -1,0 +1,26 @@
+COPY	~Derats_Dawap/Mages/Projo/Copy~					~override~
+COPY	~Derats_Dawap/Bardes/Chantefeu/pxchatf0.spl~	~override~
+COPY_EXISTING	~pxchatf0.spl~	~override/pxchatf2.spl~ WRITE_BYTE 0x9e 2 WRITE_BYTE 0xce 2
+COPY	~Derats_Dawap/Multi/Lame/Copy/pxlamed4.spl~	~override/pxchatf4.spl~ WRITE_ASCII 0xae ~pxchatf4~ #8
+COPY	~Derats_Dawap/Multi/Lame/Copy/pxlamed4.eff~	~override/pxchatf4.eff~ WRITE_BYTE 0x22 8
+ADD_PROJECTILE	~Derats_Dawap/Bardes/Chantefeu/pxchantf.pro~	~px Firesinger Blast~
+COPY	~Derats_Dawap/Bardes/Chantefeu/pxchanfe.spl~	~override~	LPF ALTER_SPELL_HEADER INT_VAR projectile = pxchantf END
+ADD_KIT ~pxCHANTEF~
+~pxCHANTEF            1           1           1           1           1           1           1           1~
+~pxCHANTEF            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxCHANTEF            0       12      0       0       0       15~
+~pxCHANTEF            0       0       0       0       0       0~
+~pxCHANTEF            0       0       0       0       0       0~
+~pxCHANTEF            0       0       0       0       0       0~
+~pxCHANTEF            1       1       1       1       1       1       1       1       1~
+~pxCHANTEF            0       0       0       0       0       0~
+~Derats_Dawap/Bardes/Chantefeu/pxchantf.2da~
+~K_B_H   K_B_D   K_B_G   K_B_E   K_B_HE   K_B_HL   K_B_HO~
+~0x00000000    5~
+~Ba0~
+~CHAN012 * * BAG30 RING06 RING34 CLCK02 BOOT01 AMUL19 BRAC16 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+SAY @580
+SAY @581
+SAY @582
+LAF fl#add_kit_ee	STR_VAR kit_name = pxCHANTEF	END
+COPY	~Derats_Dawap/Bardes/Chsort/Copy/pxchsob.spl~	~override/pxchanfa.spl~	WRITE_ASCII 0xae ~pxchanfe~ #8

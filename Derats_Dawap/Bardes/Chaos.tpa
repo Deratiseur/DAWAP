@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Bardes/Engeance/Copy~				~override~
 ADD_KIT ~pxANGEANCE~
-~pxANGEANCE            1           1           1           1           1           1           0           0~
+~pxANGEANCE            1           1           1           1           1           1           1           1~
 ~pxANGEANCE            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxANGEANCE            0       12      0       13      0       15~
 ~pxANGEANCE            0       0       0       0       0       0~

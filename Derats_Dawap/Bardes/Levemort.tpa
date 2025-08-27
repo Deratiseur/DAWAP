@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Bardes/Levemort/Copy~					~override~
 ADD_KIT ~PXLEVMORT~
-~PXLEVMORT              1           1           1           1           1           1           0           0~
+~PXLEVMORT              1           1           1           1           1           1           1           1~
 ~PXLEVMORT              1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PXLEVMORT              0       12      0       13      0       15~
 ~PXLEVMORT              0       0       0       0       0       2~

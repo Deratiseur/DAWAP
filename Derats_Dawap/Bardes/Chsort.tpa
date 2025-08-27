@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Bardes/Chsort/Copy~				~override~
 ADD_KIT ~PxCHSORT~
-~PxCHSORT            1           1           1           1           1           1           0           0~
+~PxCHSORT            1           1           1           1           1           1           1           1~
 ~PxCHSORT            1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PxCHSORT            0       12      0       13      0       15~
 ~PxCHSORT            0       0       0       0       0       0~

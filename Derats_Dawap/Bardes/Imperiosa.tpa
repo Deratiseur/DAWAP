@@ -1,7 +1,7 @@
 COPY	~Derats_Dawap/Bardes/Imperiosa/pxdimpe1.spl~	~override~
 COPY	~Derats_Dawap/Mages/Projo/Copy~					~override~
 ADD_KIT ~PXDIMPER~
-~PXDIMPER              1           1           1           1           1           1           0           0~
+~PXDIMPER              1           1           1           1           1           1           1           1~
 ~PXDIMPER              1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PXDIMPER              0       12      0       13      0       15~
 ~PXDIMPER              0       0       0       0       0       2~
