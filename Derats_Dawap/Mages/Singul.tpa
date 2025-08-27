@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Mages/Singul/pxsingub.spl~		~override~
 ADD_KIT ~PxSINGUL~
-~PxSINGUL           0           0           1           0           0           0           0           0~
+~PxSINGUL           1           0           1           1           0           0           0           0~
 ~PxSINGUL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PxSINGUL           0       0       0       9       0       0~
 ~PxSINGUL           0       0       0       0       0       0~

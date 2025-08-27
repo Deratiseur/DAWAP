@@ -1,7 +1,7 @@
 COPY	~Derats_Dawap/Mages/Artilleur/Copy~				~override~
 COMPILE	~Derats_Dawap/Mages/Artilleur/pxdarti.baf~
 ADD_KIT ~PXDARTIL~
-~PXDARTIL           0           0           1           0           0           0           0           0~
+~PXDARTIL           1           0           1           1           0           0           0           0~
 ~PXDARTIL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PXDARTIL           0       0       0       9       0       0~
 ~PXDARTIL           0       0       0       0       0       0~

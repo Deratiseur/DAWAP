@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Mages/Voleur/Copy~				~override~
 ADD_KIT ~pxVOLSOR~
-~pxVOLSOR           0           0           1           0           0           0           0           0~
+~pxVOLSOR           1           0           1           1           0           0           0           0~
 ~pxVOLSOR           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxVOLSOR           0       0       0       9       0       0~
 ~pxVOLSOR           0       0       0       0       0       0~
@@ -21,3 +21,5 @@ COPY	~Derats_Dawap/Mages/Voleur/pxdvol1.spl~			~override~	SAY NAME1 @33
 COPY	~Derats_Dawap/Mages/Voleur/pxdvolt.spl~			~override~	SAY NAME1 @34
 COPY_EXISTING	~sareveff.eff~				~override/pxdvol1.eff~	WRITE_ASCII 0x30 ~pxdvo1~ #8
 COPY_EXISTING	~sareveff.eff~				~override/pxdvol2.eff~	WRITE_ASCII 0x30 ~pxdvo2~ #8
+COPY_EXISTING	~amcall.vvc~				~override/pxl2vlrv.vvc~	WRITE_ASCII 0x8 ~pxl2volr~ #8	WRITE_BYTE 0x4c 10
+COPY_EXISTING	~pxl2vlrv.vvc~				~override/pxdvoltv.vvc~	WRITE_ASCII 0x8 ~pxdvolt1~ #8	

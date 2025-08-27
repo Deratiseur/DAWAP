@@ -1,6 +1,6 @@
 COPY	~Derats_Dawap/Mages/Projo/Copy~					~override~
 ADD_KIT ~PxDMANGA~
-~PxDMANGA           0           0           1           0           0           0           0           0~
+~PxDMANGA           1           0           1           1           0           0           0           0~
 ~PxDMANGA           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PxDMANGA           0       0       0       9       0       0~
 ~PxDMANGA           0       0       0       0       0       0~

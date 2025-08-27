@@ -17,7 +17,7 @@ COPY	~Derats_Dawap/Mages/Spheres/Copy2~				~override~
 COPY	~Derats_Dawap/Mages/Spheres/Copy3~				~override~
 COPY	~Derats_Dawap/Mages/Projo/Copy/pxprojoa.spl~	~override~
 ADD_KIT ~pxSPHERES~
-~pxSPHERES           0           0           1           0           0           0           0           0~
+~pxSPHERES           1           0           1           1           0           0           0           0~
 ~pxSPHERES           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxSPHERES           0       0       0       9       0       0~
 ~pxSPHERES           0       0       0       0       0       0~

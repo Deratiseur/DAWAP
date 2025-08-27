@@ -3,7 +3,7 @@ COPY	~Derats_Dawap/Mages/Modeleur/Copy2~				~override~
 COPY	~Derats_Dawap/Combattants/Flamme/Bams~			~override~
 COPY	~Derats_Dawap/Mages/Projo/Copy/pxprojoa.spl~	~override~
 ADD_KIT ~PXDMODEL~
-~PXDMODEL           0           0           1           0           0           0           0           0~
+~PXDMODEL           1           0           1           1           0           0           0           0~
 ~PXDMODEL           0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~PXDMODEL           0       0       0       9       0       0~
 ~PXDMODEL           0       0       0       0       0       0~
