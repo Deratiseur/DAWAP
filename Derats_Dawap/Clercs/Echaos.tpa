@@ -3,7 +3,7 @@ COMPILE	~Derats_Dawap/Sorciers/eorat/pxdeorat.baf~
 COPY	~Derats_Dawap/Clercs/Eochaos/Copy~				~override~
 ADD_KIT ~pxDEOCHAOS~
 ~pxDEOCHAOS           0           0           1           1           0           1           0           0~
-~pxDEOCHAOS           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDEOCHAOS           0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDEOCHAOS           0       0       0       0       9       0~
 ~pxDEOCHAOS           0       0       0       0       0       0~
 ~pxDEOCHAOS           0       0       0       0       17      0~

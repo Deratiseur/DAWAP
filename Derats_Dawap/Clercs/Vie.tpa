@@ -1,7 +1,7 @@
 INCLUDE ~Derats_Dawap/Clercs/Vie/pxdvie.tph~
 ADD_KIT ~pxDVIE~
 ~pxDVIE             0           0           1           1           0           1           0           0~
-~pxDVIE             0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDVIE             0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDVIE             0       0       0       0       9       0~
 ~pxDVIE             0       0       0       0       0       0~
 ~pxDVIE             0       0       0       0       17      0~

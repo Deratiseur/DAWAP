@@ -2,7 +2,7 @@ COPY	~Derats_Dawap/Clercs/Dweom/pxddweob.spl~		~override~
 COPY	~Derats_Dawap/Clercs/Beni/pxsoben1.spl~			~override~
 ADD_KIT ~pxDDWEOM~
 ~pxDDWEOM            0           0           1           1           0           1           0           0~
-~pxDDWEOM            0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDDWEOM            0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDDWEOM            0       0       0       0       9       0~
 ~pxDDWEOM            0       0       0       0       0       0~
 ~pxDDWEOM            0       0       0       0       17      0~

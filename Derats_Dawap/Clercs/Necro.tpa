@@ -2,7 +2,7 @@ INCLUDE ~Derats_Dawap/Druides/Horde/GW_Preacher.tpa~
 COPY	~Derats_Dawap/Clercs/Necro/Copy~				~override~
 ADD_KIT ~pxDNECRO~
 ~pxDNECRO           0           0           1           1           0           1           0           0~
-~pxDNECRO           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDNECRO           0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDNECRO           0       0       0       0       9       0~
 ~pxDNECRO           0       0       0       0       0       0~
 ~pxDNECRO           0       0       0       0       17      0~

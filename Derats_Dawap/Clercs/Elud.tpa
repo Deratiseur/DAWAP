@@ -1,9 +1,9 @@
 COPY	~Derats_Dawap/Druides/Poly/Copy/pxdpolyb.spl~ ~override/pxeludb.spl~	LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete=87 END
 ADD_KIT ~pxELUD~
 ~pxELUD            0           0           1           1           0           1           0           0~
-~pxELUD            0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxELUD            0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxELUD            0       0       0       0       9       0~
-~pxELUD            0       0       0       0       0       0~
+~pxELUD            0       0       0       0       0       2~
 ~pxELUD            0       0       0       0       17      0~
 ~pxELUD            0       0       0       0       15      0~
 ~pxELUD            1       1       1       1       1       1       1       1       1~

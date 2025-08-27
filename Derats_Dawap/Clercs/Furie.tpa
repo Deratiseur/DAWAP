@@ -1,7 +1,7 @@
 COPY	~Derats_Dawap/Clercs/Furie/pxdfurib.spl~		~override~
 ADD_KIT ~pxDFURIE~
 ~pxDFURIE           0           0           1           1           0           1           0           0~
-~pxDFURIE           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxDFURIE           0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxDFURIE           0       0       0       0       9       0~
 ~pxDFURIE           0       0       0       0       0       0~
 ~pxDFURIE           0       0       0       0       17      0~

@@ -3,7 +3,7 @@ COPY	~Derats_Dawap/Clercs/Univers/pxuniveb.spl~		~override~
 COPY	~Derats_Dawap/Combattants/Athran/Copy/pxathra0.spl~	~override~
 ADD_KIT ~pxUNIVERS~
 ~pxUNIVERS           0           0           1           1           0           1           0           0~
-~pxUNIVERS           0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~pxUNIVERS           0 0 0 0 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
 ~pxUNIVERS           0       0       0       0       9       0~
 ~pxUNIVERS           0       0       0       0       0       0~
 ~pxUNIVERS           0       0       0       0       17      0~
