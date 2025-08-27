@@ -1,12 +1,12 @@
 COPY	~Derats_Dawap/Combattants/Flamme/Copy~				~override~
 COPY	~Derats_Dawap/Combattants/Flamme/Bams~				~override~
 ADD_KIT ~PxDFLAM~
-~PxDFLAM         1           1           0           0           1           0           0           1~
-~PxDFLAM         1 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-~PxDFLAM         9       0       0       9      0       0~
+~PxDFLAM         1           1           1           1           1           0           0           0~
+~PxDFLAM         0 1 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 1 0 0 0 0 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~PxDFLAM         0       9       9       0      9       0~
 ~PxDFLAM         0       0       0       0      0       0~
-~PxDFLAM         0       17      0       0      17      0~
-~PxDFLAM         0       15      0       0      15      0~
+~PxDFLAM         0       0       0       0      0       0~
+~PxDFLAM         0       0       0       0      0       0~
 ~PxDFLAM         1       0       0       0      0       0       0       0       0~
 ~PxDFLAM         0       0       0       0      0       0~
 ~Derats_Dawap/Combattants/Flamme/pxdflam.2da~
@@ -19,7 +19,7 @@ SAY @461
 SAY @462
 LAF fl#add_kit_ee	STR_VAR kit_name = PxDFLAM	END
 COPY ~Derats_Dawap/Combattants/Flamme/pxdflam1.spl~			~override~	SAY NAME1 @4621
-COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam2.spl~	SAY NAME1 @4622	WRITE_ASCII 0x76 ~pxwyin41~ #8	WRITE_ASCII 0xae ~pxdflam2~ #8
+COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam2.spl~	SAY NAME1 @4622	WRITE_ASCII 0x76 ~pxwyin42~ #8	WRITE_ASCII 0xae ~pxdflam2~ #8
 COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam3.spl~	SAY NAME1 @4623	WRITE_ASCII 0x76 ~pxwyin43~ #8	WRITE_ASCII 0xae ~pxdflam3~ #8
 COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam4.spl~	SAY NAME1 @4624	WRITE_ASCII 0x76 ~pxwyin44~ #8	WRITE_ASCII 0xae ~pxdflam4~ #8
 COPY_EXISTING	~pxdflam1.spl~				~override/pxdflam5.spl~	SAY NAME1 @4625	WRITE_ASCII 0x76 ~pxwyin45~ #8	WRITE_ASCII 0xae ~pxdflam5~ #8
