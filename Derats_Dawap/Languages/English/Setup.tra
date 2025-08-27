@@ -693,6 +693,7 @@ Advantages:
 - Aid: +1 and +1 every 6 levels.
 - Bless: +1 and +1 every 6 levels.
 - Draw Upon Holy Might: +1 and +1 every 6 levels.
+- Charisma : +2
 - Chooses warrior Hlas instead of cleric Hlas.
 
 Disadvantage:
@@ -807,6 +808,7 @@ Area of effect: special
 Saving throw: no
 
 This spell allows you to combine several spells and cast them all at the same time from a special ability button. Three spells of level eight or less can thus be stored and cast simultaneously. Once the combined spells have been cast, the button disappears.~
+@3825 = ~Combined spells~
 
 @399 = ~Clan champion (shaman)~
 @390 = ~clan champion~
@@ -1034,7 +1036,7 @@ From level 30 onwards, his song also produces the effects of Power Word: Destruc
 - Charisma: +2
 
 Disadvantages:
-- Can't cast any spells.
+- It cannot cast any spells.
 - It cannot be chaotic or good.~
 
 @439 = ~Paramander (paladin)~
@@ -1283,7 +1285,7 @@ Saving throw: special
 
 This spell allows the Spell Modeler to select any existing level 9 spell to be cast instead. All spell parameters depend on the selected spell.~
 
-@489 = ~Master of the Wit (druid)~
+@489 = ~Master of the Wit (ranger)~
 @480 = ~master of the Wit~
 @481 = ~Master of the Wit~
 @482 = ~MASTER OF THE WIT: This druid's link with nature is very strong, but it doesn't manifest itself in the same way as that of his colleagues.
@@ -1291,16 +1293,16 @@ This spell allows the Spell Modeler to select any existing level 9 spell to be c
 Advantages:
 - Protection against animals.
 - He can charm a wild animal (not summoned) at will: the animal cannot make a saving throw, and becomes his faithful companion. It can follow him into any zone. Control is definitive until death.
-- From level 12 onwards, his charming ability can also affect woodland creatures: spiders, beetles, snakes, ankheg, wyverns.
-- From level 15, protection against woodland creatures he can charm.
-- From level 24, his ability to charm can also affect certain exotic creatures: carrion crawlers, trolls, umber hulks, otyughs, basilisks.
-- From level 30, protection against exotic creatures he can charm.
+- From level 10 onwards, his charming ability can also affect woodland creatures: spiders, beetles, snakes, ankheg, wyverns.
+- From level 12, protection against woodland creatures he can charm.
+- From level 20, his ability to charm can also affect certain exotic creatures: carrion crawlers, trolls, umber hulks, otyughs, basilisks.
+- From level 24, protection against exotic creatures he can charm.
 
 Disadvantages:
-- He cannot cast any spells.
-- He has no access to hla.
-- He has no elemental or poison resistance.
-- He cannot use metamorphoses.~
+– He may not use the classic Charm Animal ability.
+- He can't cast any spells.
+- He may not wear armor heavier than studded leather.
+- He Can't be dual-classed.~
 
 @499 = ~Deathraiser (bard)~
 @490 = ~deathraiser~
@@ -1457,7 +1459,7 @@ Disadvantages:
 - Cannot "learn" spells.
 - Cannot cast spells "normally".
 - He has no access to mage's hlas and epic spells.
-- Each time he casts a spell, all group members (regardless of range) and all enemies within 4.5 meters lose a number of hit points equal to half the level of the spell cast, rounded up.
+- Each time he model a spell, all creatures within 10 foots of him (including party members) lose a number of hit points equal to half the level of the spell cast, rounded up.
 - Contingency/sequencer spells don't affect him.
 - Alignment limited to evil.~
 @5321 = ~Divine Dweomer 1~
@@ -1690,5 +1692,18 @@ Advantages:
 - From level 22 all his strikes kill the target if it fails a saving throw against spells.
 
 Disadvantages:
-- Every time he kills a creature, he has a 30% -1% chance every 3 levels of becoming a berserk. This state lasts 2 turns, during which he is uncontrollable for the first turn. If he kills other creatures, he can restart the uncontrollable state.
+- Every time he kills a creature, he has a 30% -1% chance every 2 levels of becoming a berserk. This state lasts 2 turns, during which he is uncontrollable for the first turn. If he kills other creatures, he can restart the uncontrollable state.
 - Alignment limited to Neutral Evil and Chaotic Evil.~
+
+@589 = ~Firesinger (bard)~
+@580 = ~Firesinger~
+@581 = ~Firesinger~
+@582 = ~FIRESINGER: This bard comes from a world where magic does not exist. Only The Flame exists.
+
+Advantages:
+- Its song creates a Sunfire that inflicts 1D4 points of fire damage per level, maximum 20D4 (spell save for ½).
+- Its melee attacks add 1D4 points of fire damage, +1D4 every 5 levels, maximum 5D4.
+- Fire resistance 25%, +2% per level.
+
+Disadvantage:
+- It cannot cast any spells.~

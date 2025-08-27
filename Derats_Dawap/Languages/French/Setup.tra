@@ -695,6 +695,7 @@ Avantages :
 - Aide :  +1 et +1 tous les 6 niveaux.
 - Bénédiction : +1 et +1 tous les 6 niveaux.
 - Puiser dans la puissance divine : +1 et +1 tous les 6 niveaux.
+- Charisme : +2
 - Choisit des Hlas de guerrier à la place de ceux de clerc.
 
 Inconvénient :
@@ -809,6 +810,7 @@ Zone d'effet : spécial
 Jet de Sauvegarde : non
 
 Ce sort permet de combiner plusieurs sorts et de les lancer tous en même temps à partir d'un bouton de capacité spéciale. Trois sorts de niveau huit ou moins peuvent ainsi être stockés et lancés simultanément. Une fois les sorts combinés lancés, le bouton disparaît.~
+@3825 = ~Sorts combinés~@3825 = ~Sorts combinés~
 
 @399 = ~Champion du clan (shaman)~
 @390 = ~champion du clan~
@@ -1286,24 +1288,24 @@ Jet de sauvegarde : spécial
 
 Ce sort permet au Modeleur de sort de sélectionner n'importe quel sort de niveau 9 existant pour être lancé à la place. Tous les paramètres du sort dépendent du sort choisi. À partir du niveau 23 ce sort permet aussi de sélectionner les sorts épiques~
 
-@489 = ~Maitre du Vif (druide)~
+@489 = ~Maitre du Vif (rodeur)~
 @480 = ~maître du Vif~
 @481 = ~Maître du Vif~
-@482 = ~MAÎTRE DU VIF : Le lien de ce druide avec la nature est très fort, mais ne se manifeste de la même manière que celui de ces confrères.
+@482 = ~MAÎTRE DU VIF : Le lien de ce rodeur avec la nature est très fort, mais ne se manifeste de la même manière que celui de ces confrères.
 
 Avantages :
 - Protection contre les animaux.
 - Il peut à volonté charmer un animal sauvage (non convoqué) : ce dernier n'a pas droit à un jet de sauvegarde et devient le fidèle compagnon du Maître du Vif. Il peut le suivre dans toutes les zones. Le contrôle est définitif jusqu'à sa mort.
-- À partir du niveau 12 sa capacité de charme peut aussi affecter les créatures des bois : araignées, scarabées, serpents, ankheg, wyvernes.
-- A partir du niveau 15, protection contre les créatures des bois qu'il peut charmer.
-- À partir du niveau 24 sa capacité de charme peut aussi affecter certaines créatures exotiques : vers charognards, trolls, ombres des roches, otyughs, basilics.
-- A partir du niveau 30, protection contre les créatures exotiques qu'il peut charmer.
+- À partir du niveau 10 sa capacité de charme peut aussi affecter les créatures des bois : araignées, scarabées, serpents, ankheg, wyvernes.
+- A partir du niveau 12, protection contre les créatures des bois qu'il peut charmer.
+- À partir du niveau 20 sa capacité de charme peut aussi affecter certaines créatures exotiques : vers charognards, trolls, ombres des roches, otyughs, basilics.
+- A partir du niveau 24, protection contre les créatures exotiques qu'il peut charmer.
 
 Inconvénients :
+- Il n'a pas la capacité "charme animal" standard.
 - Il ne peut lancer aucun sort.
-- Il n'a accès à aucun hla.
-- Il n'a pas de résistances élémentaires ou au poison.
-- Il ne peut pas se métamorphoser.~
+- Il ne peut pas porter d'armure plus lourde que l'armure de cuir clouté.
+- Il ne peut pas se jumeler.~
 
 @499 = ~Levemort (barde)~
 @490 = ~lèvemort~
@@ -1459,7 +1461,7 @@ Inconvénients :
 - Il ne peut pas "apprendre" de sorts.
 - Il ne peut pas lancer de sorts "normalement".
 - Il n'as pas accès aux hlas et sorts épiques de mage.
-- Chaque fois qu'il modèle un sort tout les membres du groupe (quel que soit la portée) et tous les ennemis dans les 4,5 mètres alentours perdent un nombre de points de vie égal à la moitié du niveau du sort lancé, arrondi au supérieur.
+- Chaque fois qu'il modèle un sort toutes les créatures dans les 4,5 mètres alentours de lui (membre du groupe inclus) perdent un nombre de points de vie égal à la moitié du niveau du sort lancé, arrondi au supérieur.
 - Les sorts de Contingence/Séquenceurs ne l'affectent pas.
 - Alignement limité à mauvais.~
 @5321 = ~Dwéomer divin 1~
@@ -1682,7 +1684,7 @@ Inconvénients :
 - Il ne peut pas dépasser la maîtrise avec les armes.
 - Il ne peut pas choisir de HLAs.~
 
-@579 = ~Boucher (Guerrier)~
+@579 = ~Boucher (guerrier)~
 @570 = ~boucher~
 @571 = ~Boucher~
 @572 = ~BOUCHER : Ce guerrier aime tellement tuer que ça le rend fou.
@@ -1694,5 +1696,18 @@ Avantages :
 - À partir du niveau 22 toutes ses frappes tuent la cible si elle rate un jet de sauvegarde contre les sorts.
 
 Inconvénient :
-- Chaque fois qu'il tue une créature il a 30% de chance -1% tous les 3 niveaux de devenir berserk. Cet état dure 2 tours pendant lesquels il est incontrôlable le premier tour. S'il tue d'autres créatures, il peut relancer l'état incontrôlable.
+- Chaque fois qu'il tue une créature il a 30% de chance -1% tous les 2 niveaux de devenir berserk. Cet état dure 2 tours pendant lesquels il est incontrôlable le premier tour. S'il tue d'autres créatures, il peut relancer l'état incontrôlable.
 - Alignement limité à Neutre mauvais et Chaotique mauvais.~
+
+@589 = ~Chantefeu (barde)~
+@580 = ~chantefeu~
+@581 = ~Chantefeu~
+@582 = ~CHANTEFEU : Ce barde vient d'un monde où la magie n'existe pas. Seule existe La Flamme.
+
+Avantages :
+- Son chant crée un feu solaire qui inflige 1D4 points de dégâts de feu par niveau, maximum 20D4 (jet de sauvegarde contre les sorts pour ½).
+- Ses attaques de mêlée ajoutent 1D4 point de dégât de feu, +1D4 tous les 5 niveaux, maximum 5D4.
+- Résistance au feu 25%, +2% par niveau.
+
+Inconvénient :
+- Il ne peut lancer aucun sort.~
