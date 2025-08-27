@@ -188,7 +188,7 @@ Scion de la vie : il avait 4 sorts qui n'avaient pas le niveau de sort réduit.
 
 v9
 Nouveaux kit :
-Malavisé, Préfondateur, Instilleur, Dweomeriste divin universel, Maître du Vif, Lèvemort.
+Malavisé, Préfondateur, Débordeur, Dweomeriste divin universel, Maître du Vif, Lèvemort.
 
 Modifications :
 Modeleur de sorts : il a maintenant un décalage de niveaux pour pouvoir modeler les hlas.
@@ -208,9 +208,35 @@ Modeleur de sorts : pour chaque niveau de sort, le jeu n'affichait pas les 3 pre
 v10
 Nouveaux kit :
 Ajout de 3 kits de combattants.
-Intégration du kit déjà existant "4UH4S4RD" dans le Dawap.
+Intégration du kit déjà existant "4U-H4S4RD" dans le Dawap.
 
 Modifications :
+- Ajout d'un nouveau sort d’évocation installé avec le Fléau.
 - Le "Arcanist" dans DAWAP devient "Adventurers" et le mod intègre maintenant des combattants. (Merci à ceux qui m'ont aidé à trouver ce nouvel acronyme)
 - Ajout d'un Weidu alternatif pour installer tous les kits d'un coup.
 - Préfondateur : il avait un nom vraiment trop moche. Il devient l'Arcanologue Vampirique. Il gagne aussi une nouvelle animation.
+
+
+
+v10.1
+Correction :
+- Il manquait deux lignes dans le fichier .tra en français.
+
+v11
+Nouveau kit :
+Chantefeu
+
+Modifications :
+- Voleur de sorts : il gagne des animations pour ses deux capacités.
+- Sorcelier : Il ne peut plus être installé sur IWDEE. Pour une raison que je ne comprend pas, sur IWDEE son malus à l'xp devient 100% -> il ne gagne rien.
+- Maître combineur : sa capacité spéciale a maintenant une icône et un nom alternatifs quand elle est chargée.
+- Arcanologue vampirique : modification de son inconvénient pour le rendre plus jouable.
+- Boucher : sa réduction de chance de devenir berserk passe de 1% tous les 3 niveaux à 1% tous les 2 niveaux.
+- Maître du vif : devient un rôdeur. Un druide sans sort c'est nul.
+- Modeleur de sorts et Arcanologue vampirique : mise à jour des sorts arcaniques possibles d'après les fichiers de l'Interplan, les plus à jour.
+
+Correction :
+- Initié de la flamme blanche : son choix de sorts de niveau 2 avait l’icône du choix de sorts de niveau 1.
+- Incantateur : il gagnait +3 au niveau de lanceur de sort à la place de +4.
+- Corrections d'erreurs dans les data des kits (CLASWEAP, WEAPPROF)
+- Tous les bardes manquaient du sort OHBARDTR.spl appliqué au niveau 24 (correction apportée par les EE : Set trap = 100 pour pouvoir poser les pièges disponibles en hla) 

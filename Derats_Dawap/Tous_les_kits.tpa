@@ -4,6 +4,7 @@ END
 ACTION_IF GAME_IS ~BGEE BG2EE EET~ THEN BEGIN
 INCLUDE ~Derats_Dawap/mages/Devast.tpa~
 INCLUDE ~Derats_Dawap/mages/Rage.tpa~
+INCLUDE ~Derats_Dawap/Sorciers/Sorcelier.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Vie.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Levemort.tpa~
 INCLUDE ~Derats_Dawap/Multi/Lame.tpa~
@@ -22,7 +23,6 @@ INCLUDE ~Derats_Dawap/Sorciers/Anoma.tpa~
 INCLUDE ~Derats_Dawap/Sorciers/Sprites.tpa~
 INCLUDE ~Derats_Dawap/Sorciers/Formul.tpa~
 INCLUDE ~Derats_Dawap/Sorciers/Miroir.tpa~
-INCLUDE ~Derats_Dawap/Sorciers/Sorcelier.tpa~
 INCLUDE ~Derats_Dawap/Sorciers/Zap.tpa~
 INCLUDE ~Derats_Dawap/Sorciers/Psycho.tpa~
 INCLUDE ~Derats_Dawap/Sorciers/Debord.tpa~
@@ -39,7 +39,6 @@ INCLUDE ~Derats_Dawap/Druides/Mutant.tpa~
 INCLUDE ~Derats_Dawap/Druides/Horde.tpa~
 INCLUDE ~Derats_Dawap/Druides/Element.tpa~
 INCLUDE ~Derats_Dawap/Druides/Poly.tpa~
-INCLUDE ~Derats_Dawap/Druides/Vif.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Chsort.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Tempus.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Nishru.tpa~
@@ -48,14 +47,16 @@ INCLUDE ~Derats_Dawap/Bardes/Antimaginum.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Agglu.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Chaos.tpa~
 INCLUDE ~Derats_Dawap/Bardes/Imperiosa.tpa~
+INCLUDE ~Derats_Dawap/Bardes/Chantefeu.tpa~
 INCLUDE ~Derats_Dawap/Shamans/Champion.tpa~
 INCLUDE ~Derats_Dawap/Shamans/Cauchemar.tpa~
 INCLUDE ~Derats_Dawap/Shamans/Saiyan.tpa~
-INCLUDE ~Derats_Dawap/Combattants/Paramender.tpa~
-INCLUDE ~Derats_Dawap/Combattants/Athran.tpa~
 INCLUDE ~Derats_Dawap/Combattants/Hasard.tpa~
 INCLUDE ~Derats_Dawap/Combattants/Frenetic.tpa~
 INCLUDE ~Derats_Dawap/Combattants/Flemmard.tpa~
 INCLUDE ~Derats_Dawap/Combattants/Boucher.tpa~
+INCLUDE ~Derats_Dawap/Combattants/Paramender.tpa~
+INCLUDE ~Derats_Dawap/Combattants/Athran.tpa~
+INCLUDE ~Derats_Dawap/Combattants/Vif.tpa~
 INCLUDE ~Derats_Dawap/Combattants/Flamme.tpa~
 INCLUDE ~Derats_Dawap/Multi/Magie.tpa~
