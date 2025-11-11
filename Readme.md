@@ -15,7 +15,7 @@
 ## Description:
 ------------
 
-58 kits qui vous feront réviser votre façon de jouer.
+57 kits qui vous feront réviser votre façon de jouer.
 
 Magiciens :
 
@@ -151,7 +151,7 @@ Descriptions complètes en suivant le lien pour le forum officiel.
 
 ------------
 
-58 kits that will make you revise the way you play.
+57 kits that will make you revise the way you play.
 
 Wizards:
 
