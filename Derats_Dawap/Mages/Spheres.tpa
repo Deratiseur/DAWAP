@@ -27,7 +27,7 @@ ADD_KIT ~pxSPHERES~
 ~pxSPHERES           1       1       0       1       0       0~
 ~Derats_Dawap/Mages/Spheres/pxsphere.2da~
 ~K_M_H	K_M_D	K_M_G	K_M_E	K_M_HE	K_M_HL	K_M_HO~
-~0x00003FC0    1~
+~0x00000000    1~
 ~~
 ~* * * BAG29 RING06 RING40 * BOOT01 AMUL21 BRAC15 BELT10 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SLNG05 DAGG05,40 STAF20~
 SAY @400
