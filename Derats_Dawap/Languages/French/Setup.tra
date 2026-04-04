@@ -661,8 +661,14 @@ Inconvénients :
 Avantages :
 - Il ne connaît qu'un seul sort, Projectile magique, qu'il peut lancer à volonté et dont il est le spécialiste :
  * 1 projectile supplémentaire tous les 3 niveaux jusqu'à 11 projectiles maximum.
- * Dégâts des projectiles 1D4+1, 1D6+2 au niveau 10, 1D8+3 au niveau 20, 1D10+4 au niveau 30, 1D12+5 au niveau 40, 3D4+6 au niveau 50.
- * Chaque projectile à 5% de chance d'infliger des dégâts doublés, 10% au niveau 20, 15% au niveau 40.
+ * Les dégâts des projectiles évoluent selon son niveau :
+  Niveau 1 à 6 : 1D4+1
+  Niveau 7 à 12 : 1D6+2
+  Niveau 13 à 18 : 1D8+3
+  Niveau 19 à 24 : 1D10+4
+  Niveau 25 à 30 : 1D12+5
+  Niveau 31 et+ : 3D4+6
+ * Chaque projectile à 5% de chance d'infliger des dégâts doublés, 10% au niveau 15, 15% au niveau 30.
  * Les protections contre les sorts considèrent ce sort comme un sort de niveau égal aux nombre de projectiles envoyés (IE : considéré comme un sort de niveau 6 quand il envoi 6 projectiles). À 10 projectiles envoyés plus aucune protection contre les sorts ne peut bloquer ce sort, à part Bouclier et Protection contre l'Évocation.
 
 Inconvénients :
@@ -818,8 +824,8 @@ Ce sort permet de combiner plusieurs sorts et de les lancer tous en même temps 
 @392 = ~CHAMPION DU CLAN : Ce shaman n'a pas besoin d'appeler les esprits : ils sont tout le temps avec lui.
 
 Avantages :
-- Les esprits le protègent : +1 à la Classe d'armure et aux jets de sauvegarde, +2 aux points de vie maximum,et +5% à la résistance à la magie au niveau 1 et tous les 7 niveaux ensuite.
-- Les esprits le renforcent : +1 à toutes les caractéristiques au niveau 12 et tous les 12 niveaux ensuite.
+- Les esprits le protègent : +1 à la Classe d'armure et aux jets de sauvegarde, +2 aux points de vie maximum,et +5% à la résistance à la magie au niveau 1 et tous les 6 niveaux ensuite.
+- Les esprits le renforcent : +1 à toutes les caractéristiques au niveau 10 et tous les 10 niveaux ensuite.
 - Les esprits lui enseignent des secrets : il connaît quelques sorts non-druidiques qui peuvent l'aide à défendre le clan et il peut se spécialiser dans toutes les armes de mêlée et dans les styles de combat Arme à deux mains et Épée et bouclier.
 - Sa danse crée les effets de Bénédiction sur les alliés mais pas sur lui même. A partir du niveau 7 elle crée aussi les effets de cantique (pas sur les ennemis) et à partir du niveau 15 elle crée aussi les effets d'Harmonie défensive (CA +2).
 
@@ -1013,8 +1019,8 @@ Le sort crée un orbe de glace entre les mains du mage, qu'il lance aussitôt à
 @412 = ~ARTILLEUR : Cet arcaniste a deux passions : faire des petits trous cramés et trancher des têtes grillées.
 
 Avantages :
-- Quand il lance le sort "Minuscules météores de Melf" il crée toujours 20 météores, 30 au niveau 18, 40 au niveau 27 et 50 au niveau 36.
-- Quand il lance le sort "Lames d’énergie" il crée toujours 30 lames, 40 au niveau 27 et 50 au niveau 36.
+- Quand il lance le sort "Minuscules météores de Melf" il crée toujours 20 météores, 30 au niveau 18, 40 au niveau 24 et 50 au niveau 30.
+- Quand il lance le sort "Lames d’énergie" il crée toujours 30 lames, 40 au niveau 24 et 50 au niveau 30.
 - +1 au TAC0 avec les armes à projectiles tous les 5 niveaux.
 
 Inconvénients :
@@ -1092,13 +1098,13 @@ Avantages :
 - Au niveau 28 les bonus accordés par sa danse sont doublés, lui accordent Enchaînement et Hâte améliorée pendant 2 round et rendent ses cheveux dorés.
 - Ses attaques aux poings évoluent avec son niveau suivant le schéma suivant :
   Au niveau 1 : 1D6 dégâts non létaux, +1 au toucher, 1,5 attaques par round, considérés comme une arme +1
-  Au niveau 5 : 1D8 dégâts non létaux, +2 au toucher, 2 attaques par round
-  Au niveau 10 : 1D10 dégâts non létaux, +3 au toucher, 2,5 attaques par round, considérés comme une arme +2
-  Au niveau 15 : 1D12 dégâts non létaux, +4 au toucher, 3 attaques par round
-  Au niveau 20 : 2D6 dégâts non létaux, +5 au toucher, 3,5 attaques par round, considérés comme une arme +3
-  Au niveau 25 : 2D8 dégâts non létaux, +6 au toucher, 4 attaques par round
-  Au niveau 30 : 2D10 dégâts non létaux, +7 au toucher, 4,5 attaques par round, considérés comme une arme +4
-  Au niveau 35 : 2D12 dégâts non létaux, +8 au toucher, 5 attaques par round.
+  Au niveau 4 : 1D8 dégâts non létaux, +2 au toucher, 2 attaques par round
+  Au niveau 8 : 1D10 dégâts non létaux, +3 au toucher, 2,5 attaques par round, considérés comme une arme +2
+  Au niveau 12 : 1D12 dégâts non létaux, +4 au toucher, 3 attaques par round
+  Au niveau 16 : 2D6 dégâts non létaux, +5 au toucher, 3,5 attaques par round, considérés comme une arme +3
+  Au niveau 20 : 2D8 dégâts non létaux, +6 au toucher, 4 attaques par round
+  Au niveau 24 : 2D10 dégâts non létaux, +7 au toucher, 4,5 attaques par round, considérés comme une arme +4
+  Au niveau 38 : 2D12 dégâts non létaux, +8 au toucher, 5 attaques par round.
 - Il peut se spécialiser dans les armes à deux mains et dans le style Arme à deux mains.
 
 Inconvénients :

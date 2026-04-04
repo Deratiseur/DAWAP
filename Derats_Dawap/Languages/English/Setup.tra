@@ -659,8 +659,14 @@ Disadvantages:
 Advantages:
 - He knows only one spell, Magic Missile, which he can cast at will and of which he is the specialist:
  * 1 additional missile every 3 levels, up to a maximum of 11 missiles.
- * Missile damage 1D4+1, 1D6+2 at level 10, 1D8+3 at level 20, 1D10+4 at level 30, 1D12+5 at level 40, 3D4+6 at level 50.
- * Each missile has a 5% chance of inflicting double damage, 10% at level 20, 15% at level 40.
+ * Projectile damage scales with level:
+  Levels 1–6: 1D4+1
+  Levels 7–12: 1D6+2
+  Levels 13–18: 1D8+3
+  Levels 19–24: 1D10+4
+  Level 25 to 30: 1D12+5
+  Level 31 and up: 3D4+6
+ * Each missile has a 5% chance of inflicting double damage, 10% at level 15, 15% at level 30.
  * Spell protection considers this spell to be of equal level to the number of missiles sent (IE: considered a level 6 spell when 6 missiles are sent). At 10 missiles sent, no spell protection can block this spell, apart from Shield and Protection against Evocation.
 
 Disadvantages:
@@ -816,8 +822,8 @@ This spell allows you to combine several spells and cast them all at the same ti
 @392 = ~CLAN CHAMPION: This shaman doesn't need to call spirits: they're with him all the time.
 
 Advantages:
-- The Spirits protects him: +1 to Armor Class and saving throws, +2 to maximum hit points and +5% to magic resistance at level 1 and every 7 levels thereafter.
-- The Spirits strengthen him: +1 to all characteristics at level 12 and every 12 levels thereafter.
+- The Spirits protects him: +1 to Armor Class and saving throws, +2 to maximum hit points and +5% to magic resistance at level 1 and every 6 levels thereafter.
+- The Spirits strengthen him: +1 to all characteristics at level 10 and every 10 levels thereafter.
 - The spirits teach him secrets: he knows a few non-druidic spells that can help him defend the clan, and he can specialize in all melee weapons and in the Two-handed Weapon and Sword and Shield combat styles.
 - His dance creates the effects of Bless on allies, but not on himself. From level 7 it also creates the effects of Chant (not on enemies) and from level 15 it also creates the effects of Defensive Harmony (AC +2).
 
@@ -1011,8 +1017,8 @@ The spell creates an orb of ice in the mage's hands, which he immediately throws
 @412 = ~ARTILLERIST: This arcanist has two passions: making little burnt holes and slicing grilled heads.
 
 Advantages:
-- When he casts the "Melf's Minute Meteors" spell, he always creates 20 meteors, 30 at level 18, 40 at level 27 and 50 at lvl 36.
-- When he casts the "Energy Blades" spell, he always creates 30 blades, 40 at level 27 and 50 at level 36.
+- When he casts the "Melf's Minute Meteors" spell, he always creates 20 meteors, 30 at level 18, 40 at level 24 and 50 at lvl 30.
+- When he casts the "Energy Blades" spell, he always creates 30 blades, 40 at level 24 and 50 at level 30.
 - +1 to TAC0 with projectile weapons every 5 levels.
 
 Disadvantages:
@@ -1090,13 +1096,13 @@ Advantages:
 - At level 28, the bonuses granted by his dance are doubled, granting him Improved Alacrity and Improved Haste for 2 rounds and turning his hairs golden.
 - His fist attacks evolve with his level as follows:
   At level 1: 1D6 non-lethal damage, +1 to hit, 1.5 attacks per round, considered a +1 weapon.
-  At Level 5: 1D8 non-lethal damage, +2 to hit, 2 attacks per round
-  At level 10: 1D10 non-lethal damage, +3 to hit, 2.5 attacks per round, considered a +2 weapon
-  At level 15: 1D12 non-lethal damage, +4 to hit, 3 attacks per round
-  At level 20: 2D6 non-lethal damage, +5 to hit, 3.5 attacks per round, considered a +3 weapon
-  At level 25: 2D8 non-lethal damage, +6 to hit, 4 attacks per round
-  At level 30: 2D10 non-lethal damage, +6 to hit, 4.5 attacks per round, considered a weapon +4
-  At level 35: 2D12 non-lethal damage, +7 to hit, 5 attacks per round.
+  At Level 4: 1D8 non-lethal damage, +2 to hit, 2 attacks per round
+  At level 8: 1D10 non-lethal damage, +3 to hit, 2.5 attacks per round, considered a +2 weapon
+  At level 12: 1D12 non-lethal damage, +4 to hit, 3 attacks per round
+  At level 16: 2D6 non-lethal damage, +5 to hit, 3.5 attacks per round, considered a +3 weapon
+  At level 20: 2D8 non-lethal damage, +6 to hit, 4 attacks per round
+  At level 24: 2D10 non-lethal damage, +6 to hit, 4.5 attacks per round, considered a weapon +4
+  At level 28: 2D12 non-lethal damage, +7 to hit, 5 attacks per round.
 - Can specialize in two-handed weapons and two-handed weapon style.
 
 Disadvantages:
