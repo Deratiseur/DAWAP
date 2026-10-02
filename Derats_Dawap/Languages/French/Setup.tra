@@ -258,7 +258,7 @@ SORTS AMÉLIORÉS : Le sorcelier connaît spontanément quelques sorts de combat
  * Frappe précise : durée rallongée : 1 round / 3 niveaux
  * Armure : temps d'incantation réduit et CA réduite : -1 CA / 3 niveaux (CA max 0)
  * Force : force améliorée si le sort est lancé sur lui-même : fixée à 19
- * Coups mortels de Tenser : durée maximale et +1 aux chances de coup critique.
+ * Coups mortels de Tenser : durée maximale et +5 % aux chances de coup critique.
  * Bouclier de feu (rouge/bleu) : arme affectée : +1D8 dégâts~
 
 @1239 = ~Armure (Améliorée)~
@@ -755,7 +755,7 @@ Inconvénients :
 
 Avantages :
 - Il connaît les sorts Sommeil, Hantise, Horreur, Émotion et Assassin imaginaire.
-- Sa danse a 20 % de chance +2 % par niveau de créer des assassins imaginaires qui agressent les ennemis.
+- Sa danse a 10 % de chance +2 % par niveau (maximum 50 %) de créer des assassins imaginaires qui agressent les ennemis.
 
 Inconvénients :
 - Après chaque repos, il a 1 % de chance par niveau (maximum 20 %) d'être agressé par 1D4+2 Incarnations de cauchemar tueuses.
@@ -1105,7 +1105,7 @@ Avantages :
   Au niveau 16 : 2D6 dégâts non létaux, +5 au toucher, 3,5 attaques par round, considérés comme une arme +3
   Au niveau 20 : 2D8 dégâts non létaux, +6 au toucher, 4 attaques par round
   Au niveau 24 : 2D10 dégâts non létaux, +7 au toucher, 4,5 attaques par round, considérés comme une arme +4
-  Au niveau 38 : 2D12 dégâts non létaux, +8 au toucher, 5 attaques par round.
+  Au niveau 28 : 2D12 dégâts non létaux, +8 au toucher, 5 attaques par round.
 - Il peut se spécialiser dans les armes à deux mains et dans le style Arme à deux mains.
 
 Inconvénients :
