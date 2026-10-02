@@ -7,7 +7,7 @@
 
 **Author** : **Deratiseur**
 
-[Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=33790)
+[Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=33790)  
 [Link to the beamdog forum and full descriptions](https://forums.beamdog.com/discussion/87104/derats-dawap-a-new-kits-mods-for-ee-editions/p1)  
   
 [Lien vers les descriptions complètes.](https://github.com/Deratiseur/DAWAP/blob/main/Derats_Dawap/Documents/DAWAP_Lisez_moi.html)  
@@ -106,8 +106,6 @@
 - Infuser (Fighter/mage)
 - Magisterium (Cleric/mage)
 
-Full descriptions available through the official forum link.
-
 </td>
 
 <td width="50%" valign="top">
@@ -200,8 +198,6 @@ Full descriptions available through the official forum link.
 
 - Infuseur (Guerrier/mage)
 - Magistèrium (Clerc/mage)
-
-Descriptions complètes en suivant le lien vers le forum officiel.
 
 </td>
 </tr>
