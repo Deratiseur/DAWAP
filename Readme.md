@@ -8,8 +8,10 @@
 **Author** : **Deratiseur**
 
 [Lien vers le forum français et les descriptions complètes](https://www.baldursgateworld.fr/viewtopic.php?t=33790)
-
-[Link to the beamdog forum and full descriptions](https://forums.beamdog.com/discussion/87104/derats-dawap-a-new-kits-mods-for-ee-editions/p1)
+[Link to the beamdog forum and full descriptions](https://forums.beamdog.com/discussion/87104/derats-dawap-a-new-kits-mods-for-ee-editions/p1)  
+  
+[Lien vers les descriptions complètes.](https://github.com/Deratiseur/DAWAP/blob/main/Derats_Dawap/Documents/DAWAP_Lisez_moi.html)  
+[Link to complete descriptions.](https://github.com/Deratiseur/DAWAP/blob/main/Derats_Dawap/Documents/DAWAP_Read_me.html)  
 
 <table>
 <tr>
