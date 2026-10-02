@@ -19,7 +19,7 @@
 
 ### Description
 
-57 kits that will make you revise the way you play.
+59 kits that will make you revise the way you play.
 
 **Wizards:**
 
@@ -46,6 +46,7 @@
 - Sorcelerer
 - Psycho absorber
 - Overflower
+- Spellrage
 
 **Clerics:**
 
@@ -55,14 +56,14 @@
 - Fury
 - Necrophorus
 - Scion of life
-- Blessed trainer
+- Blessed healer
 - Divine chosen
 - Universal Divine Dweomerist
 
 **Druids:**
 
 - Pyroclasm
-- Instable mutant monstruosity
+- Unstable mutant monstruosity
 - Horde spirit
 - Ravager
 - Polymorph
@@ -75,10 +76,11 @@
 - Disciple of Ratatoskr
 - Antimaginum
 - Magivore
-- Cruw of Chaos
+- Spawn of Chaos
 - Imperiosa
 - Deathraiser
 - Firesinger
+- Lifesinger
 
 **Shamans:**
 
@@ -112,7 +114,7 @@ Full descriptions available through the official forum link.
 
 ### Description
 
-57 kits qui vous feront réviser votre façon de jouer.
+59 kits qui vous feront réviser votre façon de jouer.
 
 **Magiciens :**
 
@@ -139,6 +141,7 @@ Full descriptions available through the official forum link.
 - Sorcelier
 - Psycho Absorbeur
 - Débordeur
+- Ragesort
 
 **Clercs :**
 
@@ -172,6 +175,7 @@ Full descriptions available through the official forum link.
 - Impériosa
 - Lèvemort
 - Chantefeu
+- Chantevie
 
 **Shamans :**
 
