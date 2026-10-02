@@ -256,7 +256,7 @@ IMPROVED SPELLS: the Sorcelerer spontaneously knows a few combat spells, which h
  * True Strike: extended duration: 1 round/3 levels.
  * Armor: reduced casting time and improved AC: -1 AC/3 levels (best AC 0).
  * Strength: improved Strength when cast on himself: set to 19.
- * Tenser's Deadly Strikes: maximum duration and +1 to critical hit chance.
+ * Tenser's Deadly Strikes: maximum duration and +5% to critical hit chance.
  * Fire Shield (Red/Blue): also affects his weapon: +1D8 damage.~
  
 @1239 = ~Armor (Improved)~
@@ -753,7 +753,7 @@ Disadvantages:
 
 Advantages:
 - He knows the spells Sleep, Spook, Horror, Emotion and Phantasmal Killer.
-- His dance has a 20% +2% chance per level of creating Phantasmal Killers who assault enemies.
+- His dance has a 10% chance, plus 2% per level (maximum 50%), of creating Phantasmal Killers who assault enemies.
 
 Disadvantage:
 - After each rest he has a 1% chance per level (maximum 20%) of being attacked by 1D4+2 killer Nightmare Incarnations.
@@ -1103,7 +1103,7 @@ Advantages:
   At level 16: 2D6 non-lethal damage, +5 to hit, 3.5 attacks per round, considered a +3 weapon
   At level 20: 2D8 non-lethal damage, +6 to hit, 4 attacks per round
   At level 24: 2D10 non-lethal damage, +7 to hit, 4.5 attacks per round, considered a weapon +4
-  At level 38: 2D12 non-lethal damage, +8 to hit, 5 attacks per round.
+  At level 28: 2D12 non-lethal damage, +8 to hit, 5 attacks per round.
 - Can specialize in two-handed weapons and two-handed weapon style.
 
 Disadvantages:
