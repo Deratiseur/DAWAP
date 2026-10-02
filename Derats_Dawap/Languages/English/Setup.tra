@@ -1,17 +1,17 @@
 @1 = ~This component only works with BG2EE~
 @2 = ~This component only works with an IE game in Enhanced version.~
-@3 = ~This component only works with an IE game in Enhanced version, except IWDEE.~
+@3 = ~This component is not available in IWDEE.~
 @4 = ~Mage kits~
 @5 = ~Sorcerer kits~
 @6 = ~Cleric kits~
 @7 = ~Druid kits~
 @8 = ~Bard kits~
-@9 = ~Miscellaneous and multi-class kits~
+@9 = ~Multi-class kits~
 @990 = ~Shaman kits~
 @991 = ~Install all kits~
 @992 = ~With changed animations~
 @993 = ~Without changed animations~
-@995 = ~Fighters kits~
+@995 = ~Fighter kits~
 
 @19 = ~Scourge (mage)~
 @10 = ~scourge~
@@ -19,11 +19,11 @@
 @12 = ~SCOURGE: this arcanist from another dark reality is a plague on our reality.
 
 Advantage:
-- His spells and innate abilities are restored every round.
+- All his spells are restored every round.
 
 Disadvantages:
-- Can only learn spells from Evocation and Necromancy schools.
-- Alignment limited to Evil.
+- Can only learn spells from the Evocation and Necromancy schools.
+- Cannot be of good alignment.
 - Cannot dual-class.~
 @13 = ~Fire Blast~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (130 new spells, in french)
 @14 = ~Fire Blast (Evocation)
@@ -31,18 +31,18 @@ Level: 1
 Range: 0
 Duration: Instant
 Casting time: 1
-Area of effect: 7-ft. radius
+Area of effect: 2.5-meter radius
 Saving throw: ½
 
 This spell creates an explosion that emanates from the caster and injures all creatures within 2.5 meters of him. All affected creatures take 1D4 points of fire damage per caster level (to a maximum of 10D4). A successful saving throw against spells reduces the damage by half.~
 
-@14 = ~Fiery burst~
-@15 = ~Fiery burst (Evocation)
+@15 = ~Fiery Burst~
+@16 = ~Fiery burst (Evocation)
 Level: 1
-Range: 30 ft.
+Range: visual range of the caster
 Duration: Instant
 Casting time: 1
-Area of effect: 7-ft. radius
+Area of effect: 2.5-meter radius
 Saving throw: Neg.
 
 This spell creates a burst of flame at the designated location, inflicting 1D2 points of fire damage per level (maximum 8D2) to all creatures in the area who fail a saving throw against breath.~
@@ -50,30 +50,30 @@ This spell creates a burst of flame at the designated location, inflicting 1D2 p
 @29 = ~Psycho absorber (sorcerer)~
 @20 = ~psycho absorber~
 @21 = ~Psycho absorber~
-@22 = ~PSYCHO ABSORBER: This very strange arcanist draws his magic from every possible source, using only his conscience to cast spells.
+@22 = ~PSYCHO ABSORBER: This very strange arcanist draws his magic from every possible source, using only his consciousness to cast spells.
 
 Advantages:
-- Every 3 rounds he rememorize a lost spell of the maximum known level. If there is no spell to rememorize at that level, it is one spell level below instead.
+- Every 3 rounds, he restores one expended spell of the highest level he knows. If there is no spell to restore at that level, he restores one from the next lower spell level instead.
 - Permanent Spell Trap.
-- Every time he kills a creature, he recalls a spell of the highest level he knows.
+- Every time he kills a creature, he restores a spell of the highest level he knows.
 - Casting time fixed to 1.
-- After each rest he memorizes 1D10 spells of the maximum known level.
+- After each rest he restores 1D10 spells of the maximum known level.
 
 Disadvantage:
-- Any loss of consciousness: sleep (after a rest or induced), stun, fear, berserk, charm, confusion, debility, or death causes him to forget all his spells.~
+- Any loss of consciousness: sleep (after a rest or induced), stun, fear, berserk, charm, confusion, feeblemindedness, or death causes him to forget all his spells.~
 
 @39 = ~Spell stealer (mage)~
 @30 = ~spell stealer~
 @31 = ~Spell stealer~
-@32 = ~SPELL STEALER: this magician has strange magical abilities.
+@32 = ~SPELL STEALER: this mage possesses strange magical abilities.
 
 Advantages:
-- Can at will, on contact, make an arcanist forget a spell (no saving throw) to remember himself a spell of maximum known level.
-- Can once a day, on contact, make an arcanist forget all his spells (saving throw against death) to remember all his spells himself.
+- At will, by touch, can make an arcanist forget a spell (no saving throw) to restore one of his own spells of the highest level he knows.
+- Once per day, by touch, can make an arcanist forget all their spells (save vs. Death) to restore all his own spells.
 
 Disadvantages:
-- Can memorize one less spell per spell level.
-- Each access to a new spell level is slowed down by one level (first spell of level 1 at level 2 of wizard).~
+- Can memorize one fewer spell per spell level.
+- Access to each new spell level is delayed by one mage level (first level 1 spell at mage level 2).~
 @33 = ~Draining touch~
 @34 = ~Draining palm~
 
@@ -87,7 +87,7 @@ Advantage:
 
 Disadvantages:
 - Can memorize three fewer spells per spell level.
-- Each access to a new spell level is slowed down by one level (first spell level 1 at level 2 of spellcaster).
+- Each access to a new spell level is slowed down by one level (first level 1 spell at sorcerer level 2).
 - Unaffected by effects that allow to store more spells.~
 
 @59 = ~Anomaly (sorcerer)~
@@ -95,18 +95,18 @@ Disadvantages:
 @592 = ~Without changed animation (non-rp)~
 @50 = ~anomaly~
 @51 = ~Anomaly~
-@52 = ~ANOMALY: this amalgam of incarneted magic comes from another reality and reacts strangely to the laws of the known reality.
+@52 = ~ANOMALY: this amalgam of incarnate magic comes from another reality and reacts strangely to the laws of the known reality.
 
 Advantages:
 - Immune to offensive magic and 100% magic resistance.
 - Immune to poison, disease and level drain.
 - Immune to dead magic, miscast and imposed wild surges.
-- Gains two hit point each time he casts a spell.
-- Can cast a ball of energy +1 once per round at will, inflicting 1D4+1 magical damage. The "enchantment" level and damages increases by +1 per 5 levels of the anomaly, up to a maximum of +7.
+- Gains two hit points each time he casts a spell.
+- Can cast a ball of energy +1 once per round at will, inflicting 1D4+1 magical damage. The "enchantment" level and damage increase by +1 per 5 levels of the anomaly, up to a maximum of +7.
 
 Disadvantages:
 - Wild magic, but without the spells common to the conventional wild mage.
-- Conventional healing (spells, potions) do not affect it.~
+- Conventional healing (spells, potions) does not affect it.~
 @53 = ~Ball of energy~
 @531 = ~This magic energy ball +1 provides +3 to hit and inflicts 1D4+1 magic damage.~
 @532 = ~This magic energy ball +2 provides +3 to hit and inflicts 1D4+2 magic damage.~
@@ -124,8 +124,8 @@ Disadvantages:
 @62 = ~MAGIC MINUIMS: This agglomeration of tiny fairies comes from another reality and can accomplish great things by group effect.
 
 Advantages:
-- Doubled amount of memorable spells.
-- +2 to AC, +2 additionnal against slashing and piercing attacks.
+- Doubled amount of memorizable spells.
+- +2 to AC, +2 additional against slashing and piercing attacks.
 - Protection from normal weapons.
 
 Disadvantage:
@@ -155,15 +155,14 @@ Disadvantage:
 Advantages:
 - Unlimited Spell Turning.
 - Light Reflection: +3 to AC.
-- Can use the special ability "Reflected Image" at will.
 - Automatically learns all image spells when he reaches the required level.
 - Can cast image spells "on target".
 - Can cast "personal" versions of image spells as spells one level lower.
 
 Disadvantage:
-- Very fragile: -50% fewer hit points and -100% crushing damage resistance.~
+- Very fragile: -50% hit points and -100% crushing damage resistance.~
 @821 = ~Major Reflected Image (personal)~ //Want more spells? This one is from "L'interplan", my spells/shop/forge mod. (130 new spells, in french)
-@822 = ~Major Reflected Image (Illusion) 
+@822 = ~Major Reflected Image (Illusion)
 Level: 4
 Range: 0
 Duration: 1 round/level
@@ -171,7 +170,7 @@ Area of effect: the caster
 Casting Time: 4
 Saving throw: None
 
-Upon casting this spell, the wizard creates 1 image of <PRO_HIMHER>self that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wizard does so that if any enemies are trying to attack the wizard, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the caster. The image will disappear with a successful Dispel Magic or when the spell's duration expires.~
+Upon casting this spell, the wizard creates an image of <PRO_HIMHER>self that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wizard does so that if any enemies are trying to attack the wizard, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the caster. The image will disappear with a successful Dispel Magic or when the spell's duration expires.~
 @823 = ~Reflected image (on target)~
 @824 = ~Mirror image (personal)~
 @825 = ~Mirror image (on target)~
@@ -196,7 +195,7 @@ Advantages:
 Disadvantages:
 - Wisdom -2
 - Does not know any level 6 and 7 spells.
-- No access to hla.~
+- No access to HLAs.~
 
 @109 = ~Enraged (mage)~
 @100 = ~enraged~
@@ -204,16 +203,16 @@ Disadvantages:
 @102 = ~ENRAGED: This magician never lets go of the animal rage that inhabits him.
 
 Advantages:
-- Whenever he kills a creature he gain Improved Alacrity for one round.
+- Whenever he kills a creature he gains Improved Alacrity for one round.
 - +15% damage dealt, weapon or spell.
 
 Disadvantages:
-- He gives no credit to defensives schools and does not learn any spells from the schools of Abjuration, Divination, and Illusion.
-- When his hit points drop below 25% he becomes a spell berserk.
+- He gives no credit to defensive schools and does not learn any spells from the schools of Abjuration, Divination, and Illusion.
+- When his hit points drop below 25% he becomes a spell berserker.
 
 Spell Berserk:
-For 3 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gain Improved Alacrity and -2 to casting time but has a 10% chance of missing incantations.~
-@103 = ~Enrage~
+For 3 rounds the Enraged can no longer move or attack. He can only think of casting spells: he gains Improved Alacrity and -2 to casting time but has a 10% chance of missing incantations.~
+@103 = ~Enraged~
 @104 = ~Spell Berserk~
 
 @119 = ~Zap (sorcerer)~
@@ -234,32 +233,31 @@ Disadvantage:
 @1299 = ~Sorcelerer (sorcerer)~
 @120 = ~sorcelerer~
 @121 = ~Sorcelerer~
-@122 = ~SORCELERER: This arcanist loves fighting so much that he spends more time doing it than mastering magic.
+@122 = ~SORCELERER: this arcanist is not without resources when spells fail him.
 
 Advantages:
-- +1 proficient point in dagger and in staff at level 1 and every 6 levels thereafter, up to grandmaster at level 24.
+- +1 proficiency point in daggers and quarterstaffs at level 1 and every 6 levels thereafter, up to Grand Mastery at level 24.
 - +½ attack per round at levels 9, 17 and 23.
-- +1 melee THAC0 every 2 levels.
-- +1 to saving throw vs. death every 4 levels.
-- +1 to saving throw vs. polymorph every 8 levels.
-- Life Points aligned on the Thief table.
-- Can advance in fighting styles "One weapon", "Two weapons" and "Two Handed weapons".
-- Know improved versions of some combat spells.
-- Can choose Hlas of fighter in addition to those of mage.
+- +1 to melee THAC0 every 2 levels.
+- +1 to saves vs. Death every 4 levels.
+- +1 to saves vs. Polymorph every 8 levels.
+- Can advance in the Two-Handed Weapon, Single-Weapon and Two-Weapon fighting styles.
+- Automatically learns improved versions of certain combat spells.
+- Can choose fighter HLAs in addition to mage HLAs.
 - Hit Die: D6.
 
 Disadvantages:
-- Ability to cast spell reduced of two spells per spell level.
-- Development slowed by the non-exclusive practice of magic: -15% of xp.
-- Immune to effects that change the xp received.
-- May not use missile weapons.
+- Can cast two fewer spells per spell level.
+- Progression is slowed by the non-exclusive practice of magic: -15% XP.
+- Immune to effects that change XP received.
+- Cannot use ranged weapons.
 
-IMPROVED SPELLS: the Sorceler spontaneously knows a few combat spells, which he enhances by casting them:
-  * True Strike: extended duration: 1 round/3 levels
-  * Armor: reduced casting time and reduced AC: -1 AC/3 levels
-  * Strength: improved strength when casting upon himself: set at 19
-  * Tenser's Deadly Strikes: always maximum duration and +5% critical strike chance.
-  * Fire Shield (Red/Blue): affected weapon: +1D8 damage~
+IMPROVED SPELLS: the Sorcelerer spontaneously knows a few combat spells, which he improves when casting them:
+ * True Strike: extended duration: 1 round/3 levels.
+ * Armor: reduced casting time and improved AC: -1 AC/3 levels (best AC 0).
+ * Strength: improved Strength when cast on himself: set to 19.
+ * Tenser's Deadly Strikes: maximum duration and +1 to critical hit chance.
+ * Fire Shield (Red/Blue): also affects his weapon: +1D8 damage.~
  
 @1239 = ~Armor (Improved)~
 @123 = ~Armor
@@ -271,18 +269,18 @@ Casting Time: 5
 Area of Effect: caster
 Saving Throw: none
 
-By means of this spell, the wizard creates a magical field of force that sets his base armor class at 6. This effect is improved by 1 point to AC every three levels of the caster, up to an armor class of 0 at level 19. The armor spell does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.~
+By means of this spell, the Sorcelerer creates a magical field of force that sets his base armor class at 6. This effect is improved by 1 point to AC every three levels of the caster, up to an armor class of 0 at level 19. The armor spell does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.~
 
 @124 = ~True Strike (Improved)~
 @125 = ~True Strike (Divination)
 Level: 1
-Range: spellcaster
+Range: caster
 Duration: 1 round/3 levels
 Casting Time: 1
 Area of Effect: caster
-Saving Throw: none
+Saving Throw: None
 
-By means of this spell, the wizard can temporarily see the near future. All his attacks made during the duration of the spell gets a perception bonus of +10.~
+By casting this spell, the Sorcelerer can temporarily glimpse his opponent's weaknesses. All his attack rolls during the spell's duration receive a +10 insight bonus.~
 
 @1269 = ~Strength (Improved)~
 @126 = ~Strength (Alteration)
@@ -301,7 +299,7 @@ Starting strength: Received Strength
 18/78 --> 18/00
 20    --> 18/50
 
-If the mage uses this spell on himself, the conferred strength is automatically 19.~
+If the Sorcelerer uses this spell on himself, the conferred strength is automatically 19.~
 
 @127 = ~Fire Shield (Red) (Improved)~
 @128 = ~Fire Shield (Red) (Evocation, Alteration)
@@ -312,8 +310,8 @@ Casting Time: 4
 Area of Effect: Caster
 Saving Throw: No
 
-This red fire shield protects the caster against fire by surrounding him by flames. Not only this shield gives him 50% Fire resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1D8 + 2 points of fire damage.
-The mage can also expand the shield covering up his weapon, which adds 1D8 points of fire damage to each of his strikes.~
+This red fire shield protects the caster against fire by surrounding him with flames. Not only does this shield give him 50% Fire resistance, but it also protects him against attacks made within a radius of 1.5 meters. Any enemy attacking the caster with a weapon or spell suffers 1D8 + 2 points of fire damage.
+The Sorcelerer can also expand the shield to cover his weapon, which adds 1D8 points of fire damage to each of his strikes.~
 
 @129 = ~Fire Shield (Blue) (Improved)~
 @1210 = ~Fire Shield (Blue) (Evocation, Alteration)
@@ -324,11 +322,11 @@ Casting Time: 4
 Area of Effect: Caster
 Saving Throw: No
 
-This blue fire shield protects the caster against cold by surrounding him by flames. Not only this shield gives him 50% Cold resistance, but it also protects him against attacks in a range within a radius of 1.5 m. Any enemy attacking the caster with a weapon or spell suffers 1d8 + 2 points of cold damage.
-The mage can also expand the shield covering up his weapon, which adds 1D8 points of cold damage to each of his strikes.~
+This blue fire shield protects the caster against cold by surrounding him with flames. Not only does this shield give him 50% Cold resistance, but it also protects him against attacks made within a radius of 1.5 meters. Any enemy attacking the caster with a weapon or spell suffers 1d8 + 2 points of cold damage.
+The Sorcelerer can also expand the shield to cover his weapon, which adds 1D8 points of cold damage to each of his strikes.~
 
 @1211 = ~Tenser's Deadly Strikes (Improved)~
-@1212 = ~Tenser's Deadly Strikes (Alteration) 
+@1212 = ~Tenser's Deadly Strikes (Alteration)
 Level: 3
 Range: 0
 Duration: 1 turn
@@ -344,7 +342,7 @@ This spell improves the caster's martial abilities: for the duration of the spel
 @132 = ~Lifesinger: This bard reveres life and all its creations.
 
 Advantages:
-- His song regenerates her allies' hit points: 1 hp per round at level 1, 2 hp per round at level 15, 3 hp per round at level 30.
+- His song regenerates his allies' hit points: 1 hp per round at level 1, 2 hp per round at level 15, 3 hp per round at level 30.
 - His song has a 1% chance per Lifesinger level (maximum 30%) of curing poisons and diseases.
 
 Disadvantages:
@@ -360,12 +358,12 @@ This ability brings a recently deceased person back from the dead. Body and soul
 @142 = ~DWEOMERIST: this cleric comes from elsewhere and knows only magic, which he uses in a very unusual way.
 
 Advantages:
-- Doubled amount of memorable cleric spells.
+- Doubled amount of memorizable divine spells.
 - Improved Alacrity.
-- Maximum spell casting time set at 5.
+- Maximum spell casting time set at 4.
 
 Disadvantage:
-- Hit Dies and THAC0 of a mage.~
+- Hit Dice and THAC0 of a mage.~
 
 @159 = ~Chaos eoratian (cleric)~
 @150 = ~chaos eoratian~
@@ -402,7 +400,7 @@ Advantages:
 - 125% fire resistance.
 - Immune to normal weapons and +1.
 - Immune to diseases, poisons, sneak attacks, webs, entangle and grease.
-- Knows a dozen additional fire spells.
+- Knows about ten additional fire spells.
 - Inflicts 5% more fire damage per level, maximum +100%.
 - Can attack with its fire fist or with a small fireball whose damage and enchantment level vary according to the pyroclasm's level: 1D4+1 at level 1, 1D6+2 at level 5, 1D8+3 at level 10, 1D10+4 at level 15 and 1D12+5 at level 20.
 - Can be of any alignment.
@@ -431,24 +429,26 @@ Requires: Level 32, Superior Fireball~
 (Any School)
 
 Level: Quest
-Range: 320 ft.
+Range: 98 meters
 Duration: Instant
 Casting Time: 3
-Area of Effect: 15-ft. radius
+Area of Effect: 4.5-meter radius
 Saving Throw: Special
 
-This spell causes a disembodied head of a red dragon to appear and breathe fire with the strength of an adult red dragon. In addition to the enormous 20d10 fireball, the force of the dragon's breath knocks an opponent off their feet and away from the caster. The victim can save vs. Breath Weapon to take half damage and not be blown backwards.~
+This spell causes a disembodied head of a red dragon to appear and breathe fire with the strength of an adult red dragon. In addition to the enormous 20d10 fireball, the force of the dragon's breath knocks an opponent off their feet and away from the caster. The victim can save vs. Breath Weapon to take half damage and not be blown backwards.
 
-@189 = ~Instable mutant monstruosity (druid)~
-@180 = ~instable mutant monstruosity~
-@181 = ~Instable mutant monstruosity~
-@182 = ~INSTABLE MUTANT MONSTRUOSITY: This druid is a large, ever-growing blister from another universe.
+This spell does not damage party members.~
+
+@189 = ~Unstable Mutant Monstrosity (druid)~
+@180 = ~unstable mutant monstrosity~
+@181 = ~Unstable Mutant Monstrosity~
+@182 = ~UNSTABLE MUTANT MONSTROSITY: This druid is a large, ever-growing blister from another universe.
 
 Advantage:
 - At level 1 and every 5 levels thereafter: +1 in strength, dexterity and constitution and -1 in intelligence, wisdom and charisma. (maximum +7/+7/+7/-7/-7/-7 at level 30).
 
 Disadvantages:
-- He is charged with highly unstable energy and consequently once a round when he suffers damage he has a 5% chance of being disintegrated by generating a ball of magical energy which inflicts 10D10 points of magical damage to all creatures within 4.5 meters of him (saving throw against spells for ½). 
+- He is charged with highly unstable energy and consequently once a round when he suffers damage he has a 5% chance of being disintegrated by generating a ball of magical energy which inflicts 10D10 points of magical damage to all creatures within 4.5 meters of him (saving throw against spells for ½).
 - When dying, he is automatically disintegrated and generates the ball of magical energy.~
 
 @199 = ~Horde spirit (druid)~
@@ -468,7 +468,7 @@ Disadvantage:
 @202 = ~NECROPHORUS: This evil being comes from another reality.
 
 Advantages:
-- Memorizes all instant-kill spells as lower-level spells.
+- Memorizes all instant-kill spells as spells one level lower.
 - Knows new instant-kill spells.
 - Protection against death and level drain.
 - At level 5 and every 5 levels thereafter, can cast Slay living as a special ability.
@@ -479,7 +479,7 @@ Disadvantages:
 - No healing, restoration, regeneration, resurrection or protection against death/negative plane spells.
 - Cannot be resurrected.
 - Alignment limited to Evil.~
-@203 = ~gains 5 life points~
+@203 = ~gains 5 hit points~
 
 @219 = ~Scion of Life (cleric)~
 @2191 = ~With changed animation: creature of white mist~
@@ -489,9 +489,9 @@ Disadvantages:
 @212 = ~SCION OF LIFE: This beneficent being comes from another reality.
 
 Advantages:
-- Life points doubled.
+- Hit points doubled.
 - Turn Undead level doubled.
-- Memorizes all healing, restoration, regeneration, cure and resurrection spells as spells one level lower, at distance, with an incantation time of 1.
+- Memorizes all healing, restoration, regeneration, cure and resurrection spells as spells one level lower, at distance, with an casting time of 1.
 - Can use Cure Light Wounds at will as a special ability.
 
 Disadvantages:
@@ -515,21 +515,21 @@ Disadvantages:
 - Has no interest in metamorphosis.
 - Not immune to poison.~
 
-@239 = ~Polymorph (druid)~
+@239 = ~Polymorph (druid) (animation: greenish skin)~
 @230 = ~polymorph~
 @231 = ~Polymorph~
-@232 = ~POLYMORPH: This protoplasmic vase assembly can simulate all forms of life.
+@232 = ~POLYMORPH: This mass of protoplasmic ooze can simulate all forms of life.
 
 Advantages:
-- Resistance to crushing damage: 25%.
-- Can use all forms of the "Polymorph" spell at will.
+- Resistance to crushing damage: +25%.
+- Can use the "Polymorph Self" spell at will as a special ability.
 - At 7th level, can use all special druidic forms at will.
-- At level 15, can use all forms of the "Shapechange" spell at will.
+- At level 15, can use the "Shapechange" spell at will as a special ability.
 - Hit Die: D12.
 
 Disadvantages:
 - Cannot cast any spells.
-- No access to any hla.~
+- No access to any HLAs.~
 
 @249 = ~Blessed healer (cleric)~
 @240 = ~blessed healer~
@@ -537,7 +537,7 @@ Disadvantages:
 @242 = ~BLESSED HEALER: This cleric from another reality follows other divine rules.
 
 Advantage:
-- Every healing spell he casts is automatically re-cast on himself. 
+- Every healing spell he casts is automatically re-cast on himself.
 
 Disadvantages:
 - Mage THAC0.
@@ -549,7 +549,7 @@ Disadvantages:
 @252 = ~Spellsinger: this bard should be wary of the Red Wizards.
 
 Advantage:
-- His song allows those who hear it to recall spells of level 1 +1 per 4 levels of the Chantesort (example: can recall spells of level 5 and below at level 16).
+- His song allows those who hear it to recall spells of level 1 +1 per 4 levels of the Spellsinger (example: can recall spells of level 5 and below at level 16).
 
 Disadvantage:
 - His song costs him hit points: 1 hit point lost for recalling level 1-3 spells, 2 hit points lost for recalling level 4-6 spells, 3 hit points lost for recalling level 7-9 spells.~
@@ -557,10 +557,10 @@ Disadvantage:
 @254 = ~Spells up to level 6~
 @255 = ~Spells up to level 9~
 
-@269 = ~Tempus fugiom (bard)~
+@269 = ~Tempus fugïom (bard)~
 @260 = ~tempus fugïom~
 @261 = ~Tempus fugïom~
-@262 = ~TEMPUS FUGÏOM: this bard comes from another reality and interacts strangely with ours
+@262 = ~TEMPUS FUGÏOM: this bard comes from another reality and interacts strangely with ours.
 
 Advantage:
 - His song imposes slowness on enemies and grants haste to allies.
@@ -568,7 +568,7 @@ Advantage:
 Disadvantage:
 - His song exhausts him: +1 fatigue per round of singing.~
 
-@279 = ~Legendary singularity (bard)~
+@279 = ~Legendary singularity (mage)~
 @270 = ~legendary singularity~
 @271 = ~Legendary singularity~
 @272 = ~LEGENDARY SINGULARITY: A once-in-a-millennium exception.
@@ -577,7 +577,7 @@ Advantage:
 - Damage inflicted tripled.
 
 Disadvantages:
-- Life points fixed at 1 per level.
+- Hit points fixed at 1 per level.
 - Not affected by effects that increase the number of maximum hit points.
 - Physical, elemental and magic resistances: -50%.
 - Saving throws: -4~
@@ -597,13 +597,13 @@ Disadvantages:
 @299 = ~Disciple of Ratatoskr (bard)~
 @290 = ~disciple of Ratatoskr~
 @291 = ~Disciple of Ratatoskr~
-@292 = ~DDISCIPLE OF RATATOSKR: this bard is the chosen of a divinity.
+@292 = ~DISCIPLE OF RATATOSKR: this bard is the chosen of a divinity.
 
 Advantage:
-- His song turns all enemies who fail a saving throw versus metamorphosis into squirrels.
+- His song turns all enemies who fail a saving throw vs. Polymorph into squirrels.
 
 Disadvantage:
-- His song turns him into a squirrel if he fails a saving throw versus metamorphosis at +3.~
+- His song turns him into a squirrel if he fails a saving throw vs. Polymorph at +3.~
 
 @309 = ~Antimaginum (bard)~
 @300 = ~antimaginum~
@@ -624,30 +624,30 @@ Disadvantages:
 @312 = ~MAGIVORE: this unusual bard is a dangerous blessing.
 
 Advantages:
-- His song allows him to absorb residual magic from surrounding spells: All allies who hear him gains Improved Alacrity.
+- His song allows him to absorb residual magic from surrounding spells: All allies who hear him gain Improved Alacrity.
 - The residual magic surrounding him protects him: while singing and up to one turn after the end of his song: +15% resistance to magic.
 
 Disadvantage:
 - The residual magic surrounding him makes his spells unstable: until one turn after the end of his song, all spells he casts have a 20% chance of generating an explosion of magical energy inflicting 10D10 points of magical damage (saving throw against spells for ½) to himself and all surrounding creatures within a 4.5-meter radius.~
 
-@329 = ~Cruw of chaos (bard)~
-@320 = ~cruw of chaos~
-@321 = ~Cruw of chaos~
-@322 = ~CRUW OF CHAOS: this bard is the embodiment of elemental chaos.
+@329 = ~Spawn of Chaos (bard)~
+@320 = ~spawn of chaos~
+@321 = ~Spawn of Chaos~
+@322 = ~SPAWN OF CHAOS: this bard is the embodiment of elemental chaos.
 
 Advantages:
 - His song applies one of the effects of the Sphere of Chaos spell to each enemy.
-- Enemies surrounding him suffer the effects of a Sphere of Chaos every time he make a critical hit.
+- Enemies surrounding him suffer one of the effects of a Sphere of Chaos every time he scores a critical hit.
 - +2 to critical strike chance.
-- He knows the 3 spells normally reserved for entropists.
-- He knows the Chaos Sphere spell as a level 5 spell.
+- He knows the three spells normally reserved for wild mages.
+- He knows the Sphere of Chaos spell as a level 5 spell.
 - He knows the Improved Chaos Shield spell as a level 6 cumulative spell.
 - His level counts double for the roll on the Wild Surge table.
 - He's immune to confusion.
 
 Disadvantages:
 - The spells he casts systematically create a Wild Surge.
-- Everyone around him suffer the effects of a Sphere of Chaos every time he critically fails.
+- Everyone around him suffers one of the effects of a Sphere of Chaos every time he critically fails.
 - +2 to critical fail chance.
 - Alignment limited to chaotic.~
 
@@ -671,14 +671,14 @@ Advantages:
 
 Disadvantages:
 - He can't learn any other spells.
-- He has no access to any hla.
+- He has no access to any HLAs.
 
 Special: This class comes with a player script called "PXMANGA". Remember to assign it to the character.~
-@333 = ~Magic Missile (Evocation) 
+@333 = ~Magic Missile (Evocation)
 Level: 1
-Range: field of vision
+Range: visual range of the caster
 Duration: instantaneous
-Casting time: 1 
+Casting time: 1
 Area of effect: 1 creature
 Saving throw: none
 
@@ -700,26 +700,26 @@ Advantages:
 - Bless: +1 and +1 every 6 levels.
 - Draw Upon Holy Might: +1 and +1 every 6 levels.
 - Charisma : +2
-- Chooses warrior Hlas instead of cleric Hlas.
+- Chooses warrior HLAs instead of cleric HLAs.
 
 Disadvantage:
 - Cannot cast any spells.~
 
-@359 = ~Infuser (warrior -> warrior/mage)~
+@359 = ~Infuser (fighter -> fighter/mage)~
 @350 = ~infuser~
 @351 = ~Infuser~
 @352 = ~INFUSER: This arcanist infuses the magic he doesn't need into his weapon.
 
 Advantages:
-- Automatically becomes a warrior-mage at creation.
+- Automatically becomes a fighter/mage at creation.
 - Any melee weapon he uses inflicts 1D4 additional magic damage, +1D4 every 5 levels.
-- Any melee weapon he uses is considered magic +1 and grants +1 to touch, +1 every 5 levels.
+- Any melee weapon he uses is considered magic +1 and grants +1 to hit, +1 every 5 levels.
 - Can wear any type of armor without being unable to cast spells.
-- Has more hit points than a standard warrior-mage.
+- Has more hit points than a standard fighter/mage.
 
 Disadvantages:
 - Can only cast spells from the Alteration, Abjuration and Illusion schools.
-- Don't use ranged weapons.
+- Cannot use ranged weapons.
 - Starts the game with no known spells.~
 
 @369 = ~Magisterium (mage -> cleric/mage)~
@@ -729,20 +729,21 @@ Disadvantages:
 
 Advantages:
 - He automatically becomes a Cleric/Mage after creation.
-- If a spell is common to both classes but of a lower level in one class, he learns that spell at the lower level in the other class. The group gains learning xp for this conversion.
-- He regularly discovers how to reproduce a druidic spell in arcane form. The group gains learning xp for this discovery.
+- If a spell is common to both classes but of a lower level in one class, he learns that spell at the lower level in the other class. The group gains learning XP for this conversion.
+- He regularly discovers how to reproduce a druidic spell in arcane form. The group gains learning XP for this discovery.
+- From level 3 onwards, at each level, he discovers how to reproduce a druidic spell in arcane form. The party gains spell-learning XP for this discovery.
 - +3 arcane spells per spell level.
-- Each time he casts a spell, he gains 75 xp (including reduction) and has a 10% chance of triggering "Arcane Luck".
+- Each time he casts a spell, he gains 75 XP (including reduction) and has a 10% chance of triggering "Arcane Luck".
 
-ARCANIC LUCK: when this effect is active the magisterium recalls an arcane spell and a divine spell of the highest known level, is healed of 1D12+5 hit points, is covered by 1D5+2 mirror images and applies +4 to spellcaster level and +30% damage/duration on spells it casts for the next 2 rounds.
+ARCANE LUCK: when this effect is activated, the Magisterium restores an arcane spell and a divine spell of the highest known level, is healed of 1D12+5 hit points, is covered by 1D5+2 mirror images and applies +4 to spellcaster level and +30% damage/duration on spells he casts for the next 2 rounds.
 
 Disadvantages:
-- Time spent researching leaves little time to apprehend the rest: -25% xp received.
+- Time spent researching leaves little time to apprehend the rest: -25% XP received.
 - He wears no armor (he can wear a robe).
-- He does not Turn undead.~
-@3621 = ~has gained 75 xps.~
-@3622 = ~ARCANIC LUCK!~
-@3623 = ~Remember two spells~
+- He does not turn undead.~
+@3621 = ~has gained 75 XP.~
+@3622 = ~ARCANE LUCK!~
+@3623 = ~Two spells restored~
 @3624 = ~Two rounds of improved spells~
 
 @379 = ~Nightmare Storyteller (shaman)~
@@ -760,27 +761,27 @@ Disadvantage:
 @3721 = ~Phantasmal Killer~
 @3722 = ~Phantasmal Killer (Illusion/Phantasm)
 Level: 4
-Range: 60 ft.
-Duration: Instant 
+Range: visual range of the caster
+Duration: Instant
 Casting Time: 4
-Area of Effect: 1 creature
-Saving Throw: Neg. 
+Area of Effect: one creature
+Saving Throw: Special
 
-This spell enables the shaman to conjure up an image of the most abominable creature imaginable for the target of the spell, giving substance to the latter's worst fears. Only the victim can fully see the imaginary assassin, while the shaman perceives only a vague spectral form. The target is entitled to a saving throw against spells to understand that his assailant is merely a hallucination. If they fail to do so, they are affected by the illusion and must make a saving throw against death, or die of fright. Even if she succeeds in this second saving throw, the psychic shock is such that she suffers 3D6 points of damage.~
+This spell allows the shaman to give form to the target's worst fears, conjuring an image of the most hideous creature imaginable to the victim. Only the victim fully sees the phantasmal killer; the shaman perceives only a vague spectral shape. The target may save vs. Spell to realize that the attacker is merely a hallucination. If this save fails, the illusion strikes the target, who must then save vs. Death or die of fright. Even if this second save succeeds, the psychic shock inflicts 3D6 points of damage.~
 @3723 = ~killer Nightmare Incarnation~
 @3724 = ~Large killer Nightmare Incarnation~
 
 @389 = ~Master combiner (mage)~
 @380 = ~master combiner~
 @381 = ~Master combiner~
-@382 = ~MASTER COMBINER: This mage studies the power of fusions more than any other.
+@382 = ~MASTER COMBINER: This mage focuses above all on the power of spell combinations.
 
 Advantages:
 - He automatically learns combination spells as spells one level down.
 - At 5th level he gains the ability Spell Combination, which he can use once a day.
 
 SPELL COMBINATION:
-This spell allows you to combine spells and cast the result from the special abilities button. The number and level of spells that can be combined depends on the Master Combiner's level:
+This spell allows you to combine spells and cast the result from the special abilities button. The number and level of spells that can be combined depend on the Master Combiner's level:
 Level 5 to 8: 2 spells up to level 3
 Level 9 to 12: 2 spells up to level 4
 Level 13 to 16: 2 spells up to level 5
@@ -795,7 +796,7 @@ Once the spell combination has been discharged, the button disappears.
 Disadvantage:
 - Transmuter and Invoker at the same time, but without additional spells.~
 @3821 = ~Spell combination~
-@3822 = ~This spell allows you to combine spells and cast the result from the special abilities button. The number and level of spells that can be combined depends on the Master Combiner's level:
+@3822 = ~This spell allows you to combine spells and cast the result from the special abilities button. The number and level of spells that can be combined depend on the Master Combiner's level:
 Level 5 to 8: 2 spells up to level 3
 Level 9 to 12: 2 spells up to level 4
 Level 13 to 16: 2 spells up to level 5
@@ -822,13 +823,13 @@ This spell allows you to combine several spells and cast them all at the same ti
 @392 = ~CLAN CHAMPION: This shaman doesn't need to call spirits: they're with him all the time.
 
 Advantages:
-- The Spirits protects him: +1 to Armor Class and saving throws, +2 to maximum hit points and +5% to magic resistance at level 1 and every 6 levels thereafter.
-- The Spirits strengthen him: +1 to all characteristics at level 10 and every 10 levels thereafter.
+- The spirits protect him: +1 to Armor Class and saving throws, +2 to maximum hit points and +5% to magic resistance at level 1 and every 6 levels thereafter.
+- The spirits strengthen him: +1 to all characteristics at level 10 and every 10 levels thereafter.
 - The spirits teach him secrets: he knows a few non-druidic spells that can help him defend the clan, and he can specialize in all melee weapons and in the Two-handed Weapon and Sword and Shield combat styles.
 - His dance creates the effects of Bless on allies, but not on himself. From level 7 it also creates the effects of Chant (not on enemies) and from level 15 it also creates the effects of Defensive Harmony (AC +2).
 
 Disadvantages:
-- It can cast one less spell per spell level.
+- He can cast one less spell per spell level.
 - His Detect Illusions score is 0 and does not progress.~
 @3921 = ~Guardian Spirit~
 @3922 = ~Guardian Spirit (Conjuration)
@@ -840,7 +841,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: None
 
-When this spell is cast, the shaman is affected by an Improved Invisibility spell and is teleported a few feet away from <PRO_HISHER> original position. Meanwhile, a Guardin Spirit appears, with exactly the same Hit Points as the caster. The spirit cannot perform any actions at all, such as attacking or casting spells. It can, however, move around and act as a decoy for the invisible shaman. The spirit will remain under control of the caster until reduced to 0 Hit Points, or until affected by a Dispel Magic.~
+When this spell is cast, the shaman is affected by an Improved Invisibility spell and is teleported a few feet away from <PRO_HISHER> original position. Meanwhile, a Guardian Spirit appears, a perfect replica of the shaman with exactly the same Hit Points as the caster. The spirit cannot perform any actions at all, such as attacking or casting spells. It can, however, move around and act as a decoy for the invisible shaman. The spirit will remain under control of the caster until reduced to 0 Hit Points, or until affected by a Dispel Magic.~
 
 @409 = ~Spheromaniac (mage)~
 @400 = ~spheromaniac~
@@ -854,14 +855,14 @@ Advantages:
   Level 3 infinite spells: Explosive Orbs and Fireball
   Level 4 infinite spells: Minor Globe of Invulnerability and Black Sphere
   Level 5 infinite spells: Vitriolic Sphere and Otiluke's Freezing Sphere
-  Level 6 infinite spells: Fatal Sphere of Total Dissipation and Electric Sphere
-  Level 7 infinite spells: Fatal Sphere of Absolute Vulnerability and Delayed Blast Fireball
+  Level 6 infinite spells: Lethal Sphere of Total Dissipation and Electric Sphere
+  Level 7 infinite spells: Lethal Sphere of Total Vulnerability and Delayed Blast Fireball
   Level 8 infinite spells: Globe of Blades and Globe of Total Invulnerability
   Level 9 infinite spells: Ice Orb and Globe of Absolute Immunity
 - All his spells are "on target", even normally personal spells (such as Globe of Invulnerability).
 
 Disadvantages:
-- He can't learn any other spells or hla.
+- He can't learn any other spells or HLAs.
 - He cannot use scrolls.~
 @40221 = ~Cone of Elemental Orbs~
 @40222 = ~Cone of Elemental Orbs (Invocation)
@@ -870,7 +871,7 @@ Level: 2
 Range: 0
 Duration: instant
 Casting time: 2
-Area of Effect: 15-ft.-long cone 
+Area of Effect: 3-meter-long cone with a 90-degree angle
 Saving throw: ½
 
 This spell conjures up multiple elemental spheres projected in the shape of a cone, inflicting 2D4 points of damage of each element (fire, cold, electricity, acid) for a total of 8D4 to all creatures caught in the cone. They are entitled to a saving throw against spells to halve the damage.~
@@ -894,8 +895,8 @@ This spell enables the magician to throw small explosive orbs (one per experienc
 Level: 4
 Range: Visual range of the caster
 Duration: instant
-Casting time: 4 
-Area of effect: 15-ft. radius
+Casting time: 4
+Area of effect: 3.5-meter radius
 Saving throw: special
 
 A black sphere explodes at the designated location, inflicting 1D4 points of magic damage per wizard level, maximum 10D4. Impacted creatures are entitled to a saving throw against spells to halve the damage inflicted, and those who fail it are encased in a bubble of force that prevents them from moving for 4 rounds.~
@@ -907,24 +908,24 @@ Level: 5
 Range: Visual range of the caster
 Duration: Special
 Casting Time: 5
-Area of Effect: 5-ft. radius
+Area of Effect: 1.5-meter radius
 Saving Throw: Special
 
-This spell conjures a sphere of glowing emerald acid that the caster can direct to strike any target within range. When it reaches its target, the sphere explodes and drenches the victim in potent acid. The victim suffers 1d4 points of acid damage per caster level, to a maximum of 12d4 points of damage. After the initial damage, the victim must save vs. Spell to avoid more damage. If unsuccessful, the victim continues to suffer acid damage in the following rounds, sustaining two less dice of damage each round. For example, an 8th-level wizard inflicts 8d4 damage with this spell on the first round, 6d4 on the second round, 4d4 on the third round, 2d4 on the fourth round, and the spell ends on the fifth round. Each round after the first, the victim is entitled to a Save vs. Spell to avoid further damage.
+This spell conjures a sphere of glowing emerald acid that the caster can direct to strike any target within range. When it reaches its target, the sphere explodes and drenches the victim in potent acid. The victim suffers 1d4 points of acid damage per caster level, to a maximum of 12d4 points of damage. After the initial damage, the victim must save vs. Spell to avoid more damage. If unsuccessful, the victim continues to suffer acid damage in the following rounds, sustaining two fewer dice of damage each round. For example, an 8th-level wizard inflicts 8d4 damage with this spell on the first round, 6d4 on the second round, 4d4 on the third round, 2d4 on the fourth round, and the spell ends on the fifth round. Each round after the first, the victim is entitled to a Save vs. Spell to avoid further damage.
 
-The vitriolic sphere also splashes acid in a 5-ft. radius around the primary target. Any creatures within the splash radius must save vs. Petrification/Polymorph or suffer a splash hit that inflicts 1d4 points of damage per every five levels of the caster. Splash hits do not cause continuing damage.~
+The vitriolic sphere also splashes acid in a 1.5-meter radius around the primary target. Any creatures within the splash radius must save vs. Petrification/Polymorph or suffer a splash hit that inflicts 1d4 points of damage per every five levels of the caster. Splash hits do not cause continuing damage.~
 
 @40253 = ~Otiluke's Freezing Sphere~
-@40254 = ~Otiluke's Freezing Sphere (Alteration, Evocation)
+@40254 = ~Otiluke's Freezing Sphere (Transmutation, Invocation)
 
-Level: 6
-Range: Visual range of the caster
+Level: 5
+Range: visual range of the caster
 Duration: Instant
-Casting Time: 6
+Casting Time: 5
 Area of Effect: 1 creature
-Saving Throw: Neg.
+Saving Throw: Negates
 
-This spell fires an orb of cold at a creature that inflicts 1d4+2 points of cold damage per level of the caster. If the target makes its Save vs. Spell, however, they have dodged the orb and avoided all damage.~
+This spell projects an icy ray at the target. It can strike any creature within the mage's visual range and inflicts 1D4+2 points of cold damage per caster level. A successful saving throw allows the victim to evade the ray entirely and take no damage.~
 
 @40261 = ~Lethal Sphere of Total Dissipation~
 @40262 = ~Lethal Sphere of Total Dissipation (Abjuration)
@@ -936,25 +937,25 @@ Casting time: 5
 Area of effect: 1 creature
 Saving throw: Neg.
 
-If the target of this spell fails a saving throw, it suffers a total dispelling of all magical effects affecting it, and a removal of all magical protection spells that cannot be dispelled. The spells removed are: Minor Spell Turning, Minor Globe of Invulnerability, Spell Shield , Spell Immunity, Globe Of Invulnerability, Spell deflection, Spell Turning, Spell Shield, Shield of the Archons, Spell Deflection and Spell Trap. The target's Magic Resistance, if any, does not affect this spell.~
+If the target of this spell fails a saving throw, it suffers a total dispelling of all magical effects affecting it, and a removal of all magical protection spells that cannot be dispelled. The spells removed are: Minor Spell Deflection, Minor Spell Turning, Spell Deflection, Minor Globe of Invulnerability, Spell Immunity, Globe of Invulnerability, Spell Turning, Shield of the Archons, Spell Shield and Spell Trap. The target's Magic Resistance, if any, does not affect this spell.~
 
 @40263 = ~Electric Sphere~
 @40264 = ~Electric Sphere (Evocation)
 
 Level: 6
 Range: Visual range of the caster
-Duration: 1 round/ levels
+Duration: 1 round per level
 Casting time: 6
 Area of effect: 1 creature
 Saving throw: none
 
-This spell surrounds the target with a sphere of electricity, giving it 100% resistance to electricity and forcing every opponent attacking within the sphere's radius to take 1d10+2 points of electricity damage and pass a saving throw against spells, or being stunned for one round.~
+This spell surrounds the target with a sphere of electricity, giving it 100% resistance to electricity and forcing every opponent attacking within the sphere's radius to take 1d10+2 points of electricity damage and pass a saving throw against spells, or be stunned for one round.~
 
 @40271 = ~Lethal Sphere of Absolute Vulnerability~
 @40272 = ~Lethal Sphere of Absolute Vulnerability (Abjuration)
 
 Level: 7
-Range: Visual range of the caster
+Range: 12 meters
 Duration: permanent
 Casting time: 6
 Area of effect: 1 creature
@@ -966,14 +967,14 @@ If the target of this spell fails a saving throw against spells, it loses all im
 @40281 = ~Globe of Blades~
 @40282 = ~Globe of Blades (Evocation)
 
-Level: 8 
+Level: 8
 Range: Visual range of the caster
 Duration: 1 turn
 Casting Time: 9
 Area of Effect: Special
 Saving Throw: Special
 
-The priest employs this spell to set up a sphere of circling, razor-sharp blades. These whirl and flash around the caster, creating an impenetrable barrier. Any enemy attempting to cross the barrier must attempt a saving throw against spells: if he fails, he suffers 6d8 points of slashing damage.~
+This spell creates a sphere of circling, razor-sharp blades. These whirl and flash around the target, creating an impenetrable barrier. Any enemy attempting to cross the barrier must attempt a saving throw against spells: if he fails, he suffers 8d8 points of slashing damage.~
 
 @40283 = ~Globe of Total Invulnerability~
 @40284 = ~Globe of Total Invulnerability (Abjuration)
@@ -1019,7 +1020,7 @@ The spell creates an orb of ice in the mage's hands, which he immediately throws
 Advantages:
 - When he casts the "Melf's Minute Meteors" spell, he always creates 20 meteors, 30 at level 18, 40 at level 24 and 50 at lvl 30.
 - When he casts the "Energy Blades" spell, he always creates 30 blades, 40 at level 24 and 50 at level 30.
-- +1 to TAC0 with projectile weapons every 5 levels.
+- +1 to THAC0 with projectile weapons every 5 levels.
 
 Disadvantages:
 - He can't be Good.
@@ -1030,9 +1031,9 @@ Disadvantages:
 @421 = ~Imperiosa~
 @422 = ~IMPERIOSA: this "bard" isn't really a bard: he doesn't sing or cast spells. What he does is impose his imperious words.
 
-Advantages:				
+Advantages:
 - His song reproduces the effects of Power Words and accumulates them:
-From level 1 onwards, his song produces the effects of Power Words: Sleep
+From level 1 onwards, his song produces the effects of Power Word: Sleep
 From level 5 onwards, his song also produces the effects of Power Word: Deafness
 From level 10 onwards, his song also produces the effects of Power Word: Silence
 From level 15 onwards, his song also produces the effects of Power Word: Stun
@@ -1072,28 +1073,28 @@ Disadvantages:
 @442 = ~ATHRAN: This paladin comes from a faraway land where the rules are different.
 
 Advantages:
-- Casts 3rd-level spells in place of 1st-level spells, 4th-level spells in place of 2nd-level spells, etc.....
+- Casts 3rd-level spells in place of 1st-level spells, 4th-level spells in place of 2nd-level spells, etc.
 - Number of memorizable spells doubled.
 - -2 casting time.
-- Can achieve high mastery with quarterstaffs.
+- Can allocate up to 4 proficiency points to quarterstaffs (High Mastery).
 
 Disadvantages:
 - Can only be proficient with all other weapons.
 - Can only learn the "two-handed weapon" fighting style.
 - Cannot turn undead.
 - Does not know wounding spells or spells that kill directly.
-- Knows no spells to summon the undead, demons or fallen Devas.
+- Knows no spells to summon demons or fallen devas.
 - Hit Die: D8.~
 
 @459 = ~Saïyan Healer (shaman)~
 @450 = ~saïyan Healer~
 @451 = ~Saïyan Healer~
-@452 = ~SAÏYAN HEALER: this shaman has a monkey tail. Strange....
+@452 = ~SAÏYAN HEALER: this shaman has a monkey tail. Strange…
 
 Advantages:
 - He knows several spells of destruction: Magic Missile, Agannazar's Scorcher, Fireball, Vitriolic Sphere, Cone of Cold, Chain Lightning and Energy Blades.
-- His dance grants him 15% damage inflicted and -1 to casting time for one turn and cumulative. (e.g. if he dances for 5 rounds, he will inflict +60% damage and gain -4 to casting time for one turn when he stops dancing).
-- At level 28, the bonuses granted by his dance are doubled, granting him Improved Alacrity and Improved Haste for 2 rounds and turning his hairs golden.
+- His dance grants him +15% damage dealt and -1 to casting time for one turn. These bonuses stack. (e.g. if he dances for 5 rounds, he will inflict +60% damage and gain -4 to casting time for one turn when he stops dancing).
+- At level 28, the bonuses granted by his dance are doubled, granting him Improved Alacrity and Improved Haste for 2 rounds and turning his hair golden.
 - His fist attacks evolve with his level as follows:
   At level 1: 1D6 non-lethal damage, +1 to hit, 1.5 attacks per round, considered a +1 weapon.
   At Level 4: 1D8 non-lethal damage, +2 to hit, 2 attacks per round
@@ -1101,8 +1102,8 @@ Advantages:
   At level 12: 1D12 non-lethal damage, +4 to hit, 3 attacks per round
   At level 16: 2D6 non-lethal damage, +5 to hit, 3.5 attacks per round, considered a +3 weapon
   At level 20: 2D8 non-lethal damage, +6 to hit, 4 attacks per round
-  At level 24: 2D10 non-lethal damage, +6 to hit, 4.5 attacks per round, considered a weapon +4
-  At level 28: 2D12 non-lethal damage, +7 to hit, 5 attacks per round.
+  At level 24: 2D10 non-lethal damage, +7 to hit, 4.5 attacks per round, considered a weapon +4
+  At level 38: 2D12 non-lethal damage, +8 to hit, 5 attacks per round.
 - Can specialize in two-handed weapons and two-handed weapon style.
 
 Disadvantages:
@@ -1121,32 +1122,32 @@ Magic +1
 +2 to hit
 1D8 points of non-lethal blunt damage.~
 @4523 = ~Fist attack:
-Magic +1
+Magic +2
 2.5 attacks per round
 +3 to hit
 1D10 points of non-lethal blunt damage.~
 @4524 = ~Fist attack:
-Magic +1
+Magic +2
 3 attacks per round
 +4 to hit
 1D12 points of non-lethal blunt damage.~
 @4525 = ~Fist attack:
-Magic +1
+Magic +3
 3.5 attacks per round
 +5 to hit
 2D6 points of non-lethal blunt damage.~
 @4526 = ~Fist attack:
-Magic +1
+Magic +3
 4 attacks per round
 +6 to hit
 2D8 points of non-lethal blunt damage.~
 @4527 = ~Fist attack:
-Magic +1
+Magic +4
 4.5 attacks per round
 +7 to hit
 2D10 points of non-lethal blunt damage.~
 @4528 = ~Fist attack:
-Magic +1
+Magic +4
 5 attacks per round
 +8 to hit
 2D12 points of non-lethal blunt damage.~
@@ -1156,34 +1157,34 @@ Level: 4
 Range: Visual range of the caster
 Duration: Special
 Casting Time: 4
-Area of Effect: 5-ft. radius
+Area of Effect: 1.5-meter radius
 Saving Throw: Special
 
-This spell conjures a sphere of glowing emerald acid that the caster can direct to strike any target within range. When it reaches its target, the sphere explodes and drenches the victim in potent acid. The victim suffers 1d4 points of acid damage per caster level, to a maximum of 12d4 points of damage. After the initial damage, the victim must save vs. Spell to avoid more damage. If unsuccessful, the victim continues to suffer acid damage in the following rounds, sustaining two less dice of damage each round. For example, an 8th-level wizard inflicts 8d4 damage with this spell on the first round, 6d4 on the second round, 4d4 on the third round, 2d4 on the fourth round, and the spell ends on the fifth round. Each round after the first, the victim is entitled to a Save vs. Spell to avoid further damage.
+This spell conjures a sphere of glowing emerald acid that the caster can direct to strike any target within range. When it reaches its target, the sphere explodes and drenches the victim in potent acid. The victim suffers 1d4 points of acid damage per caster level, to a maximum of 12d4 points of damage. After the initial damage, the victim must save vs. Spell to avoid more damage. If unsuccessful, the victim continues to suffer acid damage in the following rounds, sustaining two fewer dice of damage each round. For example, an 8th-level wizard inflicts 8d4 damage with this spell on the first round, 6d4 on the second round, 4d4 on the third round, 2d4 on the fourth round, and the spell ends on the fifth round. Each round after the first, the victim is entitled to a Save vs. Spell to avoid further damage.
 
-The vitriolic sphere also splashes acid in a 5-ft. radius around the primary target. Any creatures within the splash radius must save vs. Petrification/Polymorph or suffer a splash hit that inflicts 1d4 points of damage per every five levels of the caster. Splash hits do not cause continuing damage.~
+The vitriolic sphere also splashes acid in a 1.5-meter radius around the primary target. Any creatures within the splash radius must save vs. Petrification/Polymorph or suffer a splash hit that inflicts 1d4 points of damage per every five levels of the caster. Splash hits do not cause continuing damage.~
 
 @469 = ~Initiate of the White Flame (monk)~
 @460 = ~initiate of the White Flame~
 @461 = ~Initiate of the White Flame~
-@462 = ~INITIATE OF THE WHITE FLAME: This order of monks undergo rigorous training to become God's hammers.
+@462 = ~INITIATE OF THE WHITE FLAME: This order of monks undergoes rigorous training to make its members the hammers of god.
 Advantages:
 - He can cast all priest spells as special abilities. He has access to a new spell level every 4 levels and can cast a maximum of 4 spells per spell level.
 - For each spell level he can cast any spell of that level.
 
 Disadvantages:
-- He can only be Loyal Good.
-- He don't gains magic resistance.
-- He don't gains increased movement.
+- He can only be Lawful Good.
+- He does not gain magic resistance.
+- He does not gain increased movement.
 - He isn't immune to haste and slow.
 - He doesn't know the Quivering Palm.~
-@4621 = ~Spells level 1~
-@4622 = ~Spells level 2~
-@4623 = ~Spells level 3~
-@4624 = ~Spells level 4~
-@4625 = ~Spells level 5~
-@4626 = ~Spells level 6~
-@4627 = ~Spells level 7~
+@4621 = ~Spells of level 1~
+@4622 = ~Spells of level 2~
+@4623 = ~Spells of level 3~
+@4624 = ~Spells of level 4~
+@4625 = ~Spells of level 5~
+@4626 = ~Spells of level 6~
+@4627 = ~Spells of level 7~
 
 @479 = ~Spell modeler (mage)~
 @470 = ~spell modeler~
@@ -1192,7 +1193,7 @@ Disadvantages:
 Advantages:
 - He models spells: whenever he should cast a spell, instead he can cast any existing spell of the corresponding level.
 - Casting time: -2.
-- He doesn't need to learn hla; he can cast them as level 9 spells from level 23.
+- He doesn't need to learn HLAs; he can cast them as level 9 spells from level 23.
 - Hit Die: D6.
 
 Disadvantages:
@@ -1289,12 +1290,12 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Spell Modeler to select any existing level 9 spell to be cast instead. All spell parameters depend on the selected spell.~
+This spell allows the Spell Modeler to select any existing level 9 spell to be cast instead. All spell parameters depend on the selected spell. From level 23 onwards, this spell also allows the selection of epic spells.~
 
 @489 = ~Master of the Wit (ranger)~
 @480 = ~master of the Wit~
 @481 = ~Master of the Wit~
-@482 = ~MASTER OF THE WIT: This druid's link with nature is very strong, but it doesn't manifest itself in the same way as that of his colleagues.
+@482 = ~MASTER OF THE WIT: This ranger's link with nature is very strong, but it doesn't manifest itself in the same way as that of his colleagues.
 
 Advantages:
 - Protection against animals.
@@ -1308,7 +1309,7 @@ Disadvantages:
 – He may not use the classic Charm Animal ability.
 - He can't cast any spells.
 - He may not wear armor heavier than studded leather.
-- He Can't be dual-classed.~
+- He cannot be dual-classed.~
 
 @499 = ~Deathraiser (bard)~
 @490 = ~deathraiser~
@@ -1317,7 +1318,7 @@ Disadvantages:
 
 Advantages:
 - His chant has a 20% chance +1% chance per level (max 40%) of raising the dead in zombie form.
-- Every 4 levels of Lèvemort, the zombies he raises have an extra HD (including TAC0 and saving throw) and +1 to movement (max +10).
+- Every 4 levels of the Deathraiser, the zombies he raises have an extra Hit Die (including THAC0 and saving throws) and +1 to movement (max +10).
 - From level 8, zombies he raises inflict Contagion on hit.
 - From level 16, the zombies he raises gain ½ additional attack per round.
 - From level 24, the zombies he raises inflict Hold Person on hit.
@@ -1327,7 +1328,7 @@ Advantages:
 Disadvantages:
 - Necromancer and enchanter at the same time, but without additional spells.
 -1 spell per spell level, additional -1 at levels 20 and 40.
-- Aligned limited to evil.~
+- Alignment limited to evil.~
 
 @509 = ~Overflower (sorcerer)~
 @500 = ~overflower~
@@ -1357,7 +1358,7 @@ Disadvantage:
 Advantages:
 - Whenever he should cast a spell, he can instead cast any existing spell of the corresponding level.
 - He can cast all divine spells, including druidic spells.
-- He doesn't need to learn any hla; he can cast them as level 7 spells from level 22.
+- He doesn't need to learn any HLAs; he can cast them as level 7 spells from level 22.
 
 Disadvantages:
 - Casting time: +1
@@ -1453,8 +1454,8 @@ Disadvantage:
 @5391 = ~With changed animation: recolored doppelganger~
 @5392 = ~Without changed animation (non-rp)~
 @530 = ~vampiric arcanologist~
-@531 = ~Vampiric Arcanologist~
-@532 = ~VAMPIRIC ARCANOLOGIST: This being from another reality knows how to extract vital energy from the beings around him, turning it into raw magic that he can reshape into any spell he wants..
+@5319 = ~Vampiric Arcanologist~
+@5329 = ~VAMPIRIC ARCANOLOGIST: This being from another reality knows how to extract vital energy from the beings around him, turning it into raw magic that he can reshape into any spell he wants.
 
 Advantages:
 - He models spells: whenever he should cast a spell, instead he can cast any existing spell of the corresponding level.
@@ -1464,8 +1465,8 @@ Advantages:
 Disadvantages:
 - Cannot "learn" spells.
 - Cannot cast spells "normally".
-- He has no access to mage's hlas and epic spells.
-- Each time he model a spell, all creatures within 10 foots of him (including party members) lose a number of hit points equal to half the level of the spell cast, rounded up.
+- He has no access to mage's HLAs and epic spells.
+- Each time he models a spell, all creatures within a 4.5-meter radius of him (including party members) lose a number of hit points equal to half the level of the spell cast, rounded up.
 - Contingency/sequencer spells don't affect him.
 - Alignment limited to evil.~
 @5321 = ~Divine Dweomer 1~
@@ -1477,7 +1478,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 1 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
+This spell allows the Prefounder to select any existing level 1 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 hit point.~
 @5322 = ~Divine Dweomer 2~
 @53221 = ~Level 2 divine dweomer (unaligned)
 Level: 2
@@ -1487,7 +1488,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 2 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
+This spell allows the Prefounder to select any existing level 2 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 hit point.~
 @5323 = ~Divine Dweomer 3~
 @53231 = ~Level 3 divine dweomer (unaligned)
 Level: 3
@@ -1497,7 +1498,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 3 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
+This spell allows the Prefounder to select any existing level 3 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 hit points.~
 @5324 = ~Divine Dweomer 4~
 @53241 = ~Level 4 divine dweomer (unaligned)
 Level: 4
@@ -1507,7 +1508,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 4 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
+This spell allows the Prefounder to select any existing level 4 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 hit points.~
 @5325 = ~Divine Dweomer 5~
 @53251 = ~Level 5 divine dweomer (unaligned)
 Level: 5
@@ -1517,7 +1518,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 5 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
+This spell allows the Prefounder to select any existing level 5 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 hit points.~
 @5326 = ~Divine Dweomer 6~
 @53261 = ~Level 6 divine dweomer (unaligned)
 Level: 6
@@ -1527,7 +1528,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 6 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
+This spell allows the Prefounder to select any existing level 6 divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 hit points.~
 @5327 = ~Divine Dweomer 7~
 @53271 = ~Level 7 divine dweomer (unaligned)
 Level: 7
@@ -1537,7 +1538,7 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing 7th-level divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
+This spell allows the Prefounder to select any existing 7th-level divine spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 hit points.~
 @5328 = ~Divine Dweomer 8~
 @53281 = ~Level Quest divine dweomer (unaligned)
 Level: 8
@@ -1547,9 +1548,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
-@53291 = ~arcanic Dweomer 1~
-@532911 = ~Level 1 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing divine quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 hit points.~
+@53291 = ~arcane Dweomer 1~
+@532911 = ~Level 1 arcane dweomer (unaligned)
 Level: 1
 Range: special
 Duration: special
@@ -1557,9 +1558,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 1 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
-@53292 = ~arcanic Dweomer 2~
-@532921 = ~Level 2 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 1 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 hit point.~
+@53292 = ~arcane Dweomer 2~
+@532921 = ~Level 2 arcane dweomer (unaligned)
 Level: 2
 Range: special
 Duration: special
@@ -1567,9 +1568,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 2 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 life point.~
-@53293 = ~arcanic Dweomer 3~
-@532931 = ~Level 3 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 2 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 1 hit point.~
+@53293 = ~arcane Dweomer 3~
+@532931 = ~Level 3 arcane dweomer (unaligned)
 Level: 3
 Range: special
 Duration: special
@@ -1577,9 +1578,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 3 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
-@53294 = ~arcanic Dweomer 4~
-@532941 = ~Level 4 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 3 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 hit points.~
+@53294 = ~arcane Dweomer 4~
+@532941 = ~Level 4 arcane dweomer (unaligned)
 Level: 4
 Range: special
 Duration: special
@@ -1587,9 +1588,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 4 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 life points.~
-@53295 = ~arcanic Dweomer 5~
-@532951 = ~Level 5 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 4 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 2 hit points.~
+@53295 = ~arcane Dweomer 5~
+@532951 = ~Level 5 arcane dweomer (unaligned)
 Level: 5
 Range: special
 Duration: special
@@ -1597,9 +1598,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 5 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
-@53296 = ~arcanic Dweomer 6~
-@532961 = ~Level 6 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 5 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 hit points.~
+@53296 = ~arcane Dweomer 6~
+@532961 = ~Level 6 arcane dweomer (unaligned)
 Level: 6
 Range: special
 Duration: special
@@ -1607,9 +1608,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing level 6 arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 life points.~
-@53297 = ~arcanic Dweomer 7~
-@532971 = ~Level 7 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 6 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 3 hit points.~
+@53297 = ~arcane Dweomer 7~
+@532971 = ~Level 7 arcane dweomer (unaligned)
 Level: 7
 Range: special
 Duration: special
@@ -1617,9 +1618,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing 7th-level arcanic spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
-@53298 = ~arcanic Dweomer 8~
-@532981 = ~Level 8 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing 7th-level arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 hit points.~
+@53298 = ~arcane Dweomer 8~
+@532981 = ~Level 8 arcane dweomer (unaligned)
 Level: 8
 Range: special
 Duration: special
@@ -1627,9 +1628,9 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 life points.~
-@53299 = ~arcanic Dweomer 9~
-@532991 = ~Level 9 arcanic dweomer (unaligned)
+This spell allows the Prefounder to select any existing level 8 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 4 hit points.~
+@53299 = ~arcane Dweomer 9~
+@532991 = ~Level 9 arcane dweomer (unaligned)
 Level: 9
 Range: special
 Duration: special
@@ -1637,24 +1638,24 @@ Casting time: special
 Area of effect: special
 Saving throw: special
 
-This spell allows the Vampiric Arcanologist to select any existing Quest spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 5 life points.~
+This spell allows the Prefounder to select any existing level 9 arcane spell to cast instead. All spell parameters depend on the selected spell. Using this spell costs all surrounding living creatures 5 hit points.~
 
 @549 = ~4T-R4ND0M (warrior)~
 @540 = ~4T-R4ND0M~
 @541 = ~4T-R4ND0M~
 @542 = ~4T-R4ND0M : this warrior doesn't use any particular technique. He uses ALL techniques.
 
-Advantages: 
+Advantages:
 - He can use Great Magic Technique once every 2 levels.
 - From level 18 he can use Super magic technique once per level.
 
-GREAT MAGIC TECHNIQUE: this technique gives the 4U-H4S4RD all the bonuses of a random ability normally acquired by another class/specialization. The ability can be of any order, but does not apply to ranged weapons.
+GREAT MAGIC TECHNIQUE: this technique gives the 4T-R4ND0M all the bonuses of a random ability normally acquired by another class/specialization. The ability can be of any order, but does not apply to ranged weapons.
 
-SUPER MAGIC TECHNIQUE: this technique allows the 4U-H4S4RD to randomly simulate any high-level ability of another class/specialization, including epic spells.
+SUPER MAGIC TECHNIQUE: this technique allows the 4T-R4ND0M to randomly simulate any high-level ability of another class/specialization, including epic spells.
 
 Disadvantages:
-- He Cannot specialize in ranged weapons.
-- He cannot choose hlas.~
+- He cannot specialize in ranged weapons.
+- He cannot choose HLAs.~
 @543 = ~Great Magic Technique~
 @544 = ~Super Magic Technique~
 
@@ -1664,7 +1665,7 @@ Disadvantages:
 @552 = ~FRENZIED: Quick, quick, quick.... but not too quick, otherwise it hurts.
 
 Advantage:
-- Permanently Improved haste.
+- Permanent Improved Haste.
 
 Disadvantages:
 - Uses only long blades.
@@ -1676,13 +1677,13 @@ Disadvantages:
 @561 = ~Lazy~
 @562 = ~LAZY: This warrior doesn't intend to learn anything, he just relies on his luck. And it works.
 
-Advantages: 
+Advantages:
 - Luck +1, +1 every 10 levels.
 - Critical strike chance +1, +1 every 10 levels.
 - His attacks have a 6% chance of randomly triggering Greater Whirlwind Attack, Greater Deathblow or Critical Strike, +3% every 10 levels.
 
 Disadvantages:
-- Thief's TAC0.
+- Thief's THAC0.
 - Cannot exceed mastery with weapons.
 - Cannot choose HLAs.~
 
@@ -1691,7 +1692,7 @@ Disadvantages:
 @571 = ~Butcher~
 @572 = ~BUTCHER: This warrior loves killing so much it drives him mad.
 
-Advantages: 
+Advantages:
 - Every time he kills a creature, he regains 2 hit points.
 - Damage inflicted +30%
 - From level 15, permanent death blow.
