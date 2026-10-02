@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DAWAP — Lisez-moi français</title><style>
+   :root{
+  --gold: goldenrod;
+  --gold2:#c79a35;
+  --line:#96846e;
+  --brown:#655949;
+  --brown2:#41382f;
+  --paper:#4b463f;
+  --paper2:#37332e;
+  --text:#deded9;
+  --muted:#c4bfb7;
+  --black:#080706;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  padding:0 0 50px;
+  cursor:default;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(120,95,55,.14), transparent 34%),
+    radial-gradient(ellipse at 80% 60%, rgba(95,70,40,.11), transparent 38%),
+    linear-gradient(#080706,#15120e 45%,#080706);
+  font-family:Verdana,Tahoma,Arial,sans-serif;
+  font-size:16px;
+}
+#cartouche{
+  width:calc(100% - 4cm);
+  max-width:none;
+  margin:20px 2cm 0;
+}
+#header{
+  text-align:center;
+  padding:8px 20px 18px;
+  min-height:245px;
+  border:1px solid var(--gold);
+  border-top:5px solid var(--gold);
+  border-bottom:5px solid var(--gold);
+  border-radius:4px;
+  box-shadow:8px 8px 15px #000;
+  background:
+    linear-gradient(rgba(255,255,255,.06),rgba(0,0,0,.16)),
+    radial-gradient(ellipse at center, #514a40 0,#2c2925 55%,#080706 100%);
+}
+h1{
+  line-height:170%;
+  font-size:225%;
+  color:var(--gold);
+  margin:0;
+  text-shadow:.1rem .1rem .25rem #000;
+}
+.subtitle{
+  margin:2px auto 18px;
+  color:#eee9dd;
+  font-size:105%;
+  font-weight:bold;
+}
+.header-rule{
+  width:90%;
+  height:1px;
+  margin:18px auto;
+  background:var(--gold);
+}
+.header-grid{
+  position:relative;
+  width:100%;
+  height:3.4em;
+  margin:0 auto;
+  font-size:105%;
+}
+.header-col{
+  position:absolute;
+  top:0;
+  width:max-content;
+  text-align:left;
+  line-height:170%;
+  transform:translateX(-50%);
+}
+.header-col-left{left:25%}
+.header-col-right{left:75%}
+.header-grid strong{color:#f1eee8}
+#menu{
+  font-weight:bold;
+  margin-top:20px;
+  padding:10px 18px;
+  text-align:center;
+  color:var(--gold);
+  line-height:220%;
+  border-top:1px solid #51483b;
+  border-bottom:1px solid #17130f;
+  border-radius:4px;
+  box-shadow:5px 5px 12px #000;
+  background:linear-gradient(#5f5447,#342d25 45%,#1a1713);
+}
+a:link,a:visited{color:var(--gold);text-decoration:none}
+a:hover,a:focus{text-decoration:underline;color:#eee}
+#maindiv{margin:0 auto;width:100%}
+.content{
+  background:
+    radial-gradient(circle at 15% 0, rgba(255,255,255,.035), transparent 26%),
+    linear-gradient(135deg, rgba(255,255,255,.025), transparent 35%),
+    linear-gradient(var(--paper),var(--paper2));
+  padding:0 0 28px;
+  margin:50px auto;
+  border-width:1px 1px 4px 10px;
+  border-style:solid;
+  border-color:var(--brown);
+  position:relative;
+  border-radius:4px;
+  box-shadow:8px 8px 15px #000;
+  overflow:hidden;
+}
+h2{
+  line-height:170%;
+  display:block;
+  text-align:left;
+  text-indent:30px;
+  padding:3px 0;
+  margin:0;
+  border-top:2px dotted var(--line);
+  border-bottom:2px dotted var(--line);
+  font-size:160%;
+  background:linear-gradient(#50473d,#2d2822);
+}
+h2::first-letter{color:var(--gold)}
+h3,h4{
+  line-height:170%;
+  margin:14px auto 8px;
+  width:90%;
+  padding:0;
+}
+h3{font-size:140%;color:#eee}
+h4{font-size:120%;color:var(--gold)}
+p{
+  text-align:justify;
+  font-size:110%;
+  line-height:150%;
+  margin:10px auto;
+  width:90%;
+}
+ul{
+  line-height:170%;
+  margin-left:4%;
+  width:87%;
+}
+hr{
+  margin:20px auto;
+  width:90%;
+  height:1px;
+  border:0;
+  background:var(--gold);
+}
+.important{
+  font-size:110%;
+  text-align:left;
+  border-width:1px 4px;
+  border-style:solid;
+  border-color:var(--gold);
+  padding:10px 16px;
+  margin:18px auto;
+  width:84%;
+  line-height:160%;
+  background:rgba(0,0,0,.13);
+}
+.note{
+  color:#f0eadf;
+  border-left:4px solid var(--gold);
+  width:88%;
+  margin:18px auto;
+  padding:10px 14px;
+  background:rgba(0,0,0,.16);
+  line-height:160%;
+}
+
+/* Grandes zones repliables */
+details.zone{
+  width:90%;
+  margin:14px auto;
+  border:1px solid #796b58;
+  border-left:5px solid var(--gold);
+  border-radius:3px;
+  background:rgba(0,0,0,.18);
+  box-shadow:0 2px 7px rgba(0,0,0,.35);
+}
+details.zone > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:11px 15px;
+  font-weight:bold;
+  font-size:125%;
+  color:#eee;
+  background:linear-gradient(#4d4439,#29251f);
+  user-select:none;
+}
+details.zone > summary::-webkit-details-marker{display:none}
+details.zone > summary::before{
+  content:"▶";
+  color:var(--gold);
+  margin-right:10px;
+}
+details.zone[open] > summary::before{content:"▼"}
+.zonebody{padding:10px 16px 18px}
+.zonebody h4{
+  width:100%;
+  margin:14px 0 5px;
+  padding-bottom:3px;
+  border-bottom:1px solid #6c6153;
+}
+.zonebody ul{width:96%;margin-left:1.5%}
+
+/* Spoiler imbriqué : option plus difficile */
+details.hard{
+  width:96%;
+  margin:20px auto 4px;
+  border:1px solid var(--gold2);
+  background:#29251f;
+}
+details.hard > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:9px 12px;
+  font-weight:bold;
+  color:var(--gold);
+  background:linear-gradient(#443a2e,#211d18);
+}
+details.hard > summary::-webkit-details-marker{display:none}
+details.hard > summary::before{
+  content:"▶";
+  margin-right:8px;
+}
+details.hard[open] > summary::before{content:"▼"}
+.hardbody{padding:10px 14px}
+
+/* Versions */
+details.versionbox{
+  width:90%;
+  margin:11px auto;
+  border-top:1px solid var(--gold);
+  border-bottom:1px solid var(--gold);
+}
+details.versionbox > summary{
+  cursor:pointer;
+  padding:7px 5px;
+  font-weight:bold;
+  color:#eee;
+}
+.versionbody{padding:4px 12px 10px}
+.versionbody ul{width:95%}
+
+.backtop{
+  text-align:right;
+  font-weight:bold;
+  margin:20px 5% 0;
+}
+.small{font-size:95%;color:var(--muted)}
+@media(max-width:760px){
+  #cartouche{width:96%;margin:12px auto 0}
+  .header-grid{height:auto}
+  .header-col{
+    position:static;
+    width:auto;
+    transform:none;
+    margin:5px 8%;
+  }
+  #header{min-height:0}
+  details.zone,p,.important,.note{width:94%}
+}
+
+
+/* Listes de l'Interplan */
+.item-list,.spell-level{width:90%;margin:14px auto;}
+.item-entry,.spell-entry{padding:10px 14px;margin:0;border-bottom:1px solid #6c6153;background:rgba(0,0,0,.08);}
+.item-entry:last-child,.spell-entry:last-child{border-bottom:0;}
+.item-head{display:flex;gap:14px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;}
+.item-name,.spell-name{font-weight:bold;color:#eee;font-size:112%;}
+.item-type{color:var(--gold);font-weight:bold;white-space:nowrap;}
+.item-restriction{color:var(--muted);font-style:italic;width:100%;margin-top:2px;}
+.item-desc,.spell-desc{margin:5px 0 0;width:100%;font-size:102%;line-height:150%;text-align:left;}
+.spell-level{border:1px solid #796b58;border-left:5px solid var(--gold);border-radius:3px;overflow:hidden;background:rgba(0,0,0,.15);}
+.spell-level h3{width:100%;margin:0;padding:8px 14px;background:linear-gradient(#4d4439,#29251f);color:var(--gold);}
+.placeholder{width:88%;margin:18px auto;padding:12px 15px;border:1px dashed #8b7a63;color:var(--muted);background:rgba(0,0,0,.12);}
+.credits-list{width:90%;margin:10px auto;line-height:165%;}
+
+details.item-category-spoiler{
+  width:90%;
+  margin:16px auto;
+  border:1px solid #796b58;
+  border-left:5px solid var(--gold);
+  border-radius:3px;
+  overflow:hidden;
+  background:rgba(0,0,0,.15);
+}
+details.item-category-spoiler > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:10px 14px;
+  font-weight:bold;
+  font-size:140%;
+  color:var(--gold);
+  background:linear-gradient(#4d4439,#29251f);
+  user-select:none;
+}
+details.item-category-spoiler > summary::-webkit-details-marker{display:none;}
+details.item-category-spoiler > summary::before{content:"▶";margin-right:10px;}
+details.item-category-spoiler[open] > summary::before{content:"▼";}
+.item-category-body{padding:0;}
+.item-category-body .item-entry{margin:0;}
+  
+
+details.spell-level > summary{
+  color:var(--gold);
+}
+  
+
+/* Spoilers imbriqués : même format, titre plus petit */
+.item-entry details.item-category-spoiler > summary{
+  font-size:100%;
+}
+   .item-source-ref{
+  font-size:70%;
+  color:var(--muted);
+  vertical-align:super;
+  font-weight:normal;
+}
+   /* Chandelle du monstre : sources des pierres */
+.stone-name{
+  font-weight:normal;
+  color:var(--text);
+}
+.interplan-source{
+  color:#eee;
+  font-weight:normal;
+  white-space:nowrap;
+}
+   /* Anneau alchimique : présentation type sorts */
+.alchemy-effects{
+  width:88%;
+  margin:10px auto 14px;
+  line-height:150%;
+}
+.alchemy-effects > li{
+  margin:8px 0 12px;
+}
+.alchemy-potion-name{
+  color:#eee;
+  font-weight:bold;
+}
+.alchemy-potion-effect{
+  margin-top:2px;
+  color:var(--text);
+}
+  
+/* Catalogue DAWAP */
+#menu a{display:inline-block;padding:0 5px}
+.kitbody p{width:100%;margin:9px 0;text-align:left;font-size:105%}
+.kitbody ul{width:100%;margin:6px 0 14px;padding-left:25px;font-size:105%;line-height:1.6}
+.kitbody h4{width:100%;margin:18px 0 7px}
+.kitbody h4:first-child{margin-top:2px}
+.kitbody .animation{color:var(--muted);font-style:italic;font-size:95%}
+.kit-index{display:flex;flex-wrap:wrap;gap:6px 16px;width:90%;margin:18px auto;font-size:95%;line-height:1.7}
+.kit-index a{border-bottom:1px dotted #796b58}
+details.zone{scroll-margin-top:15px}
+details.zone>summary:hover{background:linear-gradient(#5e5141,#342c23)}
+details.zone>summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.versionbody p{width:100%;text-align:left;font-size:100%}
+.versionbody ul{padding-left:24px;margin-left:0;width:100%;line-height:1.65}
+.versionbody h4{width:100%;font-size:110%}
+@media print{body{background:white;color:black}#cartouche{width:100%;margin:0}#menu,.kit-index,.backtop{display:none}.content,#header,details.zone{box-shadow:none;background:white;border-color:#777}.kitbody{display:block!important}h1,h2,h4,a:link,a:visited{color:black}details.zone>summary{color:black;background:white}}
+</style></head><body><div id="cartouche"><div id="top"></div><div id="header">
+<h1>Derats's Absolute Wacky<br>Adventurers Pack</h1>
+<div class="subtitle">Un module de kits pour les jeux Infinity Engine Enhanced Edition</div>
+<div class="header-rule"></div>
+<div class="header-grid">
+<div class="header-col header-col-left">
+<div><strong>Auteur :</strong> Deratiseur</div>
+<div><strong>Type :</strong> kits</div>
+</div>
+<div class="header-col header-col-right">
+<div><strong>Langues :</strong> français, anglais</div>
+<div><strong>Version :</strong> 12.1</div>
+</div>
+</div>
+</div><nav id="menu" aria-label="Navigation du lisez-moi"><a href="#intro">Présentation</a> • <a href="#magiciens">Magiciens</a> • <a href="#ensorceleurs">Ensorceleurs</a> • <a href="#clercs">Clercs</a> • <a href="#druides">Druides</a> • <a href="#bardes">Bardes</a> • <a href="#chamans">Chamans</a> • <a href="#combattants">Combattants</a> • <a href="#multiclasses">Multiclassés</a> • <a href="#versions">Mise à jour</a></nav><main id="maindiv"><section class="content" id="intro"><h2>Présentation</h2><p>Un pack composé de 59 kits dont la particularité est de vous faire changer votre façon de jouer.</p><p>Compatibilité : compatible avec tous les jeux EE et tous les autres mods. De préférence (mais pas obligatoire) à installer après les mods qui ajoutent/modifient des sorts (ex: Spell Revision).</p><p class="small">Cliquez sur le nom d’un kit pour ouvrir ou refermer sa description.</p></section><section class="content" id="magiciens"><h2>Magiciens</h2><nav class="kit-index" aria-label="Kits : Magiciens"><a href="#kit-8">Fléau</a> · <a href="#kit-22">Enragé</a> · <a href="#kit-35">Voleur de sorts</a> · <a href="#kit-44">Mangacien</a> · <a href="#kit-68">Singularité légendaire</a> · <a href="#kit-84">Maître combineur</a> · <a href="#kit-111">Sphèromaniaque</a> · <a href="#kit-134">Artilleur</a> · <a href="#kit-145">Modeleur de sorts</a> · <a href="#kit-161">Malavisé</a> · <a href="#kit-174">Arcanologue vampirique</a></nav><details class="zone" id="kit-8"><summary>Fléau</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Se remémore tous ses sorts et regagne ses capacités innées toutes les 5 secondes.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Ne peut apprendre que des sorts de l'Évocation et de la Nécromancie.</li><li>Ne peut pas être d'alignement bon.</li><li>Ne peut pas se jumeler.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Ce kit installe aussi deux nouveaux sorts d'évocation de niveau 1 (Explosion et Bouffée ardente), nécessaires pour pouvoir choisir les 6 sorts minimums lors de la création du personnage dans BG2 (7 dans TOB)</li><li>Pas disponible dans IWDEE (les écoles de magie sont différentes).</li><li>Multiclasse cheaté : Fléau/clerc (tous les sorts bénéfiques du clerc + Guérison chaque round)</li></ul></div></details><details class="zone" id="kit-22"><summary>Enragé</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Chaque fois qu'il tue une créature, il gagne Enchaînement pendant un round.</li><li>+15 % de dégâts infligés, arme ou sort.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il n'accorde aucun crédit aux écoles défensives et n'apprend aucun sort des écoles d'Abjuration, de Divination et d'Illusion.</li><li>Quand ses points de vie passent en dessous de 25 %, il devient berserk de sorts. (Pendant 3 rounds, l'Enragé ne peut plus se déplacer ni attaquer. Il ne pense qu'à lancer des sorts : il peut les enchaîner, plus vite (-2 au temps d'incantation) mais avec 10 % de chance de rater les incantations.)</li></ul>
+<h4>Notes :</h4>
+<ul><li>Jouer avec les écoles n'est pas un exercice simple : à cause de ça, certains sorts sont "verts" et vous DEVEZ en choisir au moins un lors de la création de personnage. Par contre aucun problème pour la mémorisation de sorts ensuite.</li><li>Pas disponible dans IWDEE (les écoles de magie sont différentes)</li></ul></div></details><details class="zone" id="kit-35"><summary>Voleur de sorts</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Peut à volonté, au contact, faire oublier un sort à un arcaniste (sans jet de sauvegarde) pour se remémorer un sort de niveau maximum connu.</li><li>Peut une fois par jour, au contact, faire oublier tous ses sorts à un arcaniste (jet de sauvegarde contre la mort) pour se remémorer lui-même tous ses sorts.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Peut mémoriser un sort de moins par niveau de sort.</li><li>Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 de mage).</li></ul></div></details><details class="zone" id="kit-44"><summary>Mangacien</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il ne connaît qu'un seul sort, Projectile magique, qu'il peut lancer à volonté et dont il est le spécialiste :</li><li>1 projectile supplémentaire tous les 3 niveaux jusqu'à 11 projectiles maximum.</li><li>Les dégâts des projectiles évoluent selon son niveau :</li></ul>
+<p>  Niveau 1 à 6 : 1D4+1</p>
+<p>  Niveau 7 à 12 : 1D6+2</p>
+<p>  Niveau 13 à 18 : 1D8+3</p>
+<p>  Niveau 19 à 24 : 1D10+4</p>
+<p>  Niveau 25 à 30 : 1D12+5</p>
+<p>  Niveau 31 et + : 3D4+6</p>
+<ul><li>Chaque projectile a 5 % de chance d'infliger des dégâts doublés, 10 % au niveau 15, 15 % au niveau 30.</li><li>Les protections contre les sorts considèrent ce sort comme un sort de niveau égal au nombre de projectiles envoyés (IE : considéré comme un sort de niveau 6 quand il envoie 6 projectiles). À 10 projectiles envoyés plus aucune protection contre les sorts ne peut bloquer ce sort, à part Bouclier et Protection contre l’Évocation.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut apprendre aucun autre sort.</li><li>Il n'a accès à aucune HLA.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Le Kit installe aussi un script de joueur nommé "PXMANGA". Pensez à l'utiliser :)</li><li>Pour utiliser le projectile magique, mettez-le en sorts rapides. Pensez aussi à affecter une touche de clavier/souris à ce raccourci rapide.</li><li>À la création du personnage sous BG2EE vous DEVEZ choisir des sorts. Choisissez n'importe quoi, de toute façon tous les sorts appris sont oubliés dès que le jeu commence.</li><li>Trouvez un moyen alternatif de lui donner "Enchaînement" et ça devient un dieu. (Un moyen très simple : jumelage Dwéomeriste → Mangacien.)</li></ul></div></details><details class="zone" id="kit-68"><summary>Singularité légendaire</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Dégâts infligés triplés.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Points de vie fixés à 1 point de vie par niveau.</li><li>Non affecté par les effets qui améliorent le nombre de points de vie maximum.</li><li>Résistances physiques, élémentaires et à la magie : -50 %.</li><li>Jets de sauvegarde : -4.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Multiclassage à tester : Singularité légendaire/Guerrier (Canon de verre qui met des patates à 60-75 (arme +3 force 19)).</li><li>Multiclassage à tester : Singularité légendaire/Guerrier archer (pas beaucoup de points de vie mais il reste derrière)</li><li>Autre multiclassage à tester : Voleur/ Singularité légendaire  (Canon de verre qui fait des sournoises à 15D6).</li><li>Sinon ça marche aussi en jumelage :  Singularité légendaire niveau X → guerrier ou voleur. (assassin pour des sournoises à 21D6).</li></ul></div></details><details class="zone" id="kit-84"><summary>Maître combineur</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il apprend automatiquement les sorts de combinaison de sorts comme des sorts d'un niveau en dessous.</li><li>Au niveau 5, il gagne la capacité Combinaison de sorts qu'il peut utiliser une fois par jour.</li></ul>
+<p><strong>COMBINAISON DE SORTS :</strong></p>
+<p>Ce sort permet de combiner des sorts et de pouvoir lancer le résultat à partir du bouton de capacités spéciales. Le nombre et le niveau de sorts combinables dépendent du niveau du Maître combineur :</p>
+<p>Niveau 5 à 8 : 2 sorts de niveau 3 maximum</p>
+<p>Niveau 9 à 12 : 2 sorts de niveau 4 maximum</p>
+<p>Niveau 13 à 16 : 2 sorts de niveau 5 maximum</p>
+<p>Niveau 17 à 20 : 3 sorts de niveau 5 maximum</p>
+<p>Niveau 21 à 24 : 3 sorts de niveau 6 maximum</p>
+<p>Niveau 25 à 28 : 3 sorts de niveau 7 maximum</p>
+<p>Niveau 29 et + : 3 sorts de niveau 8 maximum</p>
+<p>Une fois la combinaison de sorts déchargée, le bouton disparaît.</p>
+<ul><li>Toutes les combinaisons de sorts (par un sort ou par sa capacité spéciale) qu'il déclenche sont améliorées : +35 % de dégâts et de durée.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Transmutateur et Invocateur en même temps, mais sans sorts supplémentaires.</li></ul>
+<h4>Note :</h4>
+<ul><li>Sorts de combinaison de sorts : Séquenceur mineur (lvl 3), Séquenceur de sorts (lvl 6), Déclencheur de sorts (lvl 7), Triple Dweomer de Dillpater (nouveau sort, niveau 9)</li><li>Transmutateur c'est nul parce que l'Abjuration interdite c'est trop pénalisant ? En deux mots : Métamorphose d'autrui (-2 au jet de sauvegarde).</li><li>Dans IWDEE, ce kit a 4 écoles opposées. Ouch !</li><li>Multiclassage à essayer : Maître combineur/Clerc (Séquenceur mineur Bénédiction + Chant (temps d'incantation 1), Séquenceur de sorts 3x Animation des morts lvl 15 (sort de niveau 3 pour le clerc),  Déclencheur de sorts 3x Serviteur aérien, Triple Dweomer de Dillpater 3x Convocation de Déva (cheat : normalement limité à 1 mais quand lancés en même temps la limitation saute) ou 3x Portail ou 3x Convocation d'élémentaires (tous sorts de niveau 7 pour le clerc).)</li></ul></div></details><details class="zone" id="kit-111"><summary>Sphèromaniaque</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il connaît pour chaque niveau de sort deux sorts d'orbe/sphère/globe qu'il peut lancer indéfiniment :</li></ul>
+<p>  En sort infini de niveau 1 : Orbe chromatique et Projectile magique</p>
+<p>  En sort infini de niveau 2 : Sphère résistante d'Otiluke et Cône d'orbes élémentaires</p>
+<p>  En sort infini de niveau 3 : Orbes explosifs et Boule de feu</p>
+<p>  En sort infini de niveau 4 : Globe d'invulnérabilité mineur et Sphère noire</p>
+<p>  En sort infini de niveau 5 : Sphère acide et Sphère Glaciale d'Otiluke</p>
+<p>  En sort infini de niveau 6 : Sphère Fatale de Dissipation Totale et Sphère électrique</p>
+<p>  En sort infini de niveau 7 : Sphère Fatale de Vulnérabilité Absolue et Boule de feu à retardement</p>
+<p>  En sort infini de niveau 8 : Sphère de lames et Globe d'Invulnérabilité Totale</p>
+<p>  En sort infini de niveau 9 : Orbe de glace et Globe d’Immunité Absolue</p>
+<ul><li>Tous ses sorts sont "sur cible", même les sorts normalement personnels (comme Globe d'invulnérabilité).</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut apprendre aucun autre sort ni aucune HLA.</li><li>Il ne peut pas utiliser de parchemins.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Pas de sort de "Coquille antimagique" parce que "sur cible" ça peut rendre les guerriers et les voleurs immunisés à la magie, c'est OP.</li><li>À la création du personnage sous BG2EE vous DEVEZ choisir des sorts. Choisissez n'importe quoi, de toute façon tous les sorts appris sont oubliés dès que le jeu commence.</li><li>Trouvez un moyen alternatif de lui donner "Enchaînement" et ça devient un dieu. (un moyen très simple : Jumelage Dwéomeriste → Sphèromaniaque).</li></ul></div></details><details class="zone" id="kit-134"><summary>Artilleur</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Quand il lance le sort "Minuscules météores de Melf" il crée toujours 20 météores, 30 au niveau 18, 40 au niveau 24 et 50 au niveau 30.</li><li>Quand il lance le sort "Lames d’énergie" il crée toujours 30 lames, 40 au niveau 24 et 50 au niveau 30.</li><li>+1 au TAC0 avec les armes à projectiles tous les 5 niveaux.</li><li>Il peut se spécialiser avec les dards et la fronde.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut pas être Bon.</li><li>Les projectiles qu'il crée ont une durée maximale d'un tour et disparaissent automatiquement s'il se déplace.</li></ul></div></details><details class="zone" id="kit-145"><summary>Modeleur de sorts</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il modèle les sorts : chaque fois qu'il devrait lancer un sort, à la place il peut lancer n'importe quel sort existant du niveau correspondant.</li><li>Temps d'incantation : -2.</li><li>Il n'a pas besoin d'apprendre de HLA, il peut les lancer en tant que sorts de niveau 9 à partir du niveau 23.</li><li>Dés de vie : D6.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut pas "apprendre" de sorts.</li><li>Il ne peut pas lancer de sorts "normalement".</li><li>S'il essaie de lancer des sorts de Contingence/Séquenceurs, il perd son temps, ça ne marchera pas.</li><li>Chaque fois qu'il modèle un sort, il perd un point de vie.</li></ul>
+<h4>Notes :</h4>
+<ul><li>À la création du personnage sous BG2EE vous DEVEZ choisir des sorts. Choisissez n'importe quoi, de toute façon tous les sorts appris sont oubliés dès que le jeu commence.</li></ul></div></details><details class="zone" id="kit-161"><summary>Malavisé</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>+3 sorts par niveau de sort.</li><li>Temps d'incantation maximal des sorts fixé à 6.</li><li>Dé de vie : D6.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Chaque fois qu'il tue une créature, tous les membres du groupe subissent 1D4 points de dégâts non létaux.</li><li>Sagesse : -3.</li></ul>
+<h4>Note :</h4>
+<ul><li>Si le Malavisé tue plusieurs créatures d'un seul coup (par exemple avec une boule de feu), les dégâts infligés au groupe ne sont appliqués qu'une fois.</li></ul></div></details><details class="zone" id="kit-174"><summary>Arcanologue vampirique</summary><div class="zonebody kitbody"><p class="animation">(Animation changée : doppelgänger bleu)</p><h4>Avantages :</h4>
+<ul><li>Il modèle les sorts : chaque fois qu'il devrait lancer un sort, à la place il peut lancer n'importe quel sort existant du niveau correspondant.</li><li>Il peut modeler aussi les sorts cléricaux et druidiques, et lance les sorts de quête en tant que sorts de niveau 8.</li><li>+2 sorts par niveau de sort.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut pas "apprendre" de sorts.</li><li>Il ne peut pas lancer de sorts "normalement".</li><li>Il n'a pas accès aux HLA et sorts épiques de mage.</li><li>Chaque fois qu'il modèle un sort, toutes les créatures dans un rayon de 4,5 mètres autour de lui (membres du groupe inclus) perdent un nombre de points de vie égal à la moitié du niveau du sort lancé, arrondi à l'entier supérieur.</li><li>Les sorts de Contingence/Séquenceurs ne l'affectent pas.</li><li>Alignement limité à mauvais.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="ensorceleurs"><h2>Ensorceleurs</h2><nav class="kit-index" aria-label="Kits : Ensorceleurs"><a href="#kit-190">Eoratien</a> · <a href="#kit-199">Anomalie</a> · <a href="#kit-216">Minuims magiques</a> · <a href="#kit-228">Incantateur</a> · <a href="#kit-243">Esprit du miroir</a> · <a href="#kit-260">Sorcelier</a> · <a href="#kit-291">Zap</a> · <a href="#kit-306">Psycho absorbeur</a> · <a href="#kit-317">Débordeur</a> · <a href="#kit-333">Ragesort</a></nav><details class="zone" id="kit-190"><summary>Eoratien</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Se remémore tous ses sorts et regagne ses capacités innées à la fin de chaque combat.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Peut mémoriser trois sorts de moins par niveau de sort.</li><li>Chaque accès à un nouveau niveau de sort est ralenti d'un niveau (premier sort de niveau 1 au niveau 2 d'ensorceleur).</li><li>Non affecté par les effets permettant de mémoriser plus de sorts.</li></ul></div></details><details class="zone" id="kit-199"><summary>Anomalie</summary><div class="zonebody kitbody"><p class="animation">(animation changée : élémentaire de magie)</p><h4>Avantages :</h4>
+<ul><li>Immunisé contre la magie offensive et 100 % de résistance à la magie.</li><li>Immunisé au poison, à la maladie et au drain de niveau.</li><li>Immunisé à la magie morte, au fourvoiement et aux hiatus imposés.</li><li>Gagne deux points de vie chaque fois qu'il lance un sort.</li><li>Peut à volonté lancer une fois par round une boule d’énergie magique +1 qui inflige 1D4+1 dégâts magiques. Le niveau d'enchantement et les dégâts augmentent de +1 par 5 niveaux de l'anomalie, jusqu'à +7 maximum.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Entropie, mais sans les sorts communs à l'entropiste classique.</li><li>Les soins conventionnels (sorts, potions) ne l'affectent pas.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Pour le guérir vous avez plusieurs options : dormir, lancer des sorts, sort "toucher vampirique", peut-être d'autres.</li><li>Son arme requiert la compétence fléchette.</li><li>Son avantage "Chaque fois qu'il lance un sort" ne se déclenche pas avec enchaînement et ne marche pas en combat si l'Anomalie a comme script de combat le "super nouveau script avec des cases à cocher inclus dans les EE".</li></ul></div></details><details class="zone" id="kit-216"><summary>Minuims magiques</summary><div class="zonebody kitbody"><p class="animation">(animation changée : particules lumineuses en mouvement)</p><h4>Avantages :</h4>
+<ul><li>Quantité de sorts mémorisables doublée.</li><li>+2 à la CA, +2 supplémentaire contre les attaques tranchantes et perforantes.</li><li>Protection contre les armes non magiques.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Ne peut utiliser aucun objet.</li></ul>
+<h4>Note :</h4>
+<ul><li>Quelqu'un m'a dit que "Protection contre les armes non magiques" dans BG1EE c’était trop bourrin. Personne n'y pense, mais le Métamorphe a le même avantage.</li></ul></div></details><details class="zone" id="kit-228"><summary>Incantateur</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>+50 % de durée des sorts.</li><li>+50 % de dégâts élémentaires et magiques infligés.</li><li>+4 au niveau de lanceur de sorts.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Temps d'incantation : +3.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Ses avantages marchent avec les séquenceurs/Contingence : à vous la Chaîne de contingence de 3x Flétrissures 90D8 ou le Séquenceur de sorts de 3x flèches enflamméess 90D6.</li><li>Robe de Vecna pour annuler son inconvénient.</li><li>Les dégâts élémentaires et magiques de ses armes sont également améliorés.</li><li>J'avais pensé à ce kit en tant que kit de mage, mais … Guerrier/incantateur et Voleur/incantateur !</li></ul></div></details><details class="zone" id="kit-243"><summary>Esprit du miroir</summary><div class="zonebody kitbody"><p class="animation">(animation : couleurs perpétuellement changeantes)</p><h4>Avantages :</h4>
+<ul><li>Renvoi des sorts illimité.</li><li>Réflexion de la lumière : +3 à la CA.</li><li>Apprend automatiquement tous les sorts d'image quand il atteint le niveau requis.</li><li>Peut lancer "sur cible" les sorts d'image.</li><li>Peut lancer des versions "personnelles" des sorts d'image comme des sorts d'un niveau en dessous.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Très fragile : -50 % de points de vie et -100 % de résistance aux dégâts contondants.</li></ul>
+<h4>Note :</h4>
+<ul><li>Sorts d'images concernés : Image réfléchie , Image miroir, Image réfléchie majeure (nouveau sort, lvl 4), Double illusoire, Projection d'image et Simulacre.</li><li>L'esprit du miroir reçoit deux exemplaires de chaque sort : la version "personnelle" à un niveau réduit et la version "sur cible" au niveau normal. Les noms des sorts sont changés, mais par le texte descriptif, car certains mods peuvent changer l'effet des sorts (comme Spell revision, par exemple).</li><li>Quand vous choisissez vos sorts, évitez de prendre les sorts d'image, ce serait du gâchis.</li><li>Oui, ce kit est cheaté, il peut lancer Double illusoire sur un voleur.</li></ul></div></details><details class="zone" id="kit-260"><summary>Sorcelier</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>+1 niveau de compétence en dague et bâton au niveau 1 et tous les 6 niveaux ensuite, jusqu'à grand maître au niveau 24.</li><li>+½ attaque par round au niveaux 9, 17 et 23.</li><li>+1 au TAC0 en mêlée tous les 2 niveaux.</li><li>+1 au jet de sauvegarde contre la mort tous les 4 niveaux.</li><li>+1 au jet de sauvegarde contre la métamorphose tous les 8 niveaux.</li><li>Peut progresser dans les styles de combat "Arme à deux mains", "Une arme" et "Deux armes".</li><li>Connaît certains sorts de combat en versions améliorées.</li><li>Peut choisir des HLA de guerrier en plus de celles de mage.</li><li>Dés de vie : D6.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Capacité de lancer des sorts réduite de deux sorts par niveau de sort.</li><li>Progression ralentie par la pratique non exclusive de la magie : -15 % d'XP.</li><li>Immunisé aux effets qui changent l'XP reçuee.</li><li>N'utilise pas d'armes à distance.</li></ul>
+<p><strong>SORTS AMÉLIORÉS :</strong> Le sorcelier connaît spontanément quelques sorts de combat qu'il améliore quand il les lance :</p>
+<ul><li>Frappe précise : durée rallongée : 1 round / 3 niveaux</li><li>Armure : temps d'incantation réduit, CA réduite : -1 CA / 3 niveaux (CA max 0)</li><li>Force : force améliorée si le sort est lancé sur lui-même : fixée à 19</li><li>Coups mortels de Tenser : toujours durée maximale et +5 % aux chances de coup critique.</li><li>Bouclier de feu (rouge/bleu) : arme affectée : +1D8 dégâts</li></ul>
+<h4>Notes :</h4>
+<ul><li>Avec le mod "Tweak Anthology" et son composant "Tout le monde obtient le bonus d'attaque par round de spécialisation", le sorcelier arrive facilement à 5 attaques par round.</li><li>Avec le mod "Semi-multi-cleric" le sorcelier peut gagner des sorts de prêtre (Puiser dans la puissance divine, Magie des vertueux, Cercles de lame, Guérison, Soins, Fléau d'insectes, etc.) et devenir surpuissant.</li><li>Le sorcelier bugue avec les mods qui modifient les compétences (Skills and abilities, Tweak Anthology, etc.) : il n'a plus de compétence dague et bâton, mais à la place d'autres compétences qui ne lui servent à rien. Pour corriger ça, utilisez Eekeeper.</li><li>Ce mod ne peut pas être installé sur IWDEE : sous IWDEE ça bugue, il ne reçoit aucune XP.</li></ul></div></details><details class="zone" id="kit-291"><summary>Zap</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>+10 au Déplacement.</li><li>+1 Attaque par round.</li><li>-4 au Temps d'incantation.</li><li>Enchaînement.</li><li>+3 aux jets de sauvegarde contre les baguettes et contre les souffles.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Quand il ne fait RIEN, il perd un point de vie toutes les 3 secondes.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Au moins deux anneaux de régénération ou objets similaires pour annuler son inconvénient.</li><li>Ses avantages ne sont PAS hâte et donc peuvent être cumulés avec hâte.</li></ul></div></details><details class="zone" id="kit-306"><summary>Psycho absorbeur</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Tous les 3 rounds, il se remémore un sort du niveau maximum connu. S'il n'y a aucun sort à remémorer à ce niveau, c'est un niveau de sort en dessous à la place.</li><li>Piège à sorts permanent.</li><li>Chaque fois qu'il tue une créature, il se remémore un sort du plus haut niveau qu'il connaît.</li><li>Temps d'incantation fixés à 1.</li><li>Après chaque repos, il se remémore 1D10 sorts du niveau maximum connu.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Toute perte de conscience : sommeil (après repos ou provoqué), étourdissement, peur, berserk, charme, confusion, débilité ou mort lui fait oublier tous ses sorts.</li></ul></div></details><details class="zone" id="kit-317"><summary>Débordeur</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Toutes ses attaques rajoutent 1D4 points de dégâts magiques. À plus haut niveau d'autres effets aléatoires sont rajoutés (tous les effets autres que les dégâts autorisent un jet de sauvegarde contre les sorts pour annuler et durent un tour) :</li></ul>
+<p> À partir du niveau 4, toutes ses attaques ont en plus 5 % de chance de ralentir la cible.</p>
+<p> À partir du niveau 8, toutes ses attaques ont en plus 5 % de chance d'étourdir la cible.</p>
+<p> À partir du niveau 12, toutes ses attaques ont en plus 5 % de chance d'ajouter 1D8 points de dégâts magiques.</p>
+<p> À partir du niveau 16, toutes ses attaques ont en plus 5 % de chance d'immobiliser la cible.</p>
+<p> À partir du niveau 20, toutes ses attaques ont en plus 5 % de chance de désintégrer la cible.</p>
+<p> À partir du niveau 24, toutes ses attaques ont en plus 5 % de chance d'ajouter 1D12 points de dégâts magiques.</p>
+<p> À partir du niveau 28, tous les effets magiques de ses attaques s'appliquent sur une petite zone et ne touchent que les ennemis.</p>
+<ul><li>Les sorts le visant sont perturbés : +15 % de résistance à la magie.</li><li>Les sorts qu'il lance sont améliorés : +15 % de durée et de dégâts élémentaires et magiques infligés, et +3 au niveau de lanceur de sorts.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Les sorts qu'il lance sont perturbés : 15 % de chance de rater l'incantation des sorts.</li></ul></div></details><details class="zone" id="kit-333"><summary>Ragesort</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il peut devenir enragé 1 fois par jour, +1 fois tous les 4 niveaux suivants. La rage a les mêmes effets que "Transformation de Tenser" et la rage du berserker, et dure 5 rounds.</li><li>À partir du niveau 5, quand il est enragé, il gagne +1 en force, dextérité et constitution par tranche de 5 niveaux (maximum +4).</li><li>À partir du niveau 10, quand il est enragé, il gagne une 1/2 attaque supplémentaire par round par tranche de 5 niveaux (maximum +2 attaques par round).</li><li>À partir du niveau 15, quand il est enragé, il peut lancer des sorts, avec 10 % de chance de rater l’incantation.</li><li>À partir du niveau 20, la rage dure 1 tour.</li><li>À partir du niveau 25, quand il est enragé, tous les dégâts qu’il inflige sont augmentés de 33 %.</li><li>À partir du niveau 30, quand il est enragé, il ne risque plus d’échouer lors du lancement de sorts et il gagne +2 à la vitesse d’incantation.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il n'utilise pas d'armes à projectiles.</li><li>Il est fatigué après la rage, comme le berserk.</li><li>-1 sort par niveau de sort.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="clercs"><h2>Clercs</h2><nav class="kit-index" aria-label="Kits : Clercs"><a href="#kit-352">Dwéomeriste</a> · <a href="#kit-367">Éoration du chaos</a> · <a href="#kit-381">Faiseur de miracles</a> · <a href="#kit-398">Furie</a> · <a href="#kit-408">Nécrophore</a> · <a href="#kit-429">Scion de la Vie</a> · <a href="#kit-446">Soigneur béni</a> · <a href="#kit-458">Élu divin</a> · <a href="#kit-473">Dwéomeriste divin universel</a></nav><details class="zone" id="kit-352"><summary>Dwéomeriste</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Quantité de sorts divins mémorisables doublée.</li><li>Enchaînement.</li><li>Temps d'incantation maximal des sorts fixé à 4.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Dés de vie et TAC0 de Mage.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Multiclassage cheaté : Dwéomeriste/Mage (Mage avec Enchaînement permanent et temps d'incantation maximal fixé à 4)</li><li>Jumelage cheaté : Dwéomeriste niveau x → Mage. (Mage avec Enchaînement permanent et temps d'incantation maximal fixé à 4)</li><li>Jumelage sur-cheaté : Dwéomeriste niveau x jumelé Mangacien. (Autopause pour tuer tout le monde à l'écran en lançant sur chacun une infinité de Projectiles magiques boostés)</li><li>Multiclassage spécial : Rôdeur/Dwéomeriste (TAC0 et Pvs réduits mais sorts de prêtre/druide et nombre de sorts du rôdeur doublé)</li></ul></div></details><details class="zone" id="kit-367"><summary>Éoration du chaos</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Ses sorts et capacités spéciales sont restaurés à la fin de chaque combat.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Maximum 5 sorts par niveau de sort (4 de niveau 7), modulé par la sagesse.</li><li>Alignement limité à chaotique.</li><li>À chaque lancement de sort, 5 % de chances d'engendrer un hiatus entropique.</li></ul>
+<h4>Note :</h4>
+<ul><li>Pour jouer un clerc qui voit ses sorts rafraîchis chaque round, une alternative est le Fléau/clerc.</li><li>Multiclassage cheaté : Éoration du chaos/Mage (mage entropiste qui retrouve tous ses sorts à la fin de chaque combat)</li><li>Jumelage spécial : Éoration du chaos → n'importe quel guerrier/voleur/mage avec des capacités spéciales notables (restaurées à la fin de chaque combat)</li></ul></div></details><details class="zone" id="kit-381"><summary>Faiseur de miracles</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il peut lancer Souhait limité à volonté.</li><li>Au niveau 9, il peut utiliser tous les objets.</li><li>Au niveau 18, il peut lancer Souhait à volonté.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Sagesse -2.</li><li>Il ne connaît aucun sort de niveaux 6 et 7.</li><li>Il n'a accès à aucune HLA.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Le -2 en sagesse ce n'est pas pour diminuer Souhait, c'est pour que le kit ne puisse pas atteindre 24 en sagesse, où il gagnerait un sort de niveau 6 supplémentaire.</li><li>Pas disponible dans BGEE et IWDEE (la quête fournie par Souhait limité n’étant pas disponible).</li><li>Connaissez-vous l'astuce pour XP infini avec Souhait limité ? Sagesse inférieure à 9 et souhait "Je voudrais me protéger des morts-vivants immédiatement" pour invoquer 1 vampire antédiluvien, 2 vampires anciens et 3 vampires, tous offensifs. Répulsion des MV ou un gros combat, c'est comme vous voulez pour en disposer mais avec ce kit c'est réutilisable à l'envie. (ou mettez-le en équipe avec un Scion de la vie pour XP infini super rapide^^)</li><li>Jumelage cheaté : Faiseur de miracles niveau 9 jumelé en Kensaï/Morituri. (Kensaï/Morituri avec "utilisation tous les objets" )</li></ul></div></details><details class="zone" id="kit-398"><summary>Furie</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>+½ attaque par round tous les 4 niveaux (maximum +4 attaques par round au niveau 32).</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Dés de vie : D4.</li></ul>
+<h4>Note :</h4>
+<ul><li>Multiclassage intéressant : Guerrier/Furie. (Porter un bouclier ou une arme à deux mains et atteindre quand même les 5 attaques par round)</li></ul></div></details><details class="zone" id="kit-408"><summary>Nécrophore</summary><div class="zonebody kitbody"><p class="animation">(animation : peau et cheveux noirs comme le néant)</p><h4>Avantages :</h4>
+<ul><li>Mémorise tous les sorts permettant de tuer instantanément comme des sorts d'un niveau inférieur.</li><li>Connaît de nouveaux sorts permettant de tuer instantanément.</li><li>Protection contre la mort et le drain de niveau.</li><li>Au niveau 5, puis tous les 5 niveaux ensuite, peut lancer Mise à mort en tant que capacité spéciale.</li><li>Gagne 5 points de vie chaque fois qu'il tue une créature.</li><li>2 % de chances en touchant (en mêlée ou à distance) de tuer la cible. Aucun jet de sauvegarde et résistance à la magie ignorée.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Ne connaît aucun sort de soins, restauration, régénération, guérison, résurrection ou protection contre la mort / le plan négatif.</li><li>Ne peut pas être ressuscité.</li><li>Alignement limité à mauvais.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sort de mort : Mise à mort (lvl 4), Mise à mal (lvl 5), Doigt de mort (lvl 6), Symbole : mort (lvl 6).</li><li>Nouveaux sorts connus : Sort de mort (lvl 5), Désintégration (lvl 5), Cri de la banshee (HLA), Mot de pouvoir : mort (HLA).</li><li>Si vous l'utilisez pour un multiclassage (guerrier/Nécrophore par exemple) sa table de HLA devient celle du multiclasse standard et vous perdrez la possibilité d’apprendre Cri de la banshee et Mot de pouvoir : mort.</li><li>Multiclasse intéressant : Nécrophore/Guerrier (Plus de 1 APR, 5 pvs en tuant et 2 % de tuer)</li><li>Multiclasse cheaté : Rôdeur/Nécrophore (illégal car Bon/Mauvais en même temps)(sorts de prêtre/druide, 5 pvs en tuant et deux armes chacune 2 % de tuer)</li></ul></div></details><details class="zone" id="kit-429"><summary>Scion de la Vie</summary><div class="zonebody kitbody"><p class="animation">(animation changée : élémentaire d'air lumineux)</p><h4>Avantages :</h4>
+<ul><li>Points de vie doublés.</li><li>Niveau de renvoi des morts-vivants doublé.</li><li>Mémorise tous les sorts de soin, de restauration, de régénération, de guérison et de résurrection comme des sorts d'un niveau en dessous, à distance et avec un temps d'incantation de 1.</li><li>Peut utiliser Soins des blessures légères à volonté en tant que capacité spéciale.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Ne connaît pas les sorts qui invoquent des créatures.</li><li>Ne connaît pas les sorts de blessure / mise à mal, qui empoisonnent ou qui tuent directement.</li><li>Ne connaît pas les sorts qui invoquent des armes magiques.</li><li>Alignement limité à bon.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Son surnom c'est "le pulvérisateur de morts-vivants" ^^.</li><li>Multiclasse à essayer : Rôdeur/Scion de la vie (Renvoi des morts-vivants à un niveau normal et sorts de prêtre/druide)</li></ul></div></details><details class="zone" id="kit-446"><summary>Soigneur béni</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Chaque sort de soin qu'il lance est automatiquement relancé sur lui-même.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>TAC0 de mage.</li><li>Alignement limité à bon.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Le mod L’Interplan propose un anneau qui a à peu près les mêmes effets : équipez le Soigneur béni avec cet anneau et il sera "doublement béni". ^^</li><li>Son avantage "Chaque fois qu'il lance un sort" ne marche pas en combat si le soigneur béni a comme script de combat le "super nouveau script avec des cases à cocher inclus dans les EE".</li></ul></div></details><details class="zone" id="kit-458"><summary>Élu divin</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Aide :  +1 et +1 tous les 6 niveaux.</li><li>Bénédiction : +1 et +1 tous les 6 niveaux.</li><li>Puiser dans la puissance divine : +1 et +1 tous les 6 niveaux.</li><li>Charisme : +2.</li><li>Choisit des HLA de guerrier à la place de celles de clerc.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Ne peut lancer aucun sort.</li></ul>
+<h4>Note :</h4>
+<ul><li>Il se joue comme un guerrier surboosté.</li><li>Multiclassage intéressant : Voleur/Élu divin (force 19+, attaques sournoises boostées. Attention, dans ce cas, HLA de Voleur/prêtre (HLA de prêtre inutiles et pas de HLA de guerrier)).</li></ul></div></details><details class="zone" id="kit-473"><summary>Dwéomeriste divin universel</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Chaque fois qu'il devrait lancer un sort, à la place il peut lancer n'importe quel sort existant du niveau correspondant.</li><li>Il peut lancer tous les sorts divins, y compris les sorts druidiques.</li><li>Il n'a pas besoin d'apprendre de HLA, il peut les lancer en tant que sorts de niveau 7 à partir du niveau 22.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Temps d'incantation : +1.</li><li>-3 sorts par niveau de sort.</li><li>Dés de vie : D6.</li><li>Alignement limité à neutre.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="druides"><h2>Druides</h2><nav class="kit-index" aria-label="Kits : Druides"><a href="#kit-487">Pyroclasme</a> · <a href="#kit-507">Monstruosité mutante instable</a> · <a href="#kit-518">Esprit de Horde</a> · <a href="#kit-531">Ravageur</a> · <a href="#kit-545">Polymorphe</a></nav><details class="zone" id="kit-487"><summary>Pyroclasme</summary><div class="zonebody kitbody"><p class="animation">(animation changée : élémentaire de feu)</p><h4>Avantages :</h4>
+<ul><li>Résistance au feu 125 %.</li><li>Immunisé aux armes normales et +1.</li><li>Immunisé aux maladies, aux poisons, aux attaques sournoises, aux toiles, aux enchevêtrements et à la graisse.</li><li>Connaît une dizaine de sorts de feu supplémentaires.</li><li>Inflige 5 % de dégâts de feu en plus par niveau, maximum +100 %.</li><li>Peut attaquer avec son poing de feu ou avec une petite boule de feu dont les dégâts et le niveau d'enchantement varient suivant le niveau du pyroclasme : 1D4+1 au niveau 1, 1D6+2 au niveau 5, 1D8+3 au niveau 10, 1D10+4 au niveau 15 et 1D12+5 au niveau 20.</li><li>Peut être de n'importe quel alignement.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Vulnérabilité au froid 50 %.</li><li>Ne peut porter aucun objet.</li><li>Ne peut pas se métamorphoser.</li><li>Ne gagne pas d'autres résistances élémentaires.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sorts de feu supplémentaires : Mains ardentes, Incinérateur d'Agannazar, Flèche enflammée, Boule de feu, Minuscules météores de Melf, Bouclier de feu (rouge) (lvl3), Feu solaire (lvl 4), Boule de feu à retardement (lvl 5), Convocation d'Efrit (lvl5), Tempête de feu (déplacée lvl 6), Nuage incendiaire (lvl 7), Souffle de dragon (HLA)</li><li>Sa petite boule de feu requiert la compétence fléchette.</li></ul></div></details><details class="zone" id="kit-507"><summary>Monstruosité mutante instable</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Au niveau 1 et tous les 5 niveaux ensuite : +1 en force, dextérité et constitution et -1 en intelligence, sagesse et charisme. (maximum +7/+7/+7/-7/-7/-7 au niveau 30)</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il est chargé d’énergie très instable et, en conséquence, une fois par round, quand il subit des dommages, il a 5 % de chance d'être désintégré en générant une boule d’énergie magique qui inflige à toutes les créatures dans les 4,5 mètres autour de lui 10D10 points de dégâts magiques (jet de sauvegarde contre les sorts pour ½).</li><li>En mourant, il est automatiquement désintégré et génère la boule d’énergie magique.</li></ul>
+<h4>Note :</h4>
+<ul><li>"Une fois par round quand il subit des dommages" signifie chaque round en cas de poison, maladie, fléau d'insectes ou autres trucs dans ce genre. Soyez très vigilant.</li></ul></div></details><details class="zone" id="kit-518"><summary>Esprit de Horde</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Tous ses sorts d'invocation d'animaux et élémentaires (pas archomentaux) ont un effet doublé.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Ne connaît aucun sort de soin ou régénération.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Son avantage ne concerne que les sorts vanilla. Il ne prend pas en charge les sorts rajoutés par les mods. (exception :  il gère "Insectes géants" et "Traqueur" de IWDEE même sur BG(2)EE)</li><li>Il ne peut par défaut y avoir que 5 créatures convoquées en jeu, ce qui limite l'effet des sorts doublés. Je vous conseille donc de faire sauter la limite de convocation à l'aide d'un des multiples mods de tweak qui font ça.</li><li>Son avantage ne marche pas en combat si l'esprit de horde a comme script de combat le "super nouveau script avec des cases à cocher inclus dans les EE".</li><li>Le mod l'Interplan propose une amulette qui ajoute un ours lors de l'utilisation de "Conjuration d'animaux", ce qui peut faire pour l'Esprit de horde portant l'amulette 3 à 5 ours convoqués à chaque lancement du sort.</li></ul></div></details><details class="zone" id="kit-531"><summary>Ravageur</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Connaît une vingtaine de sorts élémentaires cléricaux et arcaniques.</li><li>Lance certains sorts élémentaires à un niveau inférieur à ce qu'il devrait.</li><li>Gagne le double des résistances élémentaires.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Ne connaît aucun sort d'invocation de créatures.</li><li>N'accorde aucun intérêt aux métamorphoses.</li><li>N'est pas immunisé au poison.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sorts connus supplémentaires : Mains ardentes, Poigne électrique, Toucher glacial, Flèche acide de Melf, Incinérateur d'Agannazar, Éclair (lvl2), Nuée de boules de neige de Snilloc (dans IWDEE), Flèche enflammée, Boule de feu, Minuscules météores de Melf, Bouclier de feu (rouge/bleu) (lvl 3), Tempête de glace (lvl 3), Colonne de feu (lvl 4), Sphère acide, Sang brûlant de Beltyn (dans IWDEE), Cône de froid, Feu solaire, Chaîne d'éclairs (lvl 5), Sphère glaciale d'Otiluke (lvl 5), Tempête de feu (lvl 6), Transmutation de la chair en pierre, Boule de feu à retardement (lvl 6), Pluie acide (dans IWDEE, lvl 6), Nuage incendiaire (lvl 7), Nuée de météores (HLA), Comète (HLA, requis Nuée de météores).</li><li>Si vous l'utilisez pour un multiclassage guerrier/Ravageur sa table de HLA devient celle du multiclasse standard et vous perdrez la possibilité d’apprendre Nuée de météores et Comète.</li></ul></div></details><details class="zone" id="kit-545"><summary>Polymorphe</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Résistance aux dégâts contondants : +25 %.</li><li>Il peut utiliser à volonté le sort "Métamorphose" en tant que capacité spéciale.</li><li>À partir du niveau 7, il peut utiliser à volonté toutes les formes druidiques spéciales.</li><li>À partir du niveau 15, il peut utiliser à volonté le sort "Changement de forme" en tant que capacité spéciale.</li><li>Dés de vie : D12.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut lancer aucun sort.</li><li>Il n'a accès à aucune HLA.</li></ul>
+<h4>Note :</h4>
+<ul><li>Au niveau 7, il peut se transformer en Loup-garou. Cette transformation évolue en Loup-garou majeur au niveau 13.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="bardes"><h2>Bardes</h2><nav class="kit-index" aria-label="Kits : Bardes"><a href="#kit-562">Chantesorts</a> · <a href="#kit-569">Tempus fugïom</a> · <a href="#kit-576">Nishruunoam</a> · <a href="#kit-584">Disciple de Ratatoskr</a> · <a href="#kit-591">Antimaginum</a> · <a href="#kit-603">Magivore</a> · <a href="#kit-611">Engeance du chaos</a> · <a href="#kit-628">Chantevie</a> · <a href="#kit-641">Impériosa</a> · <a href="#kit-661">Lèvemort</a> · <a href="#kit-681">Chantefeu</a></nav><details class="zone" id="kit-562"><summary>Chantesorts</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Son chant permet aux alliés qui l'entendent de se remémorer des sorts de niveau 1 +1 par 4 niveaux du Chantesorts (exemple : peut remémorer des sorts de niveau 5 et moins au niveau 16).</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Son chant lui coûte des points de vie : 1 point de vie perdu pour remémorer des sorts de niveau 1 à 3, 2 points de vie perdus pour remémorer des sorts de niveau 4 à 6, 3 points de vie perdus pour remémorer des sorts de niveau 7 à 9.</li></ul></div></details><details class="zone" id="kit-569"><summary>Tempus fugïom</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Son chant impose lenteur aux ennemis et accorde hâte aux alliés.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Son chant l'épuise : +1 en fatigue par round de chant.</li></ul></div></details><details class="zone" id="kit-576"><summary>Nishruunoam</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Son chant a 15 % de chance d'invoquer un/des nishruu(s).</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>10 % de chance chaque fois qu'il lance un sort qu'un nishruu hostile apparaisse.</li><li>1 % de chance quand il chante que le nishruu qui apparaît soit hostile.</li></ul></div></details><details class="zone" id="kit-584"><summary>Disciple de Ratatoskr</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Son chant change en écureuil tous les ennemis qui ratent un jet de sauvegarde contre la métamorphose.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Son chant le change lui-même en écureuil s'il rate un jet de sauvegarde contre la métamorphose à +3.</li></ul></div></details><details class="zone" id="kit-591"><summary>Antimaginum</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant dissipe la magie (100 % de chance), impose 15 % de chance de rater l'incantation des sorts et réduit de 10 % la résistance à la magie pendant un tour (cumulatif).</li><li>40 % de résistance à la magie.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Son chant affecte aussi ses alliés.</li><li>La puissance de ses sorts est fortement réduite par son aura : -30 % de dégâts et de durée.</li></ul>
+<h4>Note :</h4>
+<ul><li>Les dégâts réduits de ses sorts sont indiqués chez les ennemis par "résiste à x points de dégâts". Exemple pour une boule de feu à 10D6, un ennemi peut indiquer "subit 18 points de dégâts de feu infligés par xxx (résiste à 12 points de dégâts)" : il n'a pas de résistance au feu, c'est la façon du jeu d'indiquer les dégâts réduits.</li></ul></div></details><details class="zone" id="kit-603"><summary>Magivore</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant lui permet d'absorber la magie résiduelle des sorts environnants : Enchaînement pour tous les alliés qui l'entendent.</li><li>La magie résiduelle dont il s’entoure le protège : pendant qu'il chante et jusqu'à un tour après la fin de son chant : +15 % de résistance à la magie.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>La magie résiduelle dont il s’entoure rend ses sorts instables : jusqu'à un tour après la fin de son chant tous les sorts qu'il lance ont 20 % de chance de générer une explosion d’énergie magique infligeant 10D10 points de dégâts magiques (jet de sauvegarde contre les sorts pour ½) à lui-même et à toutes les créatures autour dans les 4,5 mètres de rayon.</li></ul></div></details><details class="zone" id="kit-611"><summary>Engeance du chaos</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant applique sur chaque ennemi un des effets d'une Sphère du chaos.</li><li>Chaque fois qu'il fait un coup critique, tous les ennemis l'entourant subissent un des effets d'une sphère du chaos.</li><li>+2 aux chances de coup critique.</li><li>Il connaît les trois sorts réservés aux entropistes.</li><li>Il connaît le sort Sphère du chaos en tant que sort de niveau 5.</li><li>Il connaît le sort Bouclier du chaos amélioré en tant que sort de niveau 6 et cumulatif.</li><li>Son niveau compte double pour le jet sur la table des hiatus.</li><li>Il est immunisé à la confusion.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Les sorts qu'il lance créent systématiquement un hiatus entropique.</li><li>Chaque fois qu'il fait un échec critique, tous ceux qui l'entourent subissent un des effets d'une sphère du chaos.</li><li>+2 aux chances d’échec critique.</li><li>Alignement limité à chaotique.</li></ul></div></details><details class="zone" id="kit-628"><summary>Chantevie</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant régénère les points de vie de ses alliés : 1 point de vie par round au niveau 1,  2 points de vie par round au niveau 15,  3 points de vie par round au niveau 30.</li><li>Son chant a 1 % de chance par niveau du Chantevie (maximum 30 %) de guérir poisons et maladies.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut pas apprendre les sorts des écoles nécromancie, évocation et invocation.</li><li>Il n'est pas affecté par son propre chant.</li><li>Alignement limité à bon.</li></ul>
+<h4>Note :</h4>
+<ul><li>Pas disponible dans IWDEE (les écoles de magie sont différentes).</li></ul></div></details><details class="zone" id="kit-641"><summary>Impériosa</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant reproduit les effets des Mots de pouvoir et les cumule :</li></ul>
+<p>À partir du niveau 1, son chant produit les effets de Mot de pouvoir : Sommeil</p>
+<p>À partir du niveau 5, son chant produit en plus les effets de Mot de pouvoir : Surdité</p>
+<p>À partir du niveau 10, son chant produit en plus les effets de Mot de pouvoir : Silence</p>
+<p>À partir du niveau 15, son chant produit en plus les effets de Mot de pouvoir : Étourdissement</p>
+<p>À partir du niveau 20, son chant produit en plus les effets de Mot de pouvoir : Cécité</p>
+<p>À partir du niveau 25, son chant produit en plus les effets de Mot de pouvoir : Mort</p>
+<p>À partir du niveau 30, son chant produit en plus les effets de Mot de pouvoir : Destruction</p>
+<ul><li>Charisme : +2.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut lancer aucun sort.</li><li>Il ne peut pas être chaotique ou bon.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Mot de pouvoir : destruction impose aux cibles un jet de sauvegarde contre la mort sous peine de désintégration, sinon 2D6 points de dégâts subis.</li><li>À la création du personnage sous BG2EE vous DEVEZ choisir des sorts. Choisissez n'importe quoi, de toute façon tous les sorts appris sont oubliés dès que le jeu commence.</li></ul></div></details><details class="zone" id="kit-661"><summary>Lèvemort</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant a 20 % de chance +1 % de chance par niveau (maximum 40 %) de relever les morts sous forme de zombis.</li><li>Tous les 4 niveaux du Lèvemort, les zombis qu'il relève ont un dé de vie supplémentaire (ce qui inclut le TAC0 et les jets de sauvegarde) et +1 en mouvement (maximum +10).</li><li>À partir du niveau 8, les zombis qu'il relève infligent Contagion en touchant.</li><li>À partir du niveau 16, les zombis qu'il relève gagnent ½ attaque supplémentaire par round.</li><li>À partir du niveau 24, les zombis qu'il relève infligent Immobilisation des personness en touchant.</li><li>À partir du niveau 32, les zombis qu'il relève gagnent ½ attaque supplémentaire par round.</li><li>À partir du niveau 40, les zombis qu'il relève infligent Immobilisation des monstres en touchant.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Nécromancien et enchanteur en même temps, mais sans sorts supplémentaires.</li></ul>
+<p>-1 sort par niveau, -1 supplémentaire au niveaux 20 et 40.</p>
+<ul><li>Alignement limité à mauvais.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Pas disponible dans IWDEE car la Nécromancie y interdit aussi l'enchantement.</li><li>Immobilisation des monstres remplace Immobilisation des personness. Ils ne sont pas cumulatifs.</li></ul></div></details><details class="zone" id="kit-681"><summary>Chantefeu</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Son chant crée un feu solaire qui inflige 1D4 points de dégâts de feu par niveau, maximum 20D4 (jet de sauvegarde contre les sorts pour ½).</li><li>Ses attaques de mêlée ajoutent 1D4 points de dégâts de feu, +1D4 tous les 5 niveaux, maximum 5D4.</li><li>Résistance au feu 25 %, +2 % par niveau.</li></ul>
+<h4>Inconvénient :</h4>
+<ul><li>Il ne peut lancer aucun sort.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sa résistance au feu peut atteindre 123 % au niveau 50.</li><li>À la création du personnage sous BG2EE vous DEVEZ choisir des sorts. Choisissez n'importe quoi, de toute façon tous les sorts appris sont oubliés dès que le jeu commence.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="chamans"><h2>Chamans</h2><nav class="kit-index" aria-label="Kits : Chamans"><a href="#kit-696">Champion du clan</a> · <a href="#kit-710">Conteur de cauchemars</a> · <a href="#kit-723">Guérisseur Saïyen</a></nav><details class="zone" id="kit-696"><summary>Champion du clan</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Les esprits le protègent : +1 à la Classe d'armure et aux jets de sauvegarde, +2 aux points de vie maximum et +5 % à la résistance à la magie au niveau 1 et tous les 6 niveaux ensuite.</li><li>Les esprits le renforcent : +1 à toutes les caractéristiques au niveau 10 et tous les 10 niveaux ensuite.</li><li>Les esprits lui enseignent des secrets : il connaît quelques sorts non druidiques qui peuvent l'aider à défendre le clan et il peut se spécialiser dans toutes les armes de mêlée et dans les styles de combat Arme à deux mains et Épée et bouclier.</li><li>Sa danse crée les effets de Bénédiction sur les alliés mais pas sur lui-même. A partir du niveau 7 elle crée aussi les effets de Cantique (pas sur les ennemis) et à partir du niveau 15 elle crée aussi les effets d'Harmonie défensive (CA +2).</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il peut lancer un sort de moins par niveau de sort.</li><li>Son score de Détection des illusions est de 0 et ne progresse pas.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sorts non druidiques connus : Force, Globe mineur d'invulnérabilité, Sainte puissance, Magie des vertueux, Protection contre les armes normales, Esprit gardien (lvl 6, double illusoire), Manteau (lvl 6), Transformation de Tenser (lvl 7).</li></ul></div></details><details class="zone" id="kit-710"><summary>Conteur de cauchemars</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il connaît les sorts Sommeil, Hantise, Mot de pouvoir : Sommeil, Horreur, Émotion : désespoir et Assassin imaginaire.</li><li>Sa danse a 10 % de chance +2 % par niveau (maximum 50 %) de créer des assassins imaginaires qui agressent les ennemis.</li><li>Il est immunisé à la peur et au sommeil magique.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Après chaque repos, il a 1 % de chance par niveau (maximum 20 %) d'être agressé par 1D4+2 Incarnations de cauchemar tueuses.</li><li>Il ne peut pas être d'alignement bon.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Les incarnations de cauchemar tueuses sont des monstres de 7 DV (13 DV à partir du niveau 15) avec 3 attaques qui tuent en cas de jet de sauvegarde contre la mort raté. Sauvegardez avant de dormir…</li></ul></div></details><details class="zone" id="kit-723"><summary>Guérisseur Saïyen</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il connaît plusieurs sorts de destruction : Projectile magique, Incinérateur d'Agannazar, Boule de feu, Sphère acide, Cône de froid, Chaîne d’éclair et Lames d’énergie.</li><li>Sa danse lui accorde +15 % de dégâts infligés et -1 au temps d’incantation pendant un tour. Ces bonus sont cumulatifs. (Exemple : s’il danse 5 rounds, il infligera +60 % de dégâts et gagnera -4 au temps d’incantation pendant un tour quand il arrêtera de danser.)</li><li>Au niveau 28, les bonus accordés par sa danse sont doublés, lui accordent Enchaînement et Hâte améliorée pendant 2 rounds et rendent ses cheveux dorés.</li><li>Ses attaques aux poings évoluent avec son niveau suivant le schéma suivant :</li></ul>
+<p>  Au niveau 1 : 1D6 dégâts non létaux, +1 au toucher, 1,5 attaque par round, considérés comme une arme +1</p>
+<p>  Au niveau 4 : 1D8 dégâts non létaux, +2 au toucher, 2 attaques par round</p>
+<p>  Au niveau 8 : 1D10 dégâts non létaux, +3 au toucher, 2,5 attaques par round, considérés comme une arme +2</p>
+<p>  Au niveau 12 : 1D12 dégâts non létaux, +4 au toucher, 3 attaques par round</p>
+<p>  Au niveau 16 : 2D6 dégâts non létaux, +5 au toucher, 3,5 attaques par round, considérés comme une arme +3</p>
+<p>  Au niveau 20 : 2D8 dégâts non létaux, +6 au toucher, 4 attaques par round</p>
+<p>  Au niveau 24 : 2D10 dégâts non létaux, +7 au toucher, 4,5 attaques par round, considérés comme une arme +4</p>
+<p>  Au niveau 28 : 2D12 dégâts non létaux, +8 au toucher, 5 attaques par round.</p>
+<ul><li>Il peut se spécialiser dans les armes à deux mains et dans le style Arme à deux mains.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Pendant sa danse, il ne peut pas se déplacer.</li><li>Il n'utilise pas d'armes à projectiles.</li><li>Il n'utilise ni armes à une main ni bouclier.</li><li>Il ne gagne pas les sorts chamaniques uniques.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Les effets de sa danse ne durant qu'un tour, en fait elle ne donnera pas ses bonus totaux pendant un tour complet. Exemple s'il danse 6 rounds :</li></ul>
+<p>Il danse 1 round</p>
+<p>Il danse 2 rounds +15 % de dégâts et -1 d'incantation pendant un tour</p>
+<p>Il danse 3 rounds +30 % de dégâts et -2 d'incantation pendant 9 rounds (le 1er effet a déjà duré un round)</p>
+<p>Il danse 4 rounds +45 % de dégâts et -3 d'incantation pendant 8 rounds (le 1er effet a déjà duré deux rounds et le 2e un)</p>
+<p>Il danse 5 rounds +60 % de dégâts et -4 d'incantat. pendant 7 rounds (le 1er effet a déjà duré trois rounds, le 2e deux et le 3e un)</p>
+<p>Il danse 6 rounds +75 % de dégâts et -5 d'incantat. pendant 6 rounds (Etc.)</p>
+<p>Il arrête de danser et peut lancer des sorts avec -5 au temps d'incantation et +75 % de dégâts infligés pendant 6 rounds, 60 %/-4 au 7e round, 45 %/-3 au 8e round, 30 %/-2 au 9e round, 15 %/-1 au 10e round.</p>
+<ul><li>Ses poings font des dégâts non létaux, pourquoi ? Très simple : dans les mangas les héros ne tuent jamais leurs adversaires, ils l'assomment et c'est tout (personnellement je trouve ça nul, un boss juste assommé et l'arc est fini).</li><li>Le niveau 35 requiert plus de 8M d’XP et n’est donc accessible que si vous installez un patch d’XP infini.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="combattants"><h2>Combattants</h2><nav class="kit-index" aria-label="Kits : Combattants"><a href="#kit-759">4U-H4S4RD (Guerrier)</a> · <a href="#kit-835">Frénétique (Guerrier)</a> · <a href="#kit-844">Flemmard (Guerrier)</a> · <a href="#kit-856">Boucher (Guerrier)</a><a href="#kit-867">Paramandeur (paladin)</a> · <a href="#kit-887">Athran (paladin)</a> · <a href="#kit-906">Maître du Vif  (rôdeur)</a> · <a href="#kit-925">Initié de la Flamme Blanche (Moine)</a> · </nav><details class="zone" id="kit-759"><summary>4U-H4S4RD (Guerrier)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il peut utiliser Grande technique magique une fois tous les 2 niveaux.</li><li>À partir du niveau 18, il peut utiliser Super technique magique une fois par niveau.</li></ul>
+<p><strong>GRANDE TECHNIQUE MAGIQUE :</strong> cette technique donne au 4U-H4S4RD tous les bonus d'une capacité aléatoire normalement acquise par une autre classe/spécialisation. La capacité peut être de n'importe quel ordre, mais ne concerne pas les armes à distance.</p>
+<p><strong>SUPER TECHNIQUE MAGIQUE :</strong> cette technique permet au 4U-H4S4RD de simuler aléatoirement n'importe quelle capacité de haut niveau d'une autre classe/spécialisation, y compris des sorts épiques.</p>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut pas se spécialiser dans les armes à distance.</li><li>Il ne peut pas choisir de HLA.</li></ul>
+<h4>Notes :</h4>
+<p>Liste des capacités qu'il peut générer avec la Grande technique magique :</p>
+<ul><li>Furie de Berserker.</li><li>Position défensive de Défenseur nain.</li><li>Kaï de Kensaï.</li><li>Rage de Barbare.</li><li>Apaisement de chevalier (centré sur l'utilisateur)</li><li>Hâte (centré sur l'utilisateur) ou Déviation des sorts mineure ou Protection contre les projectiles normaux de Traqueur.</li><li>Convocation d'animaux I de Belluaire (version II à partir du niveau 7 et  version III à partir du niveau 14)</li><li>Dissipation de la magie d’Inquisiteur (centré sur l'utilisateur)</li><li>Vision véritable d'Inquisiteur / Prêtre de Helm.</li><li>Arme empoisonnée de Chevalier noir / Assassin.</li><li>Aura de désespoir de Chevalier noir.</li><li>Bouclier des tempêtes de Prêtre de Talos.</li><li>Épée animée de Prêtre de Helm.</li><li>Bénédiction de Lathandre de Prêtre de Lathandre.</li><li>Faveur Divine de Prêtre de Tyr.</li><li>Chaos de la bataille de Prêtre de Tempus.</li><li>Convocation d'esprit animal de Druide Totémique (au hasard)</li><li>Invisibilité majeure ou Chaos (à partir du niveau 7) ou Chaîne d'éclairs (à partir du niveau 14) (centré sur l’utilisateur) de Justicier.</li><li>Métamorphose en loup-garou de Métamorphe (majeur à partir du niveau 14) (2 tours).</li><li>Métamorphose en araignée sabre ou bébé wyverne de Justicier.</li><li>Spirale offensive de Maître-lames.</li><li>Spirale défensive de Maître-lames.</li><li>Imposition des mains de Moine.</li><li>Soleil Ascendant de Moine de la conscience solaire.</li><li>Flou ou Image Miroir (à partir du niveau 7) de Moine de la Lune noire.</li></ul>
+<p>Liste des capacités de haut niveau qu'il peut générer avec la Super technique magique :</p>
+<ul><li>Attaque tournoyante majeure.</li><li>Coup mortel majeur.</li><li>Résistance magique.</li><li>Frappe critique.</li><li>Punition.</li><li>Robustesse.</li><li>Cri de guerre.</li><li>Assassinat (+ capacité d'attaque sournoise x5, 1 round)</li><li>Trompe-la-Mort.</li><li>Esquive majeure.</li><li>Alchimie.</li><li>Création de parchemins.</li><li>Chant du Barde amélioré (centré sur l'utilisateur, 1 tour)</li><li>Convocation de déva ou Convocation de planétaire déchu.</li><li>Jumeau de l'ombre.</li><li>Labyrinthe de l'Ombre.</li><li>Forme spirituelle.</li><li>Élu des esprits.</li><li>Sphère de lames.</li><li>Aura de feu funeste.</li><li>Régénération (perso)</li><li>Orage Vengeur.</li><li>Beauté de la nature.</li><li>Fatalité rampante (centré sur l'utilisateur)</li><li>Châtiment éthéré.</li><li>Résurrection de masse.</li><li>Convocation d'élémentaires ou Convocation d'élémentaires majeurs.</li><li>Transformation en élémentaire de feu (2 tours)</li><li>Comète ou Souffle de dragon (centrés sur l'utilisateur)</li><li>Arrêt du temps.</li><li>Immunité absolue.</li><li>Lame noire du désastre.</li><li>Changement de forme.</li></ul></div></details><details class="zone" id="kit-835"><summary>Frénétique (Guerrier)</summary><div class="zonebody kitbody"><h4>Avantage :</h4>
+<ul><li>Hâte améliorée permanente.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>N'utilise que les lames longues.</li><li>+2 aux chances de raté critique.</li><li>Quand il fait un raté critique, il subit 1D6+2 points de dégâts tranchants.</li></ul></div></details><details class="zone" id="kit-844"><summary>Flemmard (Guerrier)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Chance +1, +1 tous les 10 niveaux.</li><li>Chances de coup critique +1, +1 tous les 10 niveaux.</li><li>Ses attaques ont 6 % de chance de déclencher au hasard Attaque tournoyante majeure, Coup mortel majeur ou Frappe critique, +3 % tous les 10 niveaux.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>TAC0 de voleur.</li><li>Il ne peut pas dépasser la maîtrise avec les armes.</li><li>Il ne peut pas choisir de HLA.</li></ul></div></details><details class="zone" id="kit-856"><summary>Boucher (Guerrier)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Chaque fois qu'il tue une créature, il regagne 2 points de vie.</li><li>Dégâts infligés +30 %.</li><li>À partir du niveau 15, Coup mortel permanent.</li><li>À partir du niveau 22, toutes ses frappes tuent la cible si elle rate un jet de sauvegarde contre les sorts.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Chaque fois qu'il tue une créature, il a 30 % de chance -1 % tous les 2 niveaux de devenir berserk. Cet état dure 2 tours pendant lesquels il est incontrôlable le premier tour. S'il tue d'autres créatures, il peut relancer l'état incontrôlable.</li><li>Alignement limité à Neutre mauvais et Chaotique mauvais.</li></ul></div></details><details class="zone" id="kit-867"><summary>Paramandeur (paladin)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>+2 sorts par niveau de sort.</li><li>Connaît plusieurs sorts profanes :</li></ul>
+<p> Niveau 1 : Mains ardentes, Charme personne et Nuage Puant</p>
+<p> Niveau 2 : Rayon débilitant, Horreur et Porte dimensionnelle</p>
+<p> Niveau 3 : Boule de feu, Lenteur et Arme enchantée</p>
+<p> Niveau 4 : Métamorphose d'autrui, Confusion et Sphère résistante d'Otiluke</p>
+<p> Niveau 5 : Immobilisation des monstres et Sort de mort.</p>
+<h4>Inconvénients :</h4>
+<ul><li>Alignement Neutre.</li><li>Ne peut pas porter d'armure plus épaisse que celle de cuir clouté.</li><li>Ne peut pas utiliser d'armes à projectiles.</li><li>Ne peut pas utiliser la capacité Détection du mal.</li><li>Ne peut pas utiliser la capacité Protection contre le mal.</li></ul>
+<h4>Note :</h4>
+<ul><li>Sous BG2EE/EET, le paladin vanilla ne peut lancer que 4 niveaux de sorts. Si vous voulez profiter des sorts de niveau 5, vous devez modder votre jeu pour changer la table des sorts du paladin. Les mods Tweak Anthology, IWDification et Selphira tweaks permettent cela.</li></ul></div></details><details class="zone" id="kit-887"><summary>Athran (paladin)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Lance des sorts de niveau 3 à la place des sorts de niveau 1, des sorts de niveau 4 à la place des sorts de niveau 2, etc.</li><li>Nombre de sorts mémorisables doublé.</li><li>-2 au temps d'incantation.</li><li>Peut atteindre la haute maîtrise avec les bâtons.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Ne peut être que compétent avec toutes les autres armes.</li><li>Ne peut apprendre que le style de combat "Arme à deux mains".</li><li>Ne repousse pas les morts-vivants.</li><li>Ne connaît ni sorts de blessures/mise à mal ni sorts qui tuent directement.</li><li>Ne connaît pas de sort d'invocation de morts-vivants, démons ou de Dévas déchus.</li><li>Dés de Vie : D8.</li></ul>
+<h4>Note :</h4>
+<ul><li>Sous BG2EE/EET, le paladin vanilla ne peut lancer que 4 niveaux de sorts. Si vous voulez profiter des sorts de niveau 5 et +, vous devez modder votre jeu pour changer la table des sorts du paladin. Les mods Tweak Anthology, IWDification et Selphira tweaks permettent cela.</li><li>Si votre Athran a des emplacements de sort pour les niveaux 5 et 6, il lance des sorts de niveau 7 à la place des sorts de niveau 5 et des sorts de quête (HLA) à la place des sorts de niveau 6.</li></ul></div></details><details class="zone" id="kit-906"><summary>Maître du Vif  (rôdeur)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Protection contre les animaux.</li><li>Il peut à volonté charmer un animal sauvage (non convoqué) : ce dernier n'a pas droit à un jet de sauvegarde et devient le fidèle compagnon du Maître du Vif. Il peut le suivre dans toutes les zones. Le contrôle est définitif jusqu'à sa mort.</li><li>À partir du niveau 10, sa capacité de charme peut aussi affecter les créatures des bois : araignées, scarabées, serpents, ankhegs, wyvernes.</li><li>À partir du niveau 12, protection contre les créatures des bois qu'il peut charmer.</li><li>À partir du niveau 20, sa capacité de charme peut aussi affecter certaines créatures exotiques : vers charognards, trolls, ombres des roches, otyughs, basilics.</li><li>À partir du niveau 24, protection contre les créatures exotiques qu'il peut charmer.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il n'a pas la capacité "charme animal" standard.</li><li>Il ne peut lancer aucun sort.</li><li>Il ne peut pas porter d'armure plus lourde que l'armure de cuir clouté.</li><li>Il ne peut pas se jumeler.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sa capacité fonctionne sur TOUS les animaux, c'est-à-dire aussi sur les écureuils, les vaches, les chevaux, etc. Mais je vous déconseille de l’utiliser sur des animaux statiques car le  "Vous devez réunir votre groupe avant de continuer" prend en compte tous vos suiveurs. Donc ne vous encombrez pas de créatures qui ne peuvent pas vous suivre sous peine de rester coincé.</li><li>Parfois ça ne marche pas sur les araignées éclipsantes. Pourtant tous les paramètres sont bons, mais ça refuse de marcher.</li></ul></div></details><details class="zone" id="kit-925"><summary>Initié de la Flamme Blanche (Moine)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il peut lancer tous les sorts de prêtre en tant que capacités spéciales. Il a accès à un nouveau niveau de sort tous les 4 niveaux et peut lancer 4 sorts maximum par niveau de sort.</li><li>Pour chaque niveau de sort il peut lancer n'importe quel sort de ce niveau.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Il ne peut être que Loyal Bon.</li><li>Il ne gagne pas de résistance à la magie.</li><li>Il n'a pas de mouvement augmenté.</li><li>Il n'est pas immunisé à la hâte et à la lenteur.</li><li>Il ne connaît pas la Paume Tremblante.</li></ul>
+<h4>Note :</h4>
+<ul><li>Kit surpuissant : Puiser dans la puissance divine (force 19+), Magie des vertueux (dégâts maximums sur 1D20), Mise à mort (3 rounds, 4 attaques/round)</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="multiclasses"><h2>Multiclassés</h2><nav class="kit-index" aria-label="Kits : Multiclassés"><a href="#kit-942">Infuseur  (Guerrier/mage)</a> · <a href="#kit-962">Magistèrium (Clerc/mage)</a></nav><details class="zone" id="kit-942"><summary>Infuseur  (Guerrier/mage)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Devient automatiquement guerrier-mage après la création.</li><li>Toute arme de mêlée qu'il utilise inflige 1D4 dégâts magiques supplémentaires, +1D4 tous les 5 niveaux.</li><li>Toute arme de mêlée qu'il utilise est considérée comme magique +1 et accorde +1 au toucher, +1/+1 tous les 5 niveaux.</li><li>Peut porter n'importe quelle armure sans que ça l’empêche de lancer des sorts.</li><li>A un peu plus de points de vie qu'un guerrier-mage standard.</li></ul>
+<h4>Inconvénients :</h4>
+<ul><li>Ne peut lancer que des sorts des écoles Transmutation, Abjuration et Illusion.</li><li>N'utilise aucune arme à distance.</li><li>Démarre la partie sans aucun sort connu.</li></ul>
+<h4>Note :</h4>
+<ul><li>Sa sélection se fait comme kit de guerrier.</li><li>C'est son niveau de guerrier qui compte pour les bonus (exemple, +4D4, toucher +4 et arme +4 quand il est guerrier 15/mage 14).</li><li>Pas disponible dans IWDEE (les écoles de magie sont différentes).</li><li>Ce kit est cheaté : les dégâts magiques rajoutés outrepassent Peau de pierre.</li><li>Bug : sur une partie BG2EE, les parchemins qu'il peut utiliser sont verts. OK. Sur une mega installation EET, tous les parchemins lui apparaissent rouges, même ceux qu'il peut utiliser. Je ne sais pas d'où ça vient.</li></ul></div></details><details class="zone" id="kit-962"><summary>Magistèrium (Clerc/mage)</summary><div class="zonebody kitbody"><h4>Avantages :</h4>
+<ul><li>Il devient automatiquement un Clerc/Mage après la création.</li><li>Si un sort est commun aux deux classes mais d'un niveau inférieur dans une classe, il apprend ce sort au niveau inférieur dans l'autre classe. Le groupe gagne l'XP d’apprentissage pour cette conversion.</li><li>Il découvre régulièrement comment reproduire un sort druidique sous forme arcanique. Le groupe gagne l'XP d’apprentissage pour cette découverte.</li><li>+3 sorts arcaniques par niveau de sort.</li><li>Chaque fois qu'il lance un sort, il gagne 75 XP (réduction incluse) et a 10 % de chance de déclencher "Chance arcanique".</li></ul>
+<p><strong>CHANCE ARCANIQUE :</strong> quand cet effet est activé, le magistèrium se remémore un sort arcanique et un sort divin du plus haut niveau connu, est guéri de 1D12+5 points de vie, est couvert par 1D5+2 images miroir et applique +4 au niveau de lanceur de sorts et +30 % de dégâts/durée sur les sorts qu'il lance pendant les 2 rounds suivants.</p>
+<h4>Inconvénients :</h4>
+<ul><li>Le temps passé à approfondir ses recherches laisse peu de temps pour appréhender le reste : -25 % d'XP reçue.</li><li>Il ne porte pas d'armure (il peut porter une robe).</li><li>Il ne repousse pas les morts-vivants.</li><li>Il doit être d'alignement neutre.</li></ul>
+<h4>Notes :</h4>
+<ul><li>Sa sélection se fait comme kit de mage.</li><li>Son avantage "Chaque fois qu'il lance un sort" ne marche pas avec enchaînement et ne marche pas en combat si le magistèrium a comme script de combat le "super nouveau script avec des cases à cocher inclus dans les EE".</li><li>Sorts clerc/mage convertis : Apaisement (de clerc) niveau 1, Immobilisation des personnes (de clerc) niveau 2, Animation des morts (de clerc) niveau 3, Domination mentale (de clerc) niveau 4, Protection contre la foudre (de clerc) niveau 4, Confusion (de mage) niveau 4, Vision véritable (de clerc) niveau 5, Portail (de clerc) niveau 7 et Lames d’énergie (de clerc, niveau de quête) niveau 8.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section><section class="content" id="versions"><h2>Mise à jour</h2><details class="versionbox"><summary>Version 12.1</summary><div class="versionbody"><ul><li>Correction des fautes de français dans le texte en français.</li><li>Mise à jour de la concordance dans le fichier texte anglais.</li><li>Conversion du readme de pdf vers html.</li></ul></div></details><details class="versionbox"><summary>Version 12</summary><div class="versionbody"><h4>Corrections :</h4><ul><li>L'Esprit du miroir avait 200 % de vulnérabilité aux dégâts contondants.</li><li>Le Mangacien et le Sphéromaniaque ne pouvaient pas choisir de sorts lors de la création de personnage. (Merci à donatoclandorf pour le signalement)</li><li>Le Mangacien, l'Artilleur, le Champion du clan et le Guérisseur Saïyen avaient des capacités maximisées au niveau 32+ alors que les mages/chamans ne peuvent atteindre que le niveau 31.</li></ul></div></details><details class="versionbox"><summary>Version 11</summary><div class="versionbody"><h4>Nouveau kit :</h4><ul><li>Chantefeu</li></ul><h4>Modifications :</h4><ul><li>Voleur de sorts : il gagne des animations pour ses deux capacités.</li><li>Sorcelier : Il ne peut plus être installé sur IWDEE. Pour une raison que je ne comprends pas, sur IWDEE son malus à l'xp devient 100 % -&gt; il ne gagne rien.</li><li>Maître combineur : sa capacité spéciale a maintenant une icône et un nom alternatifs quand elle est chargée.</li><li>Arcanologue vampirique : modification de son inconvénient pour le rendre plus jouable.</li><li>Boucher : sa réduction de chance de devenir berserk passe de 1 % tous les 3 niveaux à 1 % tous les 2 niveaux.</li><li>Maître du vif : devient un rôdeur. Un druide sans sorts, c'est nul.</li><li>Modeleur de sorts et Arcanologue vampirique : mise à jour des sorts arcaniques possibles d'après les fichiers de l'Interplan, les plus à jour.</li></ul><h4>Correction :</h4><ul><li>Initié de la flamme blanche : son choix de sorts de niveau 2 avait l’icône du choix de sorts de niveau 1.</li><li>Incantateur : il gagnait +3 au niveau de lanceur de sort à la place de +4.</li><li>Corrections d'erreurs dans les données des kits (CLASWEAP, WEAPPROF)</li><li>Tous les bardes manquaient du sort OHBARDTR.spl appliqué au niveau 24 (correction apportée par les EE : Set trap = 100 pour pouvoir poser les pièges disponibles en HLA)</li></ul></div></details><details class="versionbox"><summary>Version 10.1</summary><div class="versionbody"><h4>Correction :</h4><ul><li>Il manquait deux lignes dans le fichier .tra en français.</li></ul></div></details><details class="versionbox"><summary>Version 10</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Ajout de 3 kits de combattants.</li><li>Intégration du kit déjà existant "4U-H4S4RD" dans le Dawap.</li></ul><h4>Modifications :</h4><ul><li>Ajout d'un nouveau sort d’évocation installé avec le Fléau.</li><li>Le "Arcanist" dans DAWAP devient "Adventurers" et le mod intègre maintenant des combattants. (Merci à ceux qui m'ont aidé à trouver ce nouvel acronyme)</li><li>Ajout d'un WeiDU alternatif pour installer tous les kits d'un coup.</li><li>Préfondateur : il avait un nom vraiment trop moche. Il devient l'Arcanologue Vampirique. Il gagne aussi une nouvelle animation.</li></ul></div></details><details class="versionbox"><summary>Version 9</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Malavisé, Préfondateur, Débordeur, Dwéomeriste divin universel, Maître du Vif, Lèvemort.</li></ul><h4>Modifications :</h4><ul><li>Modeleur de sorts : il a maintenant un décalage de niveaux pour pouvoir modeler les HLA.</li><li>Fléau : son installation ajoute un nouveau sort d'évocation de niveau 1.</li></ul><h4>Corrections :</h4><ul><li>Corrections mineures dans la traduction anglaise.</li><li>Dans les descriptions des kits, ajout ou suppression des "s" aux avantages et inconvénients suivant s'il y en a un ou plusieurs.</li><li>Les compétences d'armes de tous les kits de bardes étaient foireuses. (???)</li><li>Incantateur : sa pénalité au temps d'incantation était toujours de -4 (récurrent : modification, test, et le fichier reste dans l'override...)</li><li>Monstruosité mutante instable et Polymorphe : 2DA prévu jusqu'au niveau 40 seulement.</li><li>Mangacien, Sphéromaniaque et Modeleur de sorts : dans le cas d'une grosse installation avec beaucoup de modules de sorts, il pouvait leur rester des sorts "vanilla" appris.</li><li>Modeleur de sorts : pour chaque niveau de sort, le jeu n'affichait pas les 3 premières entrées de la liste.</li></ul></div></details><details class="versionbox"><summary>Version 8</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Modeleur de sort, Impériosa.</li></ul><h4>Modifications :</h4><ul><li>Magistèrium : ajout d'un avantage.</li><li>Scion de la vie : amélioration d'un des avantages.</li><li>Malomage et Chantre de la magie : fusion en un seul kit : l'Antimaginum. (le Malomage était nul, seulement créé pour satisfaire un gars en manque de DPS)</li><li>Psychotope : réécriture en ensorceleur : le Psycho absorbeur. (Il avait besoin de quelque chose pour regagner plus vite ses sorts après repos)</li></ul><h4>Corrections :</h4><ul><li>Chantevie : il était aussi entropiste.</li><li>Chantre de la non-magie (Antimaginum) : il était affecté par son propre chant.</li><li>Sphèromaniaque : il ne s'installait pas (modification due au Ravageur v7)</li><li>Ravageur : il pouvait toujours lancer des sorts de convocation.</li><li>Scion de la vie : il avait 4 sorts qui n'avaient pas le niveau de sort réduit.</li></ul></div></details><details class="versionbox"><summary>Version 7</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Ajout de 10 kits, dont des chamans, des paladins, et même un moine :)</li></ul><h4>Modifications :</h4><ul><li>Ajout des Labels dans le tp2 pour simplifier le travail de Selphira.</li><li>Amélioration du texte pour indiquer qu'un composant n'est pas compatible avec IWDEE.</li><li>Marteleur : Il peut dorénavant utiliser les parchemins + ajout d'un script de cast automatique + il change de nom (l'ancien était très moche) pour devenir Mangacien, nom étrange mais justifié par son texte. ^^</li><li>Esprit du miroir : remplacement d'un avantage inutile par un autre vraiment intéressant.</li><li>Dwéomeriste : légère amélioration d'un de ses avantages et inconvénient changé pour le rendre jouable.</li><li>Ravageur : les sorts "Sphère acide" et "Sphère glaciale d'Otiluke" ne sont plus limités à une installation dans IWDEE.</li><li>Polymorphe : changement complet de la façon dont il fonctionne afin qu'il fonctionne sans problèmes sous BGEE, IWDEE et si un mod (comme SR) a modifié les sorts de métamorphose. Ajout de la peau verdâtre.</li><li>Nishruunoam : légère modification pour le rendre plus intéressant.</li><li>Engeance du chaos : réécriture pour qu'il soit plus facile à gérer.</li><li>Chantevie : ajout d'une capacité en HLA.</li><li>Chantre de la non-magie : inconvénient changé pour qu'il soit pleinement jouable.</li><li>Malomage : complètement réécrit. Créé uniquement dans le but de satisfaire les(le ?) déçu(s) du chantre de la non-magie, il n'avait plus de raison d'être après la réécriture de ce dernier.</li></ul><h4>Corrections :</h4><ul><li>Ajout de l’icône "chant de barde" dans les chansons de tous les bardes à qui elle manquait.</li><li>Pyroclasme, Esprit de horde et Éoration : ils ne s'installaient pas sur BGEE (merci N3ige pour le signalement)</li><li>Enragé &amp; Nécrophore : ils ne sont plus incompatibles avec les autres sorts/objets qui utilisent l'effet #232.</li><li>Voleur de sorts : il ne volait rien du tout (erreur de typo)(et ça depuis la v2.1. Personne ne s'en est jamais servi ?)</li><li>Sorcelier : ses boucliers de feu/froid n’affichaient pas l'effet élémentaire de l'arme affectée.</li><li>Éoration du chaos : il appelait un script avec le mauvais nom (erreur de typo)(même bug que l'Éoration)</li><li>Nécrophore : il n'avait pas les sorts de soins d'IWDEE correctement supprimés.</li><li>Dwéomeriste : il avait deux sorts en bonus bugués et non précisés dans le texte.</li><li>Ravageur : il n'avait pas les sorts de convocation d'IWDEE correctement supprimés. Ses 2 HLA exclusives étaient "vides".</li><li>Chantesort : son chant ne ciblait pas que les alliés.</li><li>Magivore : il gagnait 20 % de RM à la place des 15 % annoncés.</li><li>Infuseur : il n'avait pas accès aux HLA. (erreur de typo)</li></ul></div></details><details class="versionbox"><summary>Version 6.5</summary><div class="versionbody"><ul><li>Correction du Disciple de Ratatoskr qui demandait un fichier placé au mauvais endroit.</li></ul></div></details><details class="versionbox"><summary>Version 6.4</summary><div class="versionbody"><ul><li>Correction du polymorphe qui ne fonctionnait pas dans BGEE (merci JohnBob pour la correction)</li></ul></div></details><details class="versionbox"><summary>Version 6.3</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Chantevie, Malomage.</li></ul><h4>Corrections :</h4><ul><li>Encore des corrections dans la version anglaise.</li></ul></div></details><details class="versionbox"><summary>Version 6.2</summary><div class="versionbody"><h4>Suppression de kit :</h4><ul><li>Vitalomage : l'utilisation du super script de combat automatique inclus dans les éditions EE (avec des options à cocher/décocher) squatte l'IA et zappe complètement son inconvénient. Je n'ai rien trouvé pour contrer ça.</li></ul><h4>Modifications :</h4><ul><li>Infuseur : il perd l'Evocation et gagne l’Altération à la place (peau de pierre, hâte)</li><li>Enragé : Sa rage de berserk passe à une durée de 3 rounds.</li><li>Sorcelier : Il ne peut plus être affecté par les effets qui changent l'xp. Il gagne le sort de niveau 3 "amélioré" qui lui manquait.</li></ul><h4>Corrections :</h4><ul><li>Corrections mineures dans la traduction anglaise et le readme.</li><li>Éoration : il pouvait lancer 1 sort de plus par niveau.</li><li>Sorcelier : il pouvait lancer 1 sort de plus par niveau.</li></ul></div></details><details class="versionbox"><summary>Version 6.1</summary><div class="versionbody"><h4>Modification :</h4><ul><li>Fléau : le rafraîchissement de ses sorts se fait maintenant toutes les 5 secondes à la place de 6. Avant il devait avoir 2 copies mémorisées d'un sort pour pouvoir le lancer chaque round.</li></ul><h4>Correction :</h4><ul><li>Infuseur : il ne pouvait pas porter d'armure.</li></ul></div></details><details class="versionbox"><summary>Version 6</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Ajout de 12 kits, dont tout plein de bardes (toujours pas de chamans :/).</li></ul><h4>Modifications :</h4><ul><li>Ajout de sous-composants pour les kits qui changent d'avatar proposant d’empêcher ce changement.</li><li>Sorcelier v2 : révision des bonus de combat.</li><li>Vitalomage : il gagne un bonus de points de vie pour être plus viable.</li><li>Dwéomeriste : capacité de régénération des sorts remplacée par doublement des sorts. La régénération de sorts, c’était ultra trop cheaté en multiclassant en mage.</li></ul><h4>Corrections :</h4><ul><li>Tous les druides avaient des sets d'objets pour le début de TOB correspondant aux clercs.</li><li>Tous les ensorceleurs proposaient un choix de compétences d'armes supplémentaires sans fondement. Merci à TheNamelessOne pour avoir pointé ce bug.</li><li>Furie : elle était marquée comme druide lors de l'installation.</li><li>Sorcelier v2 : sa table de HLA ne lui permettait pas de prendre les sorts de mage avant le niveau 32. Merci à TheNamelessOne pour avoir pointé ce bug.</li><li>Faiseur de miracles : il ne perdait pas les sorts de niveau 6 et 7.</li><li>Polymorphe : il n'avait pas les points de vie fixés à D12.</li></ul></div></details><details class="versionbox"><summary>Version 5</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Ajout de 12 kits, ce qui double le contenu du mod :)</li></ul><h4>Modifications :</h4><ul><li>Minuims magiques : ils regagnent l'avantage que je leur avais imaginé dès leur conception : immunité aux armes normales. C'est trop bourrin ? Le métamorphe a le même avantage.</li><li>Sorcelier v2 : il apprend maintenant automatiquement les sorts améliorés.</li><li>Incantateur : son inconvénient passe à +3 au temps d'incantation.</li><li>Enragé : sa probabilité de rater le lancement de sort quand il est berserk passe à 10 %.</li><li>Anomalie : il gagne maintenant 2 points de vie quand il lance un sort, et son arme requiert la compétence fléchette.</li><li>Anomalie : il peut maintenant se métamorphoser correctement.</li><li>Esprit du miroir : son malus sur les pv devient "-50 % de points de vie", ce qui reste équivalent à terme mais ne fait plus l'effet "plus rien après le niveau 10".</li><li>Esprit du miroir : il gagne un nouveau sort venu de l'interplan.</li></ul><h4>Corrections :</h4><ul><li>Les magiciens ne pouvaient pas se jumeler.</li><li>Minuims magiques : ils regagnent le choix des compétences. Sans ce choix, pas de HLA.</li><li>Zap : il copiait les ressources de l'Esprit du miroir à la place des siennes et du coup n'avait rien de correspondant à sa description.</li><li>Éoration : au lieu d'être protégé contre les effets qui améliorent le nombre de slots il était protégé contre les icônes affichées.</li><li>Anomalie : il avait perdu en route le sort qui lui faisait gagner un point de vie et l’icône de son arme.</li></ul></div></details><details class="versionbox"><summary>Version 4</summary><div class="versionbody"><h4>Nouveau kit :</h4><ul><li>Sorcelier v2 (exporté du DUKP et modifié)</li></ul><h4>Modifications :</h4><ul><li>Minuims magiques : ils ne peuvent plus choisir de compétences d'armes lors de la création du personnage, puisque de toute façon ils ne peuvent en porter aucune.</li></ul><h4>Corrections :</h4><ul><li>Il restait plein de fichiers textes et backups indésirables dans l'archive de la V3.</li></ul></div></details><details class="versionbox"><summary>Version 3</summary><div class="versionbody"><h4>Nouveau kit :</h4><ul><li>Zap</li></ul><h4>Modifications :</h4><ul><li>Incantateur : plus immunisé aux effets modifiant les temps d'incantation. Robe de Vecna effective.</li><li>Enragé : clarification du texte et ajout d'une ligne manquante dans le texte en anglais.</li></ul><h4>Correction :</h4><ul><li>Enragé : il subissait -1 sort par niveau de sort.</li></ul></div></details><details class="versionbox"><summary>Version 2.1</summary><div class="versionbody"><h4>Corrections :</h4><ul><li>Enragé : sa rage ne durait que 4 rounds.</li><li>Voleur de sorts : ses pouvoirs n’étaient pas limités à un usage contre les mages.</li></ul></div></details><details class="versionbox"><summary>Version 2</summary><div class="versionbody"><h4>Nouveaux kits :</h4><ul><li>Fléau, Enragé</li></ul><h4>Modifications :</h4><ul><li>Psychotope : ajout de Berserk et Charme dans les déconnexions pouvant lui faire perdre ses sorts.</li><li>Eoratien : maintenant il se remémore ses sorts à la FIN des combats (au début, c’était naze, ça ne se faisait que quelques secondes après le début)</li><li>Anomalie : plus de résistance aux dégâts magiques. (Il pouvait s'autocibler avec Projectile magique et gagner des points de vie comme ça)</li><li>Minuims magiques : plus d'immunité aux armes non-magiques, à la place bonus à la CA. (c’était surcheaté dans BG1)</li></ul><h4>Corrections :</h4><ul><li>Anomalie : sa boule d’énergie ne se mettait pas à jour s'il passait beaucoup de niveaux d'un coup.</li><li>Éoration : il ne se remémorait rien.</li></ul></div></details><p class="backtop"><a href="#top">Retour en haut ↑</a></p></section></main></div></body></html>
